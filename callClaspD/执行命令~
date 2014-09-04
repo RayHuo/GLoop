@@ -1,0 +1,2 @@
+gringo sample.in | claspD 0 > out.out
+

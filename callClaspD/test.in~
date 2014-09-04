@@ -1,0 +1,5 @@
+d :- not c.
+x_1 :- d,c.
+c :- x_1.
+ :- not d.
+ :- not c.
