@@ -1416,8 +1416,8 @@ set< set<int> > DependenceGraph::callClaspD(string fileName) {
             int id = Vocabulary::instance().queryAtom((char*)((*sit).c_str()));
             if(id != -1)
                 tmp.insert(id);
-            else
-                printf("\ncallClaspD Error!\n");
+//            else
+//                printf("\ncallClaspD Error!\n");
         }
         //printf("\n");
         result.insert(tmp);
@@ -1583,7 +1583,7 @@ void DependenceGraph::splitting(FILE* out) {
         // calculate answer sets Y
         vector<Rule> pY = eccupx;    // e_U(P, X)和ECC_U(P, X)的并集
         pY.insert(pY.begin(), tupx.begin(), tupx.end());
-        set< set<int> > Ys = solutionYs(pY, Xtest);     printf("Ys size %d\n", Ys.size());
+        set< set<int> > Ys = solutionYs(pY, Xtest);    // printf("Ys size %d\n", Ys.size());
 //        fprintf(out, "Answer set Ys : \n"); fflush(out);
 //        for(set< set<int> >::iterator it = Ys.begin(); it != Ys.end(); it++) {
 //            for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
@@ -1593,14 +1593,14 @@ void DependenceGraph::splitting(FILE* out) {
 //        }
 //        fprintf(out, "\n");
 
-        fprintf(out, "\nInput program P's answer sets : \n");
-        for(set< set<int> >::iterator pit = PAnswerSets.begin(); pit != PAnswerSets.end(); pit++) {
-            for(set<int>::iterator it = (*pit).begin(); it != (*pit).end(); it++) {
-                fprintf(out, " %s", Vocabulary::instance().getAtom(*it));
-            }
-            fprintf(out, "\n");
-        }
-        fprintf(out, "\n");
+//        fprintf(out, "\nInput program P's answer sets : \n");
+//        for(set< set<int> >::iterator pit = PAnswerSets.begin(); pit != PAnswerSets.end(); pit++) {
+//            for(set<int>::iterator it = (*pit).begin(); it != (*pit).end(); it++) {
+//                fprintf(out, " %s", Vocabulary::instance().getAtom(*it));
+//            }
+//            fprintf(out, "\n");
+//        }
+//        fprintf(out, "\n");
 
         fprintf(out, "\nSolution judge \n");
         for(set< set<int> >::iterator sit = Ys.begin(); sit != Ys.end(); sit++) {

@@ -1,950 +1,1256 @@
-_false :- not nonEquivalent.
-_false :- __int31.
-__int31 :- __int_j1.
-__int_j1 :- not _value(purple,i1,0),not value(purple,i1,0).
-_false :- __int30.
-__int30 :- __int_j2.
-__int_j2 :- value(purple,i1,0),_value(purple,i1,0).
-_false :- __int29.
-__int29 :- __int_j3.
-__int_j3 :- not _value(purple,i1,1),not value(purple,i1,1).
-_false :- __int28.
-__int28 :- __int_j4.
-__int_j4 :- value(purple,i1,1),_value(purple,i1,1).
-_false :- __int27.
-__int27 :- __int_j5.
-__int_j5 :- not _value(purple,i1,2),not value(purple,i1,2).
-_false :- __int26.
-__int26 :- __int_j6.
-__int_j6 :- value(purple,i1,2),_value(purple,i1,2).
-_false :- __int25.
-__int25 :- __int_j7.
-__int_j7 :- not _value(purple,i1,3),not value(purple,i1,3).
-_false :- __int24.
-__int24 :- __int_j8.
-__int_j8 :- value(purple,i1,3),_value(purple,i1,3).
-_false :- __int23.
-__int23 :- __int_j9.
-__int_j9 :- not _value(purple,i1,4),not value(purple,i1,4).
-_false :- __int22.
-__int22 :- __int_j10.
-__int_j10 :- value(purple,i1,4),_value(purple,i1,4).
-_false :- __int21.
-__int21 :- __int_j11.
-__int_j11 :- not _value(purple,i1,5),not value(purple,i1,5).
-_false :- __int20.
-__int20 :- __int_j12.
-__int_j12 :- value(purple,i1,5),_value(purple,i1,5).
-_false :- __int19.
-__int19 :- __int_j13.
-__int_j13 :- not _value(purple,i1,6),not value(purple,i1,6).
-_false :- __int18.
-__int18 :- __int_j14.
-__int_j14 :- value(purple,i1,6),_value(purple,i1,6).
-_false :- __int17.
-__int17 :- __int_j15.
-__int_j15 :- not _value(purple,i1,7),not value(purple,i1,7).
-_false :- __int16.
-__int16 :- __int_j16.
-__int_j16 :- value(purple,i1,7),_value(purple,i1,7).
-_false :- __int15.
-__int15 :- __int_j17.
-__int_j17 :- not _value(purple,i1,8),not value(purple,i1,8).
-_false :- __int14.
-__int14 :- __int_j18.
-__int_j18 :- value(purple,i1,8),_value(purple,i1,8).
-_false :- __int13.
-__int13 :- __int_j19.
-__int_j19 :- not _value(purple,i1,9),not value(purple,i1,9).
-_false :- __int12.
-__int12 :- __int_j20.
-__int_j20 :- value(purple,i1,9),_value(purple,i1,9).
-_false :- __int11.
-__int11 :- __int_j21.
-__int_j21 :- not _value(purple,i1,10),not value(purple,i1,10).
-_false :- __int10.
-__int10 :- __int_j22.
-__int_j22 :- value(purple,i1,10),_value(purple,i1,10).
-_false :- __int9.
-__int9 :- __int_j23.
-__int_j23 :- not _value(purple,i1,11),not value(purple,i1,11).
-_false :- __int8.
-__int8 :- __int_j24.
-__int_j24 :- value(purple,i1,11),_value(purple,i1,11).
-pc(blue,1,1).
-pc(red,1,1).
-pc(red,3,2) :- pc(red,1,1),jump(red,1,2).
-pc(red,3,2) :- pc(red,1,1),jump(red,1,2).
-pc(red,2,2) :- not haveJumped(red,1),pc(red,1,1).
-pc(red,2,2) :- not haveJumped(red,1),pc(red,1,1).
-pc(blue,3,2) :- pc(blue,1,1),jump(blue,1,2).
-pc(blue,3,2) :- pc(blue,1,1),jump(blue,1,2).
-pc(blue,2,2) :- not haveJumped(blue,1),pc(blue,1,1).
-pc(blue,2,2) :- not haveJumped(blue,1),pc(blue,1,1).
-flagStatus(red,1,carry) :- not flagChanged(red,1,carry),flagStatus(red,0,carry).
-flagStatus(red,1,over) :- not flagChanged(red,1,over),flagStatus(red,0,over).
-flagStatus(red,1,zero) :- not flagChanged(red,1,zero),flagStatus(red,0,zero).
-flagStatus(red,1,neg) :- not flagChanged(red,1,neg),flagStatus(red,0,neg).
-flagStatus(blue,1,carry) :- not flagChanged(blue,1,carry),flagStatus(blue,0,carry).
-flagStatus(blue,1,over) :- not flagChanged(blue,1,over),flagStatus(blue,0,over).
-flagStatus(blue,1,zero) :- not flagChanged(blue,1,zero),flagStatus(blue,0,zero).
-flagStatus(blue,1,neg) :- not flagChanged(blue,1,neg),flagStatus(blue,0,neg).
-flagStatus(red,1,carry) :- not flagChanged(red,1,carry),flagStatus(red,0,carry).
-flagStatus(red,1,over) :- not flagChanged(red,1,over),flagStatus(red,0,over).
-flagStatus(red,1,zero) :- not flagChanged(red,1,zero),flagStatus(red,0,zero).
-flagStatus(red,1,neg) :- not flagChanged(red,1,neg),flagStatus(red,0,neg).
-flagStatus(blue,1,carry) :- not flagChanged(blue,1,carry),flagStatus(blue,0,carry).
-flagStatus(blue,1,over) :- not flagChanged(blue,1,over),flagStatus(blue,0,over).
-flagStatus(blue,1,zero) :- not flagChanged(blue,1,zero),flagStatus(blue,0,zero).
-flagStatus(blue,1,neg) :- not flagChanged(blue,1,neg),flagStatus(blue,0,neg).
-isZero(blue,1) :- not isZero(blue,1).
-isZero(blue,i1) :- not isZero(blue,i1).
-isZero(blue,i0) :- not isZero(blue,i0).
-isZero(blue,i2) :- not isZero(blue,i2).
-isZero(red,1) :- not isZero(red,1).
-isZero(red,i1) :- not isZero(red,i1).
-isZero(red,i0) :- not isZero(red,i0).
-isZero(red,i2) :- not isZero(red,i2).
-isZero(blue,1) :- value(blue,1,0).
-isZero(blue,1) :- value(blue,1,1).
-isZero(blue,1) :- value(blue,1,2).
-isZero(blue,1) :- value(blue,1,3).
-isZero(blue,1) :- value(blue,1,4).
-isZero(blue,1) :- value(blue,1,5).
-isZero(blue,1) :- value(blue,1,6).
-isZero(blue,1) :- value(blue,1,7).
-isZero(blue,1) :- value(blue,1,8).
-isZero(blue,1) :- value(blue,1,9).
-isZero(blue,1) :- value(blue,1,10).
-isZero(blue,1) :- value(blue,1,11).
-isZero(blue,i1) :- value(blue,i1,0).
-isZero(blue,i1) :- value(blue,i1,1).
-isZero(blue,i1) :- value(blue,i1,2).
-isZero(blue,i1) :- value(blue,i1,3).
-isZero(blue,i1) :- value(blue,i1,4).
-isZero(blue,i1) :- value(blue,i1,5).
-isZero(blue,i1) :- value(blue,i1,6).
-isZero(blue,i1) :- value(blue,i1,7).
-isZero(blue,i1) :- value(blue,i1,8).
-isZero(blue,i1) :- value(blue,i1,9).
-isZero(blue,i1) :- value(blue,i1,10).
-isZero(blue,i1) :- value(blue,i1,11).
-isZero(blue,i0) :- value(blue,i0,0).
-isZero(blue,i0) :- value(blue,i0,1).
-isZero(blue,i0) :- value(blue,i0,2).
-isZero(blue,i0) :- value(blue,i0,3).
-isZero(blue,i0) :- value(blue,i0,4).
-isZero(blue,i0) :- value(blue,i0,5).
-isZero(blue,i0) :- value(blue,i0,6).
-isZero(blue,i0) :- value(blue,i0,7).
-isZero(blue,i0) :- value(blue,i0,8).
-isZero(blue,i0) :- value(blue,i0,9).
-isZero(blue,i0) :- value(blue,i0,10).
-isZero(blue,i0) :- value(blue,i0,11).
-isZero(blue,i2) :- value(blue,i2,0).
-isZero(blue,i2) :- value(blue,i2,1).
-isZero(blue,i2) :- value(blue,i2,2).
-isZero(blue,i2) :- value(blue,i2,3).
-isZero(blue,i2) :- value(blue,i2,4).
-isZero(blue,i2) :- value(blue,i2,5).
-isZero(blue,i2) :- value(blue,i2,6).
-isZero(blue,i2) :- value(blue,i2,7).
-isZero(blue,i2) :- value(blue,i2,8).
-isZero(blue,i2) :- value(blue,i2,9).
-isZero(blue,i2) :- value(blue,i2,10).
-isZero(blue,i2) :- value(blue,i2,11).
-isZero(red,i1) :- value(red,i1,0).
-isZero(red,i1) :- value(red,i1,1).
-isZero(red,i1) :- value(red,i1,2).
-isZero(red,i1) :- value(red,i1,3).
-isZero(red,i1) :- value(red,i1,4).
-isZero(red,i1) :- value(red,i1,5).
-isZero(red,i1) :- value(red,i1,6).
-isZero(red,i1) :- value(red,i1,7).
-isZero(red,i1) :- value(red,i1,8).
-isZero(red,i1) :- value(red,i1,9).
-isZero(red,i1) :- value(red,i1,10).
-isZero(red,i0) :- value(red,i0,0).
-isZero(red,i0) :- value(red,i0,1).
-isZero(red,i0) :- value(red,i0,2).
-isZero(red,i0) :- value(red,i0,3).
-isZero(red,i0) :- value(red,i0,4).
-isZero(red,i0) :- value(red,i0,5).
-isZero(red,i0) :- value(red,i0,6).
-isZero(red,i0) :- value(red,i0,7).
-isZero(red,i0) :- value(red,i0,8).
-isZero(red,i0) :- value(red,i0,9).
-isZero(red,i0) :- value(red,i0,10).
-isZero(red,i0) :- value(red,i0,11).
-isZero(red,i2) :- value(red,i2,0).
-isZero(red,i2) :- value(red,i2,1).
-isZero(red,i2) :- value(red,i2,2).
-isZero(red,i2) :- value(red,i2,3).
-isZero(red,i2) :- value(red,i2,4).
-isZero(red,i2) :- value(red,i2,5).
-isZero(red,i2) :- value(red,i2,6).
-isZero(red,i2) :- value(red,i2,7).
-isZero(red,i2) :- value(red,i2,8).
-isZero(red,i2) :- value(red,i2,9).
-isZero(red,i2) :- value(red,i2,10).
-isZero(red,i2) :- value(red,i2,11).
-value(purple,i2,1).
-value(blue,i1,0) :- value(purple,i1,0).
-value(blue,i1,1) :- value(purple,i1,1).
-value(blue,i1,2) :- value(purple,i1,2).
-value(blue,i1,3) :- value(purple,i1,3).
-value(blue,i1,4) :- value(purple,i1,4).
-value(blue,i1,5) :- value(purple,i1,5).
-value(blue,i1,6) :- value(purple,i1,6).
-value(blue,i1,7) :- value(purple,i1,7).
-value(blue,i1,8) :- value(purple,i1,8).
-value(blue,i1,9) :- value(purple,i1,9).
-value(blue,i1,10) :- value(purple,i1,10).
-value(blue,i1,11) :- value(purple,i1,11).
-value(blue,i0,0) :- value(purple,i0,0).
-value(blue,i0,1) :- value(purple,i0,1).
-value(blue,i0,2) :- value(purple,i0,2).
-value(blue,i0,3) :- value(purple,i0,3).
-value(blue,i0,4) :- value(purple,i0,4).
-value(blue,i0,5) :- value(purple,i0,5).
-value(blue,i0,6) :- value(purple,i0,6).
-value(blue,i0,7) :- value(purple,i0,7).
-value(blue,i0,8) :- value(purple,i0,8).
-value(blue,i0,9) :- value(purple,i0,9).
-value(blue,i0,10) :- value(purple,i0,10).
-value(blue,i0,11) :- value(purple,i0,11).
-value(red,i1,0) :- value(purple,i1,0).
-value(red,i1,1) :- value(purple,i1,1).
-value(red,i1,2) :- value(purple,i1,2).
-value(red,i1,3) :- value(purple,i1,3).
-value(red,i1,4) :- value(purple,i1,4).
-value(red,i1,5) :- value(purple,i1,5).
-value(red,i1,6) :- value(purple,i1,6).
-value(red,i1,7) :- value(purple,i1,7).
-value(red,i1,8) :- value(purple,i1,8).
-value(red,i1,9) :- value(purple,i1,9).
-value(red,i1,10) :- value(purple,i1,10).
-value(red,i0,0) :- value(purple,i0,0).
-value(red,i0,1) :- value(purple,i0,1).
-value(red,i0,2) :- value(purple,i0,2).
-value(red,i0,3) :- value(purple,i0,3).
-value(red,i0,4) :- value(purple,i0,4).
-value(red,i0,5) :- value(purple,i0,5).
-value(red,i0,6) :- value(purple,i0,6).
-value(red,i0,7) :- value(purple,i0,7).
-value(red,i0,8) :- value(purple,i0,8).
-value(red,i0,9) :- value(purple,i0,9).
-value(red,i0,10) :- value(purple,i0,10).
-value(red,i0,11) :- value(purple,i0,11).
-value(blue,i2,0) :- value(purple,i2,0).
-value(blue,i2,1) :- value(purple,i2,1).
-value(blue,i2,2) :- value(purple,i2,2).
-value(blue,i2,3) :- value(purple,i2,3).
-value(blue,i2,4) :- value(purple,i2,4).
-value(blue,i2,5) :- value(purple,i2,5).
-value(blue,i2,6) :- value(purple,i2,6).
-value(blue,i2,7) :- value(purple,i2,7).
-value(blue,i2,8) :- value(purple,i2,8).
-value(blue,i2,9) :- value(purple,i2,9).
-value(blue,i2,10) :- value(purple,i2,10).
-value(blue,i2,11) :- value(purple,i2,11).
-value(red,i2,0) :- value(purple,i2,0).
-value(red,i2,1) :- value(purple,i2,1).
-value(red,i2,2) :- value(purple,i2,2).
-value(red,i2,3) :- value(purple,i2,3).
-value(red,i2,4) :- value(purple,i2,4).
-value(red,i2,5) :- value(purple,i2,5).
-value(red,i2,6) :- value(purple,i2,6).
-value(red,i2,7) :- value(purple,i2,7).
-value(red,i2,8) :- value(purple,i2,8).
-value(red,i2,9) :- value(purple,i2,9).
-value(red,i2,10) :- value(purple,i2,10).
-value(red,i2,11) :- value(purple,i2,11).
-value(blue,1,0) :- not _value(blue,1,0),pc(blue,1,1).
-value(blue,1,1) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1).
-value(blue,1,2) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2).
-value(blue,1,3) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3).
-value(blue,1,4) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4).
-value(blue,1,5) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5).
-value(blue,1,6) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6).
-value(blue,1,7) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7).
-value(blue,1,8) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8).
-value(blue,1,9) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9).
-value(blue,1,10) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10).
-value(blue,1,11) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11).
-value(blue,1,1) :- pc(blue,1,1),additionCarry(blue,1,1),_value(blue,i1,1).
-value(blue,1,2) :- pc(blue,1,1),additionCarry(blue,1,2),_value(blue,i1,2).
-value(blue,1,3) :- pc(blue,1,1),additionCarry(blue,1,3),_value(blue,i1,3).
-value(blue,1,4) :- pc(blue,1,1),additionCarry(blue,1,4),_value(blue,i1,4).
-value(blue,1,5) :- pc(blue,1,1),additionCarry(blue,1,5),_value(blue,i1,5).
-value(blue,1,6) :- pc(blue,1,1),additionCarry(blue,1,6),_value(blue,i1,6).
-value(blue,1,7) :- pc(blue,1,1),additionCarry(blue,1,7),_value(blue,i1,7).
-value(blue,1,8) :- pc(blue,1,1),additionCarry(blue,1,8),_value(blue,i1,8).
-value(blue,1,9) :- pc(blue,1,1),additionCarry(blue,1,9),_value(blue,i1,9).
-value(blue,1,10) :- pc(blue,1,1),additionCarry(blue,1,10),_value(blue,i1,10).
-value(blue,1,11) :- pc(blue,1,1),additionCarry(blue,1,11),_value(blue,i1,11).
-value(blue,1,1) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1),_value(blue,i1,1).
-value(blue,1,2) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2),_value(blue,i1,2).
-value(blue,1,3) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3),_value(blue,i1,3).
-value(blue,1,4) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4),_value(blue,i1,4).
-value(blue,1,5) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5),_value(blue,i1,5).
-value(blue,1,6) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6),_value(blue,i1,6).
-value(blue,1,7) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7),_value(blue,i1,7).
-value(blue,1,8) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8),_value(blue,i1,8).
-value(blue,1,9) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9),_value(blue,i1,9).
-value(blue,1,10) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10),_value(blue,i1,10).
-value(blue,1,11) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11),_value(blue,i1,11).
-value(blue,1,1) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1),_value(blue,i1,1).
-value(blue,1,2) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2),_value(blue,i1,2).
-value(blue,1,3) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3),_value(blue,i1,3).
-value(blue,1,4) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4),_value(blue,i1,4).
-value(blue,1,5) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5),_value(blue,i1,5).
-value(blue,1,6) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6),_value(blue,i1,6).
-value(blue,1,7) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7),_value(blue,i1,7).
-value(blue,1,8) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8),_value(blue,i1,8).
-value(blue,1,9) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9),_value(blue,i1,9).
-value(blue,1,10) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10),_value(blue,i1,10).
-value(blue,1,11) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11),_value(blue,i1,11).
-_value(purple,i2,31).
-_value(purple,i2,30).
-_value(purple,i2,29).
-_value(purple,i2,28).
-_value(purple,i2,27).
-_value(purple,i2,26).
-_value(purple,i2,25).
-_value(purple,i2,24).
-_value(purple,i2,23).
-_value(purple,i2,22).
-_value(purple,i2,21).
-_value(purple,i2,20).
-_value(purple,i2,19).
-_value(purple,i2,18).
-_value(purple,i2,17).
-_value(purple,i2,16).
-_value(purple,i2,15).
-_value(purple,i2,14).
-_value(purple,i2,13).
-_value(purple,i2,12).
-_value(purple,i2,11).
-_value(purple,i2,10).
-_value(purple,i2,9).
-_value(purple,i2,8).
-_value(purple,i2,7).
-_value(purple,i2,6).
-_value(purple,i2,5).
-_value(purple,i2,4).
-_value(purple,i2,3).
-_value(purple,i2,2).
-_value(purple,i2,0).
-_value(purple,i0,31).
-_value(purple,i0,30).
-_value(purple,i0,29).
-_value(purple,i0,28).
-_value(purple,i0,27).
-_value(purple,i0,26).
-_value(purple,i0,25).
-_value(purple,i0,24).
-_value(purple,i0,23).
-_value(purple,i0,22).
-_value(purple,i0,21).
-_value(purple,i0,20).
-_value(purple,i0,19).
-_value(purple,i0,18).
-_value(purple,i0,17).
-_value(purple,i0,16).
-_value(purple,i0,15).
-_value(purple,i0,14).
-_value(purple,i0,13).
-_value(purple,i0,12).
-_value(purple,i0,11).
-_value(purple,i0,10).
-_value(purple,i0,9).
-_value(purple,i0,8).
-_value(purple,i0,7).
-_value(purple,i0,6).
-_value(purple,i0,5).
-_value(purple,i0,4).
-_value(purple,i0,3).
-_value(purple,i0,2).
-_value(purple,i0,1).
-_value(purple,i0,0).
-_value(blue,i1,0) :- _value(purple,i1,0).
-_value(blue,i1,1) :- _value(purple,i1,1).
-_value(blue,i1,2) :- _value(purple,i1,2).
-_value(blue,i1,3) :- _value(purple,i1,3).
-_value(blue,i1,4) :- _value(purple,i1,4).
-_value(blue,i1,5) :- _value(purple,i1,5).
-_value(blue,i1,6) :- _value(purple,i1,6).
-_value(blue,i1,7) :- _value(purple,i1,7).
-_value(blue,i1,8) :- _value(purple,i1,8).
-_value(blue,i1,9) :- _value(purple,i1,9).
-_value(blue,i1,10) :- _value(purple,i1,10).
-_value(blue,i1,11) :- _value(purple,i1,11).
-_value(blue,i0,0) :- _value(purple,i0,0).
-_value(blue,i0,1) :- _value(purple,i0,1).
-_value(blue,i0,2) :- _value(purple,i0,2).
-_value(blue,i0,3) :- _value(purple,i0,3).
-_value(blue,i0,4) :- _value(purple,i0,4).
-_value(blue,i0,5) :- _value(purple,i0,5).
-_value(blue,i0,6) :- _value(purple,i0,6).
-_value(blue,i0,7) :- _value(purple,i0,7).
-_value(blue,i0,8) :- _value(purple,i0,8).
-_value(blue,i0,9) :- _value(purple,i0,9).
-_value(blue,i0,10) :- _value(purple,i0,10).
-_value(blue,i0,11) :- _value(purple,i0,11).
-_value(red,i1,0) :- _value(purple,i1,0).
-_value(red,i1,1) :- _value(purple,i1,1).
-_value(red,i1,2) :- _value(purple,i1,2).
-_value(red,i1,3) :- _value(purple,i1,3).
-_value(red,i1,4) :- _value(purple,i1,4).
-_value(red,i1,5) :- _value(purple,i1,5).
-_value(red,i1,6) :- _value(purple,i1,6).
-_value(red,i1,7) :- _value(purple,i1,7).
-_value(red,i1,8) :- _value(purple,i1,8).
-_value(red,i1,9) :- _value(purple,i1,9).
-_value(red,i1,10) :- _value(purple,i1,10).
-_value(red,i0,0) :- _value(purple,i0,0).
-_value(red,i0,1) :- _value(purple,i0,1).
-_value(red,i0,2) :- _value(purple,i0,2).
-_value(red,i0,3) :- _value(purple,i0,3).
-_value(red,i0,4) :- _value(purple,i0,4).
-_value(red,i0,5) :- _value(purple,i0,5).
-_value(red,i0,6) :- _value(purple,i0,6).
-_value(red,i0,7) :- _value(purple,i0,7).
-_value(red,i0,8) :- _value(purple,i0,8).
-_value(red,i0,9) :- _value(purple,i0,9).
-_value(red,i0,10) :- _value(purple,i0,10).
-_value(red,i0,11) :- _value(purple,i0,11).
-_value(blue,i2,0) :- _value(purple,i2,0).
-_value(blue,i2,1) :- _value(purple,i2,1).
-_value(blue,i2,2) :- _value(purple,i2,2).
-_value(blue,i2,3) :- _value(purple,i2,3).
-_value(blue,i2,4) :- _value(purple,i2,4).
-_value(blue,i2,5) :- _value(purple,i2,5).
-_value(blue,i2,6) :- _value(purple,i2,6).
-_value(blue,i2,7) :- _value(purple,i2,7).
-_value(blue,i2,8) :- _value(purple,i2,8).
-_value(blue,i2,9) :- _value(purple,i2,9).
-_value(blue,i2,10) :- _value(purple,i2,10).
-_value(blue,i2,11) :- _value(purple,i2,11).
-_value(red,i2,0) :- _value(purple,i2,0).
-_value(red,i2,1) :- _value(purple,i2,1).
-_value(red,i2,2) :- _value(purple,i2,2).
-_value(red,i2,3) :- _value(purple,i2,3).
-_value(red,i2,4) :- _value(purple,i2,4).
-_value(red,i2,5) :- _value(purple,i2,5).
-_value(red,i2,6) :- _value(purple,i2,6).
-_value(red,i2,7) :- _value(purple,i2,7).
-_value(red,i2,8) :- _value(purple,i2,8).
-_value(red,i2,9) :- _value(purple,i2,9).
-_value(red,i2,10) :- _value(purple,i2,10).
-_value(red,i2,11) :- _value(purple,i2,11).
-_value(blue,1,0) :- pc(blue,1,1),_value(blue,i1,0).
-_value(blue,1,0) :- pc(blue,1,1),value(blue,i1,0).
-_value(blue,1,1) :- not value(blue,1,1),pc(blue,1,1).
-_value(blue,1,2) :- not value(blue,1,2),pc(blue,1,1).
-_value(blue,1,3) :- not value(blue,1,3),pc(blue,1,1).
-_value(blue,1,4) :- not value(blue,1,4),pc(blue,1,1).
-_value(blue,1,5) :- not value(blue,1,5),pc(blue,1,1).
-_value(blue,1,6) :- not value(blue,1,6),pc(blue,1,1).
-_value(blue,1,7) :- not value(blue,1,7),pc(blue,1,1).
-_value(blue,1,8) :- not value(blue,1,8),pc(blue,1,1).
-_value(blue,1,9) :- not value(blue,1,9),pc(blue,1,1).
-_value(blue,1,10) :- not value(blue,1,10),pc(blue,1,1).
-_value(blue,1,11) :- not value(blue,1,11),pc(blue,1,1).
-__int_j26 :- not _value(purple,i1,0),__int_j25.
-_value(purple,i1,0) :- not __int_j26,__int_j25.
-__int_j27 :- not value(purple,i1,0),__int_j25.
-value(purple,i1,0) :- not __int_j27,__int_j25.
-__int_j25.
-__int_j29 :- not _value(purple,i1,1),__int_j28.
-_value(purple,i1,1) :- not __int_j29,__int_j28.
-__int_j30 :- not value(purple,i1,1),__int_j28.
-value(purple,i1,1) :- not __int_j30,__int_j28.
-__int_j28.
-__int_j32 :- not _value(purple,i1,2),__int_j31.
-_value(purple,i1,2) :- not __int_j32,__int_j31.
-__int_j33 :- not value(purple,i1,2),__int_j31.
-value(purple,i1,2) :- not __int_j33,__int_j31.
-__int_j31.
-__int_j35 :- not _value(purple,i1,3),__int_j34.
-_value(purple,i1,3) :- not __int_j35,__int_j34.
-__int_j36 :- not value(purple,i1,3),__int_j34.
-value(purple,i1,3) :- not __int_j36,__int_j34.
-__int_j34.
-__int_j38 :- not _value(purple,i1,4),__int_j37.
-_value(purple,i1,4) :- not __int_j38,__int_j37.
-__int_j39 :- not value(purple,i1,4),__int_j37.
-value(purple,i1,4) :- not __int_j39,__int_j37.
-__int_j37.
-__int_j41 :- not _value(purple,i1,5),__int_j40.
-_value(purple,i1,5) :- not __int_j41,__int_j40.
-__int_j42 :- not value(purple,i1,5),__int_j40.
-value(purple,i1,5) :- not __int_j42,__int_j40.
-__int_j40.
-__int_j44 :- not _value(purple,i1,6),__int_j43.
-_value(purple,i1,6) :- not __int_j44,__int_j43.
-__int_j45 :- not value(purple,i1,6),__int_j43.
-value(purple,i1,6) :- not __int_j45,__int_j43.
-__int_j43.
-__int_j47 :- not _value(purple,i1,7),__int_j46.
-_value(purple,i1,7) :- not __int_j47,__int_j46.
-__int_j48 :- not value(purple,i1,7),__int_j46.
-value(purple,i1,7) :- not __int_j48,__int_j46.
-__int_j46.
-__int_j50 :- not _value(purple,i1,8),__int_j49.
-_value(purple,i1,8) :- not __int_j50,__int_j49.
-__int_j51 :- not value(purple,i1,8),__int_j49.
-value(purple,i1,8) :- not __int_j51,__int_j49.
-__int_j49.
-__int_j53 :- not _value(purple,i1,9),__int_j52.
-_value(purple,i1,9) :- not __int_j53,__int_j52.
-__int_j54 :- not value(purple,i1,9),__int_j52.
-value(purple,i1,9) :- not __int_j54,__int_j52.
-__int_j52.
-__int_j56 :- not _value(purple,i1,10),__int_j55.
-_value(purple,i1,10) :- not __int_j56,__int_j55.
-__int_j57 :- not value(purple,i1,10),__int_j55.
-value(purple,i1,10) :- not __int_j57,__int_j55.
-__int_j55.
-__int_j59 :- not _value(purple,i1,11),__int_j58.
-_value(purple,i1,11) :- not __int_j59,__int_j58.
-__int_j60 :- not value(purple,i1,11),__int_j58.
-value(purple,i1,11) :- not __int_j60,__int_j58.
-__int_j58.
-additionCarry(blue,1,1) :- not additionCarry(blue,1,1),pc(blue,1,1).
-additionCarry(blue,1,2) :- not additionCarry(blue,1,2),pc(blue,1,1).
-additionCarry(blue,1,3) :- not additionCarry(blue,1,3),pc(blue,1,1).
-additionCarry(blue,1,4) :- not additionCarry(blue,1,4),pc(blue,1,1).
-additionCarry(blue,1,5) :- not additionCarry(blue,1,5),pc(blue,1,1).
-additionCarry(blue,1,6) :- not additionCarry(blue,1,6),pc(blue,1,1).
-additionCarry(blue,1,7) :- not additionCarry(blue,1,7),pc(blue,1,1).
-additionCarry(blue,1,8) :- not additionCarry(blue,1,8),pc(blue,1,1).
-additionCarry(blue,1,9) :- not additionCarry(blue,1,9),pc(blue,1,1).
-additionCarry(blue,1,10) :- not additionCarry(blue,1,10),pc(blue,1,1).
-additionCarry(blue,1,11) :- not additionCarry(blue,1,11),pc(blue,1,1).
-additionCarry(blue,1,12) :- not additionCarry(blue,1,12),pc(blue,1,1).
-additionCarry(blue,1,1) :- pc(blue,1,1),value(blue,i1,0).
-additionCarry(blue,1,2) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1).
-additionCarry(blue,1,3) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2).
-additionCarry(blue,1,4) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3).
-additionCarry(blue,1,5) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4).
-additionCarry(blue,1,6) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5).
-additionCarry(blue,1,7) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6).
-additionCarry(blue,1,8) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7).
-additionCarry(blue,1,9) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8).
-additionCarry(blue,1,10) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9).
-additionCarry(blue,1,11) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10).
-additionCarry(blue,1,12) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11).
-additionCarry(blue,1,2) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1),_value(blue,i1,1).
-additionCarry(blue,1,3) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2),_value(blue,i1,2).
-additionCarry(blue,1,4) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3),_value(blue,i1,3).
-additionCarry(blue,1,5) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4),_value(blue,i1,4).
-additionCarry(blue,1,6) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5),_value(blue,i1,5).
-additionCarry(blue,1,7) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6),_value(blue,i1,6).
-additionCarry(blue,1,8) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7),_value(blue,i1,7).
-additionCarry(blue,1,9) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8),_value(blue,i1,8).
-additionCarry(blue,1,10) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9),_value(blue,i1,9).
-additionCarry(blue,1,11) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10),_value(blue,i1,10).
-additionCarry(blue,1,12) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11),_value(blue,i1,11).
-additionCarry(blue,1,2) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1),_value(blue,i1,1).
-additionCarry(blue,1,3) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2),_value(blue,i1,2).
-additionCarry(blue,1,4) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3),_value(blue,i1,3).
-additionCarry(blue,1,5) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4),_value(blue,i1,4).
-additionCarry(blue,1,6) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5),_value(blue,i1,5).
-additionCarry(blue,1,7) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6),_value(blue,i1,6).
-additionCarry(blue,1,8) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7),_value(blue,i1,7).
-additionCarry(blue,1,9) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8),_value(blue,i1,8).
-additionCarry(blue,1,10) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9),_value(blue,i1,9).
-additionCarry(blue,1,11) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10),_value(blue,i1,10).
-additionCarry(blue,1,12) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11),_value(blue,i1,11).
-additionCarry(blue,1,2) :- pc(blue,1,1),value(blue,i1,1),additionCarry(blue,1,1).
-additionCarry(blue,1,3) :- pc(blue,1,1),value(blue,i1,2),additionCarry(blue,1,2).
-additionCarry(blue,1,4) :- pc(blue,1,1),value(blue,i1,3),additionCarry(blue,1,3).
-additionCarry(blue,1,5) :- pc(blue,1,1),value(blue,i1,4),additionCarry(blue,1,4).
-additionCarry(blue,1,6) :- pc(blue,1,1),value(blue,i1,5),additionCarry(blue,1,5).
-additionCarry(blue,1,7) :- pc(blue,1,1),value(blue,i1,6),additionCarry(blue,1,6).
-additionCarry(blue,1,8) :- pc(blue,1,1),value(blue,i1,7),additionCarry(blue,1,7).
-additionCarry(blue,1,9) :- pc(blue,1,1),value(blue,i1,8),additionCarry(blue,1,8).
-additionCarry(blue,1,10) :- pc(blue,1,1),value(blue,i1,9),additionCarry(blue,1,9).
-additionCarry(blue,1,11) :- pc(blue,1,1),value(blue,i1,10),additionCarry(blue,1,10).
-additionCarry(blue,1,12) :- pc(blue,1,1),value(blue,i1,11),additionCarry(blue,1,11).
-registerDefined(blue,1) :- value(blue,1,0).
-registerDefined(blue,1) :- value(blue,1,1).
-registerDefined(blue,1) :- value(blue,1,2).
-registerDefined(blue,1) :- value(blue,1,3).
-registerDefined(blue,1) :- value(blue,1,4).
-registerDefined(blue,1) :- value(blue,1,5).
-registerDefined(blue,1) :- value(blue,1,6).
-registerDefined(blue,1) :- value(blue,1,7).
-registerDefined(blue,1) :- value(blue,1,8).
-registerDefined(blue,1) :- value(blue,1,9).
-registerDefined(blue,1) :- value(blue,1,10).
-registerDefined(blue,1) :- value(blue,1,11).
-registerDefined(blue,1) :- _value(blue,1,0).
-registerDefined(blue,1) :- _value(blue,1,1).
-registerDefined(blue,1) :- _value(blue,1,2).
-registerDefined(blue,1) :- _value(blue,1,3).
-registerDefined(blue,1) :- _value(blue,1,4).
-registerDefined(blue,1) :- _value(blue,1,5).
-registerDefined(blue,1) :- _value(blue,1,6).
-registerDefined(blue,1) :- _value(blue,1,7).
-registerDefined(blue,1) :- _value(blue,1,8).
-registerDefined(blue,1) :- _value(blue,1,9).
-registerDefined(blue,1) :- _value(blue,1,10).
-registerDefined(blue,1) :- _value(blue,1,11).
-constrained(blue,1,1) :- registerDefined(blue,1),finishedAt(blue,1).
-constrained(blue,2,1) :- not registerDefined(blue,1),finishedAt(blue,1).
-constrained(red,2,1) :- not registerDefined(red,1),finishedAt(red,1).
-finishedAt(red,1) :- pc(red,2,2).
-finishedAt(red,1) :- pc(red,2,2).
-finishedAt(blue,1) :- pc(blue,2,2).
-finishedAt(blue,1) :- pc(blue,2,2).
-haveJumped(red,1) :- jump(red,1,2).
-haveJumped(red,1) :- jump(red,1,2).
-haveJumped(blue,1) :- jump(blue,1,2).
-haveJumped(blue,1) :- jump(blue,1,2).
-_false :- flagStatus(red,1,carry).
-_false :- flagStatus(red,0,carry).
-_false :- flagStatus(red,1,over).
-_false :- flagStatus(red,0,over).
-_false :- flagStatus(red,1,zero).
-_false :- flagStatus(red,0,zero).
-_false :- flagStatus(red,1,neg).
-_false :- flagStatus(red,0,neg).
-_false :- flagStatus(blue,1,carry).
-_false :- flagStatus(blue,0,carry).
-_false :- flagStatus(blue,1,over).
-_false :- flagStatus(blue,0,over).
-_false :- flagStatus(blue,1,zero).
-_false :- flagStatus(blue,0,zero).
-_false :- flagStatus(blue,1,neg).
-_false :- flagStatus(blue,0,neg).
-_false :- isZero(blue,1).
-_false :- isZero(blue,i1).
-_false :- isZero(blue,i0).
-_false :- isZero(blue,i2).
-_false :- isZero(red,1).
-_false :- isZero(red,i1).
-_false :- isZero(red,i0).
-_false :- isZero(red,i2).
-_false :- value(blue,1,0),_value(blue,1,0).
-_false :- value(blue,i1,1),_value(blue,i1,1).
-_false :- value(blue,i1,2),_value(blue,i1,2).
-_false :- value(blue,i1,3),_value(blue,i1,3).
-_false :- value(blue,i1,4),_value(blue,i1,4).
-_false :- value(blue,i1,5),_value(blue,i1,5).
-_false :- value(blue,i1,6),_value(blue,i1,6).
-_false :- value(blue,i1,7),_value(blue,i1,7).
-_false :- value(blue,i1,8),_value(blue,i1,8).
-_false :- value(blue,i1,9),_value(blue,i1,9).
-_false :- value(blue,i1,10),_value(blue,i1,10).
-_false :- value(blue,i1,11),_value(blue,i1,11).
-_false :- additionCarry(blue,1,1).
-_false :- additionCarry(blue,1,2).
-_false :- additionCarry(blue,1,3).
-_false :- additionCarry(blue,1,4).
-_false :- additionCarry(blue,1,5).
-_false :- additionCarry(blue,1,6).
-_false :- additionCarry(blue,1,7).
-_false :- additionCarry(blue,1,8).
-_false :- additionCarry(blue,1,9).
-_false :- additionCarry(blue,1,10).
-_false :- additionCarry(blue,1,11).
-_false :- _value(purple,i2,31),value(purple,i2,31).
-_false :- _value(purple,i2,30),value(purple,i2,30).
-_false :- _value(purple,i2,29),value(purple,i2,29).
-_false :- _value(purple,i2,28),value(purple,i2,28).
-_false :- _value(purple,i2,27),value(purple,i2,27).
-_false :- _value(purple,i2,26),value(purple,i2,26).
-_false :- _value(purple,i2,25),value(purple,i2,25).
-_false :- _value(purple,i2,24),value(purple,i2,24).
-_false :- _value(purple,i2,23),value(purple,i2,23).
-_false :- _value(purple,i2,22),value(purple,i2,22).
-_false :- _value(purple,i2,21),value(purple,i2,21).
-_false :- _value(purple,i2,20),value(purple,i2,20).
-_false :- _value(purple,i2,19),value(purple,i2,19).
-_false :- _value(purple,i2,18),value(purple,i2,18).
-_false :- _value(purple,i2,17),value(purple,i2,17).
-_false :- _value(purple,i2,16),value(purple,i2,16).
-_false :- _value(purple,i2,15),value(purple,i2,15).
-_false :- _value(purple,i2,14),value(purple,i2,14).
-_false :- _value(purple,i2,13),value(purple,i2,13).
-_false :- _value(purple,i2,12),value(purple,i2,12).
-_false :- value(purple,i2,11),_value(purple,i2,11).
-_false :- value(purple,i2,10),_value(purple,i2,10).
-_false :- value(purple,i2,9),_value(purple,i2,9).
-_false :- value(purple,i2,8),_value(purple,i2,8).
-_false :- value(purple,i2,7),_value(purple,i2,7).
-_false :- value(purple,i2,6),_value(purple,i2,6).
-_false :- value(purple,i2,5),_value(purple,i2,5).
-_false :- value(purple,i2,4),_value(purple,i2,4).
-_false :- value(purple,i2,3),_value(purple,i2,3).
-_false :- value(purple,i2,2),_value(purple,i2,2).
-_false :- value(purple,i2,0),_value(purple,i2,0).
-_false :- _value(purple,i0,31),value(purple,i0,31).
-_false :- _value(purple,i0,30),value(purple,i0,30).
-_false :- _value(purple,i0,29),value(purple,i0,29).
-_false :- _value(purple,i0,28),value(purple,i0,28).
-_false :- _value(purple,i0,27),value(purple,i0,27).
-_false :- _value(purple,i0,26),value(purple,i0,26).
-_false :- _value(purple,i0,25),value(purple,i0,25).
-_false :- _value(purple,i0,24),value(purple,i0,24).
-_false :- _value(purple,i0,23),value(purple,i0,23).
-_false :- _value(purple,i0,22),value(purple,i0,22).
-_false :- _value(purple,i0,21),value(purple,i0,21).
-_false :- _value(purple,i0,20),value(purple,i0,20).
-_false :- _value(purple,i0,19),value(purple,i0,19).
-_false :- _value(purple,i0,18),value(purple,i0,18).
-_false :- _value(purple,i0,17),value(purple,i0,17).
-_false :- _value(purple,i0,16),value(purple,i0,16).
-_false :- _value(purple,i0,15),value(purple,i0,15).
-_false :- _value(purple,i0,14),value(purple,i0,14).
-_false :- _value(purple,i0,13),value(purple,i0,13).
-_false :- _value(purple,i0,12),value(purple,i0,12).
-_false :- value(purple,i0,11),_value(purple,i0,11).
-_false :- value(purple,i0,10),_value(purple,i0,10).
-_false :- value(purple,i0,9),_value(purple,i0,9).
-_false :- value(purple,i0,8),_value(purple,i0,8).
-_false :- value(purple,i0,7),_value(purple,i0,7).
-_false :- value(purple,i0,6),_value(purple,i0,6).
-_false :- value(purple,i0,5),_value(purple,i0,5).
-_false :- value(purple,i0,4),_value(purple,i0,4).
-_false :- value(purple,i0,3),_value(purple,i0,3).
-_false :- value(purple,i0,2),_value(purple,i0,2).
-_false :- value(purple,i0,1),_value(purple,i0,1).
-_false :- value(purple,i0,0),_value(purple,i0,0).
-_false :- value(blue,i1,0),_value(blue,i1,0).
-_false :- value(purple,i1,0),_value(purple,i1,0).
-_false :- value(purple,i1,1),_value(purple,i1,1).
-_false :- value(purple,i1,2),_value(purple,i1,2).
-_false :- value(purple,i1,3),_value(purple,i1,3).
-_false :- value(purple,i1,4),_value(purple,i1,4).
-_false :- value(purple,i1,5),_value(purple,i1,5).
-_false :- value(purple,i1,6),_value(purple,i1,6).
-_false :- value(purple,i1,7),_value(purple,i1,7).
-_false :- value(purple,i1,8),_value(purple,i1,8).
-_false :- value(purple,i1,9),_value(purple,i1,9).
-_false :- value(purple,i1,10),_value(purple,i1,10).
-_false :- value(purple,i1,11),_value(purple,i1,11).
-_false :- value(blue,i0,0),_value(blue,i0,0).
-_false :- value(blue,i0,1),_value(blue,i0,1).
-_false :- value(blue,i0,2),_value(blue,i0,2).
-_false :- value(blue,i0,3),_value(blue,i0,3).
-_false :- value(blue,i0,4),_value(blue,i0,4).
-_false :- value(blue,i0,5),_value(blue,i0,5).
-_false :- value(blue,i0,6),_value(blue,i0,6).
-_false :- value(blue,i0,7),_value(blue,i0,7).
-_false :- value(blue,i0,8),_value(blue,i0,8).
-_false :- value(blue,i0,9),_value(blue,i0,9).
-_false :- value(blue,i0,10),_value(blue,i0,10).
-_false :- value(blue,i0,11),_value(blue,i0,11).
-_false :- value(red,i1,0),_value(red,i1,0).
-_false :- value(red,i1,1),_value(red,i1,1).
-_false :- value(red,i1,2),_value(red,i1,2).
-_false :- value(red,i1,3),_value(red,i1,3).
-_false :- value(red,i1,4),_value(red,i1,4).
-_false :- value(red,i1,5),_value(red,i1,5).
-_false :- value(red,i1,6),_value(red,i1,6).
-_false :- value(red,i1,7),_value(red,i1,7).
-_false :- value(red,i1,8),_value(red,i1,8).
-_false :- value(red,i1,9),_value(red,i1,9).
-_false :- value(red,i1,10),_value(red,i1,10).
-_false :- value(red,i0,0),_value(red,i0,0).
-_false :- value(red,i0,1),_value(red,i0,1).
-_false :- value(red,i0,2),_value(red,i0,2).
-_false :- value(red,i0,3),_value(red,i0,3).
-_false :- value(red,i0,4),_value(red,i0,4).
-_false :- value(red,i0,5),_value(red,i0,5).
-_false :- value(red,i0,6),_value(red,i0,6).
-_false :- value(red,i0,7),_value(red,i0,7).
-_false :- value(red,i0,8),_value(red,i0,8).
-_false :- value(red,i0,9),_value(red,i0,9).
-_false :- value(red,i0,10),_value(red,i0,10).
-_false :- value(red,i0,11),_value(red,i0,11).
-_false :- value(blue,i2,0),_value(blue,i2,0).
-_false :- value(blue,i2,1),_value(blue,i2,1).
-_false :- value(purple,i2,1),_value(purple,i2,1).
-_false :- value(blue,i2,2),_value(blue,i2,2).
-_false :- value(blue,i2,3),_value(blue,i2,3).
-_false :- value(blue,i2,4),_value(blue,i2,4).
-_false :- value(blue,i2,5),_value(blue,i2,5).
-_false :- value(blue,i2,6),_value(blue,i2,6).
-_false :- value(blue,i2,7),_value(blue,i2,7).
-_false :- value(blue,i2,8),_value(blue,i2,8).
-_false :- value(blue,i2,9),_value(blue,i2,9).
-_false :- value(blue,i2,10),_value(blue,i2,10).
-_false :- value(blue,i2,11),_value(blue,i2,11).
-_false :- value(red,i2,0),_value(red,i2,0).
-_false :- value(red,i2,1),_value(red,i2,1).
-_false :- value(red,i2,2),_value(red,i2,2).
-_false :- value(red,i2,3),_value(red,i2,3).
-_false :- value(red,i2,4),_value(red,i2,4).
-_false :- value(red,i2,5),_value(red,i2,5).
-_false :- value(red,i2,6),_value(red,i2,6).
-_false :- value(red,i2,7),_value(red,i2,7).
-_false :- value(red,i2,8),_value(red,i2,8).
-_false :- value(red,i2,9),_value(red,i2,9).
-_false :- value(red,i2,10),_value(red,i2,10).
-_false :- value(red,i2,11),_value(red,i2,11).
-_false :- value(blue,1,1),_value(blue,1,1).
-_false :- value(blue,1,2),_value(blue,1,2).
-_false :- value(blue,1,3),_value(blue,1,3).
-_false :- value(blue,1,4),_value(blue,1,4).
-_false :- value(blue,1,5),_value(blue,1,5).
-_false :- value(blue,1,6),_value(blue,1,6).
-_false :- value(blue,1,7),_value(blue,1,7).
-_false :- value(blue,1,8),_value(blue,1,8).
-_false :- value(blue,1,9),_value(blue,1,9).
-_false :- value(blue,1,10),_value(blue,1,10).
-_false :- value(blue,1,11),_value(blue,1,11).
-_false :- subCycleAdditionCarry(red,1,0,1),_subCycleAdditionCarry(red,1,0,1).
-_false :- subCycleAdditionCarry(red,1,0,2),_subCycleAdditionCarry(red,1,0,2).
-_false :- subCycleAdditionCarry(red,1,0,3),_subCycleAdditionCarry(red,1,0,3).
-_false :- subCycleAdditionCarry(red,1,0,4),_subCycleAdditionCarry(red,1,0,4).
-_false :- subCycleAdditionCarry(red,1,0,5),_subCycleAdditionCarry(red,1,0,5).
-_false :- subCycleAdditionCarry(red,1,0,6),_subCycleAdditionCarry(red,1,0,6).
-_false :- subCycleAdditionCarry(red,1,0,7),_subCycleAdditionCarry(red,1,0,7).
-_false :- subCycleAdditionCarry(red,1,0,8),_subCycleAdditionCarry(red,1,0,8).
-_false :- subCycleAdditionCarry(red,1,0,9),_subCycleAdditionCarry(red,1,0,9).
-_false :- subCycleAdditionCarry(red,1,0,10),_subCycleAdditionCarry(red,1,0,10).
-_false :- subCycleAdditionCarry(red,1,0,11),_subCycleAdditionCarry(red,1,0,11).
-_false :- additionCarry(blue,1,12).
-_false :- _value(blue,1,31),value(blue,1,31).
-_false :- value(red,1,31),_value(red,1,31).
-_false :- _value(blue,1,30),value(blue,1,30).
-_false :- value(red,1,30),_value(red,1,30).
-_false :- _value(blue,1,29),value(blue,1,29).
-_false :- value(red,1,29),_value(red,1,29).
-_false :- _value(blue,1,28),value(blue,1,28).
-_false :- value(red,1,28),_value(red,1,28).
-_false :- _value(blue,1,27),value(blue,1,27).
-_false :- value(red,1,27),_value(red,1,27).
-_false :- _value(blue,1,26),value(blue,1,26).
-_false :- value(red,1,26),_value(red,1,26).
-_false :- _value(blue,1,25),value(blue,1,25).
-_false :- value(red,1,25),_value(red,1,25).
-_false :- _value(blue,1,24),value(blue,1,24).
-_false :- value(red,1,24),_value(red,1,24).
-_false :- _value(blue,1,23),value(blue,1,23).
-_false :- _value(blue,1,22),value(blue,1,22).
-_false :- _value(blue,1,21),value(blue,1,21).
-_false :- _value(blue,1,20),value(blue,1,20).
-_false :- _value(blue,1,19),value(blue,1,19).
-_false :- _value(blue,1,18),value(blue,1,18).
-_false :- _value(blue,1,17),value(blue,1,17).
-_false :- _value(blue,1,16),value(blue,1,16).
-_false :- _value(blue,1,15),value(blue,1,15).
-_false :- _value(blue,1,14),value(blue,1,14).
-_false :- _value(blue,1,13),value(blue,1,13).
-_false :- _value(blue,1,12),value(blue,1,12).
-isZero(red,i1).
-nonEquivalent :- value(red,1,31),_value(blue,1,31),registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,31),value(blue,1,31).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,30),_value(blue,1,30).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,30),value(blue,1,30).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,29),_value(blue,1,29).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,29),value(blue,1,29).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,28),_value(blue,1,28).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,28),value(blue,1,28).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,27),_value(blue,1,27).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,27),value(blue,1,27).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,26),_value(blue,1,26).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,26),value(blue,1,26).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,25),_value(blue,1,25).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,25),value(blue,1,25).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),value(red,1,24),_value(blue,1,24).
-nonEquivalent :- registerDefined(red,1),constrained(blue,1,1),registerDefined(blue,1),_value(red,1,24),value(blue,1,24).
- :- not value(purple,i1,11).
- :- not value(red,i1,0).
- :- not value(red,i1,1).
- :- not value(red,i1,2).
- :- not value(red,i1,3).
- :- not value(red,i1,4).
- :- not value(red,i1,5).
- :- not value(red,i1,6).
- :- not value(red,i1,7).
- :- not value(red,i1,8).
- :- not value(red,i1,9).
- :- not value(red,i1,10).
- :- not value(red,i2,1).
- :- not value(red,i2,2).
- :- not value(red,i2,3).
- :- not value(red,i2,4).
- :- not value(red,i2,5).
- :- not value(red,i2,6).
- :- not value(red,i2,7).
- :- not value(red,i2,8).
- :- not value(red,i2,9).
- :- not value(red,i2,10).
- :- not value(red,i2,11).
- :- not subCycle(red,1,23,11).
- :- not _value(red,i2,0).
- :- not subCycle(red,1,14,1).
- :- not subCycle(red,1,15,1).
- :- not subCycle(red,1,16,1).
- :- not subCycle(red,1,17,1).
- :- not subCycle(red,1,18,1).
- :- not subCycle(red,1,19,1).
- :- not subCycle(red,1,20,1).
- :- not subCycle(red,1,21,1).
- :- not subCycle(red,1,22,1).
- :- not subCycle(red,1,23,1).
- :- not subCycle(red,1,15,2).
- :- not subCycle(red,1,16,2).
- :- not subCycle(red,1,17,2).
- :- not subCycle(red,1,18,2).
- :- not subCycle(red,1,19,2).
- :- not subCycle(red,1,20,2).
- :- not subCycle(red,1,21,2).
- :- not subCycle(red,1,22,2).
- :- not subCycle(red,1,23,2).
- :- not subCycle(red,1,16,3).
- :- not subCycle(red,1,17,3).
- :- not subCycle(red,1,18,3).
- :- not subCycle(red,1,19,3).
- :- not subCycle(red,1,20,3).
- :- not subCycle(red,1,21,3).
- :- not subCycle(red,1,22,3).
- :- not subCycle(red,1,23,3).
- :- not subCycle(red,1,17,4).
- :- not subCycle(red,1,18,4).
- :- not subCycle(red,1,19,4).
- :- not subCycle(red,1,20,4).
- :- not subCycle(red,1,21,4).
- :- not subCycle(red,1,22,4).
- :- not subCycle(red,1,23,4).
- :- not subCycle(red,1,18,5).
- :- not subCycle(red,1,19,5).
- :- not subCycle(red,1,20,5).
- :- not subCycle(red,1,21,5).
- :- not subCycle(red,1,22,5).
- :- not subCycle(red,1,23,5).
- :- not subCycle(red,1,19,6).
- :- not subCycle(red,1,20,6).
- :- not subCycle(red,1,21,6).
- :- not subCycle(red,1,22,6).
- :- not subCycle(red,1,23,6).
- :- not subCycle(red,1,20,7).
- :- not subCycle(red,1,21,7).
- :- not subCycle(red,1,22,7).
- :- not subCycle(red,1,23,7).
- :- not subCycle(red,1,21,8).
- :- not subCycle(red,1,22,8).
- :- not subCycle(red,1,23,8).
- :- not subCycle(red,1,22,9).
- :- not subCycle(red,1,23,9).
- :- not subCycle(red,1,23,10).
- :- not subCycleAdditionCarry(red,1,0,1).
- :- not subCycleAdditionCarry(red,1,0,2).
- :- not subCycleAdditionCarry(red,1,0,3).
- :- not subCycleAdditionCarry(red,1,0,4).
- :- not subCycleAdditionCarry(red,1,0,5).
- :- not subCycleAdditionCarry(red,1,0,6).
- :- not subCycleAdditionCarry(red,1,0,7).
- :- not subCycleAdditionCarry(red,1,0,8).
- :- not subCycleAdditionCarry(red,1,0,9).
- :- not subCycleAdditionCarry(red,1,0,10).
- :- not _subCycleAdditionCarry(red,1,0,11).
- :- not registerDefined(red,1).
- :- not finishedAt(red,1).
+layers(1).
+tracks(7).
+connect(n1,top,1).
+connect(n1,top,2).
+connect(n2,bot,1).
+connect(n2,bot,3).
+connect(n2,top,4).
+connect(n3,bot,2).
+connect(n3,top,5).
+connect(n3,top,7).
+connect(n4,top,3).
+connect(n4,top,6).
+connect(n4,bot,7).
+connect(n5,bot,5).
+connect(n5,top,9).
+connect(n5,top,11).
+connect(n6,bot,6).
+connect(n6,top,8).
+connect(n6,bot,9).
+connect(n7,bot,8).
+connect(n7,bot,12).
+connect(n8,top,10).
+connect(n8,bot,11).
+connect(n9,bot,10).
+connect(n9,top,12).
+connectTop(n9,12).
+connectTop(n8,10).
+connectTop(n6,8).
+connectTop(n5,11).
+connectTop(n5,9).
+connectTop(n4,6).
+connectTop(n4,3).
+connectTop(n3,7).
+connectTop(n3,5).
+connectTop(n2,4).
+connectTop(n1,2).
+connectTop(n1,1).
+connectBot(n9,10).
+connectBot(n8,11).
+connectBot(n7,12).
+connectBot(n7,8).
+connectBot(n6,9).
+connectBot(n6,6).
+connectBot(n5,5).
+connectBot(n4,7).
+connectBot(n3,2).
+connectBot(n2,3).
+connectBot(n2,1).
+nminX(n9,12).
+nminX(n8,11).
+nminX(n7,12).
+nminX(n6,9).
+nminX(n6,8).
+nminX(n5,11).
+nminX(n5,9).
+nminX(n4,7).
+nminX(n4,6).
+nminX(n3,7).
+nminX(n3,5).
+nminX(n2,4).
+nminX(n2,3).
+nminX(n1,2).
+minX(n9,10).
+minX(n8,10).
+minX(n7,8).
+minX(n6,6).
+minX(n5,5).
+minX(n4,3).
+minX(n3,2).
+minX(n2,1).
+minX(n1,1).
+nmaxX(n9,10).
+nmaxX(n8,10).
+nmaxX(n7,8).
+nmaxX(n6,8).
+nmaxX(n6,6).
+nmaxX(n5,9).
+nmaxX(n5,5).
+nmaxX(n4,6).
+nmaxX(n4,3).
+nmaxX(n3,5).
+nmaxX(n3,2).
+nmaxX(n2,3).
+nmaxX(n2,1).
+nmaxX(n1,1).
+maxX(n9,12).
+maxX(n8,11).
+maxX(n7,12).
+maxX(n6,9).
+maxX(n5,11).
+maxX(n4,7).
+maxX(n3,7).
+maxX(n2,4).
+maxX(n1,2).
+net(n1).
+net(n2).
+net(n3).
+net(n4).
+net(n5).
+net(n6).
+net(n7).
+net(n8).
+net(n9).
+inter(n7,n9).
+inter(n5,n9).
+inter(n8,n9).
+inter(n5,n8).
+inter(n7,n8).
+inter(n9,n8).
+inter(n9,n7).
+inter(n5,n7).
+inter(n6,n7).
+inter(n5,n6).
+inter(n7,n6).
+inter(n3,n6).
+inter(n4,n6).
+inter(n7,n5).
+inter(n8,n5).
+inter(n9,n5).
+inter(n6,n5).
+inter(n3,n5).
+inter(n4,n5).
+inter(n3,n4).
+inter(n5,n4).
+inter(n6,n4).
+inter(n2,n4).
+inter(n4,n3).
+inter(n5,n3).
+inter(n6,n3).
+inter(n1,n3).
+inter(n2,n3).
+inter(n3,n2).
+inter(n4,n2).
+inter(n1,n2).
+inter(n2,n1).
+inter(n3,n1).
+inter(n8,n7).
+layer(1).
+track(1).
+track(2).
+track(3).
+track(4).
+track(5).
+track(6).
+track(7).
+pos(n9,1,7) :- not nopos(n9,1,7).
+pos(n8,1,7) :- not nopos(n8,1,7).
+pos(n7,1,7) :- not nopos(n7,1,7).
+pos(n2,1,7) :- not nopos(n2,1,7).
+pos(n1,1,7) :- not nopos(n1,1,7).
+pos(n9,1,6) :- not nopos(n9,1,6).
+pos(n8,1,6) :- not nopos(n8,1,6).
+pos(n7,1,6) :- not nopos(n7,1,6).
+pos(n4,1,6) :- not nopos(n4,1,6).
+pos(n3,1,6) :- not nopos(n3,1,6).
+pos(n2,1,6) :- not nopos(n2,1,6).
+pos(n1,1,6) :- not nopos(n1,1,6).
+pos(n9,1,5) :- not nopos(n9,1,5).
+pos(n8,1,5) :- not nopos(n8,1,5).
+pos(n7,1,5) :- not nopos(n7,1,5).
+pos(n4,1,5) :- not nopos(n4,1,5).
+pos(n3,1,5) :- not nopos(n3,1,5).
+pos(n2,1,5) :- not nopos(n2,1,5).
+pos(n1,1,5) :- not nopos(n1,1,5).
+pos(n9,1,4) :- not nopos(n9,1,4).
+pos(n8,1,4) :- not nopos(n8,1,4).
+pos(n7,1,4) :- not nopos(n7,1,4).
+pos(n4,1,4) :- not nopos(n4,1,4).
+pos(n3,1,4) :- not nopos(n3,1,4).
+pos(n2,1,4) :- not nopos(n2,1,4).
+pos(n1,1,4) :- not nopos(n1,1,4).
+pos(n9,1,3) :- not nopos(n9,1,3).
+pos(n8,1,3) :- not nopos(n8,1,3).
+pos(n7,1,3) :- not nopos(n7,1,3).
+pos(n4,1,3) :- not nopos(n4,1,3).
+pos(n3,1,3) :- not nopos(n3,1,3).
+pos(n2,1,3) :- not nopos(n2,1,3).
+pos(n1,1,3) :- not nopos(n1,1,3).
+pos(n9,1,2) :- not nopos(n9,1,2).
+pos(n8,1,2) :- not nopos(n8,1,2).
+pos(n7,1,2) :- not nopos(n7,1,2).
+pos(n4,1,2) :- not nopos(n4,1,2).
+pos(n3,1,2) :- not nopos(n3,1,2).
+pos(n2,1,2) :- not nopos(n2,1,2).
+pos(n1,1,2) :- not nopos(n1,1,2).
+pos(n9,1,1) :- not nopos(n9,1,1).
+pos(n8,1,1) :- not nopos(n8,1,1).
+pos(n7,1,1) :- not nopos(n7,1,1).
+pos(n4,1,1) :- not nopos(n4,1,1).
+pos(n3,1,1) :- not nopos(n3,1,1).
+pos(n2,1,1) :- not nopos(n2,1,1).
+pos(n1,1,1) :- not nopos(n1,1,1).
+nopos(n1,1,7) :- pos(n1,1,1).
+nopos(n1,1,6) :- pos(n1,1,1).
+nopos(n1,1,5) :- pos(n1,1,1).
+nopos(n1,1,4) :- pos(n1,1,1).
+nopos(n1,1,3) :- pos(n1,1,1).
+nopos(n1,1,2) :- pos(n1,1,1).
+nopos(n2,1,7) :- pos(n2,1,1).
+nopos(n2,1,6) :- pos(n2,1,1).
+nopos(n2,1,5) :- pos(n2,1,1).
+nopos(n2,1,4) :- pos(n2,1,1).
+nopos(n2,1,3) :- pos(n2,1,1).
+nopos(n2,1,2) :- pos(n2,1,1).
+nopos(n3,1,7) :- pos(n3,1,1).
+nopos(n3,1,6) :- pos(n3,1,1).
+nopos(n3,1,5) :- pos(n3,1,1).
+nopos(n3,1,4) :- pos(n3,1,1).
+nopos(n3,1,3) :- pos(n3,1,1).
+nopos(n3,1,2) :- pos(n3,1,1).
+nopos(n4,1,7) :- pos(n4,1,1).
+nopos(n4,1,6) :- pos(n4,1,1).
+nopos(n4,1,5) :- pos(n4,1,1).
+nopos(n4,1,4) :- pos(n4,1,1).
+nopos(n4,1,3) :- pos(n4,1,1).
+nopos(n4,1,2) :- pos(n4,1,1).
+nopos(n7,1,7) :- pos(n7,1,1).
+nopos(n7,1,6) :- pos(n7,1,1).
+nopos(n7,1,5) :- pos(n7,1,1).
+nopos(n7,1,4) :- pos(n7,1,1).
+nopos(n7,1,3) :- pos(n7,1,1).
+nopos(n7,1,2) :- pos(n7,1,1).
+nopos(n8,1,7) :- pos(n8,1,1).
+nopos(n8,1,6) :- pos(n8,1,1).
+nopos(n8,1,5) :- pos(n8,1,1).
+nopos(n8,1,4) :- pos(n8,1,1).
+nopos(n8,1,3) :- pos(n8,1,1).
+nopos(n8,1,2) :- pos(n8,1,1).
+nopos(n9,1,7) :- pos(n9,1,1).
+nopos(n9,1,6) :- pos(n9,1,1).
+nopos(n9,1,5) :- pos(n9,1,1).
+nopos(n9,1,4) :- pos(n9,1,1).
+nopos(n9,1,3) :- pos(n9,1,1).
+nopos(n9,1,2) :- pos(n9,1,1).
+nopos(n1,1,7) :- pos(n1,1,2).
+nopos(n1,1,6) :- pos(n1,1,2).
+nopos(n1,1,5) :- pos(n1,1,2).
+nopos(n1,1,4) :- pos(n1,1,2).
+nopos(n1,1,3) :- pos(n1,1,2).
+nopos(n1,1,1) :- pos(n1,1,2).
+nopos(n2,1,7) :- pos(n2,1,2).
+nopos(n2,1,6) :- pos(n2,1,2).
+nopos(n2,1,5) :- pos(n2,1,2).
+nopos(n2,1,4) :- pos(n2,1,2).
+nopos(n2,1,3) :- pos(n2,1,2).
+nopos(n2,1,1) :- pos(n2,1,2).
+nopos(n3,1,7) :- pos(n3,1,2).
+nopos(n3,1,6) :- pos(n3,1,2).
+nopos(n3,1,5) :- pos(n3,1,2).
+nopos(n3,1,4) :- pos(n3,1,2).
+nopos(n3,1,3) :- pos(n3,1,2).
+nopos(n3,1,1) :- pos(n3,1,2).
+nopos(n4,1,7) :- pos(n4,1,2).
+nopos(n4,1,6) :- pos(n4,1,2).
+nopos(n4,1,5) :- pos(n4,1,2).
+nopos(n4,1,4) :- pos(n4,1,2).
+nopos(n4,1,3) :- pos(n4,1,2).
+nopos(n4,1,1) :- pos(n4,1,2).
+nopos(n7,1,7) :- pos(n7,1,2).
+nopos(n7,1,6) :- pos(n7,1,2).
+nopos(n7,1,5) :- pos(n7,1,2).
+nopos(n7,1,4) :- pos(n7,1,2).
+nopos(n7,1,3) :- pos(n7,1,2).
+nopos(n7,1,1) :- pos(n7,1,2).
+nopos(n8,1,7) :- pos(n8,1,2).
+nopos(n8,1,6) :- pos(n8,1,2).
+nopos(n8,1,5) :- pos(n8,1,2).
+nopos(n8,1,4) :- pos(n8,1,2).
+nopos(n8,1,3) :- pos(n8,1,2).
+nopos(n8,1,1) :- pos(n8,1,2).
+nopos(n9,1,7) :- pos(n9,1,2).
+nopos(n9,1,6) :- pos(n9,1,2).
+nopos(n9,1,5) :- pos(n9,1,2).
+nopos(n9,1,4) :- pos(n9,1,2).
+nopos(n9,1,3) :- pos(n9,1,2).
+nopos(n9,1,1) :- pos(n9,1,2).
+nopos(n1,1,7) :- pos(n1,1,3).
+nopos(n1,1,6) :- pos(n1,1,3).
+nopos(n1,1,5) :- pos(n1,1,3).
+nopos(n1,1,4) :- pos(n1,1,3).
+nopos(n1,1,2) :- pos(n1,1,3).
+nopos(n1,1,1) :- pos(n1,1,3).
+nopos(n2,1,7) :- pos(n2,1,3).
+nopos(n2,1,6) :- pos(n2,1,3).
+nopos(n2,1,5) :- pos(n2,1,3).
+nopos(n2,1,4) :- pos(n2,1,3).
+nopos(n2,1,2) :- pos(n2,1,3).
+nopos(n2,1,1) :- pos(n2,1,3).
+nopos(n3,1,7) :- pos(n3,1,3).
+nopos(n3,1,6) :- pos(n3,1,3).
+nopos(n3,1,5) :- pos(n3,1,3).
+nopos(n3,1,4) :- pos(n3,1,3).
+nopos(n3,1,2) :- pos(n3,1,3).
+nopos(n3,1,1) :- pos(n3,1,3).
+nopos(n4,1,7) :- pos(n4,1,3).
+nopos(n4,1,6) :- pos(n4,1,3).
+nopos(n4,1,5) :- pos(n4,1,3).
+nopos(n4,1,4) :- pos(n4,1,3).
+nopos(n4,1,2) :- pos(n4,1,3).
+nopos(n4,1,1) :- pos(n4,1,3).
+nopos(n7,1,7) :- pos(n7,1,3).
+nopos(n7,1,6) :- pos(n7,1,3).
+nopos(n7,1,5) :- pos(n7,1,3).
+nopos(n7,1,4) :- pos(n7,1,3).
+nopos(n7,1,2) :- pos(n7,1,3).
+nopos(n7,1,1) :- pos(n7,1,3).
+nopos(n8,1,7) :- pos(n8,1,3).
+nopos(n8,1,6) :- pos(n8,1,3).
+nopos(n8,1,5) :- pos(n8,1,3).
+nopos(n8,1,4) :- pos(n8,1,3).
+nopos(n8,1,2) :- pos(n8,1,3).
+nopos(n8,1,1) :- pos(n8,1,3).
+nopos(n9,1,7) :- pos(n9,1,3).
+nopos(n9,1,6) :- pos(n9,1,3).
+nopos(n9,1,5) :- pos(n9,1,3).
+nopos(n9,1,4) :- pos(n9,1,3).
+nopos(n9,1,2) :- pos(n9,1,3).
+nopos(n9,1,1) :- pos(n9,1,3).
+nopos(n1,1,7) :- pos(n1,1,4).
+nopos(n1,1,6) :- pos(n1,1,4).
+nopos(n1,1,5) :- pos(n1,1,4).
+nopos(n1,1,3) :- pos(n1,1,4).
+nopos(n1,1,2) :- pos(n1,1,4).
+nopos(n1,1,1) :- pos(n1,1,4).
+nopos(n2,1,7) :- pos(n2,1,4).
+nopos(n2,1,6) :- pos(n2,1,4).
+nopos(n2,1,5) :- pos(n2,1,4).
+nopos(n2,1,3) :- pos(n2,1,4).
+nopos(n2,1,2) :- pos(n2,1,4).
+nopos(n2,1,1) :- pos(n2,1,4).
+nopos(n3,1,7) :- pos(n3,1,4).
+nopos(n3,1,6) :- pos(n3,1,4).
+nopos(n3,1,5) :- pos(n3,1,4).
+nopos(n3,1,3) :- pos(n3,1,4).
+nopos(n3,1,2) :- pos(n3,1,4).
+nopos(n3,1,1) :- pos(n3,1,4).
+nopos(n4,1,7) :- pos(n4,1,4).
+nopos(n4,1,6) :- pos(n4,1,4).
+nopos(n4,1,5) :- pos(n4,1,4).
+nopos(n4,1,3) :- pos(n4,1,4).
+nopos(n4,1,2) :- pos(n4,1,4).
+nopos(n4,1,1) :- pos(n4,1,4).
+nopos(n7,1,7) :- pos(n7,1,4).
+nopos(n7,1,6) :- pos(n7,1,4).
+nopos(n7,1,5) :- pos(n7,1,4).
+nopos(n7,1,3) :- pos(n7,1,4).
+nopos(n7,1,2) :- pos(n7,1,4).
+nopos(n7,1,1) :- pos(n7,1,4).
+nopos(n8,1,7) :- pos(n8,1,4).
+nopos(n8,1,6) :- pos(n8,1,4).
+nopos(n8,1,5) :- pos(n8,1,4).
+nopos(n8,1,3) :- pos(n8,1,4).
+nopos(n8,1,2) :- pos(n8,1,4).
+nopos(n8,1,1) :- pos(n8,1,4).
+nopos(n9,1,7) :- pos(n9,1,4).
+nopos(n9,1,6) :- pos(n9,1,4).
+nopos(n9,1,5) :- pos(n9,1,4).
+nopos(n9,1,3) :- pos(n9,1,4).
+nopos(n9,1,2) :- pos(n9,1,4).
+nopos(n9,1,1) :- pos(n9,1,4).
+nopos(n1,1,7) :- pos(n1,1,5).
+nopos(n1,1,6) :- pos(n1,1,5).
+nopos(n1,1,4) :- pos(n1,1,5).
+nopos(n1,1,3) :- pos(n1,1,5).
+nopos(n1,1,2) :- pos(n1,1,5).
+nopos(n1,1,1) :- pos(n1,1,5).
+nopos(n2,1,7) :- pos(n2,1,5).
+nopos(n2,1,6) :- pos(n2,1,5).
+nopos(n2,1,4) :- pos(n2,1,5).
+nopos(n2,1,3) :- pos(n2,1,5).
+nopos(n2,1,2) :- pos(n2,1,5).
+nopos(n2,1,1) :- pos(n2,1,5).
+nopos(n3,1,7) :- pos(n3,1,5).
+nopos(n3,1,6) :- pos(n3,1,5).
+nopos(n3,1,4) :- pos(n3,1,5).
+nopos(n3,1,3) :- pos(n3,1,5).
+nopos(n3,1,2) :- pos(n3,1,5).
+nopos(n3,1,1) :- pos(n3,1,5).
+nopos(n4,1,7) :- pos(n4,1,5).
+nopos(n4,1,6) :- pos(n4,1,5).
+nopos(n4,1,4) :- pos(n4,1,5).
+nopos(n4,1,3) :- pos(n4,1,5).
+nopos(n4,1,2) :- pos(n4,1,5).
+nopos(n4,1,1) :- pos(n4,1,5).
+nopos(n7,1,7) :- pos(n7,1,5).
+nopos(n7,1,6) :- pos(n7,1,5).
+nopos(n7,1,4) :- pos(n7,1,5).
+nopos(n7,1,3) :- pos(n7,1,5).
+nopos(n7,1,2) :- pos(n7,1,5).
+nopos(n7,1,1) :- pos(n7,1,5).
+nopos(n8,1,7) :- pos(n8,1,5).
+nopos(n8,1,6) :- pos(n8,1,5).
+nopos(n8,1,4) :- pos(n8,1,5).
+nopos(n8,1,3) :- pos(n8,1,5).
+nopos(n8,1,2) :- pos(n8,1,5).
+nopos(n8,1,1) :- pos(n8,1,5).
+nopos(n9,1,7) :- pos(n9,1,5).
+nopos(n9,1,6) :- pos(n9,1,5).
+nopos(n9,1,4) :- pos(n9,1,5).
+nopos(n9,1,3) :- pos(n9,1,5).
+nopos(n9,1,2) :- pos(n9,1,5).
+nopos(n9,1,1) :- pos(n9,1,5).
+nopos(n1,1,7) :- pos(n1,1,6).
+nopos(n1,1,5) :- pos(n1,1,6).
+nopos(n1,1,4) :- pos(n1,1,6).
+nopos(n1,1,3) :- pos(n1,1,6).
+nopos(n1,1,2) :- pos(n1,1,6).
+nopos(n1,1,1) :- pos(n1,1,6).
+nopos(n2,1,7) :- pos(n2,1,6).
+nopos(n2,1,5) :- pos(n2,1,6).
+nopos(n2,1,4) :- pos(n2,1,6).
+nopos(n2,1,3) :- pos(n2,1,6).
+nopos(n2,1,2) :- pos(n2,1,6).
+nopos(n2,1,1) :- pos(n2,1,6).
+nopos(n3,1,7) :- pos(n3,1,6).
+nopos(n3,1,5) :- pos(n3,1,6).
+nopos(n3,1,4) :- pos(n3,1,6).
+nopos(n3,1,3) :- pos(n3,1,6).
+nopos(n3,1,2) :- pos(n3,1,6).
+nopos(n3,1,1) :- pos(n3,1,6).
+nopos(n4,1,7) :- pos(n4,1,6).
+nopos(n4,1,5) :- pos(n4,1,6).
+nopos(n4,1,4) :- pos(n4,1,6).
+nopos(n4,1,3) :- pos(n4,1,6).
+nopos(n4,1,2) :- pos(n4,1,6).
+nopos(n4,1,1) :- pos(n4,1,6).
+nopos(n7,1,7) :- pos(n7,1,6).
+nopos(n7,1,5) :- pos(n7,1,6).
+nopos(n7,1,4) :- pos(n7,1,6).
+nopos(n7,1,3) :- pos(n7,1,6).
+nopos(n7,1,2) :- pos(n7,1,6).
+nopos(n7,1,1) :- pos(n7,1,6).
+nopos(n8,1,7) :- pos(n8,1,6).
+nopos(n8,1,5) :- pos(n8,1,6).
+nopos(n8,1,4) :- pos(n8,1,6).
+nopos(n8,1,3) :- pos(n8,1,6).
+nopos(n8,1,2) :- pos(n8,1,6).
+nopos(n8,1,1) :- pos(n8,1,6).
+nopos(n9,1,7) :- pos(n9,1,6).
+nopos(n9,1,5) :- pos(n9,1,6).
+nopos(n9,1,4) :- pos(n9,1,6).
+nopos(n9,1,3) :- pos(n9,1,6).
+nopos(n9,1,2) :- pos(n9,1,6).
+nopos(n9,1,1) :- pos(n9,1,6).
+nopos(n1,1,6) :- pos(n1,1,7).
+nopos(n1,1,5) :- pos(n1,1,7).
+nopos(n1,1,4) :- pos(n1,1,7).
+nopos(n1,1,3) :- pos(n1,1,7).
+nopos(n1,1,2) :- pos(n1,1,7).
+nopos(n1,1,1) :- pos(n1,1,7).
+nopos(n2,1,6) :- pos(n2,1,7).
+nopos(n2,1,5) :- pos(n2,1,7).
+nopos(n2,1,4) :- pos(n2,1,7).
+nopos(n2,1,3) :- pos(n2,1,7).
+nopos(n2,1,2) :- pos(n2,1,7).
+nopos(n2,1,1) :- pos(n2,1,7).
+nopos(n7,1,6) :- pos(n7,1,7).
+nopos(n7,1,5) :- pos(n7,1,7).
+nopos(n7,1,4) :- pos(n7,1,7).
+nopos(n7,1,3) :- pos(n7,1,7).
+nopos(n7,1,2) :- pos(n7,1,7).
+nopos(n7,1,1) :- pos(n7,1,7).
+nopos(n8,1,6) :- pos(n8,1,7).
+nopos(n8,1,5) :- pos(n8,1,7).
+nopos(n8,1,4) :- pos(n8,1,7).
+nopos(n8,1,3) :- pos(n8,1,7).
+nopos(n8,1,2) :- pos(n8,1,7).
+nopos(n8,1,1) :- pos(n8,1,7).
+nopos(n9,1,6) :- pos(n9,1,7).
+nopos(n9,1,5) :- pos(n9,1,7).
+nopos(n9,1,4) :- pos(n9,1,7).
+nopos(n9,1,3) :- pos(n9,1,7).
+nopos(n9,1,2) :- pos(n9,1,7).
+nopos(n9,1,1) :- pos(n9,1,7).
+nopos(n2,1,1) :- pos(n1,1,1).
+nopos(n2,1,2) :- pos(n1,1,2).
+nopos(n2,1,1) :- pos(n1,1,2).
+nopos(n2,1,3) :- pos(n1,1,3).
+nopos(n2,1,2) :- pos(n1,1,3).
+nopos(n2,1,1) :- pos(n1,1,3).
+nopos(n2,1,4) :- pos(n1,1,4).
+nopos(n2,1,3) :- pos(n1,1,4).
+nopos(n2,1,2) :- pos(n1,1,4).
+nopos(n2,1,1) :- pos(n1,1,4).
+nopos(n2,1,5) :- pos(n1,1,5).
+nopos(n2,1,4) :- pos(n1,1,5).
+nopos(n2,1,3) :- pos(n1,1,5).
+nopos(n2,1,2) :- pos(n1,1,5).
+nopos(n2,1,1) :- pos(n1,1,5).
+nopos(n2,1,6) :- pos(n1,1,6).
+nopos(n2,1,5) :- pos(n1,1,6).
+nopos(n2,1,4) :- pos(n1,1,6).
+nopos(n2,1,3) :- pos(n1,1,6).
+nopos(n2,1,2) :- pos(n1,1,6).
+nopos(n2,1,1) :- pos(n1,1,6).
+nopos(n2,1,7) :- pos(n1,1,7).
+nopos(n2,1,6) :- pos(n1,1,7).
+nopos(n2,1,5) :- pos(n1,1,7).
+nopos(n2,1,4) :- pos(n1,1,7).
+nopos(n2,1,3) :- pos(n1,1,7).
+nopos(n2,1,2) :- pos(n1,1,7).
+nopos(n2,1,1) :- pos(n1,1,7).
+nopos(n2,1,1) :- pos(n4,1,1).
+nopos(n2,1,2) :- pos(n4,1,2).
+nopos(n2,1,1) :- pos(n4,1,2).
+nopos(n2,1,3) :- pos(n4,1,3).
+nopos(n2,1,2) :- pos(n4,1,3).
+nopos(n2,1,1) :- pos(n4,1,3).
+nopos(n2,1,4) :- pos(n4,1,4).
+nopos(n2,1,3) :- pos(n4,1,4).
+nopos(n2,1,2) :- pos(n4,1,4).
+nopos(n2,1,1) :- pos(n4,1,4).
+nopos(n2,1,5) :- pos(n4,1,5).
+nopos(n2,1,4) :- pos(n4,1,5).
+nopos(n2,1,3) :- pos(n4,1,5).
+nopos(n2,1,2) :- pos(n4,1,5).
+nopos(n2,1,1) :- pos(n4,1,5).
+nopos(n2,1,6) :- pos(n4,1,6).
+nopos(n2,1,5) :- pos(n4,1,6).
+nopos(n2,1,4) :- pos(n4,1,6).
+nopos(n2,1,3) :- pos(n4,1,6).
+nopos(n2,1,2) :- pos(n4,1,6).
+nopos(n2,1,1) :- pos(n4,1,6).
+nopos(n3,1,1) :- pos(n1,1,1).
+nopos(n3,1,2) :- pos(n1,1,2).
+nopos(n3,1,1) :- pos(n1,1,2).
+nopos(n3,1,3) :- pos(n1,1,3).
+nopos(n3,1,2) :- pos(n1,1,3).
+nopos(n3,1,1) :- pos(n1,1,3).
+nopos(n3,1,4) :- pos(n1,1,4).
+nopos(n3,1,3) :- pos(n1,1,4).
+nopos(n3,1,2) :- pos(n1,1,4).
+nopos(n3,1,1) :- pos(n1,1,4).
+nopos(n3,1,5) :- pos(n1,1,5).
+nopos(n3,1,4) :- pos(n1,1,5).
+nopos(n3,1,3) :- pos(n1,1,5).
+nopos(n3,1,2) :- pos(n1,1,5).
+nopos(n3,1,1) :- pos(n1,1,5).
+nopos(n3,1,6) :- pos(n1,1,6).
+nopos(n3,1,5) :- pos(n1,1,6).
+nopos(n3,1,4) :- pos(n1,1,6).
+nopos(n3,1,3) :- pos(n1,1,6).
+nopos(n3,1,2) :- pos(n1,1,6).
+nopos(n3,1,1) :- pos(n1,1,6).
+nopos(n3,1,7) :- pos(n1,1,7).
+nopos(n3,1,6) :- pos(n1,1,7).
+nopos(n3,1,5) :- pos(n1,1,7).
+nopos(n3,1,4) :- pos(n1,1,7).
+nopos(n3,1,3) :- pos(n1,1,7).
+nopos(n3,1,2) :- pos(n1,1,7).
+nopos(n3,1,1) :- pos(n1,1,7).
+nopos(n4,1,1) :- pos(n3,1,1).
+nopos(n4,1,2) :- pos(n3,1,2).
+nopos(n4,1,1) :- pos(n3,1,2).
+nopos(n4,1,3) :- pos(n3,1,3).
+nopos(n4,1,2) :- pos(n3,1,3).
+nopos(n4,1,1) :- pos(n3,1,3).
+nopos(n4,1,4) :- pos(n3,1,4).
+nopos(n4,1,3) :- pos(n3,1,4).
+nopos(n4,1,2) :- pos(n3,1,4).
+nopos(n4,1,1) :- pos(n3,1,4).
+nopos(n4,1,5) :- pos(n3,1,5).
+nopos(n4,1,4) :- pos(n3,1,5).
+nopos(n4,1,3) :- pos(n3,1,5).
+nopos(n4,1,2) :- pos(n3,1,5).
+nopos(n4,1,1) :- pos(n3,1,5).
+nopos(n4,1,6) :- pos(n3,1,6).
+nopos(n4,1,5) :- pos(n3,1,6).
+nopos(n4,1,4) :- pos(n3,1,6).
+nopos(n4,1,3) :- pos(n3,1,6).
+nopos(n4,1,2) :- pos(n3,1,6).
+nopos(n4,1,1) :- pos(n3,1,6).
+nopos(n7,1,1) :- pos(n9,1,1).
+nopos(n7,1,2) :- pos(n9,1,2).
+nopos(n7,1,1) :- pos(n9,1,2).
+nopos(n7,1,3) :- pos(n9,1,3).
+nopos(n7,1,2) :- pos(n9,1,3).
+nopos(n7,1,1) :- pos(n9,1,3).
+nopos(n7,1,4) :- pos(n9,1,4).
+nopos(n7,1,3) :- pos(n9,1,4).
+nopos(n7,1,2) :- pos(n9,1,4).
+nopos(n7,1,1) :- pos(n9,1,4).
+nopos(n7,1,5) :- pos(n9,1,5).
+nopos(n7,1,4) :- pos(n9,1,5).
+nopos(n7,1,3) :- pos(n9,1,5).
+nopos(n7,1,2) :- pos(n9,1,5).
+nopos(n7,1,1) :- pos(n9,1,5).
+nopos(n7,1,6) :- pos(n9,1,6).
+nopos(n7,1,5) :- pos(n9,1,6).
+nopos(n7,1,4) :- pos(n9,1,6).
+nopos(n7,1,3) :- pos(n9,1,6).
+nopos(n7,1,2) :- pos(n9,1,6).
+nopos(n7,1,1) :- pos(n9,1,6).
+nopos(n7,1,7) :- pos(n9,1,7).
+nopos(n7,1,6) :- pos(n9,1,7).
+nopos(n7,1,5) :- pos(n9,1,7).
+nopos(n7,1,4) :- pos(n9,1,7).
+nopos(n7,1,3) :- pos(n9,1,7).
+nopos(n7,1,2) :- pos(n9,1,7).
+nopos(n7,1,1) :- pos(n9,1,7).
+nopos(n9,1,1) :- pos(n8,1,1).
+nopos(n9,1,2) :- pos(n8,1,2).
+nopos(n9,1,1) :- pos(n8,1,2).
+nopos(n9,1,3) :- pos(n8,1,3).
+nopos(n9,1,2) :- pos(n8,1,3).
+nopos(n9,1,1) :- pos(n8,1,3).
+nopos(n9,1,4) :- pos(n8,1,4).
+nopos(n9,1,3) :- pos(n8,1,4).
+nopos(n9,1,2) :- pos(n8,1,4).
+nopos(n9,1,1) :- pos(n8,1,4).
+nopos(n9,1,5) :- pos(n8,1,5).
+nopos(n9,1,4) :- pos(n8,1,5).
+nopos(n9,1,3) :- pos(n8,1,5).
+nopos(n9,1,2) :- pos(n8,1,5).
+nopos(n9,1,1) :- pos(n8,1,5).
+nopos(n9,1,6) :- pos(n8,1,6).
+nopos(n9,1,5) :- pos(n8,1,6).
+nopos(n9,1,4) :- pos(n8,1,6).
+nopos(n9,1,3) :- pos(n8,1,6).
+nopos(n9,1,2) :- pos(n8,1,6).
+nopos(n9,1,1) :- pos(n8,1,6).
+nopos(n9,1,7) :- pos(n8,1,7).
+nopos(n9,1,6) :- pos(n8,1,7).
+nopos(n9,1,5) :- pos(n8,1,7).
+nopos(n9,1,4) :- pos(n8,1,7).
+nopos(n9,1,3) :- pos(n8,1,7).
+nopos(n9,1,2) :- pos(n8,1,7).
+nopos(n9,1,1) :- pos(n8,1,7).
+nopos(n1,1,7) :- pos(n2,1,1).
+nopos(n1,1,6) :- pos(n2,1,1).
+nopos(n1,1,5) :- pos(n2,1,1).
+nopos(n1,1,4) :- pos(n2,1,1).
+nopos(n1,1,3) :- pos(n2,1,1).
+nopos(n1,1,2) :- pos(n2,1,1).
+nopos(n1,1,1) :- pos(n2,1,1).
+nopos(n1,1,7) :- pos(n2,1,2).
+nopos(n1,1,6) :- pos(n2,1,2).
+nopos(n1,1,5) :- pos(n2,1,2).
+nopos(n1,1,4) :- pos(n2,1,2).
+nopos(n1,1,3) :- pos(n2,1,2).
+nopos(n1,1,2) :- pos(n2,1,2).
+nopos(n1,1,7) :- pos(n2,1,3).
+nopos(n1,1,6) :- pos(n2,1,3).
+nopos(n1,1,5) :- pos(n2,1,3).
+nopos(n1,1,4) :- pos(n2,1,3).
+nopos(n1,1,3) :- pos(n2,1,3).
+nopos(n1,1,7) :- pos(n2,1,4).
+nopos(n1,1,6) :- pos(n2,1,4).
+nopos(n1,1,5) :- pos(n2,1,4).
+nopos(n1,1,4) :- pos(n2,1,4).
+nopos(n1,1,7) :- pos(n2,1,5).
+nopos(n1,1,6) :- pos(n2,1,5).
+nopos(n1,1,5) :- pos(n2,1,5).
+nopos(n1,1,7) :- pos(n2,1,6).
+nopos(n1,1,6) :- pos(n2,1,6).
+nopos(n1,1,7) :- pos(n2,1,7).
+nopos(n4,1,7) :- pos(n2,1,1).
+nopos(n4,1,6) :- pos(n2,1,1).
+nopos(n4,1,5) :- pos(n2,1,1).
+nopos(n4,1,4) :- pos(n2,1,1).
+nopos(n4,1,3) :- pos(n2,1,1).
+nopos(n4,1,2) :- pos(n2,1,1).
+nopos(n4,1,1) :- pos(n2,1,1).
+nopos(n4,1,7) :- pos(n2,1,2).
+nopos(n4,1,6) :- pos(n2,1,2).
+nopos(n4,1,5) :- pos(n2,1,2).
+nopos(n4,1,4) :- pos(n2,1,2).
+nopos(n4,1,3) :- pos(n2,1,2).
+nopos(n4,1,2) :- pos(n2,1,2).
+nopos(n4,1,7) :- pos(n2,1,3).
+nopos(n4,1,6) :- pos(n2,1,3).
+nopos(n4,1,5) :- pos(n2,1,3).
+nopos(n4,1,4) :- pos(n2,1,3).
+nopos(n4,1,3) :- pos(n2,1,3).
+nopos(n4,1,7) :- pos(n2,1,4).
+nopos(n4,1,6) :- pos(n2,1,4).
+nopos(n4,1,5) :- pos(n2,1,4).
+nopos(n4,1,4) :- pos(n2,1,4).
+nopos(n4,1,7) :- pos(n2,1,5).
+nopos(n4,1,6) :- pos(n2,1,5).
+nopos(n4,1,5) :- pos(n2,1,5).
+nopos(n4,1,7) :- pos(n2,1,6).
+nopos(n4,1,6) :- pos(n2,1,6).
+nopos(n4,1,7) :- pos(n2,1,7).
+nopos(n1,1,7) :- pos(n3,1,1).
+nopos(n1,1,6) :- pos(n3,1,1).
+nopos(n1,1,5) :- pos(n3,1,1).
+nopos(n1,1,4) :- pos(n3,1,1).
+nopos(n1,1,3) :- pos(n3,1,1).
+nopos(n1,1,2) :- pos(n3,1,1).
+nopos(n1,1,1) :- pos(n3,1,1).
+nopos(n1,1,7) :- pos(n3,1,2).
+nopos(n1,1,6) :- pos(n3,1,2).
+nopos(n1,1,5) :- pos(n3,1,2).
+nopos(n1,1,4) :- pos(n3,1,2).
+nopos(n1,1,3) :- pos(n3,1,2).
+nopos(n1,1,2) :- pos(n3,1,2).
+nopos(n1,1,7) :- pos(n3,1,3).
+nopos(n1,1,6) :- pos(n3,1,3).
+nopos(n1,1,5) :- pos(n3,1,3).
+nopos(n1,1,4) :- pos(n3,1,3).
+nopos(n1,1,3) :- pos(n3,1,3).
+nopos(n1,1,7) :- pos(n3,1,4).
+nopos(n1,1,6) :- pos(n3,1,4).
+nopos(n1,1,5) :- pos(n3,1,4).
+nopos(n1,1,4) :- pos(n3,1,4).
+nopos(n1,1,7) :- pos(n3,1,5).
+nopos(n1,1,6) :- pos(n3,1,5).
+nopos(n1,1,5) :- pos(n3,1,5).
+nopos(n1,1,7) :- pos(n3,1,6).
+nopos(n1,1,6) :- pos(n3,1,6).
+nopos(n3,1,7) :- pos(n4,1,1).
+nopos(n3,1,6) :- pos(n4,1,1).
+nopos(n3,1,5) :- pos(n4,1,1).
+nopos(n3,1,4) :- pos(n4,1,1).
+nopos(n3,1,3) :- pos(n4,1,1).
+nopos(n3,1,2) :- pos(n4,1,1).
+nopos(n3,1,1) :- pos(n4,1,1).
+nopos(n3,1,7) :- pos(n4,1,2).
+nopos(n3,1,6) :- pos(n4,1,2).
+nopos(n3,1,5) :- pos(n4,1,2).
+nopos(n3,1,4) :- pos(n4,1,2).
+nopos(n3,1,3) :- pos(n4,1,2).
+nopos(n3,1,2) :- pos(n4,1,2).
+nopos(n3,1,7) :- pos(n4,1,3).
+nopos(n3,1,6) :- pos(n4,1,3).
+nopos(n3,1,5) :- pos(n4,1,3).
+nopos(n3,1,4) :- pos(n4,1,3).
+nopos(n3,1,3) :- pos(n4,1,3).
+nopos(n3,1,7) :- pos(n4,1,4).
+nopos(n3,1,6) :- pos(n4,1,4).
+nopos(n3,1,5) :- pos(n4,1,4).
+nopos(n3,1,4) :- pos(n4,1,4).
+nopos(n3,1,7) :- pos(n4,1,5).
+nopos(n3,1,6) :- pos(n4,1,5).
+nopos(n3,1,5) :- pos(n4,1,5).
+nopos(n3,1,7) :- pos(n4,1,6).
+nopos(n3,1,6) :- pos(n4,1,6).
+nopos(n6,1,7) :- pos(n7,1,1).
+nopos(n6,1,7) :- pos(n7,1,2).
+nopos(n6,1,7) :- pos(n7,1,3).
+nopos(n6,1,7) :- pos(n7,1,4).
+nopos(n6,1,7) :- pos(n7,1,5).
+nopos(n6,1,7) :- pos(n7,1,6).
+nopos(n6,1,7) :- pos(n7,1,7).
+nopos(n9,1,7) :- pos(n7,1,1).
+nopos(n9,1,6) :- pos(n7,1,1).
+nopos(n9,1,5) :- pos(n7,1,1).
+nopos(n9,1,4) :- pos(n7,1,1).
+nopos(n9,1,3) :- pos(n7,1,1).
+nopos(n9,1,2) :- pos(n7,1,1).
+nopos(n9,1,1) :- pos(n7,1,1).
+nopos(n9,1,7) :- pos(n7,1,2).
+nopos(n9,1,6) :- pos(n7,1,2).
+nopos(n9,1,5) :- pos(n7,1,2).
+nopos(n9,1,4) :- pos(n7,1,2).
+nopos(n9,1,3) :- pos(n7,1,2).
+nopos(n9,1,2) :- pos(n7,1,2).
+nopos(n9,1,7) :- pos(n7,1,3).
+nopos(n9,1,6) :- pos(n7,1,3).
+nopos(n9,1,5) :- pos(n7,1,3).
+nopos(n9,1,4) :- pos(n7,1,3).
+nopos(n9,1,3) :- pos(n7,1,3).
+nopos(n9,1,7) :- pos(n7,1,4).
+nopos(n9,1,6) :- pos(n7,1,4).
+nopos(n9,1,5) :- pos(n7,1,4).
+nopos(n9,1,4) :- pos(n7,1,4).
+nopos(n9,1,7) :- pos(n7,1,5).
+nopos(n9,1,6) :- pos(n7,1,5).
+nopos(n9,1,5) :- pos(n7,1,5).
+nopos(n9,1,7) :- pos(n7,1,6).
+nopos(n9,1,6) :- pos(n7,1,6).
+nopos(n9,1,7) :- pos(n7,1,7).
+nopos(n5,1,7) :- pos(n8,1,1).
+nopos(n5,1,7) :- pos(n8,1,2).
+nopos(n5,1,7) :- pos(n8,1,3).
+nopos(n5,1,7) :- pos(n8,1,4).
+nopos(n5,1,7) :- pos(n8,1,5).
+nopos(n5,1,7) :- pos(n8,1,6).
+nopos(n5,1,7) :- pos(n8,1,7).
+nopos(n8,1,7) :- pos(n9,1,1).
+nopos(n8,1,6) :- pos(n9,1,1).
+nopos(n8,1,5) :- pos(n9,1,1).
+nopos(n8,1,4) :- pos(n9,1,1).
+nopos(n8,1,3) :- pos(n9,1,1).
+nopos(n8,1,2) :- pos(n9,1,1).
+nopos(n8,1,1) :- pos(n9,1,1).
+nopos(n8,1,7) :- pos(n9,1,2).
+nopos(n8,1,6) :- pos(n9,1,2).
+nopos(n8,1,5) :- pos(n9,1,2).
+nopos(n8,1,4) :- pos(n9,1,2).
+nopos(n8,1,3) :- pos(n9,1,2).
+nopos(n8,1,2) :- pos(n9,1,2).
+nopos(n8,1,7) :- pos(n9,1,3).
+nopos(n8,1,6) :- pos(n9,1,3).
+nopos(n8,1,5) :- pos(n9,1,3).
+nopos(n8,1,4) :- pos(n9,1,3).
+nopos(n8,1,3) :- pos(n9,1,3).
+nopos(n8,1,7) :- pos(n9,1,4).
+nopos(n8,1,6) :- pos(n9,1,4).
+nopos(n8,1,5) :- pos(n9,1,4).
+nopos(n8,1,4) :- pos(n9,1,4).
+nopos(n8,1,7) :- pos(n9,1,5).
+nopos(n8,1,6) :- pos(n9,1,5).
+nopos(n8,1,5) :- pos(n9,1,5).
+nopos(n8,1,7) :- pos(n9,1,6).
+nopos(n8,1,6) :- pos(n9,1,6).
+nopos(n8,1,7) :- pos(n9,1,7).
+nopos(n2,1,1) :- pos(n1,1,1).
+nopos(n3,1,1) :- pos(n1,1,1).
+nopos(n1,1,1) :- pos(n2,1,1).
+nopos(n3,1,1) :- pos(n2,1,1).
+nopos(n4,1,1) :- pos(n2,1,1).
+nopos(n1,1,1) :- pos(n3,1,1).
+nopos(n2,1,1) :- pos(n3,1,1).
+nopos(n4,1,1) :- pos(n3,1,1).
+nopos(n2,1,1) :- pos(n4,1,1).
+nopos(n3,1,1) :- pos(n4,1,1).
+nopos(n8,1,1) :- pos(n7,1,1).
+nopos(n9,1,1) :- pos(n7,1,1).
+nopos(n7,1,1) :- pos(n8,1,1).
+nopos(n9,1,1) :- pos(n8,1,1).
+nopos(n7,1,1) :- pos(n9,1,1).
+nopos(n8,1,1) :- pos(n9,1,1).
+nopos(n2,1,2) :- pos(n1,1,2).
+nopos(n3,1,2) :- pos(n1,1,2).
+nopos(n1,1,2) :- pos(n2,1,2).
+nopos(n3,1,2) :- pos(n2,1,2).
+nopos(n4,1,2) :- pos(n2,1,2).
+nopos(n1,1,2) :- pos(n3,1,2).
+nopos(n2,1,2) :- pos(n3,1,2).
+nopos(n4,1,2) :- pos(n3,1,2).
+nopos(n2,1,2) :- pos(n4,1,2).
+nopos(n3,1,2) :- pos(n4,1,2).
+nopos(n8,1,2) :- pos(n7,1,2).
+nopos(n9,1,2) :- pos(n7,1,2).
+nopos(n7,1,2) :- pos(n8,1,2).
+nopos(n9,1,2) :- pos(n8,1,2).
+nopos(n7,1,2) :- pos(n9,1,2).
+nopos(n8,1,2) :- pos(n9,1,2).
+nopos(n2,1,3) :- pos(n1,1,3).
+nopos(n3,1,3) :- pos(n1,1,3).
+nopos(n1,1,3) :- pos(n2,1,3).
+nopos(n3,1,3) :- pos(n2,1,3).
+nopos(n4,1,3) :- pos(n2,1,3).
+nopos(n1,1,3) :- pos(n3,1,3).
+nopos(n2,1,3) :- pos(n3,1,3).
+nopos(n4,1,3) :- pos(n3,1,3).
+nopos(n2,1,3) :- pos(n4,1,3).
+nopos(n3,1,3) :- pos(n4,1,3).
+nopos(n8,1,3) :- pos(n7,1,3).
+nopos(n9,1,3) :- pos(n7,1,3).
+nopos(n7,1,3) :- pos(n8,1,3).
+nopos(n9,1,3) :- pos(n8,1,3).
+nopos(n7,1,3) :- pos(n9,1,3).
+nopos(n8,1,3) :- pos(n9,1,3).
+nopos(n2,1,4) :- pos(n1,1,4).
+nopos(n3,1,4) :- pos(n1,1,4).
+nopos(n1,1,4) :- pos(n2,1,4).
+nopos(n3,1,4) :- pos(n2,1,4).
+nopos(n4,1,4) :- pos(n2,1,4).
+nopos(n1,1,4) :- pos(n3,1,4).
+nopos(n2,1,4) :- pos(n3,1,4).
+nopos(n4,1,4) :- pos(n3,1,4).
+nopos(n2,1,4) :- pos(n4,1,4).
+nopos(n3,1,4) :- pos(n4,1,4).
+nopos(n8,1,4) :- pos(n7,1,4).
+nopos(n9,1,4) :- pos(n7,1,4).
+nopos(n7,1,4) :- pos(n8,1,4).
+nopos(n9,1,4) :- pos(n8,1,4).
+nopos(n7,1,4) :- pos(n9,1,4).
+nopos(n8,1,4) :- pos(n9,1,4).
+nopos(n2,1,5) :- pos(n1,1,5).
+nopos(n3,1,5) :- pos(n1,1,5).
+nopos(n1,1,5) :- pos(n2,1,5).
+nopos(n3,1,5) :- pos(n2,1,5).
+nopos(n4,1,5) :- pos(n2,1,5).
+nopos(n1,1,5) :- pos(n3,1,5).
+nopos(n2,1,5) :- pos(n3,1,5).
+nopos(n4,1,5) :- pos(n3,1,5).
+nopos(n2,1,5) :- pos(n4,1,5).
+nopos(n3,1,5) :- pos(n4,1,5).
+nopos(n8,1,5) :- pos(n7,1,5).
+nopos(n9,1,5) :- pos(n7,1,5).
+nopos(n7,1,5) :- pos(n8,1,5).
+nopos(n9,1,5) :- pos(n8,1,5).
+nopos(n7,1,5) :- pos(n9,1,5).
+nopos(n8,1,5) :- pos(n9,1,5).
+nopos(n2,1,6) :- pos(n1,1,6).
+nopos(n3,1,6) :- pos(n1,1,6).
+nopos(n1,1,6) :- pos(n2,1,6).
+nopos(n3,1,6) :- pos(n2,1,6).
+nopos(n4,1,6) :- pos(n2,1,6).
+nopos(n1,1,6) :- pos(n3,1,6).
+nopos(n2,1,6) :- pos(n3,1,6).
+nopos(n4,1,6) :- pos(n3,1,6).
+nopos(n2,1,6) :- pos(n4,1,6).
+nopos(n3,1,6) :- pos(n4,1,6).
+nopos(n8,1,6) :- pos(n7,1,6).
+nopos(n9,1,6) :- pos(n7,1,6).
+nopos(n7,1,6) :- pos(n8,1,6).
+nopos(n9,1,6) :- pos(n8,1,6).
+nopos(n7,1,6) :- pos(n9,1,6).
+nopos(n8,1,6) :- pos(n9,1,6).
+nopos(n2,1,7) :- pos(n1,1,7).
+nopos(n3,1,7) :- pos(n1,1,7).
+nopos(n1,1,7) :- pos(n2,1,7).
+nopos(n3,1,7) :- pos(n2,1,7).
+nopos(n4,1,7) :- pos(n2,1,7).
+nopos(n5,1,7) :- pos(n7,1,7).
+nopos(n6,1,7) :- pos(n7,1,7).
+nopos(n8,1,7) :- pos(n7,1,7).
+nopos(n9,1,7) :- pos(n7,1,7).
+nopos(n7,1,7) :- pos(n8,1,7).
+nopos(n5,1,7) :- pos(n8,1,7).
+nopos(n9,1,7) :- pos(n8,1,7).
+nopos(n5,1,7) :- pos(n9,1,7).
+nopos(n7,1,7) :- pos(n9,1,7).
+nopos(n8,1,7) :- pos(n9,1,7).
+oknet(n1) :- pos(n1,1,1).
+oknet(n2) :- pos(n2,1,1).
+oknet(n3) :- pos(n3,1,1).
+oknet(n4) :- pos(n4,1,1).
+oknet(n7) :- pos(n7,1,1).
+oknet(n8) :- pos(n8,1,1).
+oknet(n9) :- pos(n9,1,1).
+oknet(n1) :- pos(n1,1,2).
+oknet(n2) :- pos(n2,1,2).
+oknet(n3) :- pos(n3,1,2).
+oknet(n4) :- pos(n4,1,2).
+oknet(n7) :- pos(n7,1,2).
+oknet(n8) :- pos(n8,1,2).
+oknet(n9) :- pos(n9,1,2).
+oknet(n1) :- pos(n1,1,3).
+oknet(n2) :- pos(n2,1,3).
+oknet(n3) :- pos(n3,1,3).
+oknet(n4) :- pos(n4,1,3).
+oknet(n7) :- pos(n7,1,3).
+oknet(n8) :- pos(n8,1,3).
+oknet(n9) :- pos(n9,1,3).
+oknet(n1) :- pos(n1,1,4).
+oknet(n2) :- pos(n2,1,4).
+oknet(n3) :- pos(n3,1,4).
+oknet(n4) :- pos(n4,1,4).
+oknet(n7) :- pos(n7,1,4).
+oknet(n8) :- pos(n8,1,4).
+oknet(n9) :- pos(n9,1,4).
+oknet(n1) :- pos(n1,1,5).
+oknet(n2) :- pos(n2,1,5).
+oknet(n3) :- pos(n3,1,5).
+oknet(n4) :- pos(n4,1,5).
+oknet(n7) :- pos(n7,1,5).
+oknet(n8) :- pos(n8,1,5).
+oknet(n9) :- pos(n9,1,5).
+oknet(n1) :- pos(n1,1,6).
+oknet(n2) :- pos(n2,1,6).
+oknet(n3) :- pos(n3,1,6).
+oknet(n4) :- pos(n4,1,6).
+oknet(n7) :- pos(n7,1,6).
+oknet(n8) :- pos(n8,1,6).
+oknet(n9) :- pos(n9,1,6).
+oknet(n1) :- pos(n1,1,7).
+oknet(n2) :- pos(n2,1,7).
+oknet(n7) :- pos(n7,1,7).
+oknet(n8) :- pos(n8,1,7).
+oknet(n9) :- pos(n9,1,7).
+ :- not oknet(n9).
+ :- not oknet(n8).
+ :- not oknet(n7).
+ :- not oknet(n4).
+ :- not oknet(n3).
+ :- not oknet(n2).
+ :- not oknet(n1).
+dir(e).
+dir(w).
+dir(n).
+dir(s).
+inverse(e,w).
+inverse(w,e).
+inverse(n,s).
+inverse(s,n).
+field(1,1).
+field(1,2).
+field(1,3).
+field(1,4).
+field(2,1).
+field(2,2).
+field(2,3).
+field(2,4).
+field(3,1).
+field(3,2).
+field(3,3).
+field(3,4).
+field(4,1).
+field(4,2).
+field(4,3).
+field(4,4).
+init_on(3,2).
+goal_on(1,4).
+connect(1,1,s).
+connect(1,1,w).
+connect(1,2,n).
+connect(1,2,e).
+connect(1,2,w).
+connect(1,3,e).
+connect(1,4,n).
+connect(1,4,w).
+connect(2,1,n).
+connect(2,1,w).
+connect(2,2,n).
+connect(2,2,w).
+connect(2,3,n).
+connect(2,3,s).
+connect(2,4,n).
+connect(2,4,e).
+connect(2,4,w).
+connect(3,1,n).
+connect(3,1,s).
+connect(3,2,n).
+connect(3,2,w).
+connect(3,3,e).
+connect(3,4,n).
+connect(3,4,s).
+connect(3,4,w).
+connect(4,1,n).
+connect(4,1,w).
+connect(4,2,n).
+connect(4,2,s).
+connect(4,2,e).
+connect(4,2,w).
+connect(4,3,n).
+connect(4,3,e).
+connect(4,4,w).
+max_steps(2).
+row(4).
+row(3).
+row(2).
+row(1).
+col(4).
+col(3).
+col(2).
+col(1).
+num_rows(4).
+num_cols(4).
+goal(1,4,0).
+reach(3,2,0).
+conn(4,4,w,0).
+conn(4,3,e,0).
+conn(4,3,n,0).
+conn(4,2,w,0).
+conn(4,2,e,0).
+conn(4,2,s,0).
+conn(4,2,n,0).
+conn(4,1,w,0).
+conn(4,1,n,0).
+conn(3,4,w,0).
+conn(3,4,s,0).
+conn(3,4,n,0).
+conn(3,3,e,0).
+conn(3,2,w,0).
+conn(3,2,n,0).
+conn(3,1,s,0).
+conn(3,1,n,0).
+conn(2,4,w,0).
+conn(2,4,e,0).
+conn(2,4,n,0).
+conn(2,3,s,0).
+conn(2,3,n,0).
+conn(2,2,w,0).
+conn(2,2,n,0).
+conn(2,1,w,0).
+conn(2,1,n,0).
+conn(1,4,w,0).
+conn(1,4,n,0).
+conn(1,3,e,0).
+conn(1,2,w,0).
+conn(1,2,e,0).
+conn(1,2,n,0).
+conn(1,1,w,0).
+conn(1,1,s,0).
+step(2).
+step(1).
+dneighbor(n,3,4,4,4).
+dneighbor(n,3,3,4,3).
+dneighbor(n,3,2,4,2).
+dneighbor(n,3,1,4,1).
+dneighbor(n,2,4,3,4).
+dneighbor(n,2,3,3,3).
+dneighbor(n,2,2,3,2).
+dneighbor(n,2,1,3,1).
+dneighbor(n,1,4,2,4).
+dneighbor(n,1,3,2,3).
+dneighbor(n,1,2,2,2).
+dneighbor(n,1,1,2,1).
+dneighbor(s,4,4,3,4).
+dneighbor(s,4,3,3,3).
+dneighbor(s,4,2,3,2).
+dneighbor(s,4,1,3,1).
+dneighbor(s,3,4,2,4).
+dneighbor(s,3,3,2,3).
+dneighbor(s,3,2,2,2).
+dneighbor(s,3,1,2,1).
+dneighbor(s,2,4,1,4).
+dneighbor(s,2,3,1,3).
+dneighbor(s,2,2,1,2).
+dneighbor(s,2,1,1,1).
+dneighbor(e,4,3,4,4).
+dneighbor(e,4,2,4,3).
+dneighbor(e,4,1,4,2).
+dneighbor(e,3,3,3,4).
+dneighbor(e,3,2,3,3).
+dneighbor(e,3,1,3,2).
+dneighbor(e,2,3,2,4).
+dneighbor(e,2,2,2,3).
+dneighbor(e,2,1,2,2).
+dneighbor(e,1,3,1,4).
+dneighbor(e,1,2,1,3).
+dneighbor(e,1,1,1,2).
+dneighbor(w,4,4,4,3).
+dneighbor(w,4,3,4,2).
+dneighbor(w,4,2,4,1).
+dneighbor(w,3,4,3,3).
+dneighbor(w,3,3,3,2).
+dneighbor(w,3,2,3,1).
+dneighbor(w,2,4,2,3).
+dneighbor(w,2,3,2,2).
+dneighbor(w,2,2,2,1).
+dneighbor(w,1,4,1,3).
+dneighbor(w,1,3,1,2).
+dneighbor(w,1,2,1,1).
+neighbor(w,1,2,1,1).
+neighbor(w,1,3,1,2).
+neighbor(w,1,4,1,3).
+neighbor(w,2,2,2,1).
+neighbor(w,2,3,2,2).
+neighbor(w,2,4,2,3).
+neighbor(w,3,2,3,1).
+neighbor(w,3,3,3,2).
+neighbor(w,3,4,3,3).
+neighbor(w,4,2,4,1).
+neighbor(w,4,3,4,2).
+neighbor(w,4,4,4,3).
+neighbor(e,1,1,1,2).
+neighbor(e,1,2,1,3).
+neighbor(e,1,3,1,4).
+neighbor(e,2,1,2,2).
+neighbor(e,2,2,2,3).
+neighbor(e,2,3,2,4).
+neighbor(e,3,1,3,2).
+neighbor(e,3,2,3,3).
+neighbor(e,3,3,3,4).
+neighbor(e,4,1,4,2).
+neighbor(e,4,2,4,3).
+neighbor(e,4,3,4,4).
+neighbor(s,2,1,1,1).
+neighbor(s,2,2,1,2).
+neighbor(s,2,3,1,3).
+neighbor(s,2,4,1,4).
+neighbor(s,3,1,2,1).
+neighbor(s,3,2,2,2).
+neighbor(s,3,3,2,3).
+neighbor(s,3,4,2,4).
+neighbor(s,4,1,3,1).
+neighbor(s,4,2,3,2).
+neighbor(s,4,3,3,3).
+neighbor(s,4,4,3,4).
+neighbor(n,1,1,2,1).
+neighbor(n,1,2,2,2).
+neighbor(n,1,3,2,3).
+neighbor(n,1,4,2,4).
+neighbor(n,2,1,3,1).
+neighbor(n,2,2,3,2).
+neighbor(n,2,3,3,3).
+neighbor(n,2,4,3,4).
+neighbor(n,3,1,4,1).
+neighbor(n,3,2,4,2).
+neighbor(n,3,3,4,3).
+neighbor(n,3,4,4,4).
+neighbor(n,4,4,1,4).
+neighbor(n,4,3,1,3).
+neighbor(n,4,2,1,2).
+neighbor(n,4,1,1,1).
+neighbor(s,1,4,4,4).
+neighbor(s,1,3,4,3).
+neighbor(s,1,2,4,2).
+neighbor(s,1,1,4,1).
+neighbor(e,4,4,4,1).
+neighbor(e,3,4,3,1).
+neighbor(e,2,4,2,1).
+neighbor(e,1,4,1,1).
+neighbor(w,4,1,4,4).
+neighbor(w,3,1,3,4).
+neighbor(w,2,1,2,4).
+neighbor(w,1,1,1,4).
+nopos(n5,1,7).
+nopos(n7,1,7).
+nopos(n7,1,6).
+nopos(n7,1,5).
+nopos(n7,1,4).
+nopos(n7,1,3).
+nopos(n7,1,2).
+nopos(n7,1,1).
+nopos(n8,1,6).
+nopos(n8,1,5).
+nopos(n8,1,4).
+nopos(n8,1,3).
+nopos(n8,1,2).
+nopos(n8,1,1).
+nopos(n3,1,7).
+nopos(n3,1,6).
+nopos(n4,1,7).
+nopos(n5,1,7).
+nopos(n3,1,6).
+nopos(n4,1,6).
+nopos(n7,1,6).
+nopos(n8,1,6).
+nopos(n9,1,6).
+nopos(n3,1,7).
+nopos(n4,1,7).
+nopos(n5,1,7).
+nopos(n7,1,7).
+ :- not nopos(n5,1,7).
+ :- not nopos(n4,1,7).
+ :- not nopos(n3,1,7).
+ :- not pos(n9,1,5).
+ :- not pos(n7,1,5).
+ :- not pos(n4,1,5).
+ :- not pos(n3,1,5).
+ :- not pos(n9,1,4).
+ :- not pos(n7,1,4).
+ :- not pos(n4,1,4).
+ :- not pos(n3,1,4).
+ :- not pos(n9,1,3).
+ :- not pos(n7,1,3).
+ :- not pos(n4,1,3).
+ :- not pos(n3,1,3).
+ :- not pos(n9,1,2).
+ :- not pos(n7,1,2).
+ :- not pos(n4,1,2).
+ :- not pos(n3,1,2).
+ :- not pos(n7,1,1).
+ :- not pos(n4,1,1).
+ :- not _nopos(n6,1,7).
+ :- not _pos(n9,1,6).
+ :- not _pos(n8,1,6).
+ :- not _pos(n7,1,6).
+ :- not _pos(n4,1,6).
+ :- not _pos(n3,1,6).
+ :- not _pos(n8,1,5).
+ :- not _pos(n8,1,4).
+ :- not _pos(n8,1,3).
+ :- not _pos(n8,1,2).
+ :- not _pos(n9,1,1).
+ :- not _pos(n8,1,1).
+ :- not _pos(n3,1,1).
+ :- not _reach(1,4,0).
