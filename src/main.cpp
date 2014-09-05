@@ -37,6 +37,7 @@ extern int *ruleState;
 extern int yyparse();
 FILE* result_out;
 
+
 void io(const char* iPathName, const char* oPathName, const char* sPathName) {
     yyin = fopen(iPathName, "r");
     unit = fopen(oPathName, "w+");
@@ -58,8 +59,8 @@ int main(int argc, char** argv) {
     
     for(int i = 1; i < argc; i++, outputNum++) {
         printf("\n%s\n", argv[i]);
-        yyin = fopen(argv[i], "r");
-        if (!yyin) {
+        FILE* yyin_ = fopen(argv[i], "r");
+        if (!yyin_) {
             printf("IO Error: cannot open the input file.\n" );
             assert(0);
         }
@@ -86,7 +87,7 @@ int main(int argc, char** argv) {
         printf("\nTime cost : %lf seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
 
         fclose(result_out);
-        fclose(yyin);
+        fclose(yyin_);
     }
     
     return 0;
