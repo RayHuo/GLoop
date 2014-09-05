@@ -1,6 +1,1950 @@
-a :- not d.
-a :- d,c.
-d :- not d_.
-d_ :- not d.
-c :- not c_.
-c_ :- not c.
+value(red,i1,11) :- value(purple,i1,11).
+value(red,1,0) :- pc(red,1,1),subCycle(red,1,0,11).
+value(red,1,1) :- pc(red,1,1),subCycle(red,1,1,11).
+value(red,1,2) :- pc(red,1,1),subCycle(red,1,2,11).
+value(red,1,3) :- pc(red,1,1),subCycle(red,1,3,11).
+value(red,1,4) :- pc(red,1,1),subCycle(red,1,4,11).
+value(red,1,5) :- pc(red,1,1),subCycle(red,1,5,11).
+value(red,1,6) :- pc(red,1,1),subCycle(red,1,6,11).
+value(red,1,7) :- pc(red,1,1),subCycle(red,1,7,11).
+value(red,1,8) :- pc(red,1,1),subCycle(red,1,8,11).
+value(red,1,9) :- pc(red,1,1),subCycle(red,1,9,11).
+value(red,1,10) :- pc(red,1,1),subCycle(red,1,10,11).
+value(red,1,11) :- pc(red,1,1),subCycle(red,1,11,11).
+value(red,1,12) :- pc(red,1,1),subCycle(red,1,12,11).
+value(red,1,13) :- pc(red,1,1),subCycle(red,1,13,11).
+value(red,1,14) :- pc(red,1,1),subCycle(red,1,14,11).
+value(red,1,15) :- pc(red,1,1),subCycle(red,1,15,11).
+value(red,1,16) :- pc(red,1,1),subCycle(red,1,16,11).
+value(red,1,17) :- pc(red,1,1),subCycle(red,1,17,11).
+value(red,1,18) :- pc(red,1,1),subCycle(red,1,18,11).
+value(red,1,19) :- pc(red,1,1),subCycle(red,1,19,11).
+value(red,1,20) :- pc(red,1,1),subCycle(red,1,20,11).
+value(red,1,21) :- pc(red,1,1),subCycle(red,1,21,11).
+value(red,1,22) :- pc(red,1,1),subCycle(red,1,22,11).
+value(red,1,23) :- pc(red,1,1),subCycle(red,1,23,11).
+_value(red,i1,11) :- _value(purple,i1,11).
+_value(red,1,0) :- not value(red,1,0),pc(red,1,1).
+_value(red,1,1) :- not value(red,1,1),pc(red,1,1).
+_value(red,1,2) :- not value(red,1,2),pc(red,1,1).
+_value(red,1,3) :- not value(red,1,3),pc(red,1,1).
+_value(red,1,4) :- not value(red,1,4),pc(red,1,1).
+_value(red,1,5) :- not value(red,1,5),pc(red,1,1).
+_value(red,1,6) :- not value(red,1,6),pc(red,1,1).
+_value(red,1,7) :- not value(red,1,7),pc(red,1,1).
+_value(red,1,8) :- not value(red,1,8),pc(red,1,1).
+_value(red,1,9) :- not value(red,1,9),pc(red,1,1).
+_value(red,1,10) :- not value(red,1,10),pc(red,1,1).
+_value(red,1,11) :- not value(red,1,11),pc(red,1,1).
+_value(red,1,12) :- not value(red,1,12),pc(red,1,1).
+_value(red,1,13) :- not value(red,1,13),pc(red,1,1).
+_value(red,1,14) :- not value(red,1,14),pc(red,1,1).
+_value(red,1,15) :- not value(red,1,15),pc(red,1,1).
+_value(red,1,16) :- not value(red,1,16),pc(red,1,1).
+_value(red,1,17) :- not value(red,1,17),pc(red,1,1).
+_value(red,1,18) :- not value(red,1,18),pc(red,1,1).
+_value(red,1,19) :- not value(red,1,19),pc(red,1,1).
+_value(red,1,20) :- not value(red,1,20),pc(red,1,1).
+_value(red,1,21) :- not value(red,1,21),pc(red,1,1).
+_value(red,1,22) :- not value(red,1,22),pc(red,1,1).
+_value(red,1,23) :- not value(red,1,23),pc(red,1,1).
+subCycle(red,1,0,0) :- pc(red,1,1),value(red,i1,0),value(red,i2,0).
+subCycle(red,1,1,0) :- pc(red,1,1),value(red,i1,1),value(red,i2,0).
+subCycle(red,1,2,0) :- pc(red,1,1),value(red,i1,2),value(red,i2,0).
+subCycle(red,1,3,0) :- pc(red,1,1),value(red,i1,3),value(red,i2,0).
+subCycle(red,1,4,0) :- pc(red,1,1),value(red,i1,4),value(red,i2,0).
+subCycle(red,1,5,0) :- pc(red,1,1),value(red,i1,5),value(red,i2,0).
+subCycle(red,1,6,0) :- pc(red,1,1),value(red,i1,6),value(red,i2,0).
+subCycle(red,1,7,0) :- pc(red,1,1),value(red,i1,7),value(red,i2,0).
+subCycle(red,1,8,0) :- pc(red,1,1),value(red,i1,8),value(red,i2,0).
+subCycle(red,1,9,0) :- pc(red,1,1),value(red,i1,9),value(red,i2,0).
+subCycle(red,1,10,0) :- pc(red,1,1),value(red,i1,10),value(red,i2,0).
+subCycle(red,1,11,0) :- pc(red,1,1),value(red,i1,11),value(red,i2,0).
+subCycle(red,1,12,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,12).
+subCycle(red,1,13,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,13).
+subCycle(red,1,14,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,14).
+subCycle(red,1,15,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,15).
+subCycle(red,1,16,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,16).
+subCycle(red,1,17,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,17).
+subCycle(red,1,18,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,18).
+subCycle(red,1,19,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,19).
+subCycle(red,1,20,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,20).
+subCycle(red,1,21,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,21).
+subCycle(red,1,22,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,22).
+subCycle(red,1,23,0) :- pc(red,1,1),value(red,i2,0),value(red,i1,23).
+subCycle(red,1,0,1) :- pc(red,1,1),subCycle(red,1,0,0).
+subCycle(red,1,0,2) :- pc(red,1,1),subCycle(red,1,0,1).
+subCycle(red,1,1,2) :- pc(red,1,1),subCycle(red,1,1,1).
+subCycle(red,1,0,3) :- pc(red,1,1),subCycle(red,1,0,2).
+subCycle(red,1,1,3) :- pc(red,1,1),subCycle(red,1,1,2).
+subCycle(red,1,2,3) :- pc(red,1,1),subCycle(red,1,2,2).
+subCycle(red,1,0,4) :- pc(red,1,1),subCycle(red,1,0,3).
+subCycle(red,1,1,4) :- pc(red,1,1),subCycle(red,1,1,3).
+subCycle(red,1,2,4) :- pc(red,1,1),subCycle(red,1,2,3).
+subCycle(red,1,3,4) :- pc(red,1,1),subCycle(red,1,3,3).
+subCycle(red,1,0,5) :- pc(red,1,1),subCycle(red,1,0,4).
+subCycle(red,1,1,5) :- pc(red,1,1),subCycle(red,1,1,4).
+subCycle(red,1,2,5) :- pc(red,1,1),subCycle(red,1,2,4).
+subCycle(red,1,3,5) :- pc(red,1,1),subCycle(red,1,3,4).
+subCycle(red,1,4,5) :- pc(red,1,1),subCycle(red,1,4,4).
+subCycle(red,1,0,6) :- pc(red,1,1),subCycle(red,1,0,5).
+subCycle(red,1,1,6) :- pc(red,1,1),subCycle(red,1,1,5).
+subCycle(red,1,2,6) :- pc(red,1,1),subCycle(red,1,2,5).
+subCycle(red,1,3,6) :- pc(red,1,1),subCycle(red,1,3,5).
+subCycle(red,1,4,6) :- pc(red,1,1),subCycle(red,1,4,5).
+subCycle(red,1,5,6) :- pc(red,1,1),subCycle(red,1,5,5).
+subCycle(red,1,0,7) :- pc(red,1,1),subCycle(red,1,0,6).
+subCycle(red,1,1,7) :- pc(red,1,1),subCycle(red,1,1,6).
+subCycle(red,1,2,7) :- pc(red,1,1),subCycle(red,1,2,6).
+subCycle(red,1,3,7) :- pc(red,1,1),subCycle(red,1,3,6).
+subCycle(red,1,4,7) :- pc(red,1,1),subCycle(red,1,4,6).
+subCycle(red,1,5,7) :- pc(red,1,1),subCycle(red,1,5,6).
+subCycle(red,1,6,7) :- pc(red,1,1),subCycle(red,1,6,6).
+subCycle(red,1,0,8) :- pc(red,1,1),subCycle(red,1,0,7).
+subCycle(red,1,1,8) :- pc(red,1,1),subCycle(red,1,1,7).
+subCycle(red,1,2,8) :- pc(red,1,1),subCycle(red,1,2,7).
+subCycle(red,1,3,8) :- pc(red,1,1),subCycle(red,1,3,7).
+subCycle(red,1,4,8) :- pc(red,1,1),subCycle(red,1,4,7).
+subCycle(red,1,5,8) :- pc(red,1,1),subCycle(red,1,5,7).
+subCycle(red,1,6,8) :- pc(red,1,1),subCycle(red,1,6,7).
+subCycle(red,1,7,8) :- pc(red,1,1),subCycle(red,1,7,7).
+subCycle(red,1,0,9) :- pc(red,1,1),subCycle(red,1,0,8).
+subCycle(red,1,1,9) :- pc(red,1,1),subCycle(red,1,1,8).
+subCycle(red,1,2,9) :- pc(red,1,1),subCycle(red,1,2,8).
+subCycle(red,1,3,9) :- pc(red,1,1),subCycle(red,1,3,8).
+subCycle(red,1,4,9) :- pc(red,1,1),subCycle(red,1,4,8).
+subCycle(red,1,5,9) :- pc(red,1,1),subCycle(red,1,5,8).
+subCycle(red,1,6,9) :- pc(red,1,1),subCycle(red,1,6,8).
+subCycle(red,1,7,9) :- pc(red,1,1),subCycle(red,1,7,8).
+subCycle(red,1,8,9) :- pc(red,1,1),subCycle(red,1,8,8).
+subCycle(red,1,0,10) :- pc(red,1,1),subCycle(red,1,0,9).
+subCycle(red,1,1,10) :- pc(red,1,1),subCycle(red,1,1,9).
+subCycle(red,1,2,10) :- pc(red,1,1),subCycle(red,1,2,9).
+subCycle(red,1,3,10) :- pc(red,1,1),subCycle(red,1,3,9).
+subCycle(red,1,4,10) :- pc(red,1,1),subCycle(red,1,4,9).
+subCycle(red,1,5,10) :- pc(red,1,1),subCycle(red,1,5,9).
+subCycle(red,1,6,10) :- pc(red,1,1),subCycle(red,1,6,9).
+subCycle(red,1,7,10) :- pc(red,1,1),subCycle(red,1,7,9).
+subCycle(red,1,8,10) :- pc(red,1,1),subCycle(red,1,8,9).
+subCycle(red,1,9,10) :- pc(red,1,1),subCycle(red,1,9,9).
+subCycle(red,1,0,11) :- pc(red,1,1),subCycle(red,1,0,10).
+subCycle(red,1,1,11) :- pc(red,1,1),subCycle(red,1,1,10).
+subCycle(red,1,2,11) :- pc(red,1,1),subCycle(red,1,2,10).
+subCycle(red,1,3,11) :- pc(red,1,1),subCycle(red,1,3,10).
+subCycle(red,1,4,11) :- pc(red,1,1),subCycle(red,1,4,10).
+subCycle(red,1,5,11) :- pc(red,1,1),subCycle(red,1,5,10).
+subCycle(red,1,6,11) :- pc(red,1,1),subCycle(red,1,6,10).
+subCycle(red,1,7,11) :- pc(red,1,1),subCycle(red,1,7,10).
+subCycle(red,1,8,11) :- pc(red,1,1),subCycle(red,1,8,10).
+subCycle(red,1,9,11) :- pc(red,1,1),subCycle(red,1,9,10).
+subCycle(red,1,10,11) :- pc(red,1,1),subCycle(red,1,10,10).
+subCycle(red,1,1,1) :- pc(red,1,1),value(red,i1,0),value(red,i2,1),_subCycle(red,1,1,0).
+subCycle(red,1,2,2) :- pc(red,1,1),value(red,i1,0),value(red,i2,2),_subCycle(red,1,2,1).
+subCycle(red,1,3,3) :- pc(red,1,1),value(red,i1,0),value(red,i2,3),_subCycle(red,1,3,2).
+subCycle(red,1,4,4) :- pc(red,1,1),value(red,i1,0),value(red,i2,4),_subCycle(red,1,4,3).
+subCycle(red,1,5,5) :- pc(red,1,1),value(red,i1,0),value(red,i2,5),_subCycle(red,1,5,4).
+subCycle(red,1,6,6) :- pc(red,1,1),value(red,i1,0),value(red,i2,6),_subCycle(red,1,6,5).
+subCycle(red,1,7,7) :- pc(red,1,1),value(red,i1,0),value(red,i2,7),_subCycle(red,1,7,6).
+subCycle(red,1,8,8) :- pc(red,1,1),value(red,i1,0),value(red,i2,8),_subCycle(red,1,8,7).
+subCycle(red,1,9,9) :- pc(red,1,1),value(red,i1,0),value(red,i2,9),_subCycle(red,1,9,8).
+subCycle(red,1,10,10) :- pc(red,1,1),value(red,i1,0),value(red,i2,10),_subCycle(red,1,10,9).
+subCycle(red,1,11,11) :- pc(red,1,1),value(red,i1,0),value(red,i2,11),_subCycle(red,1,11,10).
+subCycle(red,1,1,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,0),subCycle(red,1,1,0).
+subCycle(red,1,2,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,0),subCycle(red,1,2,1).
+subCycle(red,1,3,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,0),subCycle(red,1,3,2).
+subCycle(red,1,4,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,0),subCycle(red,1,4,3).
+subCycle(red,1,5,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,0),subCycle(red,1,5,4).
+subCycle(red,1,6,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,0),subCycle(red,1,6,5).
+subCycle(red,1,7,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,0),subCycle(red,1,7,6).
+subCycle(red,1,8,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,0),subCycle(red,1,8,7).
+subCycle(red,1,9,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,0),subCycle(red,1,9,8).
+subCycle(red,1,10,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,0),subCycle(red,1,10,9).
+subCycle(red,1,11,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,0),subCycle(red,1,11,10).
+subCycle(red,1,1,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,1,0).
+subCycle(red,1,2,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,2,1).
+subCycle(red,1,3,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,3,2).
+subCycle(red,1,4,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,4,3).
+subCycle(red,1,5,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,5,4).
+subCycle(red,1,6,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,6,5).
+subCycle(red,1,7,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,7,6).
+subCycle(red,1,8,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,8,7).
+subCycle(red,1,9,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,9,8).
+subCycle(red,1,10,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,10,9).
+subCycle(red,1,11,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,11,10).
+subCycle(red,1,2,1) :- pc(red,1,1),value(red,i1,1),value(red,i2,1),subCycle(red,1,2,0),subCycleAdditionCarry(red,1,1,1).
+subCycle(red,1,3,1) :- pc(red,1,1),value(red,i1,2),value(red,i2,1),subCycle(red,1,3,0),subCycleAdditionCarry(red,1,2,1).
+subCycle(red,1,4,1) :- pc(red,1,1),value(red,i1,3),value(red,i2,1),subCycle(red,1,4,0),subCycleAdditionCarry(red,1,3,1).
+subCycle(red,1,5,1) :- pc(red,1,1),value(red,i1,4),value(red,i2,1),subCycle(red,1,5,0),subCycleAdditionCarry(red,1,4,1).
+subCycle(red,1,6,1) :- pc(red,1,1),value(red,i1,5),value(red,i2,1),subCycle(red,1,6,0),subCycleAdditionCarry(red,1,5,1).
+subCycle(red,1,7,1) :- pc(red,1,1),value(red,i1,6),value(red,i2,1),subCycle(red,1,7,0),subCycleAdditionCarry(red,1,6,1).
+subCycle(red,1,8,1) :- pc(red,1,1),value(red,i1,7),value(red,i2,1),subCycle(red,1,8,0),subCycleAdditionCarry(red,1,7,1).
+subCycle(red,1,9,1) :- pc(red,1,1),value(red,i1,8),value(red,i2,1),subCycle(red,1,9,0),subCycleAdditionCarry(red,1,8,1).
+subCycle(red,1,10,1) :- pc(red,1,1),value(red,i1,9),value(red,i2,1),subCycle(red,1,10,0),subCycleAdditionCarry(red,1,9,1).
+subCycle(red,1,11,1) :- pc(red,1,1),value(red,i1,10),value(red,i2,1),subCycle(red,1,11,0),subCycleAdditionCarry(red,1,10,1).
+subCycle(red,1,12,1) :- pc(red,1,1),value(red,i1,11),value(red,i2,1),subCycle(red,1,12,0),subCycleAdditionCarry(red,1,11,1).
+subCycle(red,1,3,2) :- pc(red,1,1),value(red,i1,1),value(red,i2,2),subCycle(red,1,3,1),subCycleAdditionCarry(red,1,1,2).
+subCycle(red,1,4,2) :- pc(red,1,1),value(red,i1,2),value(red,i2,2),subCycle(red,1,4,1),subCycleAdditionCarry(red,1,2,2).
+subCycle(red,1,5,2) :- pc(red,1,1),value(red,i1,3),value(red,i2,2),subCycle(red,1,5,1),subCycleAdditionCarry(red,1,3,2).
+subCycle(red,1,6,2) :- pc(red,1,1),value(red,i1,4),value(red,i2,2),subCycle(red,1,6,1),subCycleAdditionCarry(red,1,4,2).
+subCycle(red,1,7,2) :- pc(red,1,1),value(red,i1,5),value(red,i2,2),subCycle(red,1,7,1),subCycleAdditionCarry(red,1,5,2).
+subCycle(red,1,8,2) :- pc(red,1,1),value(red,i1,6),value(red,i2,2),subCycle(red,1,8,1),subCycleAdditionCarry(red,1,6,2).
+subCycle(red,1,9,2) :- pc(red,1,1),value(red,i1,7),value(red,i2,2),subCycle(red,1,9,1),subCycleAdditionCarry(red,1,7,2).
+subCycle(red,1,10,2) :- pc(red,1,1),value(red,i1,8),value(red,i2,2),subCycle(red,1,10,1),subCycleAdditionCarry(red,1,8,2).
+subCycle(red,1,11,2) :- pc(red,1,1),value(red,i1,9),value(red,i2,2),subCycle(red,1,11,1),subCycleAdditionCarry(red,1,9,2).
+subCycle(red,1,12,2) :- pc(red,1,1),value(red,i1,10),value(red,i2,2),subCycle(red,1,12,1),subCycleAdditionCarry(red,1,10,2).
+subCycle(red,1,13,2) :- pc(red,1,1),value(red,i1,11),value(red,i2,2),subCycle(red,1,13,1),subCycleAdditionCarry(red,1,11,2).
+subCycle(red,1,4,3) :- pc(red,1,1),value(red,i1,1),value(red,i2,3),subCycle(red,1,4,2),subCycleAdditionCarry(red,1,1,3).
+subCycle(red,1,5,3) :- pc(red,1,1),value(red,i1,2),value(red,i2,3),subCycle(red,1,5,2),subCycleAdditionCarry(red,1,2,3).
+subCycle(red,1,6,3) :- pc(red,1,1),value(red,i1,3),value(red,i2,3),subCycle(red,1,6,2),subCycleAdditionCarry(red,1,3,3).
+subCycle(red,1,7,3) :- pc(red,1,1),value(red,i1,4),value(red,i2,3),subCycle(red,1,7,2),subCycleAdditionCarry(red,1,4,3).
+subCycle(red,1,8,3) :- pc(red,1,1),value(red,i1,5),value(red,i2,3),subCycle(red,1,8,2),subCycleAdditionCarry(red,1,5,3).
+subCycle(red,1,9,3) :- pc(red,1,1),value(red,i1,6),value(red,i2,3),subCycle(red,1,9,2),subCycleAdditionCarry(red,1,6,3).
+subCycle(red,1,10,3) :- pc(red,1,1),value(red,i1,7),value(red,i2,3),subCycle(red,1,10,2),subCycleAdditionCarry(red,1,7,3).
+subCycle(red,1,11,3) :- pc(red,1,1),value(red,i1,8),value(red,i2,3),subCycle(red,1,11,2),subCycleAdditionCarry(red,1,8,3).
+subCycle(red,1,12,3) :- pc(red,1,1),value(red,i1,9),value(red,i2,3),subCycle(red,1,12,2),subCycleAdditionCarry(red,1,9,3).
+subCycle(red,1,13,3) :- pc(red,1,1),value(red,i1,10),value(red,i2,3),subCycle(red,1,13,2),subCycleAdditionCarry(red,1,10,3).
+subCycle(red,1,14,3) :- pc(red,1,1),value(red,i1,11),value(red,i2,3),subCycle(red,1,14,2),subCycleAdditionCarry(red,1,11,3).
+subCycle(red,1,5,4) :- pc(red,1,1),value(red,i1,1),value(red,i2,4),subCycle(red,1,5,3),subCycleAdditionCarry(red,1,1,4).
+subCycle(red,1,6,4) :- pc(red,1,1),value(red,i1,2),value(red,i2,4),subCycle(red,1,6,3),subCycleAdditionCarry(red,1,2,4).
+subCycle(red,1,7,4) :- pc(red,1,1),value(red,i1,3),value(red,i2,4),subCycle(red,1,7,3),subCycleAdditionCarry(red,1,3,4).
+subCycle(red,1,8,4) :- pc(red,1,1),value(red,i1,4),value(red,i2,4),subCycle(red,1,8,3),subCycleAdditionCarry(red,1,4,4).
+subCycle(red,1,9,4) :- pc(red,1,1),value(red,i1,5),value(red,i2,4),subCycle(red,1,9,3),subCycleAdditionCarry(red,1,5,4).
+subCycle(red,1,10,4) :- pc(red,1,1),value(red,i1,6),value(red,i2,4),subCycle(red,1,10,3),subCycleAdditionCarry(red,1,6,4).
+subCycle(red,1,11,4) :- pc(red,1,1),value(red,i1,7),value(red,i2,4),subCycle(red,1,11,3),subCycleAdditionCarry(red,1,7,4).
+subCycle(red,1,12,4) :- pc(red,1,1),value(red,i1,8),value(red,i2,4),subCycle(red,1,12,3),subCycleAdditionCarry(red,1,8,4).
+subCycle(red,1,13,4) :- pc(red,1,1),value(red,i1,9),value(red,i2,4),subCycle(red,1,13,3),subCycleAdditionCarry(red,1,9,4).
+subCycle(red,1,14,4) :- pc(red,1,1),value(red,i1,10),value(red,i2,4),subCycle(red,1,14,3),subCycleAdditionCarry(red,1,10,4).
+subCycle(red,1,15,4) :- pc(red,1,1),value(red,i1,11),value(red,i2,4),subCycle(red,1,15,3),subCycleAdditionCarry(red,1,11,4).
+subCycle(red,1,6,5) :- pc(red,1,1),value(red,i1,1),value(red,i2,5),subCycle(red,1,6,4),subCycleAdditionCarry(red,1,1,5).
+subCycle(red,1,7,5) :- pc(red,1,1),value(red,i1,2),value(red,i2,5),subCycle(red,1,7,4),subCycleAdditionCarry(red,1,2,5).
+subCycle(red,1,8,5) :- pc(red,1,1),value(red,i1,3),value(red,i2,5),subCycle(red,1,8,4),subCycleAdditionCarry(red,1,3,5).
+subCycle(red,1,9,5) :- pc(red,1,1),value(red,i1,4),value(red,i2,5),subCycle(red,1,9,4),subCycleAdditionCarry(red,1,4,5).
+subCycle(red,1,10,5) :- pc(red,1,1),value(red,i1,5),value(red,i2,5),subCycle(red,1,10,4),subCycleAdditionCarry(red,1,5,5).
+subCycle(red,1,11,5) :- pc(red,1,1),value(red,i1,6),value(red,i2,5),subCycle(red,1,11,4),subCycleAdditionCarry(red,1,6,5).
+subCycle(red,1,12,5) :- pc(red,1,1),value(red,i1,7),value(red,i2,5),subCycle(red,1,12,4),subCycleAdditionCarry(red,1,7,5).
+subCycle(red,1,13,5) :- pc(red,1,1),value(red,i1,8),value(red,i2,5),subCycle(red,1,13,4),subCycleAdditionCarry(red,1,8,5).
+subCycle(red,1,14,5) :- pc(red,1,1),value(red,i1,9),value(red,i2,5),subCycle(red,1,14,4),subCycleAdditionCarry(red,1,9,5).
+subCycle(red,1,15,5) :- pc(red,1,1),value(red,i1,10),value(red,i2,5),subCycle(red,1,15,4),subCycleAdditionCarry(red,1,10,5).
+subCycle(red,1,16,5) :- pc(red,1,1),value(red,i1,11),value(red,i2,5),subCycle(red,1,16,4),subCycleAdditionCarry(red,1,11,5).
+subCycle(red,1,7,6) :- pc(red,1,1),value(red,i1,1),value(red,i2,6),subCycle(red,1,7,5),subCycleAdditionCarry(red,1,1,6).
+subCycle(red,1,8,6) :- pc(red,1,1),value(red,i1,2),value(red,i2,6),subCycle(red,1,8,5),subCycleAdditionCarry(red,1,2,6).
+subCycle(red,1,9,6) :- pc(red,1,1),value(red,i1,3),value(red,i2,6),subCycle(red,1,9,5),subCycleAdditionCarry(red,1,3,6).
+subCycle(red,1,10,6) :- pc(red,1,1),value(red,i1,4),value(red,i2,6),subCycle(red,1,10,5),subCycleAdditionCarry(red,1,4,6).
+subCycle(red,1,11,6) :- pc(red,1,1),value(red,i1,5),value(red,i2,6),subCycle(red,1,11,5),subCycleAdditionCarry(red,1,5,6).
+subCycle(red,1,12,6) :- pc(red,1,1),value(red,i1,6),value(red,i2,6),subCycle(red,1,12,5),subCycleAdditionCarry(red,1,6,6).
+subCycle(red,1,13,6) :- pc(red,1,1),value(red,i1,7),value(red,i2,6),subCycle(red,1,13,5),subCycleAdditionCarry(red,1,7,6).
+subCycle(red,1,14,6) :- pc(red,1,1),value(red,i1,8),value(red,i2,6),subCycle(red,1,14,5),subCycleAdditionCarry(red,1,8,6).
+subCycle(red,1,15,6) :- pc(red,1,1),value(red,i1,9),value(red,i2,6),subCycle(red,1,15,5),subCycleAdditionCarry(red,1,9,6).
+subCycle(red,1,16,6) :- pc(red,1,1),value(red,i1,10),value(red,i2,6),subCycle(red,1,16,5),subCycleAdditionCarry(red,1,10,6).
+subCycle(red,1,17,6) :- pc(red,1,1),value(red,i1,11),value(red,i2,6),subCycle(red,1,17,5),subCycleAdditionCarry(red,1,11,6).
+subCycle(red,1,8,7) :- pc(red,1,1),value(red,i1,1),value(red,i2,7),subCycle(red,1,8,6),subCycleAdditionCarry(red,1,1,7).
+subCycle(red,1,9,7) :- pc(red,1,1),value(red,i1,2),value(red,i2,7),subCycle(red,1,9,6),subCycleAdditionCarry(red,1,2,7).
+subCycle(red,1,10,7) :- pc(red,1,1),value(red,i1,3),value(red,i2,7),subCycle(red,1,10,6),subCycleAdditionCarry(red,1,3,7).
+subCycle(red,1,11,7) :- pc(red,1,1),value(red,i1,4),value(red,i2,7),subCycle(red,1,11,6),subCycleAdditionCarry(red,1,4,7).
+subCycle(red,1,12,7) :- pc(red,1,1),value(red,i1,5),value(red,i2,7),subCycle(red,1,12,6),subCycleAdditionCarry(red,1,5,7).
+subCycle(red,1,13,7) :- pc(red,1,1),value(red,i1,6),value(red,i2,7),subCycle(red,1,13,6),subCycleAdditionCarry(red,1,6,7).
+subCycle(red,1,14,7) :- pc(red,1,1),value(red,i1,7),value(red,i2,7),subCycle(red,1,14,6),subCycleAdditionCarry(red,1,7,7).
+subCycle(red,1,15,7) :- pc(red,1,1),value(red,i1,8),value(red,i2,7),subCycle(red,1,15,6),subCycleAdditionCarry(red,1,8,7).
+subCycle(red,1,16,7) :- pc(red,1,1),value(red,i1,9),value(red,i2,7),subCycle(red,1,16,6),subCycleAdditionCarry(red,1,9,7).
+subCycle(red,1,17,7) :- pc(red,1,1),value(red,i1,10),value(red,i2,7),subCycle(red,1,17,6),subCycleAdditionCarry(red,1,10,7).
+subCycle(red,1,18,7) :- pc(red,1,1),value(red,i1,11),value(red,i2,7),subCycle(red,1,18,6),subCycleAdditionCarry(red,1,11,7).
+subCycle(red,1,9,8) :- pc(red,1,1),value(red,i1,1),value(red,i2,8),subCycle(red,1,9,7),subCycleAdditionCarry(red,1,1,8).
+subCycle(red,1,10,8) :- pc(red,1,1),value(red,i1,2),value(red,i2,8),subCycle(red,1,10,7),subCycleAdditionCarry(red,1,2,8).
+subCycle(red,1,11,8) :- pc(red,1,1),value(red,i1,3),value(red,i2,8),subCycle(red,1,11,7),subCycleAdditionCarry(red,1,3,8).
+subCycle(red,1,12,8) :- pc(red,1,1),value(red,i1,4),value(red,i2,8),subCycle(red,1,12,7),subCycleAdditionCarry(red,1,4,8).
+subCycle(red,1,13,8) :- pc(red,1,1),value(red,i1,5),value(red,i2,8),subCycle(red,1,13,7),subCycleAdditionCarry(red,1,5,8).
+subCycle(red,1,14,8) :- pc(red,1,1),value(red,i1,6),value(red,i2,8),subCycle(red,1,14,7),subCycleAdditionCarry(red,1,6,8).
+subCycle(red,1,15,8) :- pc(red,1,1),value(red,i1,7),value(red,i2,8),subCycle(red,1,15,7),subCycleAdditionCarry(red,1,7,8).
+subCycle(red,1,16,8) :- pc(red,1,1),value(red,i1,8),value(red,i2,8),subCycle(red,1,16,7),subCycleAdditionCarry(red,1,8,8).
+subCycle(red,1,17,8) :- pc(red,1,1),value(red,i1,9),value(red,i2,8),subCycle(red,1,17,7),subCycleAdditionCarry(red,1,9,8).
+subCycle(red,1,18,8) :- pc(red,1,1),value(red,i1,10),value(red,i2,8),subCycle(red,1,18,7),subCycleAdditionCarry(red,1,10,8).
+subCycle(red,1,19,8) :- pc(red,1,1),value(red,i1,11),value(red,i2,8),subCycle(red,1,19,7),subCycleAdditionCarry(red,1,11,8).
+subCycle(red,1,10,9) :- pc(red,1,1),value(red,i1,1),value(red,i2,9),subCycle(red,1,10,8),subCycleAdditionCarry(red,1,1,9).
+subCycle(red,1,11,9) :- pc(red,1,1),value(red,i1,2),value(red,i2,9),subCycle(red,1,11,8),subCycleAdditionCarry(red,1,2,9).
+subCycle(red,1,12,9) :- pc(red,1,1),value(red,i1,3),value(red,i2,9),subCycle(red,1,12,8),subCycleAdditionCarry(red,1,3,9).
+subCycle(red,1,13,9) :- pc(red,1,1),value(red,i1,4),value(red,i2,9),subCycle(red,1,13,8),subCycleAdditionCarry(red,1,4,9).
+subCycle(red,1,14,9) :- pc(red,1,1),value(red,i1,5),value(red,i2,9),subCycle(red,1,14,8),subCycleAdditionCarry(red,1,5,9).
+subCycle(red,1,15,9) :- pc(red,1,1),value(red,i1,6),value(red,i2,9),subCycle(red,1,15,8),subCycleAdditionCarry(red,1,6,9).
+subCycle(red,1,16,9) :- pc(red,1,1),value(red,i1,7),value(red,i2,9),subCycle(red,1,16,8),subCycleAdditionCarry(red,1,7,9).
+subCycle(red,1,17,9) :- pc(red,1,1),value(red,i1,8),value(red,i2,9),subCycle(red,1,17,8),subCycleAdditionCarry(red,1,8,9).
+subCycle(red,1,18,9) :- pc(red,1,1),value(red,i1,9),value(red,i2,9),subCycle(red,1,18,8),subCycleAdditionCarry(red,1,9,9).
+subCycle(red,1,19,9) :- pc(red,1,1),value(red,i1,10),value(red,i2,9),subCycle(red,1,19,8),subCycleAdditionCarry(red,1,10,9).
+subCycle(red,1,20,9) :- pc(red,1,1),value(red,i1,11),value(red,i2,9),subCycle(red,1,20,8),subCycleAdditionCarry(red,1,11,9).
+subCycle(red,1,11,10) :- pc(red,1,1),value(red,i1,1),value(red,i2,10),subCycle(red,1,11,9),subCycleAdditionCarry(red,1,1,10).
+subCycle(red,1,12,10) :- pc(red,1,1),value(red,i1,2),value(red,i2,10),subCycle(red,1,12,9),subCycleAdditionCarry(red,1,2,10).
+subCycle(red,1,13,10) :- pc(red,1,1),value(red,i1,3),value(red,i2,10),subCycle(red,1,13,9),subCycleAdditionCarry(red,1,3,10).
+subCycle(red,1,14,10) :- pc(red,1,1),value(red,i1,4),value(red,i2,10),subCycle(red,1,14,9),subCycleAdditionCarry(red,1,4,10).
+subCycle(red,1,15,10) :- pc(red,1,1),value(red,i1,5),value(red,i2,10),subCycle(red,1,15,9),subCycleAdditionCarry(red,1,5,10).
+subCycle(red,1,16,10) :- pc(red,1,1),value(red,i1,6),value(red,i2,10),subCycle(red,1,16,9),subCycleAdditionCarry(red,1,6,10).
+subCycle(red,1,17,10) :- pc(red,1,1),value(red,i1,7),value(red,i2,10),subCycle(red,1,17,9),subCycleAdditionCarry(red,1,7,10).
+subCycle(red,1,18,10) :- pc(red,1,1),value(red,i1,8),value(red,i2,10),subCycle(red,1,18,9),subCycleAdditionCarry(red,1,8,10).
+subCycle(red,1,19,10) :- pc(red,1,1),value(red,i1,9),value(red,i2,10),subCycle(red,1,19,9),subCycleAdditionCarry(red,1,9,10).
+subCycle(red,1,20,10) :- pc(red,1,1),value(red,i1,10),value(red,i2,10),subCycle(red,1,20,9),subCycleAdditionCarry(red,1,10,10).
+subCycle(red,1,21,10) :- pc(red,1,1),value(red,i1,11),value(red,i2,10),subCycle(red,1,21,9),subCycleAdditionCarry(red,1,11,10).
+subCycle(red,1,12,11) :- pc(red,1,1),value(red,i1,1),value(red,i2,11),subCycle(red,1,12,10),subCycleAdditionCarry(red,1,1,11).
+subCycle(red,1,13,11) :- pc(red,1,1),value(red,i1,2),value(red,i2,11),subCycle(red,1,13,10),subCycleAdditionCarry(red,1,2,11).
+subCycle(red,1,14,11) :- pc(red,1,1),value(red,i1,3),value(red,i2,11),subCycle(red,1,14,10),subCycleAdditionCarry(red,1,3,11).
+subCycle(red,1,15,11) :- pc(red,1,1),value(red,i1,4),value(red,i2,11),subCycle(red,1,15,10),subCycleAdditionCarry(red,1,4,11).
+subCycle(red,1,16,11) :- pc(red,1,1),value(red,i1,5),value(red,i2,11),subCycle(red,1,16,10),subCycleAdditionCarry(red,1,5,11).
+subCycle(red,1,17,11) :- pc(red,1,1),value(red,i1,6),value(red,i2,11),subCycle(red,1,17,10),subCycleAdditionCarry(red,1,6,11).
+subCycle(red,1,18,11) :- pc(red,1,1),value(red,i1,7),value(red,i2,11),subCycle(red,1,18,10),subCycleAdditionCarry(red,1,7,11).
+subCycle(red,1,19,11) :- pc(red,1,1),value(red,i1,8),value(red,i2,11),subCycle(red,1,19,10),subCycleAdditionCarry(red,1,8,11).
+subCycle(red,1,20,11) :- pc(red,1,1),value(red,i1,9),value(red,i2,11),subCycle(red,1,20,10),subCycleAdditionCarry(red,1,9,11).
+subCycle(red,1,21,11) :- pc(red,1,1),value(red,i1,10),value(red,i2,11),subCycle(red,1,21,10),subCycleAdditionCarry(red,1,10,11).
+subCycle(red,1,22,11) :- pc(red,1,1),value(red,i1,11),value(red,i2,11),subCycle(red,1,22,10),subCycleAdditionCarry(red,1,11,11).
+subCycle(red,1,2,1) :- pc(red,1,1),value(red,i1,1),value(red,i2,1),_subCycle(red,1,2,0),_subCycleAdditionCarry(red,1,1,1).
+subCycle(red,1,3,1) :- pc(red,1,1),value(red,i1,2),value(red,i2,1),_subCycle(red,1,3,0),_subCycleAdditionCarry(red,1,2,1).
+subCycle(red,1,4,1) :- pc(red,1,1),value(red,i1,3),value(red,i2,1),_subCycle(red,1,4,0),_subCycleAdditionCarry(red,1,3,1).
+subCycle(red,1,5,1) :- pc(red,1,1),value(red,i1,4),value(red,i2,1),_subCycle(red,1,5,0),_subCycleAdditionCarry(red,1,4,1).
+subCycle(red,1,6,1) :- pc(red,1,1),value(red,i1,5),value(red,i2,1),_subCycle(red,1,6,0),_subCycleAdditionCarry(red,1,5,1).
+subCycle(red,1,7,1) :- pc(red,1,1),value(red,i1,6),value(red,i2,1),_subCycle(red,1,7,0),_subCycleAdditionCarry(red,1,6,1).
+subCycle(red,1,8,1) :- pc(red,1,1),value(red,i1,7),value(red,i2,1),_subCycle(red,1,8,0),_subCycleAdditionCarry(red,1,7,1).
+subCycle(red,1,9,1) :- pc(red,1,1),value(red,i1,8),value(red,i2,1),_subCycle(red,1,9,0),_subCycleAdditionCarry(red,1,8,1).
+subCycle(red,1,10,1) :- pc(red,1,1),value(red,i1,9),value(red,i2,1),_subCycle(red,1,10,0),_subCycleAdditionCarry(red,1,9,1).
+subCycle(red,1,11,1) :- pc(red,1,1),value(red,i1,10),value(red,i2,1),_subCycle(red,1,11,0),_subCycleAdditionCarry(red,1,10,1).
+subCycle(red,1,12,1) :- pc(red,1,1),value(red,i1,11),value(red,i2,1),_subCycle(red,1,12,0),_subCycleAdditionCarry(red,1,11,1).
+subCycle(red,1,3,2) :- pc(red,1,1),value(red,i1,1),value(red,i2,2),_subCycle(red,1,3,1),_subCycleAdditionCarry(red,1,1,2).
+subCycle(red,1,4,2) :- pc(red,1,1),value(red,i1,2),value(red,i2,2),_subCycle(red,1,4,1),_subCycleAdditionCarry(red,1,2,2).
+subCycle(red,1,5,2) :- pc(red,1,1),value(red,i1,3),value(red,i2,2),_subCycle(red,1,5,1),_subCycleAdditionCarry(red,1,3,2).
+subCycle(red,1,6,2) :- pc(red,1,1),value(red,i1,4),value(red,i2,2),_subCycle(red,1,6,1),_subCycleAdditionCarry(red,1,4,2).
+subCycle(red,1,7,2) :- pc(red,1,1),value(red,i1,5),value(red,i2,2),_subCycle(red,1,7,1),_subCycleAdditionCarry(red,1,5,2).
+subCycle(red,1,8,2) :- pc(red,1,1),value(red,i1,6),value(red,i2,2),_subCycle(red,1,8,1),_subCycleAdditionCarry(red,1,6,2).
+subCycle(red,1,9,2) :- pc(red,1,1),value(red,i1,7),value(red,i2,2),_subCycle(red,1,9,1),_subCycleAdditionCarry(red,1,7,2).
+subCycle(red,1,10,2) :- pc(red,1,1),value(red,i1,8),value(red,i2,2),_subCycle(red,1,10,1),_subCycleAdditionCarry(red,1,8,2).
+subCycle(red,1,11,2) :- pc(red,1,1),value(red,i1,9),value(red,i2,2),_subCycle(red,1,11,1),_subCycleAdditionCarry(red,1,9,2).
+subCycle(red,1,12,2) :- pc(red,1,1),value(red,i1,10),value(red,i2,2),_subCycle(red,1,12,1),_subCycleAdditionCarry(red,1,10,2).
+subCycle(red,1,13,2) :- pc(red,1,1),value(red,i1,11),value(red,i2,2),_subCycle(red,1,13,1),_subCycleAdditionCarry(red,1,11,2).
+subCycle(red,1,4,3) :- pc(red,1,1),value(red,i1,1),value(red,i2,3),_subCycle(red,1,4,2),_subCycleAdditionCarry(red,1,1,3).
+subCycle(red,1,5,3) :- pc(red,1,1),value(red,i1,2),value(red,i2,3),_subCycle(red,1,5,2),_subCycleAdditionCarry(red,1,2,3).
+subCycle(red,1,6,3) :- pc(red,1,1),value(red,i1,3),value(red,i2,3),_subCycle(red,1,6,2),_subCycleAdditionCarry(red,1,3,3).
+subCycle(red,1,7,3) :- pc(red,1,1),value(red,i1,4),value(red,i2,3),_subCycle(red,1,7,2),_subCycleAdditionCarry(red,1,4,3).
+subCycle(red,1,8,3) :- pc(red,1,1),value(red,i1,5),value(red,i2,3),_subCycle(red,1,8,2),_subCycleAdditionCarry(red,1,5,3).
+subCycle(red,1,9,3) :- pc(red,1,1),value(red,i1,6),value(red,i2,3),_subCycle(red,1,9,2),_subCycleAdditionCarry(red,1,6,3).
+subCycle(red,1,10,3) :- pc(red,1,1),value(red,i1,7),value(red,i2,3),_subCycle(red,1,10,2),_subCycleAdditionCarry(red,1,7,3).
+subCycle(red,1,11,3) :- pc(red,1,1),value(red,i1,8),value(red,i2,3),_subCycle(red,1,11,2),_subCycleAdditionCarry(red,1,8,3).
+subCycle(red,1,12,3) :- pc(red,1,1),value(red,i1,9),value(red,i2,3),_subCycle(red,1,12,2),_subCycleAdditionCarry(red,1,9,3).
+subCycle(red,1,13,3) :- pc(red,1,1),value(red,i1,10),value(red,i2,3),_subCycle(red,1,13,2),_subCycleAdditionCarry(red,1,10,3).
+subCycle(red,1,14,3) :- pc(red,1,1),value(red,i1,11),value(red,i2,3),_subCycle(red,1,14,2),_subCycleAdditionCarry(red,1,11,3).
+subCycle(red,1,5,4) :- pc(red,1,1),value(red,i1,1),value(red,i2,4),_subCycle(red,1,5,3),_subCycleAdditionCarry(red,1,1,4).
+subCycle(red,1,6,4) :- pc(red,1,1),value(red,i1,2),value(red,i2,4),_subCycle(red,1,6,3),_subCycleAdditionCarry(red,1,2,4).
+subCycle(red,1,7,4) :- pc(red,1,1),value(red,i1,3),value(red,i2,4),_subCycle(red,1,7,3),_subCycleAdditionCarry(red,1,3,4).
+subCycle(red,1,8,4) :- pc(red,1,1),value(red,i1,4),value(red,i2,4),_subCycle(red,1,8,3),_subCycleAdditionCarry(red,1,4,4).
+subCycle(red,1,9,4) :- pc(red,1,1),value(red,i1,5),value(red,i2,4),_subCycle(red,1,9,3),_subCycleAdditionCarry(red,1,5,4).
+subCycle(red,1,10,4) :- pc(red,1,1),value(red,i1,6),value(red,i2,4),_subCycle(red,1,10,3),_subCycleAdditionCarry(red,1,6,4).
+subCycle(red,1,11,4) :- pc(red,1,1),value(red,i1,7),value(red,i2,4),_subCycle(red,1,11,3),_subCycleAdditionCarry(red,1,7,4).
+subCycle(red,1,12,4) :- pc(red,1,1),value(red,i1,8),value(red,i2,4),_subCycle(red,1,12,3),_subCycleAdditionCarry(red,1,8,4).
+subCycle(red,1,13,4) :- pc(red,1,1),value(red,i1,9),value(red,i2,4),_subCycle(red,1,13,3),_subCycleAdditionCarry(red,1,9,4).
+subCycle(red,1,14,4) :- pc(red,1,1),value(red,i1,10),value(red,i2,4),_subCycle(red,1,14,3),_subCycleAdditionCarry(red,1,10,4).
+subCycle(red,1,15,4) :- pc(red,1,1),value(red,i1,11),value(red,i2,4),_subCycle(red,1,15,3),_subCycleAdditionCarry(red,1,11,4).
+subCycle(red,1,6,5) :- pc(red,1,1),value(red,i1,1),value(red,i2,5),_subCycle(red,1,6,4),_subCycleAdditionCarry(red,1,1,5).
+subCycle(red,1,7,5) :- pc(red,1,1),value(red,i1,2),value(red,i2,5),_subCycle(red,1,7,4),_subCycleAdditionCarry(red,1,2,5).
+subCycle(red,1,8,5) :- pc(red,1,1),value(red,i1,3),value(red,i2,5),_subCycle(red,1,8,4),_subCycleAdditionCarry(red,1,3,5).
+subCycle(red,1,9,5) :- pc(red,1,1),value(red,i1,4),value(red,i2,5),_subCycle(red,1,9,4),_subCycleAdditionCarry(red,1,4,5).
+subCycle(red,1,10,5) :- pc(red,1,1),value(red,i1,5),value(red,i2,5),_subCycle(red,1,10,4),_subCycleAdditionCarry(red,1,5,5).
+subCycle(red,1,11,5) :- pc(red,1,1),value(red,i1,6),value(red,i2,5),_subCycle(red,1,11,4),_subCycleAdditionCarry(red,1,6,5).
+subCycle(red,1,12,5) :- pc(red,1,1),value(red,i1,7),value(red,i2,5),_subCycle(red,1,12,4),_subCycleAdditionCarry(red,1,7,5).
+subCycle(red,1,13,5) :- pc(red,1,1),value(red,i1,8),value(red,i2,5),_subCycle(red,1,13,4),_subCycleAdditionCarry(red,1,8,5).
+subCycle(red,1,14,5) :- pc(red,1,1),value(red,i1,9),value(red,i2,5),_subCycle(red,1,14,4),_subCycleAdditionCarry(red,1,9,5).
+subCycle(red,1,15,5) :- pc(red,1,1),value(red,i1,10),value(red,i2,5),_subCycle(red,1,15,4),_subCycleAdditionCarry(red,1,10,5).
+subCycle(red,1,16,5) :- pc(red,1,1),value(red,i1,11),value(red,i2,5),_subCycle(red,1,16,4),_subCycleAdditionCarry(red,1,11,5).
+subCycle(red,1,7,6) :- pc(red,1,1),value(red,i1,1),value(red,i2,6),_subCycle(red,1,7,5),_subCycleAdditionCarry(red,1,1,6).
+subCycle(red,1,8,6) :- pc(red,1,1),value(red,i1,2),value(red,i2,6),_subCycle(red,1,8,5),_subCycleAdditionCarry(red,1,2,6).
+subCycle(red,1,9,6) :- pc(red,1,1),value(red,i1,3),value(red,i2,6),_subCycle(red,1,9,5),_subCycleAdditionCarry(red,1,3,6).
+subCycle(red,1,10,6) :- pc(red,1,1),value(red,i1,4),value(red,i2,6),_subCycle(red,1,10,5),_subCycleAdditionCarry(red,1,4,6).
+subCycle(red,1,11,6) :- pc(red,1,1),value(red,i1,5),value(red,i2,6),_subCycle(red,1,11,5),_subCycleAdditionCarry(red,1,5,6).
+subCycle(red,1,12,6) :- pc(red,1,1),value(red,i1,6),value(red,i2,6),_subCycle(red,1,12,5),_subCycleAdditionCarry(red,1,6,6).
+subCycle(red,1,13,6) :- pc(red,1,1),value(red,i1,7),value(red,i2,6),_subCycle(red,1,13,5),_subCycleAdditionCarry(red,1,7,6).
+subCycle(red,1,14,6) :- pc(red,1,1),value(red,i1,8),value(red,i2,6),_subCycle(red,1,14,5),_subCycleAdditionCarry(red,1,8,6).
+subCycle(red,1,15,6) :- pc(red,1,1),value(red,i1,9),value(red,i2,6),_subCycle(red,1,15,5),_subCycleAdditionCarry(red,1,9,6).
+subCycle(red,1,16,6) :- pc(red,1,1),value(red,i1,10),value(red,i2,6),_subCycle(red,1,16,5),_subCycleAdditionCarry(red,1,10,6).
+subCycle(red,1,17,6) :- pc(red,1,1),value(red,i1,11),value(red,i2,6),_subCycle(red,1,17,5),_subCycleAdditionCarry(red,1,11,6).
+subCycle(red,1,8,7) :- pc(red,1,1),value(red,i1,1),value(red,i2,7),_subCycle(red,1,8,6),_subCycleAdditionCarry(red,1,1,7).
+subCycle(red,1,9,7) :- pc(red,1,1),value(red,i1,2),value(red,i2,7),_subCycle(red,1,9,6),_subCycleAdditionCarry(red,1,2,7).
+subCycle(red,1,10,7) :- pc(red,1,1),value(red,i1,3),value(red,i2,7),_subCycle(red,1,10,6),_subCycleAdditionCarry(red,1,3,7).
+subCycle(red,1,11,7) :- pc(red,1,1),value(red,i1,4),value(red,i2,7),_subCycle(red,1,11,6),_subCycleAdditionCarry(red,1,4,7).
+subCycle(red,1,12,7) :- pc(red,1,1),value(red,i1,5),value(red,i2,7),_subCycle(red,1,12,6),_subCycleAdditionCarry(red,1,5,7).
+subCycle(red,1,13,7) :- pc(red,1,1),value(red,i1,6),value(red,i2,7),_subCycle(red,1,13,6),_subCycleAdditionCarry(red,1,6,7).
+subCycle(red,1,14,7) :- pc(red,1,1),value(red,i1,7),value(red,i2,7),_subCycle(red,1,14,6),_subCycleAdditionCarry(red,1,7,7).
+subCycle(red,1,15,7) :- pc(red,1,1),value(red,i1,8),value(red,i2,7),_subCycle(red,1,15,6),_subCycleAdditionCarry(red,1,8,7).
+subCycle(red,1,16,7) :- pc(red,1,1),value(red,i1,9),value(red,i2,7),_subCycle(red,1,16,6),_subCycleAdditionCarry(red,1,9,7).
+subCycle(red,1,17,7) :- pc(red,1,1),value(red,i1,10),value(red,i2,7),_subCycle(red,1,17,6),_subCycleAdditionCarry(red,1,10,7).
+subCycle(red,1,18,7) :- pc(red,1,1),value(red,i1,11),value(red,i2,7),_subCycle(red,1,18,6),_subCycleAdditionCarry(red,1,11,7).
+subCycle(red,1,9,8) :- pc(red,1,1),value(red,i1,1),value(red,i2,8),_subCycle(red,1,9,7),_subCycleAdditionCarry(red,1,1,8).
+subCycle(red,1,10,8) :- pc(red,1,1),value(red,i1,2),value(red,i2,8),_subCycle(red,1,10,7),_subCycleAdditionCarry(red,1,2,8).
+subCycle(red,1,11,8) :- pc(red,1,1),value(red,i1,3),value(red,i2,8),_subCycle(red,1,11,7),_subCycleAdditionCarry(red,1,3,8).
+subCycle(red,1,12,8) :- pc(red,1,1),value(red,i1,4),value(red,i2,8),_subCycle(red,1,12,7),_subCycleAdditionCarry(red,1,4,8).
+subCycle(red,1,13,8) :- pc(red,1,1),value(red,i1,5),value(red,i2,8),_subCycle(red,1,13,7),_subCycleAdditionCarry(red,1,5,8).
+subCycle(red,1,14,8) :- pc(red,1,1),value(red,i1,6),value(red,i2,8),_subCycle(red,1,14,7),_subCycleAdditionCarry(red,1,6,8).
+subCycle(red,1,15,8) :- pc(red,1,1),value(red,i1,7),value(red,i2,8),_subCycle(red,1,15,7),_subCycleAdditionCarry(red,1,7,8).
+subCycle(red,1,16,8) :- pc(red,1,1),value(red,i1,8),value(red,i2,8),_subCycle(red,1,16,7),_subCycleAdditionCarry(red,1,8,8).
+subCycle(red,1,17,8) :- pc(red,1,1),value(red,i1,9),value(red,i2,8),_subCycle(red,1,17,7),_subCycleAdditionCarry(red,1,9,8).
+subCycle(red,1,18,8) :- pc(red,1,1),value(red,i1,10),value(red,i2,8),_subCycle(red,1,18,7),_subCycleAdditionCarry(red,1,10,8).
+subCycle(red,1,19,8) :- pc(red,1,1),value(red,i1,11),value(red,i2,8),_subCycle(red,1,19,7),_subCycleAdditionCarry(red,1,11,8).
+subCycle(red,1,10,9) :- pc(red,1,1),value(red,i1,1),value(red,i2,9),_subCycle(red,1,10,8),_subCycleAdditionCarry(red,1,1,9).
+subCycle(red,1,11,9) :- pc(red,1,1),value(red,i1,2),value(red,i2,9),_subCycle(red,1,11,8),_subCycleAdditionCarry(red,1,2,9).
+subCycle(red,1,12,9) :- pc(red,1,1),value(red,i1,3),value(red,i2,9),_subCycle(red,1,12,8),_subCycleAdditionCarry(red,1,3,9).
+subCycle(red,1,13,9) :- pc(red,1,1),value(red,i1,4),value(red,i2,9),_subCycle(red,1,13,8),_subCycleAdditionCarry(red,1,4,9).
+subCycle(red,1,14,9) :- pc(red,1,1),value(red,i1,5),value(red,i2,9),_subCycle(red,1,14,8),_subCycleAdditionCarry(red,1,5,9).
+subCycle(red,1,15,9) :- pc(red,1,1),value(red,i1,6),value(red,i2,9),_subCycle(red,1,15,8),_subCycleAdditionCarry(red,1,6,9).
+subCycle(red,1,16,9) :- pc(red,1,1),value(red,i1,7),value(red,i2,9),_subCycle(red,1,16,8),_subCycleAdditionCarry(red,1,7,9).
+subCycle(red,1,17,9) :- pc(red,1,1),value(red,i1,8),value(red,i2,9),_subCycle(red,1,17,8),_subCycleAdditionCarry(red,1,8,9).
+subCycle(red,1,18,9) :- pc(red,1,1),value(red,i1,9),value(red,i2,9),_subCycle(red,1,18,8),_subCycleAdditionCarry(red,1,9,9).
+subCycle(red,1,19,9) :- pc(red,1,1),value(red,i1,10),value(red,i2,9),_subCycle(red,1,19,8),_subCycleAdditionCarry(red,1,10,9).
+subCycle(red,1,20,9) :- pc(red,1,1),value(red,i1,11),value(red,i2,9),_subCycle(red,1,20,8),_subCycleAdditionCarry(red,1,11,9).
+subCycle(red,1,11,10) :- pc(red,1,1),value(red,i1,1),value(red,i2,10),_subCycle(red,1,11,9),_subCycleAdditionCarry(red,1,1,10).
+subCycle(red,1,12,10) :- pc(red,1,1),value(red,i1,2),value(red,i2,10),_subCycle(red,1,12,9),_subCycleAdditionCarry(red,1,2,10).
+subCycle(red,1,13,10) :- pc(red,1,1),value(red,i1,3),value(red,i2,10),_subCycle(red,1,13,9),_subCycleAdditionCarry(red,1,3,10).
+subCycle(red,1,14,10) :- pc(red,1,1),value(red,i1,4),value(red,i2,10),_subCycle(red,1,14,9),_subCycleAdditionCarry(red,1,4,10).
+subCycle(red,1,15,10) :- pc(red,1,1),value(red,i1,5),value(red,i2,10),_subCycle(red,1,15,9),_subCycleAdditionCarry(red,1,5,10).
+subCycle(red,1,16,10) :- pc(red,1,1),value(red,i1,6),value(red,i2,10),_subCycle(red,1,16,9),_subCycleAdditionCarry(red,1,6,10).
+subCycle(red,1,17,10) :- pc(red,1,1),value(red,i1,7),value(red,i2,10),_subCycle(red,1,17,9),_subCycleAdditionCarry(red,1,7,10).
+subCycle(red,1,18,10) :- pc(red,1,1),value(red,i1,8),value(red,i2,10),_subCycle(red,1,18,9),_subCycleAdditionCarry(red,1,8,10).
+subCycle(red,1,19,10) :- pc(red,1,1),value(red,i1,9),value(red,i2,10),_subCycle(red,1,19,9),_subCycleAdditionCarry(red,1,9,10).
+subCycle(red,1,20,10) :- pc(red,1,1),value(red,i1,10),value(red,i2,10),_subCycle(red,1,20,9),_subCycleAdditionCarry(red,1,10,10).
+subCycle(red,1,21,10) :- pc(red,1,1),value(red,i1,11),value(red,i2,10),_subCycle(red,1,21,9),_subCycleAdditionCarry(red,1,11,10).
+subCycle(red,1,12,11) :- pc(red,1,1),value(red,i1,1),value(red,i2,11),_subCycle(red,1,12,10),_subCycleAdditionCarry(red,1,1,11).
+subCycle(red,1,13,11) :- pc(red,1,1),value(red,i1,2),value(red,i2,11),_subCycle(red,1,13,10),_subCycleAdditionCarry(red,1,2,11).
+subCycle(red,1,14,11) :- pc(red,1,1),value(red,i1,3),value(red,i2,11),_subCycle(red,1,14,10),_subCycleAdditionCarry(red,1,3,11).
+subCycle(red,1,15,11) :- pc(red,1,1),value(red,i1,4),value(red,i2,11),_subCycle(red,1,15,10),_subCycleAdditionCarry(red,1,4,11).
+subCycle(red,1,16,11) :- pc(red,1,1),value(red,i1,5),value(red,i2,11),_subCycle(red,1,16,10),_subCycleAdditionCarry(red,1,5,11).
+subCycle(red,1,17,11) :- pc(red,1,1),value(red,i1,6),value(red,i2,11),_subCycle(red,1,17,10),_subCycleAdditionCarry(red,1,6,11).
+subCycle(red,1,18,11) :- pc(red,1,1),value(red,i1,7),value(red,i2,11),_subCycle(red,1,18,10),_subCycleAdditionCarry(red,1,7,11).
+subCycle(red,1,19,11) :- pc(red,1,1),value(red,i1,8),value(red,i2,11),_subCycle(red,1,19,10),_subCycleAdditionCarry(red,1,8,11).
+subCycle(red,1,20,11) :- pc(red,1,1),value(red,i1,9),value(red,i2,11),_subCycle(red,1,20,10),_subCycleAdditionCarry(red,1,9,11).
+subCycle(red,1,21,11) :- pc(red,1,1),value(red,i1,10),value(red,i2,11),_subCycle(red,1,21,10),_subCycleAdditionCarry(red,1,10,11).
+subCycle(red,1,22,11) :- pc(red,1,1),value(red,i1,11),value(red,i2,11),_subCycle(red,1,22,10),_subCycleAdditionCarry(red,1,11,11).
+subCycle(red,1,2,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,1),subCycle(red,1,2,0),_subCycleAdditionCarry(red,1,1,1).
+subCycle(red,1,3,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,2),subCycle(red,1,3,0),_subCycleAdditionCarry(red,1,2,1).
+subCycle(red,1,4,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,3),subCycle(red,1,4,0),_subCycleAdditionCarry(red,1,3,1).
+subCycle(red,1,5,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,4),subCycle(red,1,5,0),_subCycleAdditionCarry(red,1,4,1).
+subCycle(red,1,6,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,5),subCycle(red,1,6,0),_subCycleAdditionCarry(red,1,5,1).
+subCycle(red,1,7,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,6),subCycle(red,1,7,0),_subCycleAdditionCarry(red,1,6,1).
+subCycle(red,1,8,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,7),subCycle(red,1,8,0),_subCycleAdditionCarry(red,1,7,1).
+subCycle(red,1,9,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,8),subCycle(red,1,9,0),_subCycleAdditionCarry(red,1,8,1).
+subCycle(red,1,10,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,9),subCycle(red,1,10,0),_subCycleAdditionCarry(red,1,9,1).
+subCycle(red,1,11,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,10),subCycle(red,1,11,0),_subCycleAdditionCarry(red,1,10,1).
+subCycle(red,1,12,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,11),subCycle(red,1,12,0),_subCycleAdditionCarry(red,1,11,1).
+subCycle(red,1,3,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,1),subCycle(red,1,3,1),_subCycleAdditionCarry(red,1,1,2).
+subCycle(red,1,4,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,2),subCycle(red,1,4,1),_subCycleAdditionCarry(red,1,2,2).
+subCycle(red,1,5,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,3),subCycle(red,1,5,1),_subCycleAdditionCarry(red,1,3,2).
+subCycle(red,1,6,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,4),subCycle(red,1,6,1),_subCycleAdditionCarry(red,1,4,2).
+subCycle(red,1,7,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,5),subCycle(red,1,7,1),_subCycleAdditionCarry(red,1,5,2).
+subCycle(red,1,8,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,6),subCycle(red,1,8,1),_subCycleAdditionCarry(red,1,6,2).
+subCycle(red,1,9,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,7),subCycle(red,1,9,1),_subCycleAdditionCarry(red,1,7,2).
+subCycle(red,1,10,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,8),subCycle(red,1,10,1),_subCycleAdditionCarry(red,1,8,2).
+subCycle(red,1,11,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,9),subCycle(red,1,11,1),_subCycleAdditionCarry(red,1,9,2).
+subCycle(red,1,12,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,10),subCycle(red,1,12,1),_subCycleAdditionCarry(red,1,10,2).
+subCycle(red,1,13,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,11),subCycle(red,1,13,1),_subCycleAdditionCarry(red,1,11,2).
+subCycle(red,1,4,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,1),subCycle(red,1,4,2),_subCycleAdditionCarry(red,1,1,3).
+subCycle(red,1,5,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,2),subCycle(red,1,5,2),_subCycleAdditionCarry(red,1,2,3).
+subCycle(red,1,6,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,3),subCycle(red,1,6,2),_subCycleAdditionCarry(red,1,3,3).
+subCycle(red,1,7,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,4),subCycle(red,1,7,2),_subCycleAdditionCarry(red,1,4,3).
+subCycle(red,1,8,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,5),subCycle(red,1,8,2),_subCycleAdditionCarry(red,1,5,3).
+subCycle(red,1,9,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,6),subCycle(red,1,9,2),_subCycleAdditionCarry(red,1,6,3).
+subCycle(red,1,10,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,7),subCycle(red,1,10,2),_subCycleAdditionCarry(red,1,7,3).
+subCycle(red,1,11,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,8),subCycle(red,1,11,2),_subCycleAdditionCarry(red,1,8,3).
+subCycle(red,1,12,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,9),subCycle(red,1,12,2),_subCycleAdditionCarry(red,1,9,3).
+subCycle(red,1,13,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,10),subCycle(red,1,13,2),_subCycleAdditionCarry(red,1,10,3).
+subCycle(red,1,14,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,11),subCycle(red,1,14,2),_subCycleAdditionCarry(red,1,11,3).
+subCycle(red,1,5,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,1),subCycle(red,1,5,3),_subCycleAdditionCarry(red,1,1,4).
+subCycle(red,1,6,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,2),subCycle(red,1,6,3),_subCycleAdditionCarry(red,1,2,4).
+subCycle(red,1,7,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,3),subCycle(red,1,7,3),_subCycleAdditionCarry(red,1,3,4).
+subCycle(red,1,8,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,4),subCycle(red,1,8,3),_subCycleAdditionCarry(red,1,4,4).
+subCycle(red,1,9,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,5),subCycle(red,1,9,3),_subCycleAdditionCarry(red,1,5,4).
+subCycle(red,1,10,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,6),subCycle(red,1,10,3),_subCycleAdditionCarry(red,1,6,4).
+subCycle(red,1,11,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,7),subCycle(red,1,11,3),_subCycleAdditionCarry(red,1,7,4).
+subCycle(red,1,12,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,8),subCycle(red,1,12,3),_subCycleAdditionCarry(red,1,8,4).
+subCycle(red,1,13,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,9),subCycle(red,1,13,3),_subCycleAdditionCarry(red,1,9,4).
+subCycle(red,1,14,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,10),subCycle(red,1,14,3),_subCycleAdditionCarry(red,1,10,4).
+subCycle(red,1,15,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,11),subCycle(red,1,15,3),_subCycleAdditionCarry(red,1,11,4).
+subCycle(red,1,6,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,1),subCycle(red,1,6,4),_subCycleAdditionCarry(red,1,1,5).
+subCycle(red,1,7,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,2),subCycle(red,1,7,4),_subCycleAdditionCarry(red,1,2,5).
+subCycle(red,1,8,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,3),subCycle(red,1,8,4),_subCycleAdditionCarry(red,1,3,5).
+subCycle(red,1,9,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,4),subCycle(red,1,9,4),_subCycleAdditionCarry(red,1,4,5).
+subCycle(red,1,10,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,5),subCycle(red,1,10,4),_subCycleAdditionCarry(red,1,5,5).
+subCycle(red,1,11,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,6),subCycle(red,1,11,4),_subCycleAdditionCarry(red,1,6,5).
+subCycle(red,1,12,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,7),subCycle(red,1,12,4),_subCycleAdditionCarry(red,1,7,5).
+subCycle(red,1,13,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,8),subCycle(red,1,13,4),_subCycleAdditionCarry(red,1,8,5).
+subCycle(red,1,14,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,9),subCycle(red,1,14,4),_subCycleAdditionCarry(red,1,9,5).
+subCycle(red,1,15,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,10),subCycle(red,1,15,4),_subCycleAdditionCarry(red,1,10,5).
+subCycle(red,1,16,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,11),subCycle(red,1,16,4),_subCycleAdditionCarry(red,1,11,5).
+subCycle(red,1,7,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,1),subCycle(red,1,7,5),_subCycleAdditionCarry(red,1,1,6).
+subCycle(red,1,8,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,2),subCycle(red,1,8,5),_subCycleAdditionCarry(red,1,2,6).
+subCycle(red,1,9,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,3),subCycle(red,1,9,5),_subCycleAdditionCarry(red,1,3,6).
+subCycle(red,1,10,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,4),subCycle(red,1,10,5),_subCycleAdditionCarry(red,1,4,6).
+subCycle(red,1,11,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,5),subCycle(red,1,11,5),_subCycleAdditionCarry(red,1,5,6).
+subCycle(red,1,12,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,6),subCycle(red,1,12,5),_subCycleAdditionCarry(red,1,6,6).
+subCycle(red,1,13,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,7),subCycle(red,1,13,5),_subCycleAdditionCarry(red,1,7,6).
+subCycle(red,1,14,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,8),subCycle(red,1,14,5),_subCycleAdditionCarry(red,1,8,6).
+subCycle(red,1,15,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,9),subCycle(red,1,15,5),_subCycleAdditionCarry(red,1,9,6).
+subCycle(red,1,16,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,10),subCycle(red,1,16,5),_subCycleAdditionCarry(red,1,10,6).
+subCycle(red,1,17,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,11),subCycle(red,1,17,5),_subCycleAdditionCarry(red,1,11,6).
+subCycle(red,1,8,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,1),subCycle(red,1,8,6),_subCycleAdditionCarry(red,1,1,7).
+subCycle(red,1,9,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,2),subCycle(red,1,9,6),_subCycleAdditionCarry(red,1,2,7).
+subCycle(red,1,10,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,3),subCycle(red,1,10,6),_subCycleAdditionCarry(red,1,3,7).
+subCycle(red,1,11,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,4),subCycle(red,1,11,6),_subCycleAdditionCarry(red,1,4,7).
+subCycle(red,1,12,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,5),subCycle(red,1,12,6),_subCycleAdditionCarry(red,1,5,7).
+subCycle(red,1,13,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,6),subCycle(red,1,13,6),_subCycleAdditionCarry(red,1,6,7).
+subCycle(red,1,14,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,7),subCycle(red,1,14,6),_subCycleAdditionCarry(red,1,7,7).
+subCycle(red,1,15,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,8),subCycle(red,1,15,6),_subCycleAdditionCarry(red,1,8,7).
+subCycle(red,1,16,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,9),subCycle(red,1,16,6),_subCycleAdditionCarry(red,1,9,7).
+subCycle(red,1,17,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,10),subCycle(red,1,17,6),_subCycleAdditionCarry(red,1,10,7).
+subCycle(red,1,18,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,11),subCycle(red,1,18,6),_subCycleAdditionCarry(red,1,11,7).
+subCycle(red,1,9,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,1),subCycle(red,1,9,7),_subCycleAdditionCarry(red,1,1,8).
+subCycle(red,1,10,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,2),subCycle(red,1,10,7),_subCycleAdditionCarry(red,1,2,8).
+subCycle(red,1,11,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,3),subCycle(red,1,11,7),_subCycleAdditionCarry(red,1,3,8).
+subCycle(red,1,12,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,4),subCycle(red,1,12,7),_subCycleAdditionCarry(red,1,4,8).
+subCycle(red,1,13,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,5),subCycle(red,1,13,7),_subCycleAdditionCarry(red,1,5,8).
+subCycle(red,1,14,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,6),subCycle(red,1,14,7),_subCycleAdditionCarry(red,1,6,8).
+subCycle(red,1,15,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,7),subCycle(red,1,15,7),_subCycleAdditionCarry(red,1,7,8).
+subCycle(red,1,16,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,8),subCycle(red,1,16,7),_subCycleAdditionCarry(red,1,8,8).
+subCycle(red,1,17,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,9),subCycle(red,1,17,7),_subCycleAdditionCarry(red,1,9,8).
+subCycle(red,1,18,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,10),subCycle(red,1,18,7),_subCycleAdditionCarry(red,1,10,8).
+subCycle(red,1,19,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,11),subCycle(red,1,19,7),_subCycleAdditionCarry(red,1,11,8).
+subCycle(red,1,10,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,1),subCycle(red,1,10,8),_subCycleAdditionCarry(red,1,1,9).
+subCycle(red,1,11,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,2),subCycle(red,1,11,8),_subCycleAdditionCarry(red,1,2,9).
+subCycle(red,1,12,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,3),subCycle(red,1,12,8),_subCycleAdditionCarry(red,1,3,9).
+subCycle(red,1,13,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,4),subCycle(red,1,13,8),_subCycleAdditionCarry(red,1,4,9).
+subCycle(red,1,14,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,5),subCycle(red,1,14,8),_subCycleAdditionCarry(red,1,5,9).
+subCycle(red,1,15,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,6),subCycle(red,1,15,8),_subCycleAdditionCarry(red,1,6,9).
+subCycle(red,1,16,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,7),subCycle(red,1,16,8),_subCycleAdditionCarry(red,1,7,9).
+subCycle(red,1,17,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,8),subCycle(red,1,17,8),_subCycleAdditionCarry(red,1,8,9).
+subCycle(red,1,18,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,9),subCycle(red,1,18,8),_subCycleAdditionCarry(red,1,9,9).
+subCycle(red,1,19,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,10),subCycle(red,1,19,8),_subCycleAdditionCarry(red,1,10,9).
+subCycle(red,1,20,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,11),subCycle(red,1,20,8),_subCycleAdditionCarry(red,1,11,9).
+subCycle(red,1,11,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,1),subCycle(red,1,11,9),_subCycleAdditionCarry(red,1,1,10).
+subCycle(red,1,12,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,2),subCycle(red,1,12,9),_subCycleAdditionCarry(red,1,2,10).
+subCycle(red,1,13,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,3),subCycle(red,1,13,9),_subCycleAdditionCarry(red,1,3,10).
+subCycle(red,1,14,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,4),subCycle(red,1,14,9),_subCycleAdditionCarry(red,1,4,10).
+subCycle(red,1,15,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,5),subCycle(red,1,15,9),_subCycleAdditionCarry(red,1,5,10).
+subCycle(red,1,16,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,6),subCycle(red,1,16,9),_subCycleAdditionCarry(red,1,6,10).
+subCycle(red,1,17,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,7),subCycle(red,1,17,9),_subCycleAdditionCarry(red,1,7,10).
+subCycle(red,1,18,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,8),subCycle(red,1,18,9),_subCycleAdditionCarry(red,1,8,10).
+subCycle(red,1,19,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,9),subCycle(red,1,19,9),_subCycleAdditionCarry(red,1,9,10).
+subCycle(red,1,20,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,10),subCycle(red,1,20,9),_subCycleAdditionCarry(red,1,10,10).
+subCycle(red,1,21,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,11),subCycle(red,1,21,9),_subCycleAdditionCarry(red,1,11,10).
+subCycle(red,1,12,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,1),subCycle(red,1,12,10),_subCycleAdditionCarry(red,1,1,11).
+subCycle(red,1,13,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,2),subCycle(red,1,13,10),_subCycleAdditionCarry(red,1,2,11).
+subCycle(red,1,14,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,3),subCycle(red,1,14,10),_subCycleAdditionCarry(red,1,3,11).
+subCycle(red,1,15,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,4),subCycle(red,1,15,10),_subCycleAdditionCarry(red,1,4,11).
+subCycle(red,1,16,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,5),subCycle(red,1,16,10),_subCycleAdditionCarry(red,1,5,11).
+subCycle(red,1,17,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,6),subCycle(red,1,17,10),_subCycleAdditionCarry(red,1,6,11).
+subCycle(red,1,18,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,7),subCycle(red,1,18,10),_subCycleAdditionCarry(red,1,7,11).
+subCycle(red,1,19,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,8),subCycle(red,1,19,10),_subCycleAdditionCarry(red,1,8,11).
+subCycle(red,1,20,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,9),subCycle(red,1,20,10),_subCycleAdditionCarry(red,1,9,11).
+subCycle(red,1,21,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,10),subCycle(red,1,21,10),_subCycleAdditionCarry(red,1,10,11).
+subCycle(red,1,22,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,11),subCycle(red,1,22,10),_subCycleAdditionCarry(red,1,11,11).
+subCycle(red,1,2,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,1),subCycleAdditionCarry(red,1,1,1),_subCycle(red,1,2,0).
+subCycle(red,1,3,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,2),subCycleAdditionCarry(red,1,2,1),_subCycle(red,1,3,0).
+subCycle(red,1,4,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,3),subCycleAdditionCarry(red,1,3,1),_subCycle(red,1,4,0).
+subCycle(red,1,5,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,4),subCycleAdditionCarry(red,1,4,1),_subCycle(red,1,5,0).
+subCycle(red,1,6,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,5),subCycleAdditionCarry(red,1,5,1),_subCycle(red,1,6,0).
+subCycle(red,1,7,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,6),subCycleAdditionCarry(red,1,6,1),_subCycle(red,1,7,0).
+subCycle(red,1,8,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,7),subCycleAdditionCarry(red,1,7,1),_subCycle(red,1,8,0).
+subCycle(red,1,9,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,8),subCycleAdditionCarry(red,1,8,1),_subCycle(red,1,9,0).
+subCycle(red,1,10,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,9),subCycleAdditionCarry(red,1,9,1),_subCycle(red,1,10,0).
+subCycle(red,1,11,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,10),subCycleAdditionCarry(red,1,10,1),_subCycle(red,1,11,0).
+subCycle(red,1,12,1) :- pc(red,1,1),value(red,i2,1),_value(red,i1,11),subCycleAdditionCarry(red,1,11,1),_subCycle(red,1,12,0).
+subCycle(red,1,3,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,1),subCycleAdditionCarry(red,1,1,2),_subCycle(red,1,3,1).
+subCycle(red,1,4,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,2),subCycleAdditionCarry(red,1,2,2),_subCycle(red,1,4,1).
+subCycle(red,1,5,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,3),subCycleAdditionCarry(red,1,3,2),_subCycle(red,1,5,1).
+subCycle(red,1,6,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,4),subCycleAdditionCarry(red,1,4,2),_subCycle(red,1,6,1).
+subCycle(red,1,7,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,5),subCycleAdditionCarry(red,1,5,2),_subCycle(red,1,7,1).
+subCycle(red,1,8,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,6),subCycleAdditionCarry(red,1,6,2),_subCycle(red,1,8,1).
+subCycle(red,1,9,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,7),subCycleAdditionCarry(red,1,7,2),_subCycle(red,1,9,1).
+subCycle(red,1,10,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,8),subCycleAdditionCarry(red,1,8,2),_subCycle(red,1,10,1).
+subCycle(red,1,11,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,9),subCycleAdditionCarry(red,1,9,2),_subCycle(red,1,11,1).
+subCycle(red,1,12,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,10),subCycleAdditionCarry(red,1,10,2),_subCycle(red,1,12,1).
+subCycle(red,1,13,2) :- pc(red,1,1),value(red,i2,2),_value(red,i1,11),subCycleAdditionCarry(red,1,11,2),_subCycle(red,1,13,1).
+subCycle(red,1,4,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,1),subCycleAdditionCarry(red,1,1,3),_subCycle(red,1,4,2).
+subCycle(red,1,5,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,2),subCycleAdditionCarry(red,1,2,3),_subCycle(red,1,5,2).
+subCycle(red,1,6,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,3),subCycleAdditionCarry(red,1,3,3),_subCycle(red,1,6,2).
+subCycle(red,1,7,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,4),subCycleAdditionCarry(red,1,4,3),_subCycle(red,1,7,2).
+subCycle(red,1,8,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,5),subCycleAdditionCarry(red,1,5,3),_subCycle(red,1,8,2).
+subCycle(red,1,9,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,6),subCycleAdditionCarry(red,1,6,3),_subCycle(red,1,9,2).
+subCycle(red,1,10,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,7),subCycleAdditionCarry(red,1,7,3),_subCycle(red,1,10,2).
+subCycle(red,1,11,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,8),subCycleAdditionCarry(red,1,8,3),_subCycle(red,1,11,2).
+subCycle(red,1,12,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,9),subCycleAdditionCarry(red,1,9,3),_subCycle(red,1,12,2).
+subCycle(red,1,13,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,10),subCycleAdditionCarry(red,1,10,3),_subCycle(red,1,13,2).
+subCycle(red,1,14,3) :- pc(red,1,1),value(red,i2,3),_value(red,i1,11),subCycleAdditionCarry(red,1,11,3),_subCycle(red,1,14,2).
+subCycle(red,1,5,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,1),subCycleAdditionCarry(red,1,1,4),_subCycle(red,1,5,3).
+subCycle(red,1,6,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,2),subCycleAdditionCarry(red,1,2,4),_subCycle(red,1,6,3).
+subCycle(red,1,7,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,3),subCycleAdditionCarry(red,1,3,4),_subCycle(red,1,7,3).
+subCycle(red,1,8,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,4),subCycleAdditionCarry(red,1,4,4),_subCycle(red,1,8,3).
+subCycle(red,1,9,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,5),subCycleAdditionCarry(red,1,5,4),_subCycle(red,1,9,3).
+subCycle(red,1,10,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,6),subCycleAdditionCarry(red,1,6,4),_subCycle(red,1,10,3).
+subCycle(red,1,11,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,7),subCycleAdditionCarry(red,1,7,4),_subCycle(red,1,11,3).
+subCycle(red,1,12,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,8),subCycleAdditionCarry(red,1,8,4),_subCycle(red,1,12,3).
+subCycle(red,1,13,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,9),subCycleAdditionCarry(red,1,9,4),_subCycle(red,1,13,3).
+subCycle(red,1,14,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,10),subCycleAdditionCarry(red,1,10,4),_subCycle(red,1,14,3).
+subCycle(red,1,15,4) :- pc(red,1,1),value(red,i2,4),_value(red,i1,11),subCycleAdditionCarry(red,1,11,4),_subCycle(red,1,15,3).
+subCycle(red,1,6,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,1),subCycleAdditionCarry(red,1,1,5),_subCycle(red,1,6,4).
+subCycle(red,1,7,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,2),subCycleAdditionCarry(red,1,2,5),_subCycle(red,1,7,4).
+subCycle(red,1,8,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,3),subCycleAdditionCarry(red,1,3,5),_subCycle(red,1,8,4).
+subCycle(red,1,9,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,4),subCycleAdditionCarry(red,1,4,5),_subCycle(red,1,9,4).
+subCycle(red,1,10,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,5),subCycleAdditionCarry(red,1,5,5),_subCycle(red,1,10,4).
+subCycle(red,1,11,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,6),subCycleAdditionCarry(red,1,6,5),_subCycle(red,1,11,4).
+subCycle(red,1,12,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,7),subCycleAdditionCarry(red,1,7,5),_subCycle(red,1,12,4).
+subCycle(red,1,13,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,8),subCycleAdditionCarry(red,1,8,5),_subCycle(red,1,13,4).
+subCycle(red,1,14,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,9),subCycleAdditionCarry(red,1,9,5),_subCycle(red,1,14,4).
+subCycle(red,1,15,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,10),subCycleAdditionCarry(red,1,10,5),_subCycle(red,1,15,4).
+subCycle(red,1,16,5) :- pc(red,1,1),value(red,i2,5),_value(red,i1,11),subCycleAdditionCarry(red,1,11,5),_subCycle(red,1,16,4).
+subCycle(red,1,7,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,1),subCycleAdditionCarry(red,1,1,6),_subCycle(red,1,7,5).
+subCycle(red,1,8,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,2),subCycleAdditionCarry(red,1,2,6),_subCycle(red,1,8,5).
+subCycle(red,1,9,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,3),subCycleAdditionCarry(red,1,3,6),_subCycle(red,1,9,5).
+subCycle(red,1,10,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,4),subCycleAdditionCarry(red,1,4,6),_subCycle(red,1,10,5).
+subCycle(red,1,11,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,5),subCycleAdditionCarry(red,1,5,6),_subCycle(red,1,11,5).
+subCycle(red,1,12,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,6),subCycleAdditionCarry(red,1,6,6),_subCycle(red,1,12,5).
+subCycle(red,1,13,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,7),subCycleAdditionCarry(red,1,7,6),_subCycle(red,1,13,5).
+subCycle(red,1,14,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,8),subCycleAdditionCarry(red,1,8,6),_subCycle(red,1,14,5).
+subCycle(red,1,15,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,9),subCycleAdditionCarry(red,1,9,6),_subCycle(red,1,15,5).
+subCycle(red,1,16,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,10),subCycleAdditionCarry(red,1,10,6),_subCycle(red,1,16,5).
+subCycle(red,1,17,6) :- pc(red,1,1),value(red,i2,6),_value(red,i1,11),subCycleAdditionCarry(red,1,11,6),_subCycle(red,1,17,5).
+subCycle(red,1,8,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,1),subCycleAdditionCarry(red,1,1,7),_subCycle(red,1,8,6).
+subCycle(red,1,9,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,2),subCycleAdditionCarry(red,1,2,7),_subCycle(red,1,9,6).
+subCycle(red,1,10,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,3),subCycleAdditionCarry(red,1,3,7),_subCycle(red,1,10,6).
+subCycle(red,1,11,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,4),subCycleAdditionCarry(red,1,4,7),_subCycle(red,1,11,6).
+subCycle(red,1,12,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,5),subCycleAdditionCarry(red,1,5,7),_subCycle(red,1,12,6).
+subCycle(red,1,13,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,6),subCycleAdditionCarry(red,1,6,7),_subCycle(red,1,13,6).
+subCycle(red,1,14,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,7),subCycleAdditionCarry(red,1,7,7),_subCycle(red,1,14,6).
+subCycle(red,1,15,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,8),subCycleAdditionCarry(red,1,8,7),_subCycle(red,1,15,6).
+subCycle(red,1,16,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,9),subCycleAdditionCarry(red,1,9,7),_subCycle(red,1,16,6).
+subCycle(red,1,17,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,10),subCycleAdditionCarry(red,1,10,7),_subCycle(red,1,17,6).
+subCycle(red,1,18,7) :- pc(red,1,1),value(red,i2,7),_value(red,i1,11),subCycleAdditionCarry(red,1,11,7),_subCycle(red,1,18,6).
+subCycle(red,1,9,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,1),subCycleAdditionCarry(red,1,1,8),_subCycle(red,1,9,7).
+subCycle(red,1,10,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,2),subCycleAdditionCarry(red,1,2,8),_subCycle(red,1,10,7).
+subCycle(red,1,11,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,3),subCycleAdditionCarry(red,1,3,8),_subCycle(red,1,11,7).
+subCycle(red,1,12,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,4),subCycleAdditionCarry(red,1,4,8),_subCycle(red,1,12,7).
+subCycle(red,1,13,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,5),subCycleAdditionCarry(red,1,5,8),_subCycle(red,1,13,7).
+subCycle(red,1,14,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,6),subCycleAdditionCarry(red,1,6,8),_subCycle(red,1,14,7).
+subCycle(red,1,15,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,7),subCycleAdditionCarry(red,1,7,8),_subCycle(red,1,15,7).
+subCycle(red,1,16,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,8),subCycleAdditionCarry(red,1,8,8),_subCycle(red,1,16,7).
+subCycle(red,1,17,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,9),subCycleAdditionCarry(red,1,9,8),_subCycle(red,1,17,7).
+subCycle(red,1,18,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,10),subCycleAdditionCarry(red,1,10,8),_subCycle(red,1,18,7).
+subCycle(red,1,19,8) :- pc(red,1,1),value(red,i2,8),_value(red,i1,11),subCycleAdditionCarry(red,1,11,8),_subCycle(red,1,19,7).
+subCycle(red,1,10,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,1),subCycleAdditionCarry(red,1,1,9),_subCycle(red,1,10,8).
+subCycle(red,1,11,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,2),subCycleAdditionCarry(red,1,2,9),_subCycle(red,1,11,8).
+subCycle(red,1,12,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,3),subCycleAdditionCarry(red,1,3,9),_subCycle(red,1,12,8).
+subCycle(red,1,13,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,4),subCycleAdditionCarry(red,1,4,9),_subCycle(red,1,13,8).
+subCycle(red,1,14,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,5),subCycleAdditionCarry(red,1,5,9),_subCycle(red,1,14,8).
+subCycle(red,1,15,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,6),subCycleAdditionCarry(red,1,6,9),_subCycle(red,1,15,8).
+subCycle(red,1,16,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,7),subCycleAdditionCarry(red,1,7,9),_subCycle(red,1,16,8).
+subCycle(red,1,17,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,8),subCycleAdditionCarry(red,1,8,9),_subCycle(red,1,17,8).
+subCycle(red,1,18,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,9),subCycleAdditionCarry(red,1,9,9),_subCycle(red,1,18,8).
+subCycle(red,1,19,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,10),subCycleAdditionCarry(red,1,10,9),_subCycle(red,1,19,8).
+subCycle(red,1,20,9) :- pc(red,1,1),value(red,i2,9),_value(red,i1,11),subCycleAdditionCarry(red,1,11,9),_subCycle(red,1,20,8).
+subCycle(red,1,11,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,1),subCycleAdditionCarry(red,1,1,10),_subCycle(red,1,11,9).
+subCycle(red,1,12,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,2),subCycleAdditionCarry(red,1,2,10),_subCycle(red,1,12,9).
+subCycle(red,1,13,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,3),subCycleAdditionCarry(red,1,3,10),_subCycle(red,1,13,9).
+subCycle(red,1,14,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,4),subCycleAdditionCarry(red,1,4,10),_subCycle(red,1,14,9).
+subCycle(red,1,15,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,5),subCycleAdditionCarry(red,1,5,10),_subCycle(red,1,15,9).
+subCycle(red,1,16,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,6),subCycleAdditionCarry(red,1,6,10),_subCycle(red,1,16,9).
+subCycle(red,1,17,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,7),subCycleAdditionCarry(red,1,7,10),_subCycle(red,1,17,9).
+subCycle(red,1,18,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,8),subCycleAdditionCarry(red,1,8,10),_subCycle(red,1,18,9).
+subCycle(red,1,19,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,9),subCycleAdditionCarry(red,1,9,10),_subCycle(red,1,19,9).
+subCycle(red,1,20,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,10),subCycleAdditionCarry(red,1,10,10),_subCycle(red,1,20,9).
+subCycle(red,1,21,10) :- pc(red,1,1),value(red,i2,10),_value(red,i1,11),subCycleAdditionCarry(red,1,11,10),_subCycle(red,1,21,9).
+subCycle(red,1,12,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,1),subCycleAdditionCarry(red,1,1,11),_subCycle(red,1,12,10).
+subCycle(red,1,13,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,2),subCycleAdditionCarry(red,1,2,11),_subCycle(red,1,13,10).
+subCycle(red,1,14,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,3),subCycleAdditionCarry(red,1,3,11),_subCycle(red,1,14,10).
+subCycle(red,1,15,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,4),subCycleAdditionCarry(red,1,4,11),_subCycle(red,1,15,10).
+subCycle(red,1,16,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,5),subCycleAdditionCarry(red,1,5,11),_subCycle(red,1,16,10).
+subCycle(red,1,17,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,6),subCycleAdditionCarry(red,1,6,11),_subCycle(red,1,17,10).
+subCycle(red,1,18,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,7),subCycleAdditionCarry(red,1,7,11),_subCycle(red,1,18,10).
+subCycle(red,1,19,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,8),subCycleAdditionCarry(red,1,8,11),_subCycle(red,1,19,10).
+subCycle(red,1,20,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,9),subCycleAdditionCarry(red,1,9,11),_subCycle(red,1,20,10).
+subCycle(red,1,21,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,10),subCycleAdditionCarry(red,1,10,11),_subCycle(red,1,21,10).
+subCycle(red,1,22,11) :- pc(red,1,1),value(red,i2,11),_value(red,i1,11),subCycleAdditionCarry(red,1,11,11),_subCycle(red,1,22,10).
+subCycle(red,1,2,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,2,0).
+subCycle(red,1,3,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,3,0).
+subCycle(red,1,4,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,4,0).
+subCycle(red,1,5,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,5,0).
+subCycle(red,1,6,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,6,0).
+subCycle(red,1,7,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,7,0).
+subCycle(red,1,8,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,8,0).
+subCycle(red,1,9,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,9,0).
+subCycle(red,1,10,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,10,0).
+subCycle(red,1,11,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,11,0).
+subCycle(red,1,12,1) :- pc(red,1,1),_value(red,i2,1),subCycle(red,1,12,0).
+subCycle(red,1,3,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,3,1).
+subCycle(red,1,4,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,4,1).
+subCycle(red,1,5,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,5,1).
+subCycle(red,1,6,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,6,1).
+subCycle(red,1,7,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,7,1).
+subCycle(red,1,8,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,8,1).
+subCycle(red,1,9,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,9,1).
+subCycle(red,1,10,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,10,1).
+subCycle(red,1,11,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,11,1).
+subCycle(red,1,12,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,12,1).
+subCycle(red,1,13,2) :- pc(red,1,1),_value(red,i2,2),subCycle(red,1,13,1).
+subCycle(red,1,4,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,4,2).
+subCycle(red,1,5,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,5,2).
+subCycle(red,1,6,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,6,2).
+subCycle(red,1,7,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,7,2).
+subCycle(red,1,8,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,8,2).
+subCycle(red,1,9,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,9,2).
+subCycle(red,1,10,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,10,2).
+subCycle(red,1,11,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,11,2).
+subCycle(red,1,12,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,12,2).
+subCycle(red,1,13,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,13,2).
+subCycle(red,1,14,3) :- pc(red,1,1),_value(red,i2,3),subCycle(red,1,14,2).
+subCycle(red,1,5,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,5,3).
+subCycle(red,1,6,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,6,3).
+subCycle(red,1,7,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,7,3).
+subCycle(red,1,8,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,8,3).
+subCycle(red,1,9,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,9,3).
+subCycle(red,1,10,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,10,3).
+subCycle(red,1,11,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,11,3).
+subCycle(red,1,12,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,12,3).
+subCycle(red,1,13,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,13,3).
+subCycle(red,1,14,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,14,3).
+subCycle(red,1,15,4) :- pc(red,1,1),_value(red,i2,4),subCycle(red,1,15,3).
+subCycle(red,1,6,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,6,4).
+subCycle(red,1,7,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,7,4).
+subCycle(red,1,8,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,8,4).
+subCycle(red,1,9,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,9,4).
+subCycle(red,1,10,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,10,4).
+subCycle(red,1,11,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,11,4).
+subCycle(red,1,12,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,12,4).
+subCycle(red,1,13,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,13,4).
+subCycle(red,1,14,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,14,4).
+subCycle(red,1,15,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,15,4).
+subCycle(red,1,16,5) :- pc(red,1,1),_value(red,i2,5),subCycle(red,1,16,4).
+subCycle(red,1,7,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,7,5).
+subCycle(red,1,8,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,8,5).
+subCycle(red,1,9,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,9,5).
+subCycle(red,1,10,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,10,5).
+subCycle(red,1,11,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,11,5).
+subCycle(red,1,12,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,12,5).
+subCycle(red,1,13,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,13,5).
+subCycle(red,1,14,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,14,5).
+subCycle(red,1,15,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,15,5).
+subCycle(red,1,16,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,16,5).
+subCycle(red,1,17,6) :- pc(red,1,1),_value(red,i2,6),subCycle(red,1,17,5).
+subCycle(red,1,8,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,8,6).
+subCycle(red,1,9,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,9,6).
+subCycle(red,1,10,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,10,6).
+subCycle(red,1,11,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,11,6).
+subCycle(red,1,12,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,12,6).
+subCycle(red,1,13,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,13,6).
+subCycle(red,1,14,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,14,6).
+subCycle(red,1,15,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,15,6).
+subCycle(red,1,16,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,16,6).
+subCycle(red,1,17,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,17,6).
+subCycle(red,1,18,7) :- pc(red,1,1),_value(red,i2,7),subCycle(red,1,18,6).
+subCycle(red,1,9,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,9,7).
+subCycle(red,1,10,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,10,7).
+subCycle(red,1,11,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,11,7).
+subCycle(red,1,12,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,12,7).
+subCycle(red,1,13,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,13,7).
+subCycle(red,1,14,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,14,7).
+subCycle(red,1,15,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,15,7).
+subCycle(red,1,16,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,16,7).
+subCycle(red,1,17,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,17,7).
+subCycle(red,1,18,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,18,7).
+subCycle(red,1,19,8) :- pc(red,1,1),_value(red,i2,8),subCycle(red,1,19,7).
+subCycle(red,1,10,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,10,8).
+subCycle(red,1,11,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,11,8).
+subCycle(red,1,12,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,12,8).
+subCycle(red,1,13,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,13,8).
+subCycle(red,1,14,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,14,8).
+subCycle(red,1,15,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,15,8).
+subCycle(red,1,16,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,16,8).
+subCycle(red,1,17,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,17,8).
+subCycle(red,1,18,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,18,8).
+subCycle(red,1,19,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,19,8).
+subCycle(red,1,20,9) :- pc(red,1,1),_value(red,i2,9),subCycle(red,1,20,8).
+subCycle(red,1,11,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,11,9).
+subCycle(red,1,12,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,12,9).
+subCycle(red,1,13,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,13,9).
+subCycle(red,1,14,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,14,9).
+subCycle(red,1,15,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,15,9).
+subCycle(red,1,16,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,16,9).
+subCycle(red,1,17,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,17,9).
+subCycle(red,1,18,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,18,9).
+subCycle(red,1,19,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,19,9).
+subCycle(red,1,20,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,20,9).
+subCycle(red,1,21,10) :- pc(red,1,1),_value(red,i2,10),subCycle(red,1,21,9).
+subCycle(red,1,12,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,12,10).
+subCycle(red,1,13,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,13,10).
+subCycle(red,1,14,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,14,10).
+subCycle(red,1,15,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,15,10).
+subCycle(red,1,16,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,16,10).
+subCycle(red,1,17,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,17,10).
+subCycle(red,1,18,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,18,10).
+subCycle(red,1,19,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,19,10).
+subCycle(red,1,20,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,20,10).
+subCycle(red,1,21,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,21,10).
+subCycle(red,1,22,11) :- pc(red,1,1),_value(red,i2,11),subCycle(red,1,22,10).
+_subCycle(red,1,0,0) :- not subCycle(red,1,0,0),pc(red,1,1).
+_subCycle(red,1,1,0) :- not subCycle(red,1,1,0),pc(red,1,1).
+_subCycle(red,1,2,0) :- not subCycle(red,1,2,0),pc(red,1,1).
+_subCycle(red,1,3,0) :- not subCycle(red,1,3,0),pc(red,1,1).
+_subCycle(red,1,4,0) :- not subCycle(red,1,4,0),pc(red,1,1).
+_subCycle(red,1,5,0) :- not subCycle(red,1,5,0),pc(red,1,1).
+_subCycle(red,1,6,0) :- not subCycle(red,1,6,0),pc(red,1,1).
+_subCycle(red,1,7,0) :- not subCycle(red,1,7,0),pc(red,1,1).
+_subCycle(red,1,8,0) :- not subCycle(red,1,8,0),pc(red,1,1).
+_subCycle(red,1,9,0) :- not subCycle(red,1,9,0),pc(red,1,1).
+_subCycle(red,1,10,0) :- not subCycle(red,1,10,0),pc(red,1,1).
+_subCycle(red,1,11,0) :- not subCycle(red,1,11,0),pc(red,1,1).
+_subCycle(red,1,12,0) :- not subCycle(red,1,12,0),pc(red,1,1).
+_subCycle(red,1,13,0) :- not subCycle(red,1,13,0),pc(red,1,1).
+_subCycle(red,1,14,0) :- not subCycle(red,1,14,0),pc(red,1,1).
+_subCycle(red,1,15,0) :- not subCycle(red,1,15,0),pc(red,1,1).
+_subCycle(red,1,16,0) :- not subCycle(red,1,16,0),pc(red,1,1).
+_subCycle(red,1,17,0) :- not subCycle(red,1,17,0),pc(red,1,1).
+_subCycle(red,1,18,0) :- not subCycle(red,1,18,0),pc(red,1,1).
+_subCycle(red,1,19,0) :- not subCycle(red,1,19,0),pc(red,1,1).
+_subCycle(red,1,20,0) :- not subCycle(red,1,20,0),pc(red,1,1).
+_subCycle(red,1,21,0) :- not subCycle(red,1,21,0),pc(red,1,1).
+_subCycle(red,1,22,0) :- not subCycle(red,1,22,0),pc(red,1,1).
+_subCycle(red,1,23,0) :- not subCycle(red,1,23,0),pc(red,1,1).
+_subCycle(red,1,0,1) :- not subCycle(red,1,0,1),pc(red,1,1).
+_subCycle(red,1,1,1) :- not subCycle(red,1,1,1),pc(red,1,1).
+_subCycle(red,1,2,1) :- not subCycle(red,1,2,1),pc(red,1,1).
+_subCycle(red,1,3,1) :- not subCycle(red,1,3,1),pc(red,1,1).
+_subCycle(red,1,4,1) :- not subCycle(red,1,4,1),pc(red,1,1).
+_subCycle(red,1,5,1) :- not subCycle(red,1,5,1),pc(red,1,1).
+_subCycle(red,1,6,1) :- not subCycle(red,1,6,1),pc(red,1,1).
+_subCycle(red,1,7,1) :- not subCycle(red,1,7,1),pc(red,1,1).
+_subCycle(red,1,8,1) :- not subCycle(red,1,8,1),pc(red,1,1).
+_subCycle(red,1,9,1) :- not subCycle(red,1,9,1),pc(red,1,1).
+_subCycle(red,1,10,1) :- not subCycle(red,1,10,1),pc(red,1,1).
+_subCycle(red,1,11,1) :- not subCycle(red,1,11,1),pc(red,1,1).
+_subCycle(red,1,12,1) :- not subCycle(red,1,12,1),pc(red,1,1).
+_subCycle(red,1,13,1) :- not subCycle(red,1,13,1),pc(red,1,1).
+_subCycle(red,1,14,1) :- not subCycle(red,1,14,1),pc(red,1,1).
+_subCycle(red,1,15,1) :- not subCycle(red,1,15,1),pc(red,1,1).
+_subCycle(red,1,16,1) :- not subCycle(red,1,16,1),pc(red,1,1).
+_subCycle(red,1,17,1) :- not subCycle(red,1,17,1),pc(red,1,1).
+_subCycle(red,1,18,1) :- not subCycle(red,1,18,1),pc(red,1,1).
+_subCycle(red,1,19,1) :- not subCycle(red,1,19,1),pc(red,1,1).
+_subCycle(red,1,20,1) :- not subCycle(red,1,20,1),pc(red,1,1).
+_subCycle(red,1,21,1) :- not subCycle(red,1,21,1),pc(red,1,1).
+_subCycle(red,1,22,1) :- not subCycle(red,1,22,1),pc(red,1,1).
+_subCycle(red,1,23,1) :- not subCycle(red,1,23,1),pc(red,1,1).
+_subCycle(red,1,0,2) :- not subCycle(red,1,0,2),pc(red,1,1).
+_subCycle(red,1,1,2) :- not subCycle(red,1,1,2),pc(red,1,1).
+_subCycle(red,1,2,2) :- not subCycle(red,1,2,2),pc(red,1,1).
+_subCycle(red,1,3,2) :- not subCycle(red,1,3,2),pc(red,1,1).
+_subCycle(red,1,4,2) :- not subCycle(red,1,4,2),pc(red,1,1).
+_subCycle(red,1,5,2) :- not subCycle(red,1,5,2),pc(red,1,1).
+_subCycle(red,1,6,2) :- not subCycle(red,1,6,2),pc(red,1,1).
+_subCycle(red,1,7,2) :- not subCycle(red,1,7,2),pc(red,1,1).
+_subCycle(red,1,8,2) :- not subCycle(red,1,8,2),pc(red,1,1).
+_subCycle(red,1,9,2) :- not subCycle(red,1,9,2),pc(red,1,1).
+_subCycle(red,1,10,2) :- not subCycle(red,1,10,2),pc(red,1,1).
+_subCycle(red,1,11,2) :- not subCycle(red,1,11,2),pc(red,1,1).
+_subCycle(red,1,12,2) :- not subCycle(red,1,12,2),pc(red,1,1).
+_subCycle(red,1,13,2) :- not subCycle(red,1,13,2),pc(red,1,1).
+_subCycle(red,1,14,2) :- not subCycle(red,1,14,2),pc(red,1,1).
+_subCycle(red,1,15,2) :- not subCycle(red,1,15,2),pc(red,1,1).
+_subCycle(red,1,16,2) :- not subCycle(red,1,16,2),pc(red,1,1).
+_subCycle(red,1,17,2) :- not subCycle(red,1,17,2),pc(red,1,1).
+_subCycle(red,1,18,2) :- not subCycle(red,1,18,2),pc(red,1,1).
+_subCycle(red,1,19,2) :- not subCycle(red,1,19,2),pc(red,1,1).
+_subCycle(red,1,20,2) :- not subCycle(red,1,20,2),pc(red,1,1).
+_subCycle(red,1,21,2) :- not subCycle(red,1,21,2),pc(red,1,1).
+_subCycle(red,1,22,2) :- not subCycle(red,1,22,2),pc(red,1,1).
+_subCycle(red,1,23,2) :- not subCycle(red,1,23,2),pc(red,1,1).
+_subCycle(red,1,0,3) :- not subCycle(red,1,0,3),pc(red,1,1).
+_subCycle(red,1,1,3) :- not subCycle(red,1,1,3),pc(red,1,1).
+_subCycle(red,1,2,3) :- not subCycle(red,1,2,3),pc(red,1,1).
+_subCycle(red,1,3,3) :- not subCycle(red,1,3,3),pc(red,1,1).
+_subCycle(red,1,4,3) :- not subCycle(red,1,4,3),pc(red,1,1).
+_subCycle(red,1,5,3) :- not subCycle(red,1,5,3),pc(red,1,1).
+_subCycle(red,1,6,3) :- not subCycle(red,1,6,3),pc(red,1,1).
+_subCycle(red,1,7,3) :- not subCycle(red,1,7,3),pc(red,1,1).
+_subCycle(red,1,8,3) :- not subCycle(red,1,8,3),pc(red,1,1).
+_subCycle(red,1,9,3) :- not subCycle(red,1,9,3),pc(red,1,1).
+_subCycle(red,1,10,3) :- not subCycle(red,1,10,3),pc(red,1,1).
+_subCycle(red,1,11,3) :- not subCycle(red,1,11,3),pc(red,1,1).
+_subCycle(red,1,12,3) :- not subCycle(red,1,12,3),pc(red,1,1).
+_subCycle(red,1,13,3) :- not subCycle(red,1,13,3),pc(red,1,1).
+_subCycle(red,1,14,3) :- not subCycle(red,1,14,3),pc(red,1,1).
+_subCycle(red,1,15,3) :- not subCycle(red,1,15,3),pc(red,1,1).
+_subCycle(red,1,16,3) :- not subCycle(red,1,16,3),pc(red,1,1).
+_subCycle(red,1,17,3) :- not subCycle(red,1,17,3),pc(red,1,1).
+_subCycle(red,1,18,3) :- not subCycle(red,1,18,3),pc(red,1,1).
+_subCycle(red,1,19,3) :- not subCycle(red,1,19,3),pc(red,1,1).
+_subCycle(red,1,20,3) :- not subCycle(red,1,20,3),pc(red,1,1).
+_subCycle(red,1,21,3) :- not subCycle(red,1,21,3),pc(red,1,1).
+_subCycle(red,1,22,3) :- not subCycle(red,1,22,3),pc(red,1,1).
+_subCycle(red,1,23,3) :- not subCycle(red,1,23,3),pc(red,1,1).
+_subCycle(red,1,0,4) :- not subCycle(red,1,0,4),pc(red,1,1).
+_subCycle(red,1,1,4) :- not subCycle(red,1,1,4),pc(red,1,1).
+_subCycle(red,1,2,4) :- not subCycle(red,1,2,4),pc(red,1,1).
+_subCycle(red,1,3,4) :- not subCycle(red,1,3,4),pc(red,1,1).
+_subCycle(red,1,4,4) :- not subCycle(red,1,4,4),pc(red,1,1).
+_subCycle(red,1,5,4) :- not subCycle(red,1,5,4),pc(red,1,1).
+_subCycle(red,1,6,4) :- not subCycle(red,1,6,4),pc(red,1,1).
+_subCycle(red,1,7,4) :- not subCycle(red,1,7,4),pc(red,1,1).
+_subCycle(red,1,8,4) :- not subCycle(red,1,8,4),pc(red,1,1).
+_subCycle(red,1,9,4) :- not subCycle(red,1,9,4),pc(red,1,1).
+_subCycle(red,1,10,4) :- not subCycle(red,1,10,4),pc(red,1,1).
+_subCycle(red,1,11,4) :- not subCycle(red,1,11,4),pc(red,1,1).
+_subCycle(red,1,12,4) :- not subCycle(red,1,12,4),pc(red,1,1).
+_subCycle(red,1,13,4) :- not subCycle(red,1,13,4),pc(red,1,1).
+_subCycle(red,1,14,4) :- not subCycle(red,1,14,4),pc(red,1,1).
+_subCycle(red,1,15,4) :- not subCycle(red,1,15,4),pc(red,1,1).
+_subCycle(red,1,16,4) :- not subCycle(red,1,16,4),pc(red,1,1).
+_subCycle(red,1,17,4) :- not subCycle(red,1,17,4),pc(red,1,1).
+_subCycle(red,1,18,4) :- not subCycle(red,1,18,4),pc(red,1,1).
+_subCycle(red,1,19,4) :- not subCycle(red,1,19,4),pc(red,1,1).
+_subCycle(red,1,20,4) :- not subCycle(red,1,20,4),pc(red,1,1).
+_subCycle(red,1,21,4) :- not subCycle(red,1,21,4),pc(red,1,1).
+_subCycle(red,1,22,4) :- not subCycle(red,1,22,4),pc(red,1,1).
+_subCycle(red,1,23,4) :- not subCycle(red,1,23,4),pc(red,1,1).
+_subCycle(red,1,0,5) :- not subCycle(red,1,0,5),pc(red,1,1).
+_subCycle(red,1,1,5) :- not subCycle(red,1,1,5),pc(red,1,1).
+_subCycle(red,1,2,5) :- not subCycle(red,1,2,5),pc(red,1,1).
+_subCycle(red,1,3,5) :- not subCycle(red,1,3,5),pc(red,1,1).
+_subCycle(red,1,4,5) :- not subCycle(red,1,4,5),pc(red,1,1).
+_subCycle(red,1,5,5) :- not subCycle(red,1,5,5),pc(red,1,1).
+_subCycle(red,1,6,5) :- not subCycle(red,1,6,5),pc(red,1,1).
+_subCycle(red,1,7,5) :- not subCycle(red,1,7,5),pc(red,1,1).
+_subCycle(red,1,8,5) :- not subCycle(red,1,8,5),pc(red,1,1).
+_subCycle(red,1,9,5) :- not subCycle(red,1,9,5),pc(red,1,1).
+_subCycle(red,1,10,5) :- not subCycle(red,1,10,5),pc(red,1,1).
+_subCycle(red,1,11,5) :- not subCycle(red,1,11,5),pc(red,1,1).
+_subCycle(red,1,12,5) :- not subCycle(red,1,12,5),pc(red,1,1).
+_subCycle(red,1,13,5) :- not subCycle(red,1,13,5),pc(red,1,1).
+_subCycle(red,1,14,5) :- not subCycle(red,1,14,5),pc(red,1,1).
+_subCycle(red,1,15,5) :- not subCycle(red,1,15,5),pc(red,1,1).
+_subCycle(red,1,16,5) :- not subCycle(red,1,16,5),pc(red,1,1).
+_subCycle(red,1,17,5) :- not subCycle(red,1,17,5),pc(red,1,1).
+_subCycle(red,1,18,5) :- not subCycle(red,1,18,5),pc(red,1,1).
+_subCycle(red,1,19,5) :- not subCycle(red,1,19,5),pc(red,1,1).
+_subCycle(red,1,20,5) :- not subCycle(red,1,20,5),pc(red,1,1).
+_subCycle(red,1,21,5) :- not subCycle(red,1,21,5),pc(red,1,1).
+_subCycle(red,1,22,5) :- not subCycle(red,1,22,5),pc(red,1,1).
+_subCycle(red,1,23,5) :- not subCycle(red,1,23,5),pc(red,1,1).
+_subCycle(red,1,0,6) :- not subCycle(red,1,0,6),pc(red,1,1).
+_subCycle(red,1,1,6) :- not subCycle(red,1,1,6),pc(red,1,1).
+_subCycle(red,1,2,6) :- not subCycle(red,1,2,6),pc(red,1,1).
+_subCycle(red,1,3,6) :- not subCycle(red,1,3,6),pc(red,1,1).
+_subCycle(red,1,4,6) :- not subCycle(red,1,4,6),pc(red,1,1).
+_subCycle(red,1,5,6) :- not subCycle(red,1,5,6),pc(red,1,1).
+_subCycle(red,1,6,6) :- not subCycle(red,1,6,6),pc(red,1,1).
+_subCycle(red,1,7,6) :- not subCycle(red,1,7,6),pc(red,1,1).
+_subCycle(red,1,8,6) :- not subCycle(red,1,8,6),pc(red,1,1).
+_subCycle(red,1,9,6) :- not subCycle(red,1,9,6),pc(red,1,1).
+_subCycle(red,1,10,6) :- not subCycle(red,1,10,6),pc(red,1,1).
+_subCycle(red,1,11,6) :- not subCycle(red,1,11,6),pc(red,1,1).
+_subCycle(red,1,12,6) :- not subCycle(red,1,12,6),pc(red,1,1).
+_subCycle(red,1,13,6) :- not subCycle(red,1,13,6),pc(red,1,1).
+_subCycle(red,1,14,6) :- not subCycle(red,1,14,6),pc(red,1,1).
+_subCycle(red,1,15,6) :- not subCycle(red,1,15,6),pc(red,1,1).
+_subCycle(red,1,16,6) :- not subCycle(red,1,16,6),pc(red,1,1).
+_subCycle(red,1,17,6) :- not subCycle(red,1,17,6),pc(red,1,1).
+_subCycle(red,1,18,6) :- not subCycle(red,1,18,6),pc(red,1,1).
+_subCycle(red,1,19,6) :- not subCycle(red,1,19,6),pc(red,1,1).
+_subCycle(red,1,20,6) :- not subCycle(red,1,20,6),pc(red,1,1).
+_subCycle(red,1,21,6) :- not subCycle(red,1,21,6),pc(red,1,1).
+_subCycle(red,1,22,6) :- not subCycle(red,1,22,6),pc(red,1,1).
+_subCycle(red,1,23,6) :- not subCycle(red,1,23,6),pc(red,1,1).
+_subCycle(red,1,0,7) :- not subCycle(red,1,0,7),pc(red,1,1).
+_subCycle(red,1,1,7) :- not subCycle(red,1,1,7),pc(red,1,1).
+_subCycle(red,1,2,7) :- not subCycle(red,1,2,7),pc(red,1,1).
+_subCycle(red,1,3,7) :- not subCycle(red,1,3,7),pc(red,1,1).
+_subCycle(red,1,4,7) :- not subCycle(red,1,4,7),pc(red,1,1).
+_subCycle(red,1,5,7) :- not subCycle(red,1,5,7),pc(red,1,1).
+_subCycle(red,1,6,7) :- not subCycle(red,1,6,7),pc(red,1,1).
+_subCycle(red,1,7,7) :- not subCycle(red,1,7,7),pc(red,1,1).
+_subCycle(red,1,8,7) :- not subCycle(red,1,8,7),pc(red,1,1).
+_subCycle(red,1,9,7) :- not subCycle(red,1,9,7),pc(red,1,1).
+_subCycle(red,1,10,7) :- not subCycle(red,1,10,7),pc(red,1,1).
+_subCycle(red,1,11,7) :- not subCycle(red,1,11,7),pc(red,1,1).
+_subCycle(red,1,12,7) :- not subCycle(red,1,12,7),pc(red,1,1).
+_subCycle(red,1,13,7) :- not subCycle(red,1,13,7),pc(red,1,1).
+_subCycle(red,1,14,7) :- not subCycle(red,1,14,7),pc(red,1,1).
+_subCycle(red,1,15,7) :- not subCycle(red,1,15,7),pc(red,1,1).
+_subCycle(red,1,16,7) :- not subCycle(red,1,16,7),pc(red,1,1).
+_subCycle(red,1,17,7) :- not subCycle(red,1,17,7),pc(red,1,1).
+_subCycle(red,1,18,7) :- not subCycle(red,1,18,7),pc(red,1,1).
+_subCycle(red,1,19,7) :- not subCycle(red,1,19,7),pc(red,1,1).
+_subCycle(red,1,20,7) :- not subCycle(red,1,20,7),pc(red,1,1).
+_subCycle(red,1,21,7) :- not subCycle(red,1,21,7),pc(red,1,1).
+_subCycle(red,1,22,7) :- not subCycle(red,1,22,7),pc(red,1,1).
+_subCycle(red,1,23,7) :- not subCycle(red,1,23,7),pc(red,1,1).
+_subCycle(red,1,0,8) :- not subCycle(red,1,0,8),pc(red,1,1).
+_subCycle(red,1,1,8) :- not subCycle(red,1,1,8),pc(red,1,1).
+_subCycle(red,1,2,8) :- not subCycle(red,1,2,8),pc(red,1,1).
+_subCycle(red,1,3,8) :- not subCycle(red,1,3,8),pc(red,1,1).
+_subCycle(red,1,4,8) :- not subCycle(red,1,4,8),pc(red,1,1).
+_subCycle(red,1,5,8) :- not subCycle(red,1,5,8),pc(red,1,1).
+_subCycle(red,1,6,8) :- not subCycle(red,1,6,8),pc(red,1,1).
+_subCycle(red,1,7,8) :- not subCycle(red,1,7,8),pc(red,1,1).
+_subCycle(red,1,8,8) :- not subCycle(red,1,8,8),pc(red,1,1).
+_subCycle(red,1,9,8) :- not subCycle(red,1,9,8),pc(red,1,1).
+_subCycle(red,1,10,8) :- not subCycle(red,1,10,8),pc(red,1,1).
+_subCycle(red,1,11,8) :- not subCycle(red,1,11,8),pc(red,1,1).
+_subCycle(red,1,12,8) :- not subCycle(red,1,12,8),pc(red,1,1).
+_subCycle(red,1,13,8) :- not subCycle(red,1,13,8),pc(red,1,1).
+_subCycle(red,1,14,8) :- not subCycle(red,1,14,8),pc(red,1,1).
+_subCycle(red,1,15,8) :- not subCycle(red,1,15,8),pc(red,1,1).
+_subCycle(red,1,16,8) :- not subCycle(red,1,16,8),pc(red,1,1).
+_subCycle(red,1,17,8) :- not subCycle(red,1,17,8),pc(red,1,1).
+_subCycle(red,1,18,8) :- not subCycle(red,1,18,8),pc(red,1,1).
+_subCycle(red,1,19,8) :- not subCycle(red,1,19,8),pc(red,1,1).
+_subCycle(red,1,20,8) :- not subCycle(red,1,20,8),pc(red,1,1).
+_subCycle(red,1,21,8) :- not subCycle(red,1,21,8),pc(red,1,1).
+_subCycle(red,1,22,8) :- not subCycle(red,1,22,8),pc(red,1,1).
+_subCycle(red,1,23,8) :- not subCycle(red,1,23,8),pc(red,1,1).
+_subCycle(red,1,0,9) :- not subCycle(red,1,0,9),pc(red,1,1).
+_subCycle(red,1,1,9) :- not subCycle(red,1,1,9),pc(red,1,1).
+_subCycle(red,1,2,9) :- not subCycle(red,1,2,9),pc(red,1,1).
+_subCycle(red,1,3,9) :- not subCycle(red,1,3,9),pc(red,1,1).
+_subCycle(red,1,4,9) :- not subCycle(red,1,4,9),pc(red,1,1).
+_subCycle(red,1,5,9) :- not subCycle(red,1,5,9),pc(red,1,1).
+_subCycle(red,1,6,9) :- not subCycle(red,1,6,9),pc(red,1,1).
+_subCycle(red,1,7,9) :- not subCycle(red,1,7,9),pc(red,1,1).
+_subCycle(red,1,8,9) :- not subCycle(red,1,8,9),pc(red,1,1).
+_subCycle(red,1,9,9) :- not subCycle(red,1,9,9),pc(red,1,1).
+_subCycle(red,1,10,9) :- not subCycle(red,1,10,9),pc(red,1,1).
+_subCycle(red,1,11,9) :- not subCycle(red,1,11,9),pc(red,1,1).
+_subCycle(red,1,12,9) :- not subCycle(red,1,12,9),pc(red,1,1).
+_subCycle(red,1,13,9) :- not subCycle(red,1,13,9),pc(red,1,1).
+_subCycle(red,1,14,9) :- not subCycle(red,1,14,9),pc(red,1,1).
+_subCycle(red,1,15,9) :- not subCycle(red,1,15,9),pc(red,1,1).
+_subCycle(red,1,16,9) :- not subCycle(red,1,16,9),pc(red,1,1).
+_subCycle(red,1,17,9) :- not subCycle(red,1,17,9),pc(red,1,1).
+_subCycle(red,1,18,9) :- not subCycle(red,1,18,9),pc(red,1,1).
+_subCycle(red,1,19,9) :- not subCycle(red,1,19,9),pc(red,1,1).
+_subCycle(red,1,20,9) :- not subCycle(red,1,20,9),pc(red,1,1).
+_subCycle(red,1,21,9) :- not subCycle(red,1,21,9),pc(red,1,1).
+_subCycle(red,1,22,9) :- not subCycle(red,1,22,9),pc(red,1,1).
+_subCycle(red,1,23,9) :- not subCycle(red,1,23,9),pc(red,1,1).
+_subCycle(red,1,0,10) :- not subCycle(red,1,0,10),pc(red,1,1).
+_subCycle(red,1,1,10) :- not subCycle(red,1,1,10),pc(red,1,1).
+_subCycle(red,1,2,10) :- not subCycle(red,1,2,10),pc(red,1,1).
+_subCycle(red,1,3,10) :- not subCycle(red,1,3,10),pc(red,1,1).
+_subCycle(red,1,4,10) :- not subCycle(red,1,4,10),pc(red,1,1).
+_subCycle(red,1,5,10) :- not subCycle(red,1,5,10),pc(red,1,1).
+_subCycle(red,1,6,10) :- not subCycle(red,1,6,10),pc(red,1,1).
+_subCycle(red,1,7,10) :- not subCycle(red,1,7,10),pc(red,1,1).
+_subCycle(red,1,8,10) :- not subCycle(red,1,8,10),pc(red,1,1).
+_subCycle(red,1,9,10) :- not subCycle(red,1,9,10),pc(red,1,1).
+_subCycle(red,1,10,10) :- not subCycle(red,1,10,10),pc(red,1,1).
+_subCycle(red,1,11,10) :- not subCycle(red,1,11,10),pc(red,1,1).
+_subCycle(red,1,12,10) :- not subCycle(red,1,12,10),pc(red,1,1).
+_subCycle(red,1,13,10) :- not subCycle(red,1,13,10),pc(red,1,1).
+_subCycle(red,1,14,10) :- not subCycle(red,1,14,10),pc(red,1,1).
+_subCycle(red,1,15,10) :- not subCycle(red,1,15,10),pc(red,1,1).
+_subCycle(red,1,16,10) :- not subCycle(red,1,16,10),pc(red,1,1).
+_subCycle(red,1,17,10) :- not subCycle(red,1,17,10),pc(red,1,1).
+_subCycle(red,1,18,10) :- not subCycle(red,1,18,10),pc(red,1,1).
+_subCycle(red,1,19,10) :- not subCycle(red,1,19,10),pc(red,1,1).
+_subCycle(red,1,20,10) :- not subCycle(red,1,20,10),pc(red,1,1).
+_subCycle(red,1,21,10) :- not subCycle(red,1,21,10),pc(red,1,1).
+_subCycle(red,1,22,10) :- not subCycle(red,1,22,10),pc(red,1,1).
+_subCycle(red,1,23,10) :- not subCycle(red,1,23,10),pc(red,1,1).
+_subCycle(red,1,0,11) :- not subCycle(red,1,0,11),pc(red,1,1).
+_subCycle(red,1,1,11) :- not subCycle(red,1,1,11),pc(red,1,1).
+_subCycle(red,1,2,11) :- not subCycle(red,1,2,11),pc(red,1,1).
+_subCycle(red,1,3,11) :- not subCycle(red,1,3,11),pc(red,1,1).
+_subCycle(red,1,4,11) :- not subCycle(red,1,4,11),pc(red,1,1).
+_subCycle(red,1,5,11) :- not subCycle(red,1,5,11),pc(red,1,1).
+_subCycle(red,1,6,11) :- not subCycle(red,1,6,11),pc(red,1,1).
+_subCycle(red,1,7,11) :- not subCycle(red,1,7,11),pc(red,1,1).
+_subCycle(red,1,8,11) :- not subCycle(red,1,8,11),pc(red,1,1).
+_subCycle(red,1,9,11) :- not subCycle(red,1,9,11),pc(red,1,1).
+_subCycle(red,1,10,11) :- not subCycle(red,1,10,11),pc(red,1,1).
+_subCycle(red,1,11,11) :- not subCycle(red,1,11,11),pc(red,1,1).
+_subCycle(red,1,12,11) :- not subCycle(red,1,12,11),pc(red,1,1).
+_subCycle(red,1,13,11) :- not subCycle(red,1,13,11),pc(red,1,1).
+_subCycle(red,1,14,11) :- not subCycle(red,1,14,11),pc(red,1,1).
+_subCycle(red,1,15,11) :- not subCycle(red,1,15,11),pc(red,1,1).
+_subCycle(red,1,16,11) :- not subCycle(red,1,16,11),pc(red,1,1).
+_subCycle(red,1,17,11) :- not subCycle(red,1,17,11),pc(red,1,1).
+_subCycle(red,1,18,11) :- not subCycle(red,1,18,11),pc(red,1,1).
+_subCycle(red,1,19,11) :- not subCycle(red,1,19,11),pc(red,1,1).
+_subCycle(red,1,20,11) :- not subCycle(red,1,20,11),pc(red,1,1).
+_subCycle(red,1,21,11) :- not subCycle(red,1,21,11),pc(red,1,1).
+_subCycle(red,1,22,11) :- not subCycle(red,1,22,11),pc(red,1,1).
+_subCycle(red,1,23,11) :- not subCycle(red,1,23,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,1) :- not subCycleAdditionCarry(red,1,1,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,2) :- not subCycleAdditionCarry(red,1,1,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,3) :- not subCycleAdditionCarry(red,1,1,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,4) :- not subCycleAdditionCarry(red,1,1,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,5) :- not subCycleAdditionCarry(red,1,1,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,6) :- not subCycleAdditionCarry(red,1,1,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,7) :- not subCycleAdditionCarry(red,1,1,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,8) :- not subCycleAdditionCarry(red,1,1,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,9) :- not subCycleAdditionCarry(red,1,1,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,10) :- not subCycleAdditionCarry(red,1,1,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,11) :- not subCycleAdditionCarry(red,1,1,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,1) :- not subCycleAdditionCarry(red,1,1,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,1) :- not subCycleAdditionCarry(red,1,2,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,1) :- not subCycleAdditionCarry(red,1,3,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,1) :- not subCycleAdditionCarry(red,1,4,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,1) :- not subCycleAdditionCarry(red,1,5,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,1) :- not subCycleAdditionCarry(red,1,6,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,1) :- not subCycleAdditionCarry(red,1,7,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,1) :- not subCycleAdditionCarry(red,1,8,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,1) :- not subCycleAdditionCarry(red,1,9,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,1) :- not subCycleAdditionCarry(red,1,10,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,1) :- not subCycleAdditionCarry(red,1,11,1),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,2) :- not subCycleAdditionCarry(red,1,1,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,2) :- not subCycleAdditionCarry(red,1,2,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,2) :- not subCycleAdditionCarry(red,1,3,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,2) :- not subCycleAdditionCarry(red,1,4,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,2) :- not subCycleAdditionCarry(red,1,5,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,2) :- not subCycleAdditionCarry(red,1,6,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,2) :- not subCycleAdditionCarry(red,1,7,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,2) :- not subCycleAdditionCarry(red,1,8,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,2) :- not subCycleAdditionCarry(red,1,9,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,2) :- not subCycleAdditionCarry(red,1,10,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,2) :- not subCycleAdditionCarry(red,1,11,2),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,3) :- not subCycleAdditionCarry(red,1,1,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,3) :- not subCycleAdditionCarry(red,1,2,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,3) :- not subCycleAdditionCarry(red,1,3,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,3) :- not subCycleAdditionCarry(red,1,4,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,3) :- not subCycleAdditionCarry(red,1,5,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,3) :- not subCycleAdditionCarry(red,1,6,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,3) :- not subCycleAdditionCarry(red,1,7,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,3) :- not subCycleAdditionCarry(red,1,8,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,3) :- not subCycleAdditionCarry(red,1,9,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,3) :- not subCycleAdditionCarry(red,1,10,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,3) :- not subCycleAdditionCarry(red,1,11,3),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,4) :- not subCycleAdditionCarry(red,1,1,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,4) :- not subCycleAdditionCarry(red,1,2,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,4) :- not subCycleAdditionCarry(red,1,3,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,4) :- not subCycleAdditionCarry(red,1,4,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,4) :- not subCycleAdditionCarry(red,1,5,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,4) :- not subCycleAdditionCarry(red,1,6,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,4) :- not subCycleAdditionCarry(red,1,7,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,4) :- not subCycleAdditionCarry(red,1,8,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,4) :- not subCycleAdditionCarry(red,1,9,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,4) :- not subCycleAdditionCarry(red,1,10,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,4) :- not subCycleAdditionCarry(red,1,11,4),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,5) :- not subCycleAdditionCarry(red,1,1,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,5) :- not subCycleAdditionCarry(red,1,2,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,5) :- not subCycleAdditionCarry(red,1,3,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,5) :- not subCycleAdditionCarry(red,1,4,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,5) :- not subCycleAdditionCarry(red,1,5,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,5) :- not subCycleAdditionCarry(red,1,6,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,5) :- not subCycleAdditionCarry(red,1,7,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,5) :- not subCycleAdditionCarry(red,1,8,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,5) :- not subCycleAdditionCarry(red,1,9,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,5) :- not subCycleAdditionCarry(red,1,10,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,5) :- not subCycleAdditionCarry(red,1,11,5),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,6) :- not subCycleAdditionCarry(red,1,1,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,6) :- not subCycleAdditionCarry(red,1,2,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,6) :- not subCycleAdditionCarry(red,1,3,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,6) :- not subCycleAdditionCarry(red,1,4,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,6) :- not subCycleAdditionCarry(red,1,5,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,6) :- not subCycleAdditionCarry(red,1,6,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,6) :- not subCycleAdditionCarry(red,1,7,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,6) :- not subCycleAdditionCarry(red,1,8,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,6) :- not subCycleAdditionCarry(red,1,9,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,6) :- not subCycleAdditionCarry(red,1,10,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,6) :- not subCycleAdditionCarry(red,1,11,6),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,7) :- not subCycleAdditionCarry(red,1,1,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,7) :- not subCycleAdditionCarry(red,1,2,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,7) :- not subCycleAdditionCarry(red,1,3,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,7) :- not subCycleAdditionCarry(red,1,4,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,7) :- not subCycleAdditionCarry(red,1,5,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,7) :- not subCycleAdditionCarry(red,1,6,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,7) :- not subCycleAdditionCarry(red,1,7,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,7) :- not subCycleAdditionCarry(red,1,8,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,7) :- not subCycleAdditionCarry(red,1,9,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,7) :- not subCycleAdditionCarry(red,1,10,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,7) :- not subCycleAdditionCarry(red,1,11,7),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,8) :- not subCycleAdditionCarry(red,1,1,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,8) :- not subCycleAdditionCarry(red,1,2,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,8) :- not subCycleAdditionCarry(red,1,3,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,8) :- not subCycleAdditionCarry(red,1,4,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,8) :- not subCycleAdditionCarry(red,1,5,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,8) :- not subCycleAdditionCarry(red,1,6,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,8) :- not subCycleAdditionCarry(red,1,7,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,8) :- not subCycleAdditionCarry(red,1,8,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,8) :- not subCycleAdditionCarry(red,1,9,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,8) :- not subCycleAdditionCarry(red,1,10,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,8) :- not subCycleAdditionCarry(red,1,11,8),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,9) :- not subCycleAdditionCarry(red,1,1,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,9) :- not subCycleAdditionCarry(red,1,2,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,9) :- not subCycleAdditionCarry(red,1,3,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,9) :- not subCycleAdditionCarry(red,1,4,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,9) :- not subCycleAdditionCarry(red,1,5,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,9) :- not subCycleAdditionCarry(red,1,6,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,9) :- not subCycleAdditionCarry(red,1,7,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,9) :- not subCycleAdditionCarry(red,1,8,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,9) :- not subCycleAdditionCarry(red,1,9,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,9) :- not subCycleAdditionCarry(red,1,10,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,9) :- not subCycleAdditionCarry(red,1,11,9),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,10) :- not subCycleAdditionCarry(red,1,1,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,10) :- not subCycleAdditionCarry(red,1,2,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,10) :- not subCycleAdditionCarry(red,1,3,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,10) :- not subCycleAdditionCarry(red,1,4,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,10) :- not subCycleAdditionCarry(red,1,5,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,10) :- not subCycleAdditionCarry(red,1,6,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,10) :- not subCycleAdditionCarry(red,1,7,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,10) :- not subCycleAdditionCarry(red,1,8,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,10) :- not subCycleAdditionCarry(red,1,9,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,10) :- not subCycleAdditionCarry(red,1,10,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,10) :- not subCycleAdditionCarry(red,1,11,10),pc(red,1,1).
+_subCycleAdditionCarry(red,1,1,11) :- not subCycleAdditionCarry(red,1,1,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,2,11) :- not subCycleAdditionCarry(red,1,2,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,3,11) :- not subCycleAdditionCarry(red,1,3,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,4,11) :- not subCycleAdditionCarry(red,1,4,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,5,11) :- not subCycleAdditionCarry(red,1,5,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,6,11) :- not subCycleAdditionCarry(red,1,6,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,7,11) :- not subCycleAdditionCarry(red,1,7,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,8,11) :- not subCycleAdditionCarry(red,1,8,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,9,11) :- not subCycleAdditionCarry(red,1,9,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,10,11) :- not subCycleAdditionCarry(red,1,10,11),pc(red,1,1).
+_subCycleAdditionCarry(red,1,11,11) :- not subCycleAdditionCarry(red,1,11,11),pc(red,1,1).
+subCycleAdditionCarry(red,1,1,1) :- pc(red,1,1),value(red,i1,0),value(red,i2,1),subCycle(red,1,1,0).
+subCycleAdditionCarry(red,1,1,2) :- pc(red,1,1),value(red,i1,0),value(red,i2,2),subCycle(red,1,2,1).
+subCycleAdditionCarry(red,1,1,3) :- pc(red,1,1),value(red,i1,0),value(red,i2,3),subCycle(red,1,3,2).
+subCycleAdditionCarry(red,1,1,4) :- pc(red,1,1),value(red,i1,0),value(red,i2,4),subCycle(red,1,4,3).
+subCycleAdditionCarry(red,1,1,5) :- pc(red,1,1),value(red,i1,0),value(red,i2,5),subCycle(red,1,5,4).
+subCycleAdditionCarry(red,1,1,6) :- pc(red,1,1),value(red,i1,0),value(red,i2,6),subCycle(red,1,6,5).
+subCycleAdditionCarry(red,1,1,7) :- pc(red,1,1),value(red,i1,0),value(red,i2,7),subCycle(red,1,7,6).
+subCycleAdditionCarry(red,1,1,8) :- pc(red,1,1),value(red,i1,0),value(red,i2,8),subCycle(red,1,8,7).
+subCycleAdditionCarry(red,1,1,9) :- pc(red,1,1),value(red,i1,0),value(red,i2,9),subCycle(red,1,9,8).
+subCycleAdditionCarry(red,1,1,10) :- pc(red,1,1),value(red,i1,0),value(red,i2,10),subCycle(red,1,10,9).
+subCycleAdditionCarry(red,1,1,11) :- pc(red,1,1),value(red,i1,0),value(red,i2,11),subCycle(red,1,11,10).
+subCycleAdditionCarry(red,1,1,1) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,1,0),subCycleAdditionCarry(red,1,0,1).
+subCycleAdditionCarry(red,1,2,1) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,2,0),subCycleAdditionCarry(red,1,1,1).
+subCycleAdditionCarry(red,1,3,1) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,3,0),subCycleAdditionCarry(red,1,2,1).
+subCycleAdditionCarry(red,1,4,1) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,4,0),subCycleAdditionCarry(red,1,3,1).
+subCycleAdditionCarry(red,1,5,1) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,5,0),subCycleAdditionCarry(red,1,4,1).
+subCycleAdditionCarry(red,1,6,1) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,6,0),subCycleAdditionCarry(red,1,5,1).
+subCycleAdditionCarry(red,1,7,1) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,7,0),subCycleAdditionCarry(red,1,6,1).
+subCycleAdditionCarry(red,1,8,1) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,8,0),subCycleAdditionCarry(red,1,7,1).
+subCycleAdditionCarry(red,1,9,1) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,9,0),subCycleAdditionCarry(red,1,8,1).
+subCycleAdditionCarry(red,1,10,1) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,10,0),subCycleAdditionCarry(red,1,9,1).
+subCycleAdditionCarry(red,1,11,1) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,11,0),subCycleAdditionCarry(red,1,10,1).
+subCycleAdditionCarry(red,1,1,2) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,2,1),subCycleAdditionCarry(red,1,0,2).
+subCycleAdditionCarry(red,1,2,2) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,3,1),subCycleAdditionCarry(red,1,1,2).
+subCycleAdditionCarry(red,1,3,2) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,4,1),subCycleAdditionCarry(red,1,2,2).
+subCycleAdditionCarry(red,1,4,2) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,5,1),subCycleAdditionCarry(red,1,3,2).
+subCycleAdditionCarry(red,1,5,2) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,6,1),subCycleAdditionCarry(red,1,4,2).
+subCycleAdditionCarry(red,1,6,2) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,7,1),subCycleAdditionCarry(red,1,5,2).
+subCycleAdditionCarry(red,1,7,2) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,8,1),subCycleAdditionCarry(red,1,6,2).
+subCycleAdditionCarry(red,1,8,2) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,9,1),subCycleAdditionCarry(red,1,7,2).
+subCycleAdditionCarry(red,1,9,2) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,10,1),subCycleAdditionCarry(red,1,8,2).
+subCycleAdditionCarry(red,1,10,2) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,11,1),subCycleAdditionCarry(red,1,9,2).
+subCycleAdditionCarry(red,1,11,2) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,12,1),subCycleAdditionCarry(red,1,10,2).
+subCycleAdditionCarry(red,1,1,3) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,3,2),subCycleAdditionCarry(red,1,0,3).
+subCycleAdditionCarry(red,1,2,3) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,4,2),subCycleAdditionCarry(red,1,1,3).
+subCycleAdditionCarry(red,1,3,3) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,5,2),subCycleAdditionCarry(red,1,2,3).
+subCycleAdditionCarry(red,1,4,3) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,6,2),subCycleAdditionCarry(red,1,3,3).
+subCycleAdditionCarry(red,1,5,3) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,7,2),subCycleAdditionCarry(red,1,4,3).
+subCycleAdditionCarry(red,1,6,3) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,8,2),subCycleAdditionCarry(red,1,5,3).
+subCycleAdditionCarry(red,1,7,3) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,9,2),subCycleAdditionCarry(red,1,6,3).
+subCycleAdditionCarry(red,1,8,3) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,10,2),subCycleAdditionCarry(red,1,7,3).
+subCycleAdditionCarry(red,1,9,3) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,11,2),subCycleAdditionCarry(red,1,8,3).
+subCycleAdditionCarry(red,1,10,3) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,12,2),subCycleAdditionCarry(red,1,9,3).
+subCycleAdditionCarry(red,1,11,3) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,13,2),subCycleAdditionCarry(red,1,10,3).
+subCycleAdditionCarry(red,1,1,4) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,4,3),subCycleAdditionCarry(red,1,0,4).
+subCycleAdditionCarry(red,1,2,4) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,5,3),subCycleAdditionCarry(red,1,1,4).
+subCycleAdditionCarry(red,1,3,4) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,6,3),subCycleAdditionCarry(red,1,2,4).
+subCycleAdditionCarry(red,1,4,4) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,7,3),subCycleAdditionCarry(red,1,3,4).
+subCycleAdditionCarry(red,1,5,4) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,8,3),subCycleAdditionCarry(red,1,4,4).
+subCycleAdditionCarry(red,1,6,4) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,9,3),subCycleAdditionCarry(red,1,5,4).
+subCycleAdditionCarry(red,1,7,4) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,10,3),subCycleAdditionCarry(red,1,6,4).
+subCycleAdditionCarry(red,1,8,4) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,11,3),subCycleAdditionCarry(red,1,7,4).
+subCycleAdditionCarry(red,1,9,4) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,12,3),subCycleAdditionCarry(red,1,8,4).
+subCycleAdditionCarry(red,1,10,4) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,13,3),subCycleAdditionCarry(red,1,9,4).
+subCycleAdditionCarry(red,1,11,4) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,14,3),subCycleAdditionCarry(red,1,10,4).
+subCycleAdditionCarry(red,1,1,5) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,5,4),subCycleAdditionCarry(red,1,0,5).
+subCycleAdditionCarry(red,1,2,5) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,6,4),subCycleAdditionCarry(red,1,1,5).
+subCycleAdditionCarry(red,1,3,5) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,7,4),subCycleAdditionCarry(red,1,2,5).
+subCycleAdditionCarry(red,1,4,5) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,8,4),subCycleAdditionCarry(red,1,3,5).
+subCycleAdditionCarry(red,1,5,5) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,9,4),subCycleAdditionCarry(red,1,4,5).
+subCycleAdditionCarry(red,1,6,5) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,10,4),subCycleAdditionCarry(red,1,5,5).
+subCycleAdditionCarry(red,1,7,5) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,11,4),subCycleAdditionCarry(red,1,6,5).
+subCycleAdditionCarry(red,1,8,5) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,12,4),subCycleAdditionCarry(red,1,7,5).
+subCycleAdditionCarry(red,1,9,5) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,13,4),subCycleAdditionCarry(red,1,8,5).
+subCycleAdditionCarry(red,1,10,5) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,14,4),subCycleAdditionCarry(red,1,9,5).
+subCycleAdditionCarry(red,1,11,5) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,15,4),subCycleAdditionCarry(red,1,10,5).
+subCycleAdditionCarry(red,1,1,6) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,6,5),subCycleAdditionCarry(red,1,0,6).
+subCycleAdditionCarry(red,1,2,6) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,7,5),subCycleAdditionCarry(red,1,1,6).
+subCycleAdditionCarry(red,1,3,6) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,8,5),subCycleAdditionCarry(red,1,2,6).
+subCycleAdditionCarry(red,1,4,6) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,9,5),subCycleAdditionCarry(red,1,3,6).
+subCycleAdditionCarry(red,1,5,6) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,10,5),subCycleAdditionCarry(red,1,4,6).
+subCycleAdditionCarry(red,1,6,6) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,11,5),subCycleAdditionCarry(red,1,5,6).
+subCycleAdditionCarry(red,1,7,6) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,12,5),subCycleAdditionCarry(red,1,6,6).
+subCycleAdditionCarry(red,1,8,6) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,13,5),subCycleAdditionCarry(red,1,7,6).
+subCycleAdditionCarry(red,1,9,6) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,14,5),subCycleAdditionCarry(red,1,8,6).
+subCycleAdditionCarry(red,1,10,6) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,15,5),subCycleAdditionCarry(red,1,9,6).
+subCycleAdditionCarry(red,1,11,6) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,16,5),subCycleAdditionCarry(red,1,10,6).
+subCycleAdditionCarry(red,1,1,7) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,7,6),subCycleAdditionCarry(red,1,0,7).
+subCycleAdditionCarry(red,1,2,7) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,8,6),subCycleAdditionCarry(red,1,1,7).
+subCycleAdditionCarry(red,1,3,7) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,9,6),subCycleAdditionCarry(red,1,2,7).
+subCycleAdditionCarry(red,1,4,7) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,10,6),subCycleAdditionCarry(red,1,3,7).
+subCycleAdditionCarry(red,1,5,7) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,11,6),subCycleAdditionCarry(red,1,4,7).
+subCycleAdditionCarry(red,1,6,7) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,12,6),subCycleAdditionCarry(red,1,5,7).
+subCycleAdditionCarry(red,1,7,7) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,13,6),subCycleAdditionCarry(red,1,6,7).
+subCycleAdditionCarry(red,1,8,7) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,14,6),subCycleAdditionCarry(red,1,7,7).
+subCycleAdditionCarry(red,1,9,7) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,15,6),subCycleAdditionCarry(red,1,8,7).
+subCycleAdditionCarry(red,1,10,7) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,16,6),subCycleAdditionCarry(red,1,9,7).
+subCycleAdditionCarry(red,1,11,7) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,17,6),subCycleAdditionCarry(red,1,10,7).
+subCycleAdditionCarry(red,1,1,8) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,8,7),subCycleAdditionCarry(red,1,0,8).
+subCycleAdditionCarry(red,1,2,8) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,9,7),subCycleAdditionCarry(red,1,1,8).
+subCycleAdditionCarry(red,1,3,8) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,10,7),subCycleAdditionCarry(red,1,2,8).
+subCycleAdditionCarry(red,1,4,8) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,11,7),subCycleAdditionCarry(red,1,3,8).
+subCycleAdditionCarry(red,1,5,8) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,12,7),subCycleAdditionCarry(red,1,4,8).
+subCycleAdditionCarry(red,1,6,8) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,13,7),subCycleAdditionCarry(red,1,5,8).
+subCycleAdditionCarry(red,1,7,8) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,14,7),subCycleAdditionCarry(red,1,6,8).
+subCycleAdditionCarry(red,1,8,8) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,15,7),subCycleAdditionCarry(red,1,7,8).
+subCycleAdditionCarry(red,1,9,8) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,16,7),subCycleAdditionCarry(red,1,8,8).
+subCycleAdditionCarry(red,1,10,8) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,17,7),subCycleAdditionCarry(red,1,9,8).
+subCycleAdditionCarry(red,1,11,8) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,18,7),subCycleAdditionCarry(red,1,10,8).
+subCycleAdditionCarry(red,1,1,9) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,9,8),subCycleAdditionCarry(red,1,0,9).
+subCycleAdditionCarry(red,1,2,9) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,10,8),subCycleAdditionCarry(red,1,1,9).
+subCycleAdditionCarry(red,1,3,9) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,11,8),subCycleAdditionCarry(red,1,2,9).
+subCycleAdditionCarry(red,1,4,9) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,12,8),subCycleAdditionCarry(red,1,3,9).
+subCycleAdditionCarry(red,1,5,9) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,13,8),subCycleAdditionCarry(red,1,4,9).
+subCycleAdditionCarry(red,1,6,9) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,14,8),subCycleAdditionCarry(red,1,5,9).
+subCycleAdditionCarry(red,1,7,9) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,15,8),subCycleAdditionCarry(red,1,6,9).
+subCycleAdditionCarry(red,1,8,9) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,16,8),subCycleAdditionCarry(red,1,7,9).
+subCycleAdditionCarry(red,1,9,9) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,17,8),subCycleAdditionCarry(red,1,8,9).
+subCycleAdditionCarry(red,1,10,9) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,18,8),subCycleAdditionCarry(red,1,9,9).
+subCycleAdditionCarry(red,1,11,9) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,19,8),subCycleAdditionCarry(red,1,10,9).
+subCycleAdditionCarry(red,1,1,10) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,10,9),subCycleAdditionCarry(red,1,0,10).
+subCycleAdditionCarry(red,1,2,10) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,11,9),subCycleAdditionCarry(red,1,1,10).
+subCycleAdditionCarry(red,1,3,10) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,12,9),subCycleAdditionCarry(red,1,2,10).
+subCycleAdditionCarry(red,1,4,10) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,13,9),subCycleAdditionCarry(red,1,3,10).
+subCycleAdditionCarry(red,1,5,10) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,14,9),subCycleAdditionCarry(red,1,4,10).
+subCycleAdditionCarry(red,1,6,10) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,15,9),subCycleAdditionCarry(red,1,5,10).
+subCycleAdditionCarry(red,1,7,10) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,16,9),subCycleAdditionCarry(red,1,6,10).
+subCycleAdditionCarry(red,1,8,10) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,17,9),subCycleAdditionCarry(red,1,7,10).
+subCycleAdditionCarry(red,1,9,10) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,18,9),subCycleAdditionCarry(red,1,8,10).
+subCycleAdditionCarry(red,1,10,10) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,19,9),subCycleAdditionCarry(red,1,9,10).
+subCycleAdditionCarry(red,1,11,10) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,20,9),subCycleAdditionCarry(red,1,10,10).
+subCycleAdditionCarry(red,1,1,11) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,11,10),subCycleAdditionCarry(red,1,0,11).
+subCycleAdditionCarry(red,1,2,11) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,12,10),subCycleAdditionCarry(red,1,1,11).
+subCycleAdditionCarry(red,1,3,11) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,13,10),subCycleAdditionCarry(red,1,2,11).
+subCycleAdditionCarry(red,1,4,11) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,14,10),subCycleAdditionCarry(red,1,3,11).
+subCycleAdditionCarry(red,1,5,11) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,15,10),subCycleAdditionCarry(red,1,4,11).
+subCycleAdditionCarry(red,1,6,11) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,16,10),subCycleAdditionCarry(red,1,5,11).
+subCycleAdditionCarry(red,1,7,11) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,17,10),subCycleAdditionCarry(red,1,6,11).
+subCycleAdditionCarry(red,1,8,11) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,18,10),subCycleAdditionCarry(red,1,7,11).
+subCycleAdditionCarry(red,1,9,11) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,19,10),subCycleAdditionCarry(red,1,8,11).
+subCycleAdditionCarry(red,1,10,11) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,20,10),subCycleAdditionCarry(red,1,9,11).
+subCycleAdditionCarry(red,1,11,11) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,21,10),subCycleAdditionCarry(red,1,10,11).
+subCycleAdditionCarry(red,1,1,1) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,1,0),subCycleAdditionCarry(red,1,0,1).
+subCycleAdditionCarry(red,1,2,1) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,2,0),subCycleAdditionCarry(red,1,1,1).
+subCycleAdditionCarry(red,1,3,1) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,3,0),subCycleAdditionCarry(red,1,2,1).
+subCycleAdditionCarry(red,1,4,1) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,4,0),subCycleAdditionCarry(red,1,3,1).
+subCycleAdditionCarry(red,1,5,1) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,5,0),subCycleAdditionCarry(red,1,4,1).
+subCycleAdditionCarry(red,1,6,1) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,6,0),subCycleAdditionCarry(red,1,5,1).
+subCycleAdditionCarry(red,1,7,1) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,7,0),subCycleAdditionCarry(red,1,6,1).
+subCycleAdditionCarry(red,1,8,1) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,8,0),subCycleAdditionCarry(red,1,7,1).
+subCycleAdditionCarry(red,1,9,1) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,9,0),subCycleAdditionCarry(red,1,8,1).
+subCycleAdditionCarry(red,1,10,1) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,10,0),subCycleAdditionCarry(red,1,9,1).
+subCycleAdditionCarry(red,1,11,1) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,11,0),subCycleAdditionCarry(red,1,10,1).
+subCycleAdditionCarry(red,1,1,2) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,2,1),subCycleAdditionCarry(red,1,0,2).
+subCycleAdditionCarry(red,1,2,2) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,3,1),subCycleAdditionCarry(red,1,1,2).
+subCycleAdditionCarry(red,1,3,2) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,4,1),subCycleAdditionCarry(red,1,2,2).
+subCycleAdditionCarry(red,1,4,2) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,5,1),subCycleAdditionCarry(red,1,3,2).
+subCycleAdditionCarry(red,1,5,2) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,6,1),subCycleAdditionCarry(red,1,4,2).
+subCycleAdditionCarry(red,1,6,2) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,7,1),subCycleAdditionCarry(red,1,5,2).
+subCycleAdditionCarry(red,1,7,2) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,8,1),subCycleAdditionCarry(red,1,6,2).
+subCycleAdditionCarry(red,1,8,2) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,9,1),subCycleAdditionCarry(red,1,7,2).
+subCycleAdditionCarry(red,1,9,2) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,10,1),subCycleAdditionCarry(red,1,8,2).
+subCycleAdditionCarry(red,1,10,2) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,11,1),subCycleAdditionCarry(red,1,9,2).
+subCycleAdditionCarry(red,1,11,2) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,12,1),subCycleAdditionCarry(red,1,10,2).
+subCycleAdditionCarry(red,1,1,3) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,3,2),subCycleAdditionCarry(red,1,0,3).
+subCycleAdditionCarry(red,1,2,3) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,4,2),subCycleAdditionCarry(red,1,1,3).
+subCycleAdditionCarry(red,1,3,3) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,5,2),subCycleAdditionCarry(red,1,2,3).
+subCycleAdditionCarry(red,1,4,3) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,6,2),subCycleAdditionCarry(red,1,3,3).
+subCycleAdditionCarry(red,1,5,3) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,7,2),subCycleAdditionCarry(red,1,4,3).
+subCycleAdditionCarry(red,1,6,3) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,8,2),subCycleAdditionCarry(red,1,5,3).
+subCycleAdditionCarry(red,1,7,3) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,9,2),subCycleAdditionCarry(red,1,6,3).
+subCycleAdditionCarry(red,1,8,3) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,10,2),subCycleAdditionCarry(red,1,7,3).
+subCycleAdditionCarry(red,1,9,3) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,11,2),subCycleAdditionCarry(red,1,8,3).
+subCycleAdditionCarry(red,1,10,3) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,12,2),subCycleAdditionCarry(red,1,9,3).
+subCycleAdditionCarry(red,1,11,3) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,13,2),subCycleAdditionCarry(red,1,10,3).
+subCycleAdditionCarry(red,1,1,4) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,4,3),subCycleAdditionCarry(red,1,0,4).
+subCycleAdditionCarry(red,1,2,4) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,5,3),subCycleAdditionCarry(red,1,1,4).
+subCycleAdditionCarry(red,1,3,4) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,6,3),subCycleAdditionCarry(red,1,2,4).
+subCycleAdditionCarry(red,1,4,4) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,7,3),subCycleAdditionCarry(red,1,3,4).
+subCycleAdditionCarry(red,1,5,4) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,8,3),subCycleAdditionCarry(red,1,4,4).
+subCycleAdditionCarry(red,1,6,4) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,9,3),subCycleAdditionCarry(red,1,5,4).
+subCycleAdditionCarry(red,1,7,4) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,10,3),subCycleAdditionCarry(red,1,6,4).
+subCycleAdditionCarry(red,1,8,4) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,11,3),subCycleAdditionCarry(red,1,7,4).
+subCycleAdditionCarry(red,1,9,4) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,12,3),subCycleAdditionCarry(red,1,8,4).
+subCycleAdditionCarry(red,1,10,4) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,13,3),subCycleAdditionCarry(red,1,9,4).
+subCycleAdditionCarry(red,1,11,4) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,14,3),subCycleAdditionCarry(red,1,10,4).
+subCycleAdditionCarry(red,1,1,5) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,5,4),subCycleAdditionCarry(red,1,0,5).
+subCycleAdditionCarry(red,1,2,5) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,6,4),subCycleAdditionCarry(red,1,1,5).
+subCycleAdditionCarry(red,1,3,5) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,7,4),subCycleAdditionCarry(red,1,2,5).
+subCycleAdditionCarry(red,1,4,5) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,8,4),subCycleAdditionCarry(red,1,3,5).
+subCycleAdditionCarry(red,1,5,5) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,9,4),subCycleAdditionCarry(red,1,4,5).
+subCycleAdditionCarry(red,1,6,5) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,10,4),subCycleAdditionCarry(red,1,5,5).
+subCycleAdditionCarry(red,1,7,5) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,11,4),subCycleAdditionCarry(red,1,6,5).
+subCycleAdditionCarry(red,1,8,5) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,12,4),subCycleAdditionCarry(red,1,7,5).
+subCycleAdditionCarry(red,1,9,5) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,13,4),subCycleAdditionCarry(red,1,8,5).
+subCycleAdditionCarry(red,1,10,5) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,14,4),subCycleAdditionCarry(red,1,9,5).
+subCycleAdditionCarry(red,1,11,5) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,15,4),subCycleAdditionCarry(red,1,10,5).
+subCycleAdditionCarry(red,1,1,6) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,6,5),subCycleAdditionCarry(red,1,0,6).
+subCycleAdditionCarry(red,1,2,6) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,7,5),subCycleAdditionCarry(red,1,1,6).
+subCycleAdditionCarry(red,1,3,6) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,8,5),subCycleAdditionCarry(red,1,2,6).
+subCycleAdditionCarry(red,1,4,6) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,9,5),subCycleAdditionCarry(red,1,3,6).
+subCycleAdditionCarry(red,1,5,6) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,10,5),subCycleAdditionCarry(red,1,4,6).
+subCycleAdditionCarry(red,1,6,6) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,11,5),subCycleAdditionCarry(red,1,5,6).
+subCycleAdditionCarry(red,1,7,6) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,12,5),subCycleAdditionCarry(red,1,6,6).
+subCycleAdditionCarry(red,1,8,6) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,13,5),subCycleAdditionCarry(red,1,7,6).
+subCycleAdditionCarry(red,1,9,6) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,14,5),subCycleAdditionCarry(red,1,8,6).
+subCycleAdditionCarry(red,1,10,6) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,15,5),subCycleAdditionCarry(red,1,9,6).
+subCycleAdditionCarry(red,1,11,6) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,16,5),subCycleAdditionCarry(red,1,10,6).
+subCycleAdditionCarry(red,1,1,7) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,7,6),subCycleAdditionCarry(red,1,0,7).
+subCycleAdditionCarry(red,1,2,7) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,8,6),subCycleAdditionCarry(red,1,1,7).
+subCycleAdditionCarry(red,1,3,7) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,9,6),subCycleAdditionCarry(red,1,2,7).
+subCycleAdditionCarry(red,1,4,7) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,10,6),subCycleAdditionCarry(red,1,3,7).
+subCycleAdditionCarry(red,1,5,7) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,11,6),subCycleAdditionCarry(red,1,4,7).
+subCycleAdditionCarry(red,1,6,7) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,12,6),subCycleAdditionCarry(red,1,5,7).
+subCycleAdditionCarry(red,1,7,7) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,13,6),subCycleAdditionCarry(red,1,6,7).
+subCycleAdditionCarry(red,1,8,7) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,14,6),subCycleAdditionCarry(red,1,7,7).
+subCycleAdditionCarry(red,1,9,7) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,15,6),subCycleAdditionCarry(red,1,8,7).
+subCycleAdditionCarry(red,1,10,7) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,16,6),subCycleAdditionCarry(red,1,9,7).
+subCycleAdditionCarry(red,1,11,7) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,17,6),subCycleAdditionCarry(red,1,10,7).
+subCycleAdditionCarry(red,1,1,8) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,8,7),subCycleAdditionCarry(red,1,0,8).
+subCycleAdditionCarry(red,1,2,8) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,9,7),subCycleAdditionCarry(red,1,1,8).
+subCycleAdditionCarry(red,1,3,8) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,10,7),subCycleAdditionCarry(red,1,2,8).
+subCycleAdditionCarry(red,1,4,8) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,11,7),subCycleAdditionCarry(red,1,3,8).
+subCycleAdditionCarry(red,1,5,8) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,12,7),subCycleAdditionCarry(red,1,4,8).
+subCycleAdditionCarry(red,1,6,8) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,13,7),subCycleAdditionCarry(red,1,5,8).
+subCycleAdditionCarry(red,1,7,8) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,14,7),subCycleAdditionCarry(red,1,6,8).
+subCycleAdditionCarry(red,1,8,8) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,15,7),subCycleAdditionCarry(red,1,7,8).
+subCycleAdditionCarry(red,1,9,8) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,16,7),subCycleAdditionCarry(red,1,8,8).
+subCycleAdditionCarry(red,1,10,8) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,17,7),subCycleAdditionCarry(red,1,9,8).
+subCycleAdditionCarry(red,1,11,8) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,18,7),subCycleAdditionCarry(red,1,10,8).
+subCycleAdditionCarry(red,1,1,9) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,9,8),subCycleAdditionCarry(red,1,0,9).
+subCycleAdditionCarry(red,1,2,9) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,10,8),subCycleAdditionCarry(red,1,1,9).
+subCycleAdditionCarry(red,1,3,9) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,11,8),subCycleAdditionCarry(red,1,2,9).
+subCycleAdditionCarry(red,1,4,9) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,12,8),subCycleAdditionCarry(red,1,3,9).
+subCycleAdditionCarry(red,1,5,9) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,13,8),subCycleAdditionCarry(red,1,4,9).
+subCycleAdditionCarry(red,1,6,9) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,14,8),subCycleAdditionCarry(red,1,5,9).
+subCycleAdditionCarry(red,1,7,9) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,15,8),subCycleAdditionCarry(red,1,6,9).
+subCycleAdditionCarry(red,1,8,9) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,16,8),subCycleAdditionCarry(red,1,7,9).
+subCycleAdditionCarry(red,1,9,9) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,17,8),subCycleAdditionCarry(red,1,8,9).
+subCycleAdditionCarry(red,1,10,9) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,18,8),subCycleAdditionCarry(red,1,9,9).
+subCycleAdditionCarry(red,1,11,9) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,19,8),subCycleAdditionCarry(red,1,10,9).
+subCycleAdditionCarry(red,1,1,10) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,10,9),subCycleAdditionCarry(red,1,0,10).
+subCycleAdditionCarry(red,1,2,10) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,11,9),subCycleAdditionCarry(red,1,1,10).
+subCycleAdditionCarry(red,1,3,10) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,12,9),subCycleAdditionCarry(red,1,2,10).
+subCycleAdditionCarry(red,1,4,10) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,13,9),subCycleAdditionCarry(red,1,3,10).
+subCycleAdditionCarry(red,1,5,10) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,14,9),subCycleAdditionCarry(red,1,4,10).
+subCycleAdditionCarry(red,1,6,10) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,15,9),subCycleAdditionCarry(red,1,5,10).
+subCycleAdditionCarry(red,1,7,10) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,16,9),subCycleAdditionCarry(red,1,6,10).
+subCycleAdditionCarry(red,1,8,10) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,17,9),subCycleAdditionCarry(red,1,7,10).
+subCycleAdditionCarry(red,1,9,10) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,18,9),subCycleAdditionCarry(red,1,8,10).
+subCycleAdditionCarry(red,1,10,10) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,19,9),subCycleAdditionCarry(red,1,9,10).
+subCycleAdditionCarry(red,1,11,10) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,20,9),subCycleAdditionCarry(red,1,10,10).
+subCycleAdditionCarry(red,1,1,11) :- pc(red,1,1),_value(red,i1,0),subCycle(red,1,11,10),subCycleAdditionCarry(red,1,0,11).
+subCycleAdditionCarry(red,1,2,11) :- pc(red,1,1),_value(red,i1,1),subCycle(red,1,12,10),subCycleAdditionCarry(red,1,1,11).
+subCycleAdditionCarry(red,1,3,11) :- pc(red,1,1),_value(red,i1,2),subCycle(red,1,13,10),subCycleAdditionCarry(red,1,2,11).
+subCycleAdditionCarry(red,1,4,11) :- pc(red,1,1),_value(red,i1,3),subCycle(red,1,14,10),subCycleAdditionCarry(red,1,3,11).
+subCycleAdditionCarry(red,1,5,11) :- pc(red,1,1),_value(red,i1,4),subCycle(red,1,15,10),subCycleAdditionCarry(red,1,4,11).
+subCycleAdditionCarry(red,1,6,11) :- pc(red,1,1),_value(red,i1,5),subCycle(red,1,16,10),subCycleAdditionCarry(red,1,5,11).
+subCycleAdditionCarry(red,1,7,11) :- pc(red,1,1),_value(red,i1,6),subCycle(red,1,17,10),subCycleAdditionCarry(red,1,6,11).
+subCycleAdditionCarry(red,1,8,11) :- pc(red,1,1),_value(red,i1,7),subCycle(red,1,18,10),subCycleAdditionCarry(red,1,7,11).
+subCycleAdditionCarry(red,1,9,11) :- pc(red,1,1),_value(red,i1,8),subCycle(red,1,19,10),subCycleAdditionCarry(red,1,8,11).
+subCycleAdditionCarry(red,1,10,11) :- pc(red,1,1),_value(red,i1,9),subCycle(red,1,20,10),subCycleAdditionCarry(red,1,9,11).
+subCycleAdditionCarry(red,1,11,11) :- pc(red,1,1),_value(red,i1,10),subCycle(red,1,21,10),subCycleAdditionCarry(red,1,10,11).
+subCycleAdditionCarry(red,1,1,1) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,1,0),subCycleAdditionCarry(red,1,0,1).
+subCycleAdditionCarry(red,1,2,1) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,1),_subCycle(red,1,2,0).
+subCycleAdditionCarry(red,1,3,1) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,1),_subCycle(red,1,3,0).
+subCycleAdditionCarry(red,1,4,1) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,1),_subCycle(red,1,4,0).
+subCycleAdditionCarry(red,1,5,1) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,1),_subCycle(red,1,5,0).
+subCycleAdditionCarry(red,1,6,1) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,1),_subCycle(red,1,6,0).
+subCycleAdditionCarry(red,1,7,1) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,1),_subCycle(red,1,7,0).
+subCycleAdditionCarry(red,1,8,1) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,1),_subCycle(red,1,8,0).
+subCycleAdditionCarry(red,1,9,1) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,1),_subCycle(red,1,9,0).
+subCycleAdditionCarry(red,1,10,1) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,1),_subCycle(red,1,10,0).
+subCycleAdditionCarry(red,1,11,1) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,1),_subCycle(red,1,11,0).
+subCycleAdditionCarry(red,1,1,2) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,2,1),subCycleAdditionCarry(red,1,0,2).
+subCycleAdditionCarry(red,1,2,2) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,2),_subCycle(red,1,3,1).
+subCycleAdditionCarry(red,1,3,2) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,2),_subCycle(red,1,4,1).
+subCycleAdditionCarry(red,1,4,2) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,2),_subCycle(red,1,5,1).
+subCycleAdditionCarry(red,1,5,2) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,2),_subCycle(red,1,6,1).
+subCycleAdditionCarry(red,1,6,2) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,2),_subCycle(red,1,7,1).
+subCycleAdditionCarry(red,1,7,2) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,2),_subCycle(red,1,8,1).
+subCycleAdditionCarry(red,1,8,2) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,2),_subCycle(red,1,9,1).
+subCycleAdditionCarry(red,1,9,2) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,2),_subCycle(red,1,10,1).
+subCycleAdditionCarry(red,1,10,2) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,2),_subCycle(red,1,11,1).
+subCycleAdditionCarry(red,1,11,2) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,2),_subCycle(red,1,12,1).
+subCycleAdditionCarry(red,1,1,3) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,3,2),subCycleAdditionCarry(red,1,0,3).
+subCycleAdditionCarry(red,1,2,3) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,3),_subCycle(red,1,4,2).
+subCycleAdditionCarry(red,1,3,3) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,3),_subCycle(red,1,5,2).
+subCycleAdditionCarry(red,1,4,3) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,3),_subCycle(red,1,6,2).
+subCycleAdditionCarry(red,1,5,3) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,3),_subCycle(red,1,7,2).
+subCycleAdditionCarry(red,1,6,3) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,3),_subCycle(red,1,8,2).
+subCycleAdditionCarry(red,1,7,3) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,3),_subCycle(red,1,9,2).
+subCycleAdditionCarry(red,1,8,3) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,3),_subCycle(red,1,10,2).
+subCycleAdditionCarry(red,1,9,3) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,3),_subCycle(red,1,11,2).
+subCycleAdditionCarry(red,1,10,3) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,3),_subCycle(red,1,12,2).
+subCycleAdditionCarry(red,1,11,3) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,3),_subCycle(red,1,13,2).
+subCycleAdditionCarry(red,1,1,4) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,4,3),subCycleAdditionCarry(red,1,0,4).
+subCycleAdditionCarry(red,1,2,4) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,4),_subCycle(red,1,5,3).
+subCycleAdditionCarry(red,1,3,4) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,4),_subCycle(red,1,6,3).
+subCycleAdditionCarry(red,1,4,4) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,4),_subCycle(red,1,7,3).
+subCycleAdditionCarry(red,1,5,4) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,4),_subCycle(red,1,8,3).
+subCycleAdditionCarry(red,1,6,4) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,4),_subCycle(red,1,9,3).
+subCycleAdditionCarry(red,1,7,4) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,4),_subCycle(red,1,10,3).
+subCycleAdditionCarry(red,1,8,4) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,4),_subCycle(red,1,11,3).
+subCycleAdditionCarry(red,1,9,4) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,4),_subCycle(red,1,12,3).
+subCycleAdditionCarry(red,1,10,4) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,4),_subCycle(red,1,13,3).
+subCycleAdditionCarry(red,1,11,4) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,4),_subCycle(red,1,14,3).
+subCycleAdditionCarry(red,1,1,5) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,5,4),subCycleAdditionCarry(red,1,0,5).
+subCycleAdditionCarry(red,1,2,5) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,5),_subCycle(red,1,6,4).
+subCycleAdditionCarry(red,1,3,5) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,5),_subCycle(red,1,7,4).
+subCycleAdditionCarry(red,1,4,5) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,5),_subCycle(red,1,8,4).
+subCycleAdditionCarry(red,1,5,5) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,5),_subCycle(red,1,9,4).
+subCycleAdditionCarry(red,1,6,5) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,5),_subCycle(red,1,10,4).
+subCycleAdditionCarry(red,1,7,5) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,5),_subCycle(red,1,11,4).
+subCycleAdditionCarry(red,1,8,5) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,5),_subCycle(red,1,12,4).
+subCycleAdditionCarry(red,1,9,5) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,5),_subCycle(red,1,13,4).
+subCycleAdditionCarry(red,1,10,5) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,5),_subCycle(red,1,14,4).
+subCycleAdditionCarry(red,1,11,5) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,5),_subCycle(red,1,15,4).
+subCycleAdditionCarry(red,1,1,6) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,6,5),subCycleAdditionCarry(red,1,0,6).
+subCycleAdditionCarry(red,1,2,6) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,6),_subCycle(red,1,7,5).
+subCycleAdditionCarry(red,1,3,6) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,6),_subCycle(red,1,8,5).
+subCycleAdditionCarry(red,1,4,6) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,6),_subCycle(red,1,9,5).
+subCycleAdditionCarry(red,1,5,6) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,6),_subCycle(red,1,10,5).
+subCycleAdditionCarry(red,1,6,6) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,6),_subCycle(red,1,11,5).
+subCycleAdditionCarry(red,1,7,6) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,6),_subCycle(red,1,12,5).
+subCycleAdditionCarry(red,1,8,6) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,6),_subCycle(red,1,13,5).
+subCycleAdditionCarry(red,1,9,6) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,6),_subCycle(red,1,14,5).
+subCycleAdditionCarry(red,1,10,6) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,6),_subCycle(red,1,15,5).
+subCycleAdditionCarry(red,1,11,6) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,6),_subCycle(red,1,16,5).
+subCycleAdditionCarry(red,1,1,7) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,7,6),subCycleAdditionCarry(red,1,0,7).
+subCycleAdditionCarry(red,1,2,7) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,7),_subCycle(red,1,8,6).
+subCycleAdditionCarry(red,1,3,7) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,7),_subCycle(red,1,9,6).
+subCycleAdditionCarry(red,1,4,7) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,7),_subCycle(red,1,10,6).
+subCycleAdditionCarry(red,1,5,7) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,7),_subCycle(red,1,11,6).
+subCycleAdditionCarry(red,1,6,7) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,7),_subCycle(red,1,12,6).
+subCycleAdditionCarry(red,1,7,7) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,7),_subCycle(red,1,13,6).
+subCycleAdditionCarry(red,1,8,7) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,7),_subCycle(red,1,14,6).
+subCycleAdditionCarry(red,1,9,7) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,7),_subCycle(red,1,15,6).
+subCycleAdditionCarry(red,1,10,7) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,7),_subCycle(red,1,16,6).
+subCycleAdditionCarry(red,1,11,7) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,7),_subCycle(red,1,17,6).
+subCycleAdditionCarry(red,1,1,8) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,8,7),subCycleAdditionCarry(red,1,0,8).
+subCycleAdditionCarry(red,1,2,8) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,8),_subCycle(red,1,9,7).
+subCycleAdditionCarry(red,1,3,8) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,8),_subCycle(red,1,10,7).
+subCycleAdditionCarry(red,1,4,8) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,8),_subCycle(red,1,11,7).
+subCycleAdditionCarry(red,1,5,8) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,8),_subCycle(red,1,12,7).
+subCycleAdditionCarry(red,1,6,8) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,8),_subCycle(red,1,13,7).
+subCycleAdditionCarry(red,1,7,8) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,8),_subCycle(red,1,14,7).
+subCycleAdditionCarry(red,1,8,8) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,8),_subCycle(red,1,15,7).
+subCycleAdditionCarry(red,1,9,8) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,8),_subCycle(red,1,16,7).
+subCycleAdditionCarry(red,1,10,8) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,8),_subCycle(red,1,17,7).
+subCycleAdditionCarry(red,1,11,8) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,8),_subCycle(red,1,18,7).
+subCycleAdditionCarry(red,1,1,9) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,9,8),subCycleAdditionCarry(red,1,0,9).
+subCycleAdditionCarry(red,1,2,9) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,9),_subCycle(red,1,10,8).
+subCycleAdditionCarry(red,1,3,9) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,9),_subCycle(red,1,11,8).
+subCycleAdditionCarry(red,1,4,9) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,9),_subCycle(red,1,12,8).
+subCycleAdditionCarry(red,1,5,9) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,9),_subCycle(red,1,13,8).
+subCycleAdditionCarry(red,1,6,9) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,9),_subCycle(red,1,14,8).
+subCycleAdditionCarry(red,1,7,9) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,9),_subCycle(red,1,15,8).
+subCycleAdditionCarry(red,1,8,9) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,9),_subCycle(red,1,16,8).
+subCycleAdditionCarry(red,1,9,9) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,9),_subCycle(red,1,17,8).
+subCycleAdditionCarry(red,1,10,9) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,9),_subCycle(red,1,18,8).
+subCycleAdditionCarry(red,1,11,9) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,9),_subCycle(red,1,19,8).
+subCycleAdditionCarry(red,1,1,10) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,10,9),subCycleAdditionCarry(red,1,0,10).
+subCycleAdditionCarry(red,1,2,10) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,10),_subCycle(red,1,11,9).
+subCycleAdditionCarry(red,1,3,10) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,10),_subCycle(red,1,12,9).
+subCycleAdditionCarry(red,1,4,10) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,10),_subCycle(red,1,13,9).
+subCycleAdditionCarry(red,1,5,10) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,10),_subCycle(red,1,14,9).
+subCycleAdditionCarry(red,1,6,10) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,10),_subCycle(red,1,15,9).
+subCycleAdditionCarry(red,1,7,10) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,10),_subCycle(red,1,16,9).
+subCycleAdditionCarry(red,1,8,10) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,10),_subCycle(red,1,17,9).
+subCycleAdditionCarry(red,1,9,10) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,10),_subCycle(red,1,18,9).
+subCycleAdditionCarry(red,1,10,10) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,10),_subCycle(red,1,19,9).
+subCycleAdditionCarry(red,1,11,10) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,10),_subCycle(red,1,20,9).
+subCycleAdditionCarry(red,1,1,11) :- pc(red,1,1),value(red,i1,0),_subCycle(red,1,11,10),subCycleAdditionCarry(red,1,0,11).
+subCycleAdditionCarry(red,1,2,11) :- pc(red,1,1),value(red,i1,1),subCycleAdditionCarry(red,1,1,11),_subCycle(red,1,12,10).
+subCycleAdditionCarry(red,1,3,11) :- pc(red,1,1),value(red,i1,2),subCycleAdditionCarry(red,1,2,11),_subCycle(red,1,13,10).
+subCycleAdditionCarry(red,1,4,11) :- pc(red,1,1),value(red,i1,3),subCycleAdditionCarry(red,1,3,11),_subCycle(red,1,14,10).
+subCycleAdditionCarry(red,1,5,11) :- pc(red,1,1),value(red,i1,4),subCycleAdditionCarry(red,1,4,11),_subCycle(red,1,15,10).
+subCycleAdditionCarry(red,1,6,11) :- pc(red,1,1),value(red,i1,5),subCycleAdditionCarry(red,1,5,11),_subCycle(red,1,16,10).
+subCycleAdditionCarry(red,1,7,11) :- pc(red,1,1),value(red,i1,6),subCycleAdditionCarry(red,1,6,11),_subCycle(red,1,17,10).
+subCycleAdditionCarry(red,1,8,11) :- pc(red,1,1),value(red,i1,7),subCycleAdditionCarry(red,1,7,11),_subCycle(red,1,18,10).
+subCycleAdditionCarry(red,1,9,11) :- pc(red,1,1),value(red,i1,8),subCycleAdditionCarry(red,1,8,11),_subCycle(red,1,19,10).
+subCycleAdditionCarry(red,1,10,11) :- pc(red,1,1),value(red,i1,9),subCycleAdditionCarry(red,1,9,11),_subCycle(red,1,20,10).
+subCycleAdditionCarry(red,1,11,11) :- pc(red,1,1),value(red,i1,10),subCycleAdditionCarry(red,1,10,11),_subCycle(red,1,21,10).
+subCycleAdditionCarry(red,1,1,1) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,1,0),_subCycleAdditionCarry(red,1,0,1).
+subCycleAdditionCarry(red,1,2,1) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,2,0),_subCycleAdditionCarry(red,1,1,1).
+subCycleAdditionCarry(red,1,3,1) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,3,0),_subCycleAdditionCarry(red,1,2,1).
+subCycleAdditionCarry(red,1,4,1) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,4,0),_subCycleAdditionCarry(red,1,3,1).
+subCycleAdditionCarry(red,1,5,1) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,5,0),_subCycleAdditionCarry(red,1,4,1).
+subCycleAdditionCarry(red,1,6,1) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,6,0),_subCycleAdditionCarry(red,1,5,1).
+subCycleAdditionCarry(red,1,7,1) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,7,0),_subCycleAdditionCarry(red,1,6,1).
+subCycleAdditionCarry(red,1,8,1) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,8,0),_subCycleAdditionCarry(red,1,7,1).
+subCycleAdditionCarry(red,1,9,1) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,9,0),_subCycleAdditionCarry(red,1,8,1).
+subCycleAdditionCarry(red,1,10,1) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,10,0),_subCycleAdditionCarry(red,1,9,1).
+subCycleAdditionCarry(red,1,11,1) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,11,0),_subCycleAdditionCarry(red,1,10,1).
+subCycleAdditionCarry(red,1,1,2) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,2,1),_subCycleAdditionCarry(red,1,0,2).
+subCycleAdditionCarry(red,1,2,2) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,3,1),_subCycleAdditionCarry(red,1,1,2).
+subCycleAdditionCarry(red,1,3,2) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,4,1),_subCycleAdditionCarry(red,1,2,2).
+subCycleAdditionCarry(red,1,4,2) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,5,1),_subCycleAdditionCarry(red,1,3,2).
+subCycleAdditionCarry(red,1,5,2) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,6,1),_subCycleAdditionCarry(red,1,4,2).
+subCycleAdditionCarry(red,1,6,2) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,7,1),_subCycleAdditionCarry(red,1,5,2).
+subCycleAdditionCarry(red,1,7,2) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,8,1),_subCycleAdditionCarry(red,1,6,2).
+subCycleAdditionCarry(red,1,8,2) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,9,1),_subCycleAdditionCarry(red,1,7,2).
+subCycleAdditionCarry(red,1,9,2) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,10,1),_subCycleAdditionCarry(red,1,8,2).
+subCycleAdditionCarry(red,1,10,2) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,11,1),_subCycleAdditionCarry(red,1,9,2).
+subCycleAdditionCarry(red,1,11,2) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,12,1),_subCycleAdditionCarry(red,1,10,2).
+subCycleAdditionCarry(red,1,1,3) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,3,2),_subCycleAdditionCarry(red,1,0,3).
+subCycleAdditionCarry(red,1,2,3) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,4,2),_subCycleAdditionCarry(red,1,1,3).
+subCycleAdditionCarry(red,1,3,3) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,5,2),_subCycleAdditionCarry(red,1,2,3).
+subCycleAdditionCarry(red,1,4,3) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,6,2),_subCycleAdditionCarry(red,1,3,3).
+subCycleAdditionCarry(red,1,5,3) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,7,2),_subCycleAdditionCarry(red,1,4,3).
+subCycleAdditionCarry(red,1,6,3) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,8,2),_subCycleAdditionCarry(red,1,5,3).
+subCycleAdditionCarry(red,1,7,3) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,9,2),_subCycleAdditionCarry(red,1,6,3).
+subCycleAdditionCarry(red,1,8,3) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,10,2),_subCycleAdditionCarry(red,1,7,3).
+subCycleAdditionCarry(red,1,9,3) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,11,2),_subCycleAdditionCarry(red,1,8,3).
+subCycleAdditionCarry(red,1,10,3) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,12,2),_subCycleAdditionCarry(red,1,9,3).
+subCycleAdditionCarry(red,1,11,3) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,13,2),_subCycleAdditionCarry(red,1,10,3).
+subCycleAdditionCarry(red,1,1,4) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,4,3),_subCycleAdditionCarry(red,1,0,4).
+subCycleAdditionCarry(red,1,2,4) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,5,3),_subCycleAdditionCarry(red,1,1,4).
+subCycleAdditionCarry(red,1,3,4) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,6,3),_subCycleAdditionCarry(red,1,2,4).
+subCycleAdditionCarry(red,1,4,4) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,7,3),_subCycleAdditionCarry(red,1,3,4).
+subCycleAdditionCarry(red,1,5,4) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,8,3),_subCycleAdditionCarry(red,1,4,4).
+subCycleAdditionCarry(red,1,6,4) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,9,3),_subCycleAdditionCarry(red,1,5,4).
+subCycleAdditionCarry(red,1,7,4) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,10,3),_subCycleAdditionCarry(red,1,6,4).
+subCycleAdditionCarry(red,1,8,4) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,11,3),_subCycleAdditionCarry(red,1,7,4).
+subCycleAdditionCarry(red,1,9,4) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,12,3),_subCycleAdditionCarry(red,1,8,4).
+subCycleAdditionCarry(red,1,10,4) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,13,3),_subCycleAdditionCarry(red,1,9,4).
+subCycleAdditionCarry(red,1,11,4) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,14,3),_subCycleAdditionCarry(red,1,10,4).
+subCycleAdditionCarry(red,1,1,5) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,5,4),_subCycleAdditionCarry(red,1,0,5).
+subCycleAdditionCarry(red,1,2,5) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,6,4),_subCycleAdditionCarry(red,1,1,5).
+subCycleAdditionCarry(red,1,3,5) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,7,4),_subCycleAdditionCarry(red,1,2,5).
+subCycleAdditionCarry(red,1,4,5) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,8,4),_subCycleAdditionCarry(red,1,3,5).
+subCycleAdditionCarry(red,1,5,5) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,9,4),_subCycleAdditionCarry(red,1,4,5).
+subCycleAdditionCarry(red,1,6,5) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,10,4),_subCycleAdditionCarry(red,1,5,5).
+subCycleAdditionCarry(red,1,7,5) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,11,4),_subCycleAdditionCarry(red,1,6,5).
+subCycleAdditionCarry(red,1,8,5) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,12,4),_subCycleAdditionCarry(red,1,7,5).
+subCycleAdditionCarry(red,1,9,5) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,13,4),_subCycleAdditionCarry(red,1,8,5).
+subCycleAdditionCarry(red,1,10,5) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,14,4),_subCycleAdditionCarry(red,1,9,5).
+subCycleAdditionCarry(red,1,11,5) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,15,4),_subCycleAdditionCarry(red,1,10,5).
+subCycleAdditionCarry(red,1,1,6) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,6,5),_subCycleAdditionCarry(red,1,0,6).
+subCycleAdditionCarry(red,1,2,6) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,7,5),_subCycleAdditionCarry(red,1,1,6).
+subCycleAdditionCarry(red,1,3,6) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,8,5),_subCycleAdditionCarry(red,1,2,6).
+subCycleAdditionCarry(red,1,4,6) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,9,5),_subCycleAdditionCarry(red,1,3,6).
+subCycleAdditionCarry(red,1,5,6) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,10,5),_subCycleAdditionCarry(red,1,4,6).
+subCycleAdditionCarry(red,1,6,6) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,11,5),_subCycleAdditionCarry(red,1,5,6).
+subCycleAdditionCarry(red,1,7,6) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,12,5),_subCycleAdditionCarry(red,1,6,6).
+subCycleAdditionCarry(red,1,8,6) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,13,5),_subCycleAdditionCarry(red,1,7,6).
+subCycleAdditionCarry(red,1,9,6) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,14,5),_subCycleAdditionCarry(red,1,8,6).
+subCycleAdditionCarry(red,1,10,6) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,15,5),_subCycleAdditionCarry(red,1,9,6).
+subCycleAdditionCarry(red,1,11,6) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,16,5),_subCycleAdditionCarry(red,1,10,6).
+subCycleAdditionCarry(red,1,1,7) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,7,6),_subCycleAdditionCarry(red,1,0,7).
+subCycleAdditionCarry(red,1,2,7) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,8,6),_subCycleAdditionCarry(red,1,1,7).
+subCycleAdditionCarry(red,1,3,7) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,9,6),_subCycleAdditionCarry(red,1,2,7).
+subCycleAdditionCarry(red,1,4,7) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,10,6),_subCycleAdditionCarry(red,1,3,7).
+subCycleAdditionCarry(red,1,5,7) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,11,6),_subCycleAdditionCarry(red,1,4,7).
+subCycleAdditionCarry(red,1,6,7) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,12,6),_subCycleAdditionCarry(red,1,5,7).
+subCycleAdditionCarry(red,1,7,7) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,13,6),_subCycleAdditionCarry(red,1,6,7).
+subCycleAdditionCarry(red,1,8,7) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,14,6),_subCycleAdditionCarry(red,1,7,7).
+subCycleAdditionCarry(red,1,9,7) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,15,6),_subCycleAdditionCarry(red,1,8,7).
+subCycleAdditionCarry(red,1,10,7) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,16,6),_subCycleAdditionCarry(red,1,9,7).
+subCycleAdditionCarry(red,1,11,7) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,17,6),_subCycleAdditionCarry(red,1,10,7).
+subCycleAdditionCarry(red,1,1,8) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,8,7),_subCycleAdditionCarry(red,1,0,8).
+subCycleAdditionCarry(red,1,2,8) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,9,7),_subCycleAdditionCarry(red,1,1,8).
+subCycleAdditionCarry(red,1,3,8) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,10,7),_subCycleAdditionCarry(red,1,2,8).
+subCycleAdditionCarry(red,1,4,8) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,11,7),_subCycleAdditionCarry(red,1,3,8).
+subCycleAdditionCarry(red,1,5,8) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,12,7),_subCycleAdditionCarry(red,1,4,8).
+subCycleAdditionCarry(red,1,6,8) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,13,7),_subCycleAdditionCarry(red,1,5,8).
+subCycleAdditionCarry(red,1,7,8) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,14,7),_subCycleAdditionCarry(red,1,6,8).
+subCycleAdditionCarry(red,1,8,8) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,15,7),_subCycleAdditionCarry(red,1,7,8).
+subCycleAdditionCarry(red,1,9,8) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,16,7),_subCycleAdditionCarry(red,1,8,8).
+subCycleAdditionCarry(red,1,10,8) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,17,7),_subCycleAdditionCarry(red,1,9,8).
+subCycleAdditionCarry(red,1,11,8) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,18,7),_subCycleAdditionCarry(red,1,10,8).
+subCycleAdditionCarry(red,1,1,9) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,9,8),_subCycleAdditionCarry(red,1,0,9).
+subCycleAdditionCarry(red,1,2,9) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,10,8),_subCycleAdditionCarry(red,1,1,9).
+subCycleAdditionCarry(red,1,3,9) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,11,8),_subCycleAdditionCarry(red,1,2,9).
+subCycleAdditionCarry(red,1,4,9) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,12,8),_subCycleAdditionCarry(red,1,3,9).
+subCycleAdditionCarry(red,1,5,9) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,13,8),_subCycleAdditionCarry(red,1,4,9).
+subCycleAdditionCarry(red,1,6,9) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,14,8),_subCycleAdditionCarry(red,1,5,9).
+subCycleAdditionCarry(red,1,7,9) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,15,8),_subCycleAdditionCarry(red,1,6,9).
+subCycleAdditionCarry(red,1,8,9) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,16,8),_subCycleAdditionCarry(red,1,7,9).
+subCycleAdditionCarry(red,1,9,9) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,17,8),_subCycleAdditionCarry(red,1,8,9).
+subCycleAdditionCarry(red,1,10,9) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,18,8),_subCycleAdditionCarry(red,1,9,9).
+subCycleAdditionCarry(red,1,11,9) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,19,8),_subCycleAdditionCarry(red,1,10,9).
+subCycleAdditionCarry(red,1,1,10) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,10,9),_subCycleAdditionCarry(red,1,0,10).
+subCycleAdditionCarry(red,1,2,10) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,11,9),_subCycleAdditionCarry(red,1,1,10).
+subCycleAdditionCarry(red,1,3,10) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,12,9),_subCycleAdditionCarry(red,1,2,10).
+subCycleAdditionCarry(red,1,4,10) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,13,9),_subCycleAdditionCarry(red,1,3,10).
+subCycleAdditionCarry(red,1,5,10) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,14,9),_subCycleAdditionCarry(red,1,4,10).
+subCycleAdditionCarry(red,1,6,10) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,15,9),_subCycleAdditionCarry(red,1,5,10).
+subCycleAdditionCarry(red,1,7,10) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,16,9),_subCycleAdditionCarry(red,1,6,10).
+subCycleAdditionCarry(red,1,8,10) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,17,9),_subCycleAdditionCarry(red,1,7,10).
+subCycleAdditionCarry(red,1,9,10) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,18,9),_subCycleAdditionCarry(red,1,8,10).
+subCycleAdditionCarry(red,1,10,10) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,19,9),_subCycleAdditionCarry(red,1,9,10).
+subCycleAdditionCarry(red,1,11,10) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,20,9),_subCycleAdditionCarry(red,1,10,10).
+subCycleAdditionCarry(red,1,1,11) :- pc(red,1,1),value(red,i1,0),subCycle(red,1,11,10),_subCycleAdditionCarry(red,1,0,11).
+subCycleAdditionCarry(red,1,2,11) :- pc(red,1,1),value(red,i1,1),subCycle(red,1,12,10),_subCycleAdditionCarry(red,1,1,11).
+subCycleAdditionCarry(red,1,3,11) :- pc(red,1,1),value(red,i1,2),subCycle(red,1,13,10),_subCycleAdditionCarry(red,1,2,11).
+subCycleAdditionCarry(red,1,4,11) :- pc(red,1,1),value(red,i1,3),subCycle(red,1,14,10),_subCycleAdditionCarry(red,1,3,11).
+subCycleAdditionCarry(red,1,5,11) :- pc(red,1,1),value(red,i1,4),subCycle(red,1,15,10),_subCycleAdditionCarry(red,1,4,11).
+subCycleAdditionCarry(red,1,6,11) :- pc(red,1,1),value(red,i1,5),subCycle(red,1,16,10),_subCycleAdditionCarry(red,1,5,11).
+subCycleAdditionCarry(red,1,7,11) :- pc(red,1,1),value(red,i1,6),subCycle(red,1,17,10),_subCycleAdditionCarry(red,1,6,11).
+subCycleAdditionCarry(red,1,8,11) :- pc(red,1,1),value(red,i1,7),subCycle(red,1,18,10),_subCycleAdditionCarry(red,1,7,11).
+subCycleAdditionCarry(red,1,9,11) :- pc(red,1,1),value(red,i1,8),subCycle(red,1,19,10),_subCycleAdditionCarry(red,1,8,11).
+subCycleAdditionCarry(red,1,10,11) :- pc(red,1,1),value(red,i1,9),subCycle(red,1,20,10),_subCycleAdditionCarry(red,1,9,11).
+subCycleAdditionCarry(red,1,11,11) :- pc(red,1,1),value(red,i1,10),subCycle(red,1,21,10),_subCycleAdditionCarry(red,1,10,11).
+constrained(red,1,1) :- registerDefined(red,1),finishedAt(red,1).
+value(purple,i1,11) :- not _value(purple,i1,11).
+_value(purple,i1,11) :- not value(purple,i1,11).
+_value(purple,i1,11) :- not __value(purple,i1,11).
+__value(purple,i1,11) :- not _value(purple,i1,11).
+pc(red,1,1) :- not _pc(red,1,1).
+_pc(red,1,1) :- not pc(red,1,1).
+value(red,i1,0) :- not _value(red,i1,0).
+_value(red,i1,0) :- not value(red,i1,0).
+value(red,i1,1) :- not _value(red,i1,1).
+_value(red,i1,1) :- not value(red,i1,1).
+value(red,i1,2) :- not _value(red,i1,2).
+_value(red,i1,2) :- not value(red,i1,2).
+value(red,i1,3) :- not _value(red,i1,3).
+_value(red,i1,3) :- not value(red,i1,3).
+value(red,i1,4) :- not _value(red,i1,4).
+_value(red,i1,4) :- not value(red,i1,4).
+value(red,i1,5) :- not _value(red,i1,5).
+_value(red,i1,5) :- not value(red,i1,5).
+value(red,i1,6) :- not _value(red,i1,6).
+_value(red,i1,6) :- not value(red,i1,6).
+value(red,i1,7) :- not _value(red,i1,7).
+_value(red,i1,7) :- not value(red,i1,7).
+value(red,i1,8) :- not _value(red,i1,8).
+_value(red,i1,8) :- not value(red,i1,8).
+value(red,i1,9) :- not _value(red,i1,9).
+_value(red,i1,9) :- not value(red,i1,9).
+value(red,i1,10) :- not _value(red,i1,10).
+_value(red,i1,10) :- not value(red,i1,10).
+value(red,i2,0) :- not _value(red,i2,0).
+_value(red,i2,0) :- not value(red,i2,0).
+value(red,i2,1) :- not _value(red,i2,1).
+_value(red,i2,1) :- not value(red,i2,1).
+value(red,i2,2) :- not _value(red,i2,2).
+_value(red,i2,2) :- not value(red,i2,2).
+value(red,i2,3) :- not _value(red,i2,3).
+_value(red,i2,3) :- not value(red,i2,3).
+value(red,i2,4) :- not _value(red,i2,4).
+_value(red,i2,4) :- not value(red,i2,4).
+value(red,i2,5) :- not _value(red,i2,5).
+_value(red,i2,5) :- not value(red,i2,5).
+value(red,i2,6) :- not _value(red,i2,6).
+_value(red,i2,6) :- not value(red,i2,6).
+value(red,i2,7) :- not _value(red,i2,7).
+_value(red,i2,7) :- not value(red,i2,7).
+value(red,i2,8) :- not _value(red,i2,8).
+_value(red,i2,8) :- not value(red,i2,8).
+value(red,i2,9) :- not _value(red,i2,9).
+_value(red,i2,9) :- not value(red,i2,9).
+value(red,i2,10) :- not _value(red,i2,10).
+_value(red,i2,10) :- not value(red,i2,10).
+value(red,i2,11) :- not _value(red,i2,11).
+_value(red,i2,11) :- not value(red,i2,11).
+subCycle(red,1,23,11) :- not _subCycle(red,1,23,11).
+_subCycle(red,1,23,11) :- not subCycle(red,1,23,11).
+_value(red,i1,0) :- not __value(red,i1,0).
+__value(red,i1,0) :- not _value(red,i1,0).
+_value(red,i1,1) :- not __value(red,i1,1).
+__value(red,i1,1) :- not _value(red,i1,1).
+_value(red,i1,2) :- not __value(red,i1,2).
+__value(red,i1,2) :- not _value(red,i1,2).
+_value(red,i1,3) :- not __value(red,i1,3).
+__value(red,i1,3) :- not _value(red,i1,3).
+_value(red,i1,4) :- not __value(red,i1,4).
+__value(red,i1,4) :- not _value(red,i1,4).
+_value(red,i1,5) :- not __value(red,i1,5).
+__value(red,i1,5) :- not _value(red,i1,5).
+_value(red,i1,6) :- not __value(red,i1,6).
+__value(red,i1,6) :- not _value(red,i1,6).
+_value(red,i1,7) :- not __value(red,i1,7).
+__value(red,i1,7) :- not _value(red,i1,7).
+_value(red,i1,8) :- not __value(red,i1,8).
+__value(red,i1,8) :- not _value(red,i1,8).
+_value(red,i1,9) :- not __value(red,i1,9).
+__value(red,i1,9) :- not _value(red,i1,9).
+_value(red,i1,10) :- not __value(red,i1,10).
+__value(red,i1,10) :- not _value(red,i1,10).
+_value(red,i2,1) :- not __value(red,i2,1).
+__value(red,i2,1) :- not _value(red,i2,1).
+_value(red,i2,2) :- not __value(red,i2,2).
+__value(red,i2,2) :- not _value(red,i2,2).
+_value(red,i2,3) :- not __value(red,i2,3).
+__value(red,i2,3) :- not _value(red,i2,3).
+_value(red,i2,4) :- not __value(red,i2,4).
+__value(red,i2,4) :- not _value(red,i2,4).
+_value(red,i2,5) :- not __value(red,i2,5).
+__value(red,i2,5) :- not _value(red,i2,5).
+_value(red,i2,6) :- not __value(red,i2,6).
+__value(red,i2,6) :- not _value(red,i2,6).
+_value(red,i2,7) :- not __value(red,i2,7).
+__value(red,i2,7) :- not _value(red,i2,7).
+_value(red,i2,8) :- not __value(red,i2,8).
+__value(red,i2,8) :- not _value(red,i2,8).
+_value(red,i2,9) :- not __value(red,i2,9).
+__value(red,i2,9) :- not _value(red,i2,9).
+_value(red,i2,10) :- not __value(red,i2,10).
+__value(red,i2,10) :- not _value(red,i2,10).
+_value(red,i2,11) :- not __value(red,i2,11).
+__value(red,i2,11) :- not _value(red,i2,11).
+subCycle(red,1,14,1) :- not _subCycle(red,1,14,1).
+_subCycle(red,1,14,1) :- not subCycle(red,1,14,1).
+subCycle(red,1,15,1) :- not _subCycle(red,1,15,1).
+_subCycle(red,1,15,1) :- not subCycle(red,1,15,1).
+subCycle(red,1,16,1) :- not _subCycle(red,1,16,1).
+_subCycle(red,1,16,1) :- not subCycle(red,1,16,1).
+subCycle(red,1,17,1) :- not _subCycle(red,1,17,1).
+_subCycle(red,1,17,1) :- not subCycle(red,1,17,1).
+subCycle(red,1,18,1) :- not _subCycle(red,1,18,1).
+_subCycle(red,1,18,1) :- not subCycle(red,1,18,1).
+subCycle(red,1,19,1) :- not _subCycle(red,1,19,1).
+_subCycle(red,1,19,1) :- not subCycle(red,1,19,1).
+subCycle(red,1,20,1) :- not _subCycle(red,1,20,1).
+_subCycle(red,1,20,1) :- not subCycle(red,1,20,1).
+subCycle(red,1,21,1) :- not _subCycle(red,1,21,1).
+_subCycle(red,1,21,1) :- not subCycle(red,1,21,1).
+subCycle(red,1,22,1) :- not _subCycle(red,1,22,1).
+_subCycle(red,1,22,1) :- not subCycle(red,1,22,1).
+subCycle(red,1,23,1) :- not _subCycle(red,1,23,1).
+_subCycle(red,1,23,1) :- not subCycle(red,1,23,1).
+subCycle(red,1,15,2) :- not _subCycle(red,1,15,2).
+_subCycle(red,1,15,2) :- not subCycle(red,1,15,2).
+subCycle(red,1,16,2) :- not _subCycle(red,1,16,2).
+_subCycle(red,1,16,2) :- not subCycle(red,1,16,2).
+subCycle(red,1,17,2) :- not _subCycle(red,1,17,2).
+_subCycle(red,1,17,2) :- not subCycle(red,1,17,2).
+subCycle(red,1,18,2) :- not _subCycle(red,1,18,2).
+_subCycle(red,1,18,2) :- not subCycle(red,1,18,2).
+subCycle(red,1,19,2) :- not _subCycle(red,1,19,2).
+_subCycle(red,1,19,2) :- not subCycle(red,1,19,2).
+subCycle(red,1,20,2) :- not _subCycle(red,1,20,2).
+_subCycle(red,1,20,2) :- not subCycle(red,1,20,2).
+subCycle(red,1,21,2) :- not _subCycle(red,1,21,2).
+_subCycle(red,1,21,2) :- not subCycle(red,1,21,2).
+subCycle(red,1,22,2) :- not _subCycle(red,1,22,2).
+_subCycle(red,1,22,2) :- not subCycle(red,1,22,2).
+subCycle(red,1,23,2) :- not _subCycle(red,1,23,2).
+_subCycle(red,1,23,2) :- not subCycle(red,1,23,2).
+subCycle(red,1,16,3) :- not _subCycle(red,1,16,3).
+_subCycle(red,1,16,3) :- not subCycle(red,1,16,3).
+subCycle(red,1,17,3) :- not _subCycle(red,1,17,3).
+_subCycle(red,1,17,3) :- not subCycle(red,1,17,3).
+subCycle(red,1,18,3) :- not _subCycle(red,1,18,3).
+_subCycle(red,1,18,3) :- not subCycle(red,1,18,3).
+subCycle(red,1,19,3) :- not _subCycle(red,1,19,3).
+_subCycle(red,1,19,3) :- not subCycle(red,1,19,3).
+subCycle(red,1,20,3) :- not _subCycle(red,1,20,3).
+_subCycle(red,1,20,3) :- not subCycle(red,1,20,3).
+subCycle(red,1,21,3) :- not _subCycle(red,1,21,3).
+_subCycle(red,1,21,3) :- not subCycle(red,1,21,3).
+subCycle(red,1,22,3) :- not _subCycle(red,1,22,3).
+_subCycle(red,1,22,3) :- not subCycle(red,1,22,3).
+subCycle(red,1,23,3) :- not _subCycle(red,1,23,3).
+_subCycle(red,1,23,3) :- not subCycle(red,1,23,3).
+subCycle(red,1,17,4) :- not _subCycle(red,1,17,4).
+_subCycle(red,1,17,4) :- not subCycle(red,1,17,4).
+subCycle(red,1,18,4) :- not _subCycle(red,1,18,4).
+_subCycle(red,1,18,4) :- not subCycle(red,1,18,4).
+subCycle(red,1,19,4) :- not _subCycle(red,1,19,4).
+_subCycle(red,1,19,4) :- not subCycle(red,1,19,4).
+subCycle(red,1,20,4) :- not _subCycle(red,1,20,4).
+_subCycle(red,1,20,4) :- not subCycle(red,1,20,4).
+subCycle(red,1,21,4) :- not _subCycle(red,1,21,4).
+_subCycle(red,1,21,4) :- not subCycle(red,1,21,4).
+subCycle(red,1,22,4) :- not _subCycle(red,1,22,4).
+_subCycle(red,1,22,4) :- not subCycle(red,1,22,4).
+subCycle(red,1,23,4) :- not _subCycle(red,1,23,4).
+_subCycle(red,1,23,4) :- not subCycle(red,1,23,4).
+subCycle(red,1,18,5) :- not _subCycle(red,1,18,5).
+_subCycle(red,1,18,5) :- not subCycle(red,1,18,5).
+subCycle(red,1,19,5) :- not _subCycle(red,1,19,5).
+_subCycle(red,1,19,5) :- not subCycle(red,1,19,5).
+subCycle(red,1,20,5) :- not _subCycle(red,1,20,5).
+_subCycle(red,1,20,5) :- not subCycle(red,1,20,5).
+subCycle(red,1,21,5) :- not _subCycle(red,1,21,5).
+_subCycle(red,1,21,5) :- not subCycle(red,1,21,5).
+subCycle(red,1,22,5) :- not _subCycle(red,1,22,5).
+_subCycle(red,1,22,5) :- not subCycle(red,1,22,5).
+subCycle(red,1,23,5) :- not _subCycle(red,1,23,5).
+_subCycle(red,1,23,5) :- not subCycle(red,1,23,5).
+subCycle(red,1,19,6) :- not _subCycle(red,1,19,6).
+_subCycle(red,1,19,6) :- not subCycle(red,1,19,6).
+subCycle(red,1,20,6) :- not _subCycle(red,1,20,6).
+_subCycle(red,1,20,6) :- not subCycle(red,1,20,6).
+subCycle(red,1,21,6) :- not _subCycle(red,1,21,6).
+_subCycle(red,1,21,6) :- not subCycle(red,1,21,6).
+subCycle(red,1,22,6) :- not _subCycle(red,1,22,6).
+_subCycle(red,1,22,6) :- not subCycle(red,1,22,6).
+subCycle(red,1,23,6) :- not _subCycle(red,1,23,6).
+_subCycle(red,1,23,6) :- not subCycle(red,1,23,6).
+subCycle(red,1,20,7) :- not _subCycle(red,1,20,7).
+_subCycle(red,1,20,7) :- not subCycle(red,1,20,7).
+subCycle(red,1,21,7) :- not _subCycle(red,1,21,7).
+_subCycle(red,1,21,7) :- not subCycle(red,1,21,7).
+subCycle(red,1,22,7) :- not _subCycle(red,1,22,7).
+_subCycle(red,1,22,7) :- not subCycle(red,1,22,7).
+subCycle(red,1,23,7) :- not _subCycle(red,1,23,7).
+_subCycle(red,1,23,7) :- not subCycle(red,1,23,7).
+subCycle(red,1,21,8) :- not _subCycle(red,1,21,8).
+_subCycle(red,1,21,8) :- not subCycle(red,1,21,8).
+subCycle(red,1,22,8) :- not _subCycle(red,1,22,8).
+_subCycle(red,1,22,8) :- not subCycle(red,1,22,8).
+subCycle(red,1,23,8) :- not _subCycle(red,1,23,8).
+_subCycle(red,1,23,8) :- not subCycle(red,1,23,8).
+subCycle(red,1,22,9) :- not _subCycle(red,1,22,9).
+_subCycle(red,1,22,9) :- not subCycle(red,1,22,9).
+subCycle(red,1,23,9) :- not _subCycle(red,1,23,9).
+_subCycle(red,1,23,9) :- not subCycle(red,1,23,9).
+subCycle(red,1,23,10) :- not _subCycle(red,1,23,10).
+_subCycle(red,1,23,10) :- not subCycle(red,1,23,10).
+subCycleAdditionCarry(red,1,0,1) :- not _subCycleAdditionCarry(red,1,0,1).
+_subCycleAdditionCarry(red,1,0,1) :- not subCycleAdditionCarry(red,1,0,1).
+subCycleAdditionCarry(red,1,0,2) :- not _subCycleAdditionCarry(red,1,0,2).
+_subCycleAdditionCarry(red,1,0,2) :- not subCycleAdditionCarry(red,1,0,2).
+subCycleAdditionCarry(red,1,0,3) :- not _subCycleAdditionCarry(red,1,0,3).
+_subCycleAdditionCarry(red,1,0,3) :- not subCycleAdditionCarry(red,1,0,3).
+subCycleAdditionCarry(red,1,0,4) :- not _subCycleAdditionCarry(red,1,0,4).
+_subCycleAdditionCarry(red,1,0,4) :- not subCycleAdditionCarry(red,1,0,4).
+subCycleAdditionCarry(red,1,0,5) :- not _subCycleAdditionCarry(red,1,0,5).
+_subCycleAdditionCarry(red,1,0,5) :- not subCycleAdditionCarry(red,1,0,5).
+subCycleAdditionCarry(red,1,0,6) :- not _subCycleAdditionCarry(red,1,0,6).
+_subCycleAdditionCarry(red,1,0,6) :- not subCycleAdditionCarry(red,1,0,6).
+subCycleAdditionCarry(red,1,0,7) :- not _subCycleAdditionCarry(red,1,0,7).
+_subCycleAdditionCarry(red,1,0,7) :- not subCycleAdditionCarry(red,1,0,7).
+subCycleAdditionCarry(red,1,0,8) :- not _subCycleAdditionCarry(red,1,0,8).
+_subCycleAdditionCarry(red,1,0,8) :- not subCycleAdditionCarry(red,1,0,8).
+subCycleAdditionCarry(red,1,0,9) :- not _subCycleAdditionCarry(red,1,0,9).
+_subCycleAdditionCarry(red,1,0,9) :- not subCycleAdditionCarry(red,1,0,9).
+subCycleAdditionCarry(red,1,0,10) :- not _subCycleAdditionCarry(red,1,0,10).
+_subCycleAdditionCarry(red,1,0,10) :- not subCycleAdditionCarry(red,1,0,10).
+subCycleAdditionCarry(red,1,0,11) :- not _subCycleAdditionCarry(red,1,0,11).
+_subCycleAdditionCarry(red,1,0,11) :- not subCycleAdditionCarry(red,1,0,11).
+_subCycleAdditionCarry(red,1,0,1) :- not __subCycleAdditionCarry(red,1,0,1).
+__subCycleAdditionCarry(red,1,0,1) :- not _subCycleAdditionCarry(red,1,0,1).
+_subCycleAdditionCarry(red,1,0,2) :- not __subCycleAdditionCarry(red,1,0,2).
+__subCycleAdditionCarry(red,1,0,2) :- not _subCycleAdditionCarry(red,1,0,2).
+_subCycleAdditionCarry(red,1,0,3) :- not __subCycleAdditionCarry(red,1,0,3).
+__subCycleAdditionCarry(red,1,0,3) :- not _subCycleAdditionCarry(red,1,0,3).
+_subCycleAdditionCarry(red,1,0,4) :- not __subCycleAdditionCarry(red,1,0,4).
+__subCycleAdditionCarry(red,1,0,4) :- not _subCycleAdditionCarry(red,1,0,4).
+_subCycleAdditionCarry(red,1,0,5) :- not __subCycleAdditionCarry(red,1,0,5).
+__subCycleAdditionCarry(red,1,0,5) :- not _subCycleAdditionCarry(red,1,0,5).
+_subCycleAdditionCarry(red,1,0,6) :- not __subCycleAdditionCarry(red,1,0,6).
+__subCycleAdditionCarry(red,1,0,6) :- not _subCycleAdditionCarry(red,1,0,6).
+_subCycleAdditionCarry(red,1,0,7) :- not __subCycleAdditionCarry(red,1,0,7).
+__subCycleAdditionCarry(red,1,0,7) :- not _subCycleAdditionCarry(red,1,0,7).
+_subCycleAdditionCarry(red,1,0,8) :- not __subCycleAdditionCarry(red,1,0,8).
+__subCycleAdditionCarry(red,1,0,8) :- not _subCycleAdditionCarry(red,1,0,8).
+_subCycleAdditionCarry(red,1,0,9) :- not __subCycleAdditionCarry(red,1,0,9).
+__subCycleAdditionCarry(red,1,0,9) :- not _subCycleAdditionCarry(red,1,0,9).
+_subCycleAdditionCarry(red,1,0,10) :- not __subCycleAdditionCarry(red,1,0,10).
+__subCycleAdditionCarry(red,1,0,10) :- not _subCycleAdditionCarry(red,1,0,10).
+_subCycleAdditionCarry(red,1,0,11) :- not __subCycleAdditionCarry(red,1,0,11).
+__subCycleAdditionCarry(red,1,0,11) :- not _subCycleAdditionCarry(red,1,0,11).
+registerDefined(red,1) :- not _registerDefined(red,1).
+_registerDefined(red,1) :- not registerDefined(red,1).
+finishedAt(red,1) :- not _finishedAt(red,1).
+_finishedAt(red,1) :- not finishedAt(red,1).

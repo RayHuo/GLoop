@@ -1,0 +1,422 @@
+Start Parser
+nlp
+End Parser
+
+Answer sets : 
+ccpush(2) col(1) col(2) col(3) col(4) conn(1,1,e,1) conn(1,1,e,2) conn(1,1,n,1) conn(1,1,n,2) conn(1,1,s,0) conn(1,1,w,0) conn(1,1,w,1) conn(1,1,w,2) conn(1,2,e,0) conn(1,2,e,1) conn(1,2,e,2) conn(1,2,n,0) conn(1,2,n,2) conn(1,2,s,2) conn(1,2,w,0) conn(1,2,w,2) conn(1,3,e,0) conn(1,3,n,1) conn(1,3,n,2) conn(1,3,w,1) conn(1,3,w,2) conn(1,4,n,0) conn(1,4,s,1) conn(1,4,s,2) conn(1,4,w,0) conn(1,4,w,1) conn(1,4,w,2) conn(2,1,n,0) conn(2,1,n,1) conn(2,1,n,2) conn(2,1,w,0) conn(2,1,w,1) conn(2,1,w,2) conn(2,2,e,2) conn(2,2,n,0) conn(2,2,n,1) conn(2,2,w,0) conn(2,2,w,1) conn(2,3,n,0) conn(2,3,n,1) conn(2,3,n,2) conn(2,3,s,0) conn(2,3,s,1) conn(2,3,s,2) conn(2,4,e,0) conn(2,4,e,1) conn(2,4,e,2) conn(2,4,n,0) conn(2,4,n,1) conn(2,4,n,2) conn(2,4,w,0) conn(2,4,w,1) conn(2,4,w,2) conn(3,1,n,0) conn(3,1,n,1) conn(3,1,n,2) conn(3,1,s,0) conn(3,1,s,1) conn(3,1,s,2) conn(3,2,n,0) conn(3,2,n,1) conn(3,2,n,2) conn(3,2,w,0) conn(3,2,w,1) conn(3,2,w,2) conn(3,3,e,0) conn(3,3,e,1) conn(3,3,e,2) conn(3,4,n,0) conn(3,4,n,1) conn(3,4,n,2) conn(3,4,s,0) conn(3,4,s,1) conn(3,4,s,2) conn(3,4,w,0) conn(3,4,w,1) conn(3,4,w,2) conn(4,1,n,0) conn(4,1,n,1) conn(4,1,n,2) conn(4,1,w,0) conn(4,1,w,1) conn(4,1,w,2) conn(4,2,e,0) conn(4,2,e,1) conn(4,2,n,0) conn(4,2,n,1) conn(4,2,n,2) conn(4,2,s,0) conn(4,2,s,1) conn(4,2,w,0) conn(4,2,w,1) conn(4,2,w,2) conn(4,3,e,0) conn(4,3,e,1) conn(4,3,e,2) conn(4,3,n,0) conn(4,3,n,1) conn(4,3,n,2) conn(4,4,w,0) conn(4,4,w,1) conn(4,4,w,2) connect(1,1,s) connect(1,1,w) connect(1,2,e) connect(1,2,n) connect(1,2,w) connect(1,3,e) connect(1,4,n) connect(1,4,w) connect(2,1,n) connect(2,1,w) connect(2,2,n) connect(2,2,w) connect(2,3,n) connect(2,3,s) connect(2,4,e) connect(2,4,n) connect(2,4,w) connect(3,1,n) connect(3,1,s) connect(3,2,n) connect(3,2,w) connect(3,3,e) connect(3,4,n) connect(3,4,s) connect(3,4,w) connect(4,1,n) connect(4,1,w) connect(4,2,e) connect(4,2,n) connect(4,2,s) connect(4,2,w) connect(4,3,e) connect(4,3,n) connect(4,4,w) cpush(2,2) dir(e) dir(n) dir(s) dir(w) dneighbor(e,1,1,1,2) dneighbor(e,1,2,1,3) dneighbor(e,1,3,1,4) dneighbor(e,2,1,2,2) dneighbor(e,2,2,2,3) dneighbor(e,2,3,2,4) dneighbor(e,3,1,3,2) dneighbor(e,3,2,3,3) dneighbor(e,3,3,3,4) dneighbor(e,4,1,4,2) dneighbor(e,4,2,4,3) dneighbor(e,4,3,4,4) dneighbor(n,1,1,2,1) dneighbor(n,1,2,2,2) dneighbor(n,1,3,2,3) dneighbor(n,1,4,2,4) dneighbor(n,2,1,3,1) dneighbor(n,2,2,3,2) dneighbor(n,2,3,3,3) dneighbor(n,2,4,3,4) dneighbor(n,3,1,4,1) dneighbor(n,3,2,4,2) dneighbor(n,3,3,4,3) dneighbor(n,3,4,4,4) dneighbor(s,2,1,1,1) dneighbor(s,2,2,1,2) dneighbor(s,2,3,1,3) dneighbor(s,2,4,1,4) dneighbor(s,3,1,2,1) dneighbor(s,3,2,2,2) dneighbor(s,3,3,2,3) dneighbor(s,3,4,2,4) dneighbor(s,4,1,3,1) dneighbor(s,4,2,3,2) dneighbor(s,4,3,3,3) dneighbor(s,4,4,3,4) dneighbor(w,1,2,1,1) dneighbor(w,1,3,1,2) dneighbor(w,1,4,1,3) dneighbor(w,2,2,2,1) dneighbor(w,2,3,2,2) dneighbor(w,2,4,2,3) dneighbor(w,3,2,3,1) dneighbor(w,3,3,3,2) dneighbor(w,3,4,3,3) dneighbor(w,4,2,4,1) dneighbor(w,4,3,4,2) dneighbor(w,4,4,4,3) field(1,1) field(1,2) field(1,3) field(1,4) field(2,1) field(2,2) field(2,3) field(2,4) field(3,1) field(3,2) field(3,3) field(3,4) field(4,1) field(4,2) field(4,3) field(4,4) goal(1,3,1) goal(1,3,2) goal(1,4,0) goal_on(1,4) init_on(3,2) inverse(e,w) inverse(n,s) inverse(s,n) inverse(w,e) max_steps(2) neg_goal(0) neg_goal(1) neighbor(e,1,1,1,2) neighbor(e,1,2,1,3) neighbor(e,1,3,1,4) neighbor(e,1,4,1,1) neighbor(e,2,1,2,2) neighbor(e,2,2,2,3) neighbor(e,2,3,2,4) neighbor(e,2,4,2,1) neighbor(e,3,1,3,2) neighbor(e,3,2,3,3) neighbor(e,3,3,3,4) neighbor(e,3,4,3,1) neighbor(e,4,1,4,2) neighbor(e,4,2,4,3) neighbor(e,4,3,4,4) neighbor(e,4,4,4,1) neighbor(n,1,1,2,1) neighbor(n,1,2,2,2) neighbor(n,1,3,2,3) neighbor(n,1,4,2,4) neighbor(n,2,1,3,1) neighbor(n,2,2,3,2) neighbor(n,2,3,3,3) neighbor(n,2,4,3,4) neighbor(n,3,1,4,1) neighbor(n,3,2,4,2) neighbor(n,3,3,4,3) neighbor(n,3,4,4,4) neighbor(n,4,1,1,1) neighbor(n,4,2,1,2) neighbor(n,4,3,1,3) neighbor(n,4,4,1,4) neighbor(s,1,1,4,1) neighbor(s,1,2,4,2) neighbor(s,1,3,4,3) neighbor(s,1,4,4,4) neighbor(s,2,1,1,1) neighbor(s,2,2,1,2) neighbor(s,2,3,1,3) neighbor(s,2,4,1,4) neighbor(s,3,1,2,1) neighbor(s,3,2,2,2) neighbor(s,3,3,2,3) neighbor(s,3,4,2,4) neighbor(s,4,1,3,1) neighbor(s,4,2,3,2) neighbor(s,4,3,3,3) neighbor(s,4,4,3,4) neighbor(w,1,1,1,4) neighbor(w,1,2,1,1) neighbor(w,1,3,1,2) neighbor(w,1,4,1,3) neighbor(w,2,1,2,4) neighbor(w,2,2,2,1) neighbor(w,2,3,2,2) neighbor(w,2,4,2,3) neighbor(w,3,1,3,4) neighbor(w,3,2,3,1) neighbor(w,3,3,3,2) neighbor(w,3,4,3,3) neighbor(w,4,1,4,4) neighbor(w,4,2,4,1) neighbor(w,4,3,4,2) neighbor(w,4,4,4,3) num_cols(4) num_rows(4) ocpush(1,2) ocpush(3,2) ocpush(4,2) orpush(2,1) orpush(3,1) orpush(4,1) push(1,w,1) push(2,n,2) reach(1,1,2) reach(1,2,2) reach(1,3,2) reach(2,3,2) reach(3,2,0) reach(3,2,1) reach(4,2,1) reach(4,2,2) row(1) row(2) row(3) row(4) rpush(1,1) rrpush(1) shift(1,1,1,1,2) shift(1,1,1,4,1) shift(1,2,1,1,1) shift(1,2,2,2,2) shift(1,3,1,2,1) shift(1,3,1,3,2) shift(1,4,1,3,1) shift(1,4,1,4,2) shift(2,1,2,1,1) shift(2,1,2,1,2) shift(2,2,2,2,1) shift(2,2,3,2,2) shift(2,3,2,3,1) shift(2,3,2,3,2) shift(2,4,2,4,1) shift(2,4,2,4,2) shift(3,1,3,1,1) shift(3,1,3,1,2) shift(3,2,3,2,1) shift(3,2,4,2,2) shift(3,3,3,3,1) shift(3,3,3,3,2) shift(3,4,3,4,1) shift(3,4,3,4,2) shift(4,1,4,1,1) shift(4,1,4,1,2) shift(4,2,1,2,2) shift(4,2,4,2,1) shift(4,3,4,3,1) shift(4,3,4,3,2) shift(4,4,4,4,1) shift(4,4,4,4,2) step(1) step(2) 
+ccpush(2) col(1) col(2) col(3) col(4) conn(1,1,e,1) conn(1,1,e,2) conn(1,1,n,1) conn(1,1,n,2) conn(1,1,s,0) conn(1,1,w,0) conn(1,1,w,1) conn(1,1,w,2) conn(1,2,e,0) conn(1,2,e,1) conn(1,2,e,2) conn(1,2,n,0) conn(1,2,w,0) conn(1,3,e,0) conn(1,3,n,1) conn(1,3,n,2) conn(1,3,s,2) conn(1,3,w,1) conn(1,4,n,0) conn(1,4,s,1) conn(1,4,s,2) conn(1,4,w,0) conn(1,4,w,1) conn(1,4,w,2) conn(2,1,n,0) conn(2,1,n,1) conn(2,1,n,2) conn(2,1,w,0) conn(2,1,w,1) conn(2,1,w,2) conn(2,2,n,0) conn(2,2,n,1) conn(2,2,n,2) conn(2,2,w,0) conn(2,2,w,1) conn(2,2,w,2) conn(2,3,e,2) conn(2,3,n,0) conn(2,3,n,1) conn(2,3,s,0) conn(2,3,s,1) conn(2,4,e,0) conn(2,4,e,1) conn(2,4,e,2) conn(2,4,n,0) conn(2,4,n,1) conn(2,4,n,2) conn(2,4,w,0) conn(2,4,w,1) conn(2,4,w,2) conn(3,1,n,0) conn(3,1,n,1) conn(3,1,n,2) conn(3,1,s,0) conn(3,1,s,1) conn(3,1,s,2) conn(3,2,n,0) conn(3,2,n,1) conn(3,2,n,2) conn(3,2,w,0) conn(3,2,w,1) conn(3,2,w,2) conn(3,3,e,0) conn(3,3,e,1) conn(3,3,e,2) conn(3,3,n,2) conn(3,4,n,0) conn(3,4,n,1) conn(3,4,n,2) conn(3,4,s,0) conn(3,4,s,1) conn(3,4,s,2) conn(3,4,w,0) conn(3,4,w,1) conn(3,4,w,2) conn(4,1,n,0) conn(4,1,n,1) conn(4,1,n,2) conn(4,1,w,0) conn(4,1,w,1) conn(4,1,w,2) conn(4,2,e,0) conn(4,2,e,1) conn(4,2,e,2) conn(4,2,n,0) conn(4,2,n,1) conn(4,2,n,2) conn(4,2,s,0) conn(4,2,s,1) conn(4,2,s,2) conn(4,2,w,0) conn(4,2,w,1) conn(4,2,w,2) conn(4,3,e,0) conn(4,3,e,1) conn(4,3,n,0) conn(4,3,n,1) conn(4,3,n,2) conn(4,3,w,2) conn(4,4,w,0) conn(4,4,w,1) conn(4,4,w,2) connect(1,1,s) connect(1,1,w) connect(1,2,e) connect(1,2,n) connect(1,2,w) connect(1,3,e) connect(1,4,n) connect(1,4,w) connect(2,1,n) connect(2,1,w) connect(2,2,n) connect(2,2,w) connect(2,3,n) connect(2,3,s) connect(2,4,e) connect(2,4,n) connect(2,4,w) connect(3,1,n) connect(3,1,s) connect(3,2,n) connect(3,2,w) connect(3,3,e) connect(3,4,n) connect(3,4,s) connect(3,4,w) connect(4,1,n) connect(4,1,w) connect(4,2,e) connect(4,2,n) connect(4,2,s) connect(4,2,w) connect(4,3,e) connect(4,3,n) connect(4,4,w) cpush(3,2) dir(e) dir(n) dir(s) dir(w) dneighbor(e,1,1,1,2) dneighbor(e,1,2,1,3) dneighbor(e,1,3,1,4) dneighbor(e,2,1,2,2) dneighbor(e,2,2,2,3) dneighbor(e,2,3,2,4) dneighbor(e,3,1,3,2) dneighbor(e,3,2,3,3) dneighbor(e,3,3,3,4) dneighbor(e,4,1,4,2) dneighbor(e,4,2,4,3) dneighbor(e,4,3,4,4) dneighbor(n,1,1,2,1) dneighbor(n,1,2,2,2) dneighbor(n,1,3,2,3) dneighbor(n,1,4,2,4) dneighbor(n,2,1,3,1) dneighbor(n,2,2,3,2) dneighbor(n,2,3,3,3) dneighbor(n,2,4,3,4) dneighbor(n,3,1,4,1) dneighbor(n,3,2,4,2) dneighbor(n,3,3,4,3) dneighbor(n,3,4,4,4) dneighbor(s,2,1,1,1) dneighbor(s,2,2,1,2) dneighbor(s,2,3,1,3) dneighbor(s,2,4,1,4) dneighbor(s,3,1,2,1) dneighbor(s,3,2,2,2) dneighbor(s,3,3,2,3) dneighbor(s,3,4,2,4) dneighbor(s,4,1,3,1) dneighbor(s,4,2,3,2) dneighbor(s,4,3,3,3) dneighbor(s,4,4,3,4) dneighbor(w,1,2,1,1) dneighbor(w,1,3,1,2) dneighbor(w,1,4,1,3) dneighbor(w,2,2,2,1) dneighbor(w,2,3,2,2) dneighbor(w,2,4,2,3) dneighbor(w,3,2,3,1) dneighbor(w,3,3,3,2) dneighbor(w,3,4,3,3) dneighbor(w,4,2,4,1) dneighbor(w,4,3,4,2) dneighbor(w,4,4,4,3) field(1,1) field(1,2) field(1,3) field(1,4) field(2,1) field(2,2) field(2,3) field(2,4) field(3,1) field(3,2) field(3,3) field(3,4) field(4,1) field(4,2) field(4,3) field(4,4) goal(1,3,1) goal(1,4,0) goal(4,3,2) goal_on(1,4) init_on(3,2) inverse(e,w) inverse(n,s) inverse(s,n) inverse(w,e) max_steps(2) neg_goal(0) neg_goal(1) neighbor(e,1,1,1,2) neighbor(e,1,2,1,3) neighbor(e,1,3,1,4) neighbor(e,1,4,1,1) neighbor(e,2,1,2,2) neighbor(e,2,2,2,3) neighbor(e,2,3,2,4) neighbor(e,2,4,2,1) neighbor(e,3,1,3,2) neighbor(e,3,2,3,3) neighbor(e,3,3,3,4) neighbor(e,3,4,3,1) neighbor(e,4,1,4,2) neighbor(e,4,2,4,3) neighbor(e,4,3,4,4) neighbor(e,4,4,4,1) neighbor(n,1,1,2,1) neighbor(n,1,2,2,2) neighbor(n,1,3,2,3) neighbor(n,1,4,2,4) neighbor(n,2,1,3,1) neighbor(n,2,2,3,2) neighbor(n,2,3,3,3) neighbor(n,2,4,3,4) neighbor(n,3,1,4,1) neighbor(n,3,2,4,2) neighbor(n,3,3,4,3) neighbor(n,3,4,4,4) neighbor(n,4,1,1,1) neighbor(n,4,2,1,2) neighbor(n,4,3,1,3) neighbor(n,4,4,1,4) neighbor(s,1,1,4,1) neighbor(s,1,2,4,2) neighbor(s,1,3,4,3) neighbor(s,1,4,4,4) neighbor(s,2,1,1,1) neighbor(s,2,2,1,2) neighbor(s,2,3,1,3) neighbor(s,2,4,1,4) neighbor(s,3,1,2,1) neighbor(s,3,2,2,2) neighbor(s,3,3,2,3) neighbor(s,3,4,2,4) neighbor(s,4,1,3,1) neighbor(s,4,2,3,2) neighbor(s,4,3,3,3) neighbor(s,4,4,3,4) neighbor(w,1,1,1,4) neighbor(w,1,2,1,1) neighbor(w,1,3,1,2) neighbor(w,1,4,1,3) neighbor(w,2,1,2,4) neighbor(w,2,2,2,1) neighbor(w,2,3,2,2) neighbor(w,2,4,2,3) neighbor(w,3,1,3,4) neighbor(w,3,2,3,1) neighbor(w,3,3,3,2) neighbor(w,3,4,3,3) neighbor(w,4,1,4,4) neighbor(w,4,2,4,1) neighbor(w,4,3,4,2) neighbor(w,4,4,4,3) num_cols(4) num_rows(4) ocpush(1,2) ocpush(2,2) ocpush(4,2) orpush(2,1) orpush(3,1) orpush(4,1) push(1,w,1) push(3,s,2) reach(3,2,0) reach(3,2,1) reach(3,2,2) reach(4,2,1) reach(4,2,2) reach(4,3,2) row(1) row(2) row(3) row(4) rpush(1,1) rrpush(1) shift(1,1,1,1,2) shift(1,1,1,4,1) shift(1,2,1,1,1) shift(1,2,1,2,2) shift(1,3,1,2,1) shift(1,3,4,3,2) shift(1,4,1,3,1) shift(1,4,1,4,2) shift(2,1,2,1,1) shift(2,1,2,1,2) shift(2,2,2,2,1) shift(2,2,2,2,2) shift(2,3,1,3,2) shift(2,3,2,3,1) shift(2,4,2,4,1) shift(2,4,2,4,2) shift(3,1,3,1,1) shift(3,1,3,1,2) shift(3,2,3,2,1) shift(3,2,3,2,2) shift(3,3,2,3,2) shift(3,3,3,3,1) shift(3,4,3,4,1) shift(3,4,3,4,2) shift(4,1,4,1,1) shift(4,1,4,1,2) shift(4,2,4,2,1) shift(4,2,4,2,2) shift(4,3,3,3,2) shift(4,3,4,3,1) shift(4,4,4,4,1) shift(4,4,4,4,2) step(1) step(2) 
+
+what the hell! 222 551
+total(406) attack(1) attackOne(2) endure(1) endureOne(3) bothOne(0) unknown(399)
+iteration 1:
+total(406) attack(2) attackOne(5) endure(1) endureOne(3) bothOne(0) unknown(395)
+total(406) attack(2) attackOne(5) endure(2) endureOne(7) bothOne(0) unknown(390)
+iteration 2:
+total(406) attack(3) attackOne(8) endure(2) endureOne(7) bothOne(0) unknown(386)
+total(406) attack(3) attackOne(8) endure(3) endureOne(10) bothOne(0) unknown(382)
+iteration 3:
+total(406) attack(4) attackOne(12) endure(3) endureOne(10) bothOne(0) unknown(377)
+total(406) attack(4) attackOne(12) endure(4) endureOne(13) bothOne(0) unknown(373)
+iteration 4:
+total(406) attack(5) attackOne(15) endure(4) endureOne(13) bothOne(0) unknown(369)
+total(406) attack(5) attackOne(15) endure(5) endureOne(14) bothOne(0) unknown(367)
+iteration 5:
+total(406) attack(6) attackOne(18) endure(5) endureOne(14) bothOne(0) unknown(363)
+total(406) attack(6) attackOne(18) endure(6) endureOne(19) bothOne(0) unknown(357)
+iteration 6:
+total(406) attack(7) attackOne(20) endure(6) endureOne(19) bothOne(0) unknown(354)
+total(406) attack(7) attackOne(20) endure(7) endureOne(24) bothOne(0) unknown(348)
+iteration 7:
+total(406) attack(8) attackOne(23) endure(7) endureOne(24) bothOne(0) unknown(344)
+total(406) attack(8) attackOne(23) endure(8) endureOne(26) bothOne(0) unknown(341)
+iteration 8:
+total(406) attack(9) attackOne(26) endure(8) endureOne(26) bothOne(0) unknown(337)
+total(406) attack(9) attackOne(25) endure(9) endureOne(28) bothOne(1) unknown(334)
+iteration 9:
+total(406) attack(10) attackOne(24) endure(9) endureOne(28) bothOne(1) unknown(334)
+total(406) attack(10) attackOne(24) endure(10) endureOne(37) bothOne(1) unknown(324)
+iteration 10:
+total(406) attack(11) attackOne(23) endure(10) endureOne(37) bothOne(1) unknown(324)
+total(406) attack(11) attackOne(23) endure(11) endureOne(47) bothOne(1) unknown(313)
+iteration 11:
+total(406) attack(12) attackOne(24) endure(11) endureOne(47) bothOne(1) unknown(311)
+total(406) attack(12) attackOne(24) endure(12) endureOne(49) bothOne(1) unknown(308)
+iteration 12:
+total(406) attack(13) attackOne(26) endure(12) endureOne(48) bothOne(2) unknown(305)
+total(406) attack(13) attackOne(24) endure(13) endureOne(53) bothOne(4) unknown(299)
+iteration 13:
+total(406) attack(14) attackOne(26) endure(13) endureOne(52) bothOne(5) unknown(296)
+total(406) attack(14) attackOne(26) endure(14) endureOne(53) bothOne(5) unknown(294)
+iteration 14:
+total(406) attack(15) attackOne(25) endure(14) endureOne(53) bothOne(5) unknown(294)
+total(406) attack(15) attackOne(25) endure(15) endureOne(56) bothOne(5) unknown(290)
+iteration 15:
+total(406) attack(16) attackOne(26) endure(15) endureOne(56) bothOne(5) unknown(288)
+total(406) attack(16) attackOne(26) endure(16) endureOne(61) bothOne(5) unknown(282)
+iteration 16:
+total(406) attack(17) attackOne(29) endure(16) endureOne(61) bothOne(5) unknown(278)
+total(406) attack(17) attackOne(27) endure(17) endureOne(66) bothOne(7) unknown(272)
+iteration 17:
+total(406) attack(18) attackOne(30) endure(17) endureOne(66) bothOne(7) unknown(268)
+total(406) attack(18) attackOne(30) endure(18) endureOne(66) bothOne(7) unknown(267)
+iteration 18:
+total(406) attack(19) attackOne(29) endure(18) endureOne(66) bothOne(7) unknown(267)
+total(406) attack(19) attackOne(29) endure(19) endureOne(77) bothOne(7) unknown(255)
+iteration 19:
+total(406) attack(20) attackOne(29) endure(19) endureOne(76) bothOne(8) unknown(254)
+total(406) attack(20) attackOne(29) endure(20) endureOne(76) bothOne(8) unknown(253)
+iteration 20:
+total(406) attack(21) attackOne(33) endure(20) endureOne(73) bothOne(11) unknown(248)
+total(406) attack(21) attackOne(32) endure(21) endureOne(75) bothOne(12) unknown(245)
+iteration 21:
+total(406) attack(22) attackOne(32) endure(21) endureOne(75) bothOne(12) unknown(244)
+total(406) attack(22) attackOne(30) endure(22) endureOne(77) bothOne(14) unknown(241)
+iteration 22:
+total(406) attack(23) attackOne(33) endure(22) endureOne(76) bothOne(15) unknown(237)
+total(406) attack(23) attackOne(33) endure(23) endureOne(77) bothOne(15) unknown(235)
+iteration 23:
+total(406) attack(24) attackOne(41) endure(23) endureOne(77) bothOne(15) unknown(226)
+total(406) attack(24) attackOne(39) endure(24) endureOne(80) bothOne(17) unknown(222)
+iteration 24:
+total(406) attack(25) attackOne(40) endure(24) endureOne(78) bothOne(19) unknown(220)
+total(406) attack(25) attackOne(40) endure(25) endureOne(79) bothOne(19) unknown(218)
+iteration 25:
+total(406) attack(26) attackOne(49) endure(25) endureOne(78) bothOne(20) unknown(208)
+total(406) attack(26) attackOne(48) endure(26) endureOne(80) bothOne(21) unknown(205)
+iteration 26:
+total(406) attack(27) attackOne(48) endure(26) endureOne(78) bothOne(23) unknown(204)
+total(406) attack(27) attackOne(48) endure(27) endureOne(81) bothOne(23) unknown(200)
+iteration 27:
+total(406) attack(28) attackOne(51) endure(27) endureOne(78) bothOne(26) unknown(196)
+total(406) attack(28) attackOne(50) endure(28) endureOne(79) bothOne(27) unknown(194)
+iteration 28:
+total(406) attack(29) attackOne(50) endure(28) endureOne(78) bothOne(28) unknown(193)
+total(406) attack(29) attackOne(50) endure(29) endureOne(84) bothOne(28) unknown(186)
+iteration 29:
+total(406) attack(30) attackOne(52) endure(29) endureOne(83) bothOne(29) unknown(183)
+total(406) attack(30) attackOne(52) endure(30) endureOne(82) bothOne(29) unknown(183)
+iteration 30:
+total(406) attack(31) attackOne(54) endure(30) endureOne(80) bothOne(31) unknown(180)
+total(406) attack(31) attackOne(54) endure(31) endureOne(83) bothOne(31) unknown(176)
+iteration 31:
+total(406) attack(32) attackOne(55) endure(31) endureOne(83) bothOne(31) unknown(174)
+total(406) attack(32) attackOne(54) endure(32) endureOne(85) bothOne(32) unknown(171)
+iteration 32:
+total(406) attack(33) attackOne(56) endure(32) endureOne(83) bothOne(34) unknown(168)
+total(406) attack(33) attackOne(54) endure(33) endureOne(84) bothOne(36) unknown(166)
+iteration 33:
+total(406) attack(34) attackOne(56) endure(33) endureOne(83) bothOne(37) unknown(163)
+total(406) attack(34) attackOne(56) endure(34) endureOne(82) bothOne(37) unknown(163)
+iteration 34:
+total(406) attack(35) attackOne(58) endure(34) endureOne(80) bothOne(39) unknown(160)
+total(406) attack(35) attackOne(57) endure(35) endureOne(87) bothOne(40) unknown(152)
+iteration 35:
+total(406) attack(36) attackOne(56) endure(35) endureOne(87) bothOne(40) unknown(152)
+total(406) attack(36) attackOne(56) endure(36) endureOne(87) bothOne(40) unknown(151)
+iteration 36:
+total(406) attack(37) attackOne(63) endure(36) endureOne(85) bothOne(42) unknown(143)
+total(406) attack(37) attackOne(60) endure(37) endureOne(88) bothOne(45) unknown(139)
+iteration 37:
+total(406) attack(38) attackOne(61) endure(37) endureOne(88) bothOne(45) unknown(137)
+total(406) attack(38) attackOne(61) endure(38) endureOne(88) bothOne(45) unknown(136)
+iteration 38:
+total(406) attack(39) attackOne(63) endure(38) endureOne(86) bothOne(47) unknown(133)
+total(406) attack(39) attackOne(62) endure(39) endureOne(85) bothOne(48) unknown(133)
+iteration 39:
+total(406) attack(40) attackOne(62) endure(39) endureOne(85) bothOne(48) unknown(132)
+total(406) attack(40) attackOne(61) endure(40) endureOne(88) bothOne(49) unknown(128)
+iteration 40:
+total(406) attack(41) attackOne(61) endure(40) endureOne(86) bothOne(51) unknown(127)
+total(406) attack(41) attackOne(61) endure(41) endureOne(86) bothOne(51) unknown(126)
+iteration 41:
+total(406) attack(42) attackOne(62) endure(41) endureOne(86) bothOne(51) unknown(124)
+total(406) attack(42) attackOne(61) endure(42) endureOne(88) bothOne(52) unknown(121)
+iteration 42:
+total(406) attack(43) attackOne(61) endure(42) endureOne(86) bothOne(54) unknown(120)
+total(406) attack(43) attackOne(61) endure(43) endureOne(86) bothOne(54) unknown(119)
+iteration 43:
+total(406) attack(44) attackOne(64) endure(43) endureOne(86) bothOne(54) unknown(115)
+total(406) attack(44) attackOne(62) endure(44) endureOne(86) bothOne(56) unknown(114)
+iteration 44:
+total(406) attack(45) attackOne(63) endure(44) endureOne(84) bothOne(58) unknown(112)
+total(406) attack(45) attackOne(62) endure(45) endureOne(90) bothOne(59) unknown(105)
+iteration 45:
+total(406) attack(46) attackOne(68) endure(45) endureOne(88) bothOne(61) unknown(98)
+total(406) attack(46) attackOne(68) endure(46) endureOne(87) bothOne(61) unknown(98)
+iteration 46:
+total(406) attack(47) attackOne(67) endure(46) endureOne(87) bothOne(61) unknown(98)
+total(406) attack(47) attackOne(67) endure(47) endureOne(87) bothOne(61) unknown(97)
+iteration 47:
+total(406) attack(48) attackOne(68) endure(47) endureOne(84) bothOne(64) unknown(95)
+total(406) attack(48) attackOne(68) endure(48) endureOne(85) bothOne(64) unknown(93)
+iteration 48:
+total(406) attack(49) attackOne(67) endure(48) endureOne(84) bothOne(65) unknown(93)
+total(406) attack(49) attackOne(66) endure(49) endureOne(90) bothOne(66) unknown(86)
+iteration 49:
+total(406) attack(50) attackOne(70) endure(49) endureOne(86) bothOne(70) unknown(81)
+total(406) attack(50) attackOne(70) endure(50) endureOne(85) bothOne(70) unknown(81)
+iteration 50:
+total(406) attack(51) attackOne(69) endure(50) endureOne(85) bothOne(70) unknown(81)
+total(406) attack(51) attackOne(66) endure(51) endureOne(85) bothOne(73) unknown(80)
+iteration 51:
+total(406) attack(52) attackOne(66) endure(51) endureOne(83) bothOne(75) unknown(79)
+total(406) attack(52) attackOne(66) endure(52) endureOne(82) bothOne(75) unknown(79)
+iteration 52:
+total(406) attack(53) attackOne(67) endure(52) endureOne(81) bothOne(76) unknown(77)
+total(406) attack(53) attackOne(66) endure(53) endureOne(86) bothOne(77) unknown(71)
+iteration 53:
+total(406) attack(54) attackOne(71) endure(53) endureOne(84) bothOne(79) unknown(65)
+total(406) attack(54) attackOne(71) endure(54) endureOne(83) bothOne(79) unknown(65)
+iteration 54:
+total(406) attack(55) attackOne(71) endure(54) endureOne(82) bothOne(80) unknown(64)
+total(406) attack(55) attackOne(70) endure(55) endureOne(83) bothOne(81) unknown(62)
+iteration 55:
+total(406) attack(56) attackOne(70) endure(55) endureOne(80) bothOne(84) unknown(61)
+total(406) attack(56) attackOne(70) endure(56) endureOne(84) bothOne(84) unknown(56)
+iteration 56:
+total(406) attack(57) attackOne(69) endure(56) endureOne(84) bothOne(84) unknown(56)
+total(406) attack(57) attackOne(69) endure(57) endureOne(83) bothOne(84) unknown(56)
+iteration 57:
+total(406) attack(58) attackOne(68) endure(57) endureOne(83) bothOne(84) unknown(56)
+total(406) attack(58) attackOne(66) endure(58) endureOne(83) bothOne(86) unknown(55)
+iteration 58:
+total(406) attack(59) attackOne(65) endure(58) endureOne(83) bothOne(86) unknown(55)
+total(406) attack(59) attackOne(65) endure(59) endureOne(82) bothOne(86) unknown(55)
+iteration 59:
+total(406) attack(60) attackOne(64) endure(59) endureOne(82) bothOne(86) unknown(55)
+total(406) attack(60) attackOne(63) endure(60) endureOne(87) bothOne(87) unknown(49)
+iteration 60:
+total(406) attack(61) attackOne(62) endure(60) endureOne(87) bothOne(87) unknown(49)
+total(406) attack(61) attackOne(62) endure(61) endureOne(86) bothOne(87) unknown(49)
+iteration 61:
+total(406) attack(62) attackOne(61) endure(61) endureOne(86) bothOne(87) unknown(49)
+total(406) attack(62) attackOne(61) endure(62) endureOne(85) bothOne(87) unknown(49)
+iteration 62:
+total(406) attack(63) attackOne(60) endure(62) endureOne(85) bothOne(87) unknown(49)
+total(406) attack(63) attackOne(60) endure(63) endureOne(84) bothOne(87) unknown(49)
+iteration 63:
+total(406) attack(64) attackOne(59) endure(63) endureOne(83) bothOne(88) unknown(49)
+total(406) attack(64) attackOne(56) endure(64) endureOne(82) bothOne(91) unknown(49)
+iteration 64:
+total(406) attack(65) attackOne(55) endure(64) endureOne(82) bothOne(91) unknown(49)
+total(406) attack(65) attackOne(54) endure(65) endureOne(81) bothOne(92) unknown(49)
+iteration 65:
+total(406) attack(66) attackOne(53) endure(65) endureOne(81) bothOne(92) unknown(49)
+total(406) attack(66) attackOne(53) endure(66) endureOne(81) bothOne(92) unknown(48)
+iteration 66:
+total(406) attack(67) attackOne(52) endure(66) endureOne(81) bothOne(92) unknown(48)
+total(406) attack(67) attackOne(51) endure(67) endureOne(80) bothOne(93) unknown(48)
+iteration 67:
+total(406) attack(68) attackOne(50) endure(67) endureOne(80) bothOne(93) unknown(48)
+total(406) attack(68) attackOne(50) endure(68) endureOne(79) bothOne(93) unknown(48)
+iteration 68:
+total(406) attack(69) attackOne(49) endure(68) endureOne(79) bothOne(93) unknown(48)
+total(406) attack(69) attackOne(48) endure(69) endureOne(78) bothOne(94) unknown(48)
+iteration 69:
+total(406) attack(70) attackOne(47) endure(69) endureOne(77) bothOne(95) unknown(48)
+total(406) attack(70) attackOne(47) endure(70) endureOne(76) bothOne(95) unknown(48)
+iteration 70:
+total(406) attack(71) attackOne(46) endure(70) endureOne(76) bothOne(95) unknown(48)
+total(406) attack(71) attackOne(46) endure(71) endureOne(75) bothOne(95) unknown(48)
+iteration 71:
+total(406) attack(72) attackOne(45) endure(71) endureOne(75) bothOne(95) unknown(48)
+total(406) attack(72) attackOne(45) endure(72) endureOne(75) bothOne(95) unknown(47)
+iteration 72:
+total(406) attack(73) attackOne(44) endure(72) endureOne(75) bothOne(95) unknown(47)
+total(406) attack(73) attackOne(43) endure(73) endureOne(75) bothOne(96) unknown(46)
+iteration 73:
+total(406) attack(74) attackOne(42) endure(73) endureOne(73) bothOne(98) unknown(46)
+total(406) attack(74) attackOne(42) endure(74) endureOne(72) bothOne(98) unknown(46)
+iteration 74:
+total(406) attack(75) attackOne(41) endure(74) endureOne(71) bothOne(99) unknown(46)
+total(406) attack(75) attackOne(41) endure(75) endureOne(70) bothOne(99) unknown(46)
+iteration 75:
+total(406) attack(76) attackOne(43) endure(75) endureOne(67) bothOne(102) unknown(43)
+total(406) attack(76) attackOne(43) endure(76) endureOne(67) bothOne(102) unknown(42)
+iteration 76:
+total(406) attack(77) attackOne(42) endure(76) endureOne(67) bothOne(102) unknown(42)
+total(406) attack(77) attackOne(39) endure(77) endureOne(66) bothOne(105) unknown(42)
+iteration 77:
+total(406) attack(78) attackOne(38) endure(77) endureOne(65) bothOne(106) unknown(42)
+total(406) attack(78) attackOne(38) endure(78) endureOne(64) bothOne(106) unknown(42)
+iteration 78:
+total(406) attack(79) attackOne(42) endure(78) endureOne(64) bothOne(106) unknown(37)
+total(406) attack(79) attackOne(41) endure(79) endureOne(63) bothOne(107) unknown(37)
+iteration 79:
+total(406) attack(80) attackOne(42) endure(79) endureOne(62) bothOne(108) unknown(35)
+total(406) attack(80) attackOne(42) endure(80) endureOne(62) bothOne(108) unknown(34)
+iteration 80:
+total(406) attack(81) attackOne(41) endure(80) endureOne(62) bothOne(108) unknown(34)
+total(406) attack(81) attackOne(39) endure(81) endureOne(62) bothOne(110) unknown(33)
+iteration 81:
+total(406) attack(82) attackOne(38) endure(81) endureOne(62) bothOne(110) unknown(33)
+total(406) attack(82) attackOne(38) endure(82) endureOne(61) bothOne(110) unknown(33)
+iteration 82:
+total(406) attack(83) attackOne(37) endure(82) endureOne(61) bothOne(110) unknown(33)
+total(406) attack(83) attackOne(37) endure(83) endureOne(60) bothOne(110) unknown(33)
+iteration 83:
+total(406) attack(84) attackOne(36) endure(83) endureOne(60) bothOne(110) unknown(33)
+total(406) attack(84) attackOne(36) endure(84) endureOne(59) bothOne(110) unknown(33)
+iteration 84:
+total(406) attack(85) attackOne(36) endure(84) endureOne(59) bothOne(110) unknown(32)
+total(406) attack(85) attackOne(35) endure(85) endureOne(58) bothOne(111) unknown(32)
+iteration 85:
+total(406) attack(86) attackOne(34) endure(85) endureOne(58) bothOne(111) unknown(32)
+total(406) attack(86) attackOne(34) endure(86) endureOne(57) bothOne(111) unknown(32)
+iteration 86:
+total(406) attack(87) attackOne(33) endure(86) endureOne(57) bothOne(111) unknown(32)
+total(406) attack(87) attackOne(33) endure(87) endureOne(57) bothOne(111) unknown(31)
+iteration 87:
+total(406) attack(88) attackOne(32) endure(87) endureOne(57) bothOne(111) unknown(31)
+total(406) attack(88) attackOne(31) endure(88) endureOne(57) bothOne(112) unknown(30)
+iteration 88:
+total(406) attack(89) attackOne(30) endure(88) endureOne(57) bothOne(112) unknown(30)
+total(406) attack(89) attackOne(30) endure(89) endureOne(56) bothOne(112) unknown(30)
+iteration 89:
+total(406) attack(90) attackOne(29) endure(89) endureOne(53) bothOne(115) unknown(30)
+total(406) attack(90) attackOne(29) endure(90) endureOne(52) bothOne(115) unknown(30)
+iteration 90:
+total(406) attack(91) attackOne(28) endure(90) endureOne(52) bothOne(115) unknown(30)
+total(406) attack(91) attackOne(28) endure(91) endureOne(51) bothOne(115) unknown(30)
+iteration 91:
+total(406) attack(92) attackOne(27) endure(91) endureOne(51) bothOne(115) unknown(30)
+total(406) attack(92) attackOne(27) endure(92) endureOne(50) bothOne(115) unknown(30)
+iteration 92:
+total(406) attack(93) attackOne(27) endure(92) endureOne(50) bothOne(115) unknown(29)
+total(406) attack(93) attackOne(27) endure(93) endureOne(49) bothOne(115) unknown(29)
+iteration 93:
+total(406) attack(94) attackOne(26) endure(93) endureOne(49) bothOne(115) unknown(29)
+total(406) attack(94) attackOne(26) endure(94) endureOne(48) bothOne(115) unknown(29)
+iteration 94:
+total(406) attack(95) attackOne(25) endure(94) endureOne(47) bothOne(116) unknown(29)
+total(406) attack(95) attackOne(24) endure(95) endureOne(46) bothOne(117) unknown(29)
+iteration 95:
+total(406) attack(96) attackOne(24) endure(95) endureOne(46) bothOne(117) unknown(28)
+total(406) attack(96) attackOne(24) endure(96) endureOne(49) bothOne(117) unknown(24)
+iteration 96:
+total(406) attack(97) attackOne(23) endure(96) endureOne(47) bothOne(119) unknown(24)
+total(406) attack(97) attackOne(23) endure(97) endureOne(51) bothOne(119) unknown(19)
+iteration 97:
+total(406) attack(98) attackOne(22) endure(97) endureOne(50) bothOne(120) unknown(19)
+total(406) attack(98) attackOne(22) endure(98) endureOne(49) bothOne(120) unknown(19)
+iteration 98:
+total(406) attack(99) attackOne(22) endure(98) endureOne(49) bothOne(120) unknown(18)
+total(406) attack(99) attackOne(22) endure(99) endureOne(48) bothOne(120) unknown(18)
+iteration 99:
+total(406) attack(100) attackOne(22) endure(99) endureOne(48) bothOne(120) unknown(17)
+total(406) attack(100) attackOne(22) endure(100) endureOne(47) bothOne(120) unknown(17)
+iteration 100:
+total(406) attack(101) attackOne(21) endure(100) endureOne(46) bothOne(121) unknown(17)
+total(406) attack(101) attackOne(21) endure(101) endureOne(48) bothOne(121) unknown(14)
+iteration 101:
+total(406) attack(102) attackOne(20) endure(101) endureOne(48) bothOne(121) unknown(14)
+total(406) attack(102) attackOne(20) endure(102) endureOne(47) bothOne(121) unknown(14)
+iteration 102:
+total(406) attack(103) attackOne(20) endure(102) endureOne(47) bothOne(121) unknown(13)
+total(406) attack(103) attackOne(20) endure(103) endureOne(46) bothOne(121) unknown(13)
+iteration 103:
+total(406) attack(104) attackOne(19) endure(103) endureOne(46) bothOne(121) unknown(13)
+total(406) attack(104) attackOne(19) endure(104) endureOne(45) bothOne(121) unknown(13)
+iteration 104:
+total(406) attack(105) attackOne(19) endure(104) endureOne(45) bothOne(121) unknown(12)
+total(406) attack(105) attackOne(19) endure(105) endureOne(44) bothOne(121) unknown(12)
+iteration 105:
+total(406) attack(106) attackOne(18) endure(105) endureOne(43) bothOne(122) unknown(12)
+total(406) attack(106) attackOne(18) endure(106) endureOne(42) bothOne(122) unknown(12)
+iteration 106:
+total(406) attack(107) attackOne(17) endure(106) endureOne(42) bothOne(122) unknown(12)
+total(406) attack(107) attackOne(17) endure(107) endureOne(44) bothOne(122) unknown(9)
+iteration 107:
+total(406) attack(108) attackOne(16) endure(107) endureOne(44) bothOne(122) unknown(9)
+total(406) attack(108) attackOne(14) endure(108) endureOne(43) bothOne(124) unknown(9)
+iteration 108:
+total(406) attack(109) attackOne(14) endure(108) endureOne(43) bothOne(124) unknown(8)
+total(406) attack(109) attackOne(12) endure(109) endureOne(42) bothOne(126) unknown(8)
+iteration 109:
+total(406) attack(110) attackOne(11) endure(109) endureOne(42) bothOne(126) unknown(8)
+total(406) attack(110) attackOne(11) endure(110) endureOne(41) bothOne(126) unknown(8)
+iteration 110:
+total(406) attack(111) attackOne(10) endure(110) endureOne(41) bothOne(126) unknown(8)
+total(406) attack(111) attackOne(10) endure(111) endureOne(42) bothOne(126) unknown(6)
+iteration 111:
+total(406) attack(112) attackOne(9) endure(111) endureOne(42) bothOne(126) unknown(6)
+total(406) attack(112) attackOne(7) endure(112) endureOne(41) bothOne(128) unknown(6)
+iteration 112:
+total(406) attack(113) attackOne(6) endure(112) endureOne(41) bothOne(128) unknown(6)
+total(406) attack(113) attackOne(4) endure(113) endureOne(40) bothOne(130) unknown(6)
+iteration 113:
+total(406) attack(114) attackOne(4) endure(113) endureOne(40) bothOne(130) unknown(5)
+total(406) attack(114) attackOne(4) endure(114) endureOne(39) bothOne(130) unknown(5)
+iteration 114:
+total(406) attack(115) attackOne(3) endure(114) endureOne(35) bothOne(134) unknown(5)
+total(406) attack(115) attackOne(3) endure(115) endureOne(34) bothOne(134) unknown(5)
+iteration 115:
+total(406) attack(116) attackOne(3) endure(115) endureOne(34) bothOne(134) unknown(4)
+total(406) attack(116) attackOne(3) endure(116) endureOne(33) bothOne(134) unknown(4)
+iteration 116:
+total(406) attack(117) attackOne(2) endure(116) endureOne(30) bothOne(137) unknown(4)
+total(406) attack(117) attackOne(2) endure(117) endureOne(29) bothOne(137) unknown(4)
+iteration 117:
+total(406) attack(118) attackOne(1) endure(117) endureOne(29) bothOne(137) unknown(4)
+total(406) attack(118) attackOne(1) endure(118) endureOne(28) bothOne(137) unknown(4)
+iteration 118:
+total(406) attack(119) attackOne(0) endure(118) endureOne(28) bothOne(137) unknown(4)
+total(406) attack(119) attackOne(0) endure(119) endureOne(27) bothOne(137) unknown(4)
+iteration 119:
+total(406) attack(119) attackOne(0) endure(120) endureOne(26) bothOne(137) unknown(4)
+iteration 120:
+total(406) attack(119) attackOne(0) endure(121) endureOne(25) bothOne(137) unknown(4)
+iteration 121:
+total(406) attack(119) attackOne(0) endure(122) endureOne(24) bothOne(137) unknown(4)
+iteration 122:
+total(406) attack(119) attackOne(0) endure(123) endureOne(23) bothOne(137) unknown(4)
+iteration 123:
+total(406) attack(119) attackOne(0) endure(124) endureOne(22) bothOne(137) unknown(4)
+iteration 124:
+total(406) attack(119) attackOne(0) endure(125) endureOne(21) bothOne(137) unknown(4)
+iteration 125:
+total(406) attack(119) attackOne(0) endure(126) endureOne(20) bothOne(137) unknown(4)
+iteration 126:
+total(406) attack(119) attackOne(0) endure(127) endureOne(19) bothOne(137) unknown(4)
+iteration 127:
+total(406) attack(119) attackOne(0) endure(128) endureOne(18) bothOne(137) unknown(4)
+iteration 128:
+total(406) attack(119) attackOne(0) endure(129) endureOne(17) bothOne(137) unknown(4)
+iteration 129:
+total(406) attack(119) attackOne(0) endure(130) endureOne(16) bothOne(137) unknown(4)
+iteration 130:
+total(406) attack(119) attackOne(0) endure(131) endureOne(15) bothOne(137) unknown(4)
+iteration 131:
+total(406) attack(119) attackOne(0) endure(132) endureOne(14) bothOne(137) unknown(4)
+iteration 132:
+total(406) attack(119) attackOne(0) endure(133) endureOne(13) bothOne(137) unknown(4)
+iteration 133:
+total(406) attack(119) attackOne(0) endure(134) endureOne(12) bothOne(137) unknown(4)
+iteration 134:
+total(406) attack(119) attackOne(0) endure(135) endureOne(11) bothOne(137) unknown(4)
+iteration 135:
+total(406) attack(119) attackOne(0) endure(136) endureOne(10) bothOne(137) unknown(4)
+iteration 136:
+total(406) attack(119) attackOne(0) endure(137) endureOne(9) bothOne(137) unknown(4)
+iteration 137:
+total(406) attack(119) attackOne(0) endure(138) endureOne(8) bothOne(137) unknown(4)
+iteration 138:
+total(406) attack(119) attackOne(0) endure(139) endureOne(7) bothOne(137) unknown(4)
+iteration 139:
+total(406) attack(119) attackOne(0) endure(140) endureOne(6) bothOne(137) unknown(4)
+iteration 140:
+total(406) attack(119) attackOne(0) endure(141) endureOne(5) bothOne(137) unknown(4)
+iteration 141:
+total(406) attack(119) attackOne(0) endure(142) endureOne(4) bothOne(137) unknown(4)
+iteration 142:
+total(406) attack(119) attackOne(0) endure(143) endureOne(3) bothOne(137) unknown(4)
+iteration 143:
+total(406) attack(119) attackOne(0) endure(144) endureOne(2) bothOne(137) unknown(4)
+iteration 144:
+total(406) attack(119) attackOne(0) endure(145) endureOne(1) bothOne(137) unknown(4)
+iteration 145:
+total(406) attack(119) attackOne(0) endure(146) endureOne(0) bothOne(137) unknown(4)
+
+Minimal Cut : 
+
+Time cost : 10000

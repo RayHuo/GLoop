@@ -75,8 +75,8 @@ int main(int argc, char** argv) {
     yyparse();
     printf("End Parser\n");
     
-    Vocabulary::instance().dumpVocabulary(result_out);
-    U.insert(1);
+//    Vocabulary::instance().dumpVocabulary(result_out);
+//    U.insert(1);
     
 //    int method, all, type;
 //    
@@ -265,17 +265,20 @@ int main(int argc, char** argv) {
 #ifdef SPLITTING
     DependenceGraph dpdg;
     long start = clock();
-//    dpdg.splitting(result_out);
-    set<int> result = dpdg.calU();
+    U = dpdg.calU();
+    dpdg.splitting(result_out);
     long end = clock();
-    printf("\nMinimal Cut : ");
-    for(set<int>::iterator it = result.begin(); it != result.end(); it++) {
-        printf("%s ", Vocabulary::instance().getAtom(*it));
-    }
-    printf("\n");
+//    printf("\nMinimal Cut : ");
+//    for(set<int>::iterator it = result.begin(); it != result.end(); it++) {
+//        printf("%s ", Vocabulary::instance().getAtom(*it));
+//    }
+//    printf("\n");
     
-    printf("\nTime cost : %ld\n", (end - start));
+    printf("\nTime cost : %lf seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
     
-#endif    
+#endif   
+    
+    fclose(result_out);
+    fclose(yyin);
     return 0;
 }

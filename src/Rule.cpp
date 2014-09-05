@@ -3,6 +3,8 @@
 #include "Vocabulary.h"
 #include <assert.h>
 #include <cstdlib>
+#include <string>
+#include <cstring>
 #include <algorithm>
 
 Rule::Rule() {
@@ -47,10 +49,14 @@ bool Rule::operator == (const Rule& _rhs) {
 }
 
 void Rule::output(FILE* _out) const {
-    if(head > 0)
-        fprintf(_out, "%s", Vocabulary::instance().getAtom(head));
+    if(type == FACT) {
+        if(head > 0 && strlen(Vocabulary::instance().getAtom(head)) > 0)
+            fprintf(_out, "%s.\n", Vocabulary::instance().getAtom(head));
+    }
     fflush(_out);
     if(type != FACT) {
+        if(head > 0)
+             fprintf(_out, "%s", Vocabulary::instance().getAtom(head));
         fprintf(_out, " :- ");
         for(set<int>::iterator pit = body_lits.begin(); pit != 
                 body_lits.end(); pit++) {
@@ -61,7 +67,8 @@ void Rule::output(FILE* _out) const {
                 fprintf(_out, ",");
             }
         }
+        fprintf(_out, ".\n");
     }
     
-    fprintf(_out, ".\n");
+    
 }
