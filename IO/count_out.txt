@@ -1,1 +1,7 @@
-Atoms(b_U(P)) - U size = 23
+Atoms(b_U(P)) - U size = 0
+Atoms(b_U(P)) - U size = 6
+Atoms(b_U(P)) - U size = 13
+Atoms(b_U(P)) - U size = 20
+Atoms(b_U(P)) - U size = 29
+Atoms(b_U(P)) - U size = 40
+Atoms(b_U(P)) - U size = 47

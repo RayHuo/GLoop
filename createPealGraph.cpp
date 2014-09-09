@@ -15,10 +15,7 @@
 
 using namespace std;
 
-int main() {
-	int PEALNUM = 2;
-	int PEALSIZE = 5;
-
+void createPealGraph(int PEALNUM, int PEALSIZE) {
 	string fileName = "nva";
 	stringstream ss1;    
     string tmp1 = "";   
@@ -39,13 +36,13 @@ int main() {
     fout = fopen(openFile.c_str(), "w");
     if(!fout) {
         printf("Fail to open output file.\n");
-        return 0;
+        return;
     }
 
     fcuts = fopen("IO/pealGraph/cuts.txt", "w");
     if(!fcuts) {
         printf("Fail to open cuts file.\n");
-        return 0;
+      	return;
     }
 
     srand(time(0));
@@ -138,6 +135,17 @@ int main() {
         printf("%s\n", (*it).c_str());
     }
     printf("\n");
+}
+
+
+int main() {
+	createPealGraph(2, 3);
+	createPealGraph(2, 4);
+	createPealGraph(2, 5);
+	createPealGraph(2, 6);
+	createPealGraph(2, 7);
+	createPealGraph(2, 8);
+	createPealGraph(2, 9);
 
     return 0;
 }

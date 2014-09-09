@@ -1,4 +1,4 @@
-reached(3)
-reached(4)
-reached(7)
+reached(6)
 reached(8)
+reached(10)
+reached(15)
