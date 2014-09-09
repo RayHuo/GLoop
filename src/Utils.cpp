@@ -362,3 +362,92 @@ bool Utils::setContains(const set<int>& a, const set<int>& b) {
     
     return true;
 }
+
+
+//void Utils::createPealGraph(int PEALNUM, int PEALSIZE) {
+//    FILE* fout; 
+//    FILE* fcuts;
+//    fout = fopen("IO/pealGraph/nv14a2.txt", "w");
+//    if(!fout) {
+//        printf("Fail to open output file.\n");
+//        assert(0);
+//    }
+//
+//    fcuts = fopen("IO/pealGraph/cuts.txt", "w");
+//    if(!fcuts) {
+//        printf("Fail to open cuts file.\n");
+//        assert(0);
+//    }
+//
+//    srand(time(0));
+//    int total = PEALNUM*PEALSIZE;
+//    bool visited[PEALNUM*PEALSIZE];
+//    memset(visited, false, sizeof(visited));
+//
+//    // print all vertexs in file
+//    for(int i = 0; i < total; i++) {
+//        fprintf(fout, "vertex(%d).\n", i);      fflush(fout);
+//    }
+//    visited[0] = true;  // while visited[i] = true, vertex[i] can not be choose as a connect node
+//
+//    // print all arcs in the each peal Test
+//    for(int t = 0; t < PEALNUM; t++)
+//        for(int i = 0; i< PEALSIZE; i++)
+//            for(int j = i+1; j< PEALSIZE; j++) {
+//                fprintf(fout, "arc(%d, %d).\n", i+t*PEALSIZE, j+t*PEALSIZE);    fflush(fout);
+//                fprintf(fout, "arc(%d, %d).\n", j+t*PEALSIZE, i+t*PEALSIZE);    fflush(fout);
+//            }
+//
+//    // generate connect edge for every two nodes
+//    set<int> cuts;              // hold all cut vertexs             
+//    int st = -1, ed = -1;
+//
+//    // first node to second node
+//    do {
+//        st = rand() % PEALSIZE;
+//    }while(visited[st]);
+//    visited[st] = true;     cuts.insert(st);
+//    do {
+//        ed = rand() % PEALSIZE + PEALSIZE;
+//    }while(visited[ed]);
+//    visited[ed] = true;     cuts.insert(ed);
+//    fprintf(fout, "arc(%d, %d).\n", st, ed);    fflush(fout);
+//
+//    // second node to first node
+//    do {
+//        st = rand() % PEALSIZE + PEALSIZE;
+//    }while(visited[st]);
+//    visited[st] = true;     cuts.insert(st);
+//    do {
+//        ed = rand() % PEALSIZE;
+//    }while(visited[ed]);
+//    visited[ed] = true;     cuts.insert(ed);
+//    fprintf(fout, "arc(%d, %d).\n", st, ed);    fflush(fout);
+//
+//    // print out total line num to judge whether a correct output
+//    // int lines = ((PEALSIZE-1)*PEALSIZE) * PEALNUM + PEALNUM + 2*PEALSIZE;
+//    // fprintf(fout, "Total lines should be %d\n", lines);      fflush(fout);
+//
+//    // print out all cut vertexs with reached(i)
+//    for(set<int>::iterator it = cuts.begin(); it != cuts.end(); it++) {
+//        fprintf(fcuts, "reached(%d)\n", *it);   fflush(fout);
+//    }
+//
+//    fclose(fcuts);
+//    fclose(fout);
+//
+//
+//    // then call gringo to ground the hc.lp with output file created above.
+//    // 管道调用 RUN_CMD 计算并将其结果写进 OUTPUT_FILE
+//    int BUFF_SIZE = 1024;
+//    string OUTPUT_FILE = "IO/input/nv14a2.in";
+//    string cmd = "gringo -t IO/pealGraph/hc.lp IO/pealGraph/nv14a2.txt > " + OUTPUT_FILE;
+//    char buff[BUFF_SIZE];
+//    FILE *pipe_file = popen(cmd.c_str(), "r");
+//    FILE *output_file = fopen(OUTPUT_FILE.c_str(), "w");
+//    while (fgets(buff, BUFF_SIZE, pipe_file)) {
+//        fprintf(output_file, "%s", buff);
+//    }
+//    pclose(pipe_file);
+//    fclose(output_file);
+//}

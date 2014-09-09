@@ -1259,11 +1259,12 @@ vector<Rule> DependenceGraph::t_UPX(set<int> X) {
         for(int i = 1; i <= HLUPX.size(); i++) {
             // 第二部分中的xE中的E其实可能是一个不止一个元素的环，所以直接命名也没有问题
             for(set<int>::iterator iit = inUP.begin(); iit != inUP.end(); iit++) {
-//                stringstream ss;    
+                stringstream ss;    
                 string tmp = "";
                 string str("_x");
-//                ss << i;
-                tmp += 'a' + i - 1;
+                ss << i;
+                tmp = ss.str();
+//                tmp += 'a' + i - 1;
                 str = tmp + str; 
                 char *input = new char[str.size() + 1];
                 strcpy(input, (char*)(str.c_str())); input[str.size()] = '\0';
@@ -1300,12 +1301,12 @@ vector<Rule> DependenceGraph::t_UPX(set<int> X) {
                 set_intersection(bodyPlus.begin(), bodyPlus.end(), HLUPX.at(i-1).loopNodes.begin(),
                         HLUPX.at(i-1).loopNodes.end(), inserter(intersect, intersect.begin()));
                 if(intersect.size() > 0) {
-//                    stringstream ss;    
+                    stringstream ss;    
                     string tmp = "";   
                     string str("_x");
-//                    ss << i;
-//                    tmp = ss.str();
-                    tmp += 'a' + i - 1;
+                    ss << i;
+                    tmp = ss.str();
+//                    tmp += 'a' + i - 1;
                     str = tmp + str; 
                     char *input = new char[str.size() + 1];
                     strcpy(input, (char*)(str.c_str())); input[str.size()] = '\0';
@@ -1628,6 +1629,7 @@ void DependenceGraph::calbuU() {
     out_UP();
     EC_UP();
 }
+
 
 // 纯粹用于测试各个函数的功能的
 void DependenceGraph::testFunction(FILE* out) {

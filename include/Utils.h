@@ -52,6 +52,8 @@ public:
     static bool compareAnswerSet(vector< vector<char*> >& claspAnswer, vector< set<int> >& satAnswer);
 
     static bool setContains(const set<int>& a, const set<int>& b);
+    
+//    static void createPealGraph(int PEALNUM, int PEALSIZE);   // create the peal graph for hc.lp
 };
 
 

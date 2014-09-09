@@ -77,12 +77,37 @@ int main(int argc, char** argv) {
     yyparse();
     printf("End Parser\n");
 
+    // get U from IO/pealGraph/cuts.txt
+    int BUFF_SIZE = 1024;
+    FILE* fcuts = fopen("IO/pealGraph/cuts.txt", "r");
+    if(!fcuts) {
+        printf("Open fcuts failed!\n");
+        assert(0);
+    }
+    char lines[BUFF_SIZE];
+    while(fgets(lines, BUFF_SIZE, fcuts)) {
+        int last = strlen(lines);
+        if(lines[last-1] == '\n')
+            lines[last-1] = '\0';   // reduce the last '\n' per line
+        int index = Vocabulary::instance().queryAtom(lines);
+        if(index != -1)
+            U.insert(index);
+        else 
+            printf("cuts Error!\n");
+    }
+//    printf("U : \n");
+//    for(set<int>::iterator it = U.begin(); it != U.end(); it++) {
+//        printf("%s ", Vocabulary::instance().getAtom(*it));
+//    }
+//    printf("\n");
+    fclose(fcuts);
+
     fprintf(result_out, "Total Atom size = %d\n", Vocabulary::instance().apSize());
     DependenceGraph dpdg;
     long start = clock();
-    U = dpdg.calU();
-    dpdg.splitting(result_out);
-//    dpdg.calbuU();
+//    U = dpdg.calU();
+    // dpdg.splitting(result_out);
+    dpdg.calbuU();
     long end = clock();
 
     fprintf(result_out, "\nTime cost : %lf seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
