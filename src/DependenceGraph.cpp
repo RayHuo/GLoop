@@ -1383,7 +1383,7 @@ set< set<int> > DependenceGraph::solutionYs(vector<Rule> pY,set<int> X) {
  */
 set< set<int> > DependenceGraph::callClaspD(string fileName) {
     // 管道调用 RUN_CMD 计算并将其结果写进 OUTPUT_FILE
-    string cmd = "gringo " + fileName + " | clasp 0 > " + OUTPUT_FILE;
+    string cmd = "gringo " + fileName + " | claspD 101 > " + OUTPUT_FILE;
     char buff[BUFF_SIZE];
     FILE *pipe_file = popen(cmd.c_str(), "r");
     FILE *output_file = fopen(OUTPUT_FILE, "w");

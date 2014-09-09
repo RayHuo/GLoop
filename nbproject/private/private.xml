@@ -10,10 +10,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/sharpen/NetBeansProjects/ASSAT/include/DependenceGraph.h</file>
-            <file>file:/home/sharpen/NetBeansProjects/ASSAT/src/main.cpp</file>
-            <file>file:/home/sharpen/NetBeansProjects/ASSAT/src/DependenceGraph.cpp</file>
-            <file>file:/home/sharpen/NetBeansProjects/ASSAT/src/SATSolver.cpp</file>
+            <file>file:/home/ray/Desktop/ASP/Program/GLoop/src/DependenceGraph.cpp</file>
+            <file>file:/home/ray/Desktop/ASP/Program/GLoop/src/global.cpp</file>
+            <file>file:/home/ray/Desktop/ASP/Program/GLoop/include/DependenceGraph.h</file>
+            <file>file:/home/ray/Desktop/ASP/Program/GLoop/src/main.cpp</file>
         </group>
     </open-files>
 </project-private>
