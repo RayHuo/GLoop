@@ -1,0 +1,267 @@
+Total Atom size = 50
+U size : 45
+Answer set Xs num : 40
+
+E done, Es size = 1
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+----------------------------
+Choose X : 
+Answer set Ys num : 1
+
+Solution judge 
+
+S is an answer set of input program! : False
+
+----------------------------
+Choose X : 
+Answer set Ys num : 0
+
+Solution judge 
+
+
+Time cost : 0.370000 seconds

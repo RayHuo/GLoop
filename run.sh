@@ -1,15 +1,16 @@
 #! /bin/bash
 
-cd IO/input/
-argus=""
-for fileName in `ls | xargs realpath`
-do
-	argus=${argus}${fileName}" "
-done
-
-cd ../output/
+cd IO/output/
 rm -rf ./*
 
-cd ../../
-# echo $argus
-./gloop $argus
+cd ../input/
+
+for fileName in `ls`
+do
+    argus="IO/input/"
+	argus=${argus}${fileName}
+    # echo $argus
+    cd ../../
+    ./gloop $argus
+    cd IO/input/
+done

@@ -152,6 +152,7 @@ public:
     set< set<int> > callClaspD(string fileName);        // 调用claspD来计算answer set，输入为一个文件
     void judge(FILE* out, set<int> X, set<int> Y);      // 对一对solution<X,Y>进行判断是否对应的S是否是程序P的一个answer set
     void splitting(FILE* out);                          // 整个splitting的运行过程
+    void calbuU();                                      // 计算Atoms(b_U(P)) - U 的原子个数
     
     // Find U
     set<int> calU();                                    // the calU use dpdGraph to calculate the minCut set U

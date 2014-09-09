@@ -1,0 +1,12 @@
+Atoms(b_U(P)) - U size = 14
+Atoms(b_U(P)) - U size = 5
+Atoms(b_U(P)) - U size = 13
+Atoms(b_U(P)) - U size = 7
+Atoms(b_U(P)) - U size = 7
+Atoms(b_U(P)) - U size = 14
+Atoms(b_U(P)) - U size = 5
+Atoms(b_U(P)) - U size = 13
+Atoms(b_U(P)) - U size = 7
+Atoms(b_U(P)) - U size = 7
+Atoms(b_U(P)) - U size = 5
+Atoms(b_U(P)) - U size = 7

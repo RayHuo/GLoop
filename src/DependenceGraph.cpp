@@ -33,6 +33,7 @@ extern vector<Rule> G_NLP;
 extern set<int> U;
 extern int *atomState;
 extern int *ruleState;
+extern FILE* count_out;
 
 DependenceGraph::DependenceGraph() {
     set<int> nodeSet;
@@ -959,7 +960,7 @@ set<int> DependenceGraph::calU() {
             ret.insert(it->first);
         }
     }
-    printf("\nRet size : %d\n", ret.size());
+//    printf("\nRet size : %d\n", ret.size());
     return ret;
 }
 
@@ -1060,6 +1061,9 @@ void DependenceGraph::EC_UP() {
     set<int> diff;      // Atoms(b_U(P)) \ U
     set_difference(AtomBUP.begin(), AtomBUP.end(), U.begin(), U.end(), inserter(diff, diff.begin()));
     
+    // 输出 Atoms(b_U(P)) \ U 的数量到 count_out.txt
+    fprintf(count_out, "Atoms(b_U(P)) - U size = %d\n", diff.size());
+    
     // 由定义可知diff中的元素必为正值
     for(set<int>::iterator it = diff.begin(); it != diff.end(); it++) {
         // 构造 a :- not a_.
@@ -1090,8 +1094,9 @@ set< set<int> > DependenceGraph::solutionXs() {
     
     FILE *result;
     result = fopen("IO/pX.txt", "w");
-    for(vector<Rule>::iterator pit = pX.begin(); pit != pX.end(); pit++)
-        (*pit).output(result);    
+    for(vector<Rule>::iterator pit = pX.begin(); pit != pX.end(); pit++) {
+        (*pit).output(result);    fflush(result);
+    }
     fflush(result);
     fclose(result);
     return callClaspD("IO/pX.txt");
@@ -1242,6 +1247,7 @@ vector<Rule> DependenceGraph::t_UPX(set<int> X) {
             result.push_back(G_NLP[i]);
     
     vector<Loop> HLUPX = HL_UPX(X);
+//    printf("\nHL_U(P,X) size = %d\n", HLUPX.size());
     
     // part 2，当HL_U(P,X)为空时，第二部分也为空.
     if(HLUPX.size() > 0) {
@@ -1253,11 +1259,11 @@ vector<Rule> DependenceGraph::t_UPX(set<int> X) {
         for(int i = 1; i <= HLUPX.size(); i++) {
             // 第二部分中的xE中的E其实可能是一个不止一个元素的环，所以直接命名也没有问题
             for(set<int>::iterator iit = inUP.begin(); iit != inUP.end(); iit++) {
-                stringstream ss;    
-                string tmp;
+//                stringstream ss;    
+                string tmp = "";
                 string str("_x");
-                ss << i;
-                tmp = ss.str();
+//                ss << i;
+                tmp += 'a' + i - 1;
                 str = tmp + str; 
                 char *input = new char[str.size() + 1];
                 strcpy(input, (char*)(str.c_str())); input[str.size()] = '\0';
@@ -1294,11 +1300,12 @@ vector<Rule> DependenceGraph::t_UPX(set<int> X) {
                 set_intersection(bodyPlus.begin(), bodyPlus.end(), HLUPX.at(i-1).loopNodes.begin(),
                         HLUPX.at(i-1).loopNodes.end(), inserter(intersect, intersect.begin()));
                 if(intersect.size() > 0) {
-                    stringstream ss;    
-                    string tmp;
+//                    stringstream ss;    
+                    string tmp = "";   
                     string str("_x");
-                    ss << i;
-                    tmp = ss.str();
+//                    ss << i;
+//                    tmp = ss.str();
+                    tmp += 'a' + i - 1;
                     str = tmp + str; 
                     char *input = new char[str.size() + 1];
                     strcpy(input, (char*)(str.c_str())); input[str.size()] = '\0';
@@ -1362,8 +1369,9 @@ void DependenceGraph::e_U(vector<Rule>& tuPX, set<int> X) {
 set< set<int> > DependenceGraph::solutionYs(vector<Rule> pY,set<int> X) {
     FILE* result;
     result = fopen("IO/pY.txt", "w");
-    for(vector<Rule>::iterator pit = pY.begin(); pit != pY.end(); pit++)
-        (*pit).output(result);
+    for(vector<Rule>::iterator pit = pY.begin(); pit != pY.end(); pit++) {
+        (*pit).output(result);  fflush(result);
+    }
     fflush(result);
     fclose(result);
     return callClaspD("IO/pY.txt");
@@ -1375,7 +1383,7 @@ set< set<int> > DependenceGraph::solutionYs(vector<Rule> pY,set<int> X) {
  */
 set< set<int> > DependenceGraph::callClaspD(string fileName) {
     // 管道调用 RUN_CMD 计算并将其结果写进 OUTPUT_FILE
-    string cmd = "gringo " + fileName + " | claspD 10 > " + OUTPUT_FILE;
+    string cmd = "gringo " + fileName + " | clasp 0 > " + OUTPUT_FILE;
     char buff[BUFF_SIZE];
     FILE *pipe_file = popen(cmd.c_str(), "r");
     FILE *output_file = fopen(OUTPUT_FILE, "w");
@@ -1458,7 +1466,7 @@ void DependenceGraph::judge(FILE* out, set<int> X, set<int> Y) {
 
 // 整个splitting的过沉
 void DependenceGraph::splitting(FILE* out) {
-//    fprintf(out, "U : ");
+    fprintf(out, "U size : %d\n", U.size());
 //    for(set<int>::iterator it = U.begin(); it != U.end(); it++)
 //        fprintf(out, "%s ", Vocabulary::instance().getAtom(*it));
 //    fprintf(out, "\n");
@@ -1470,6 +1478,9 @@ void DependenceGraph::splitting(FILE* out) {
 //        G_NLP[*it].output(out);
 //    }
 //    fprintf(out, "\n");
+    
+    // Atoms(b_U(P)) - U 的数目
+    
     
     // calculate in_U(P)
     in_UP();   // printf("\nin_U(P) done!\n");
@@ -1497,17 +1508,17 @@ void DependenceGraph::splitting(FILE* out) {
     
     // calculate answer set X
     set< set<int> > Xs = solutionXs(); // printf("\nXs done!\n");
-    fprintf(out, "Answer set Xs : \n"); fflush(out);
-    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++) {
-        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
-            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
-        }
-        fprintf(out, "\n");
-    }
-    fprintf(out, "\n"); fflush(out);
+    fprintf(out, "Answer set Xs num : %d\n", Xs.size()); fflush(out);
+//    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++) {
+//        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
+//            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
+//        }
+//        fprintf(out, "\n");
+//    }
+//    fprintf(out, "\n"); fflush(out);
     
     // calculate all half loops E
-    calE();         printf("\nE done, Es size = %d\n", Es.size());
+    calE();         fprintf(out, "\nE done, Es size = %d\n", Es.size());
     // answer set Y 
     for(set< set<int> >::iterator xit = Xs.begin(); xit != Xs.end(); xit++) {
         set<int> Xtest = (*xit);
@@ -1539,16 +1550,16 @@ void DependenceGraph::splitting(FILE* out) {
             // calculate R-(E,X)
             R_EX(Es.front(), Xtest);      //  printf("\nR_(E,X) done\n");
         
-//        fprintf(out, "R-(E,X) : \n");
-//        for(set<int>::iterator it = Es.front().ESRules.begin(); it != Es.front().ESRules.end(); it++) {
-//            G_NLP[*it].output(out);
-//        }
-//        fprintf(out, "\n");
+//            fprintf(out, "R-(E,X) : \n");
+//            for(set<int>::iterator it = Es.front().ESRules.begin(); it != Es.front().ESRules.end(); it++) {
+//                G_NLP[*it].output(out);
+//            }
+//            fprintf(out, "\n");
         }
 //        printf("1 : \n"); Vocabulary::instance().dumpVocabulary(stdout);
         
-        // calculate HL_U(P,X)
-        vector<Loop> hlupx = HL_UPX(Xtest);   //  printf("\nHL_U(P,X) done\n");
+        // calculate HL_U(P,X) will inside t_UPX(Xtest)
+//        vector<Loop> hlupx = HL_UPX(Xtest);   //  printf("\nHL_U(P,X) done\n");
 //        fprintf(out, "HL_U(P,X) :\n");
 //        for(vector<Loop>::iterator it = hlupx.begin(); it != hlupx.end(); it++) {
 //            fprintf(out, "Loop : ");
@@ -1569,8 +1580,8 @@ void DependenceGraph::splitting(FILE* out) {
 //            (*it).output(out);
 //        }
 //        fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
-//
-//        fflush(out);
+
+        fflush(out);
         // calculate e_U(P,X)
         e_U(tupx, Xtest);
 //        fprintf(out, "e_U(t_U(P,X), X): \n");
@@ -1584,7 +1595,7 @@ void DependenceGraph::splitting(FILE* out) {
         vector<Rule> pY = eccupx;    // e_U(P, X)和ECC_U(P, X)的并集
         pY.insert(pY.begin(), tupx.begin(), tupx.end());
         set< set<int> > Ys = solutionYs(pY, Xtest);    // printf("Ys size %d\n", Ys.size());
-//        fprintf(out, "Answer set Ys : \n"); fflush(out);
+        fprintf(out, "Answer set Ys num : %d\n", Ys.size()); fflush(out);
 //        for(set< set<int> >::iterator it = Ys.begin(); it != Ys.end(); it++) {
 //            for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
 //                fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
@@ -1611,156 +1622,164 @@ void DependenceGraph::splitting(FILE* out) {
     }
 }
 
+void DependenceGraph::calbuU() {
+    b_UP();
+    in_UP();
+    out_UP();
+    EC_UP();
+}
+
 // 纯粹用于测试各个函数的功能的
 void DependenceGraph::testFunction(FILE* out) {
-    fprintf(out, "U : ");
-    for(set<int>::iterator it = U.begin(); it != U.end(); it++)
-        fprintf(out, "%s ", Vocabulary::instance().getAtom(*it));
-    fprintf(out, "\n");
+//    fprintf(out, "U : ");
+//    for(set<int>::iterator it = U.begin(); it != U.end(); it++)
+//        fprintf(out, "%s ", Vocabulary::instance().getAtom(*it));
+//    fprintf(out, "\n");
     
     // test for b_U(P)
     b_UP();
-    fprintf(out, "\nb_U(P) : \n");
-    for(set<int>::iterator it = bUP.begin(); it != bUP.end(); it++) {
-        G_NLP[*it].output(out);
-    }
-    fprintf(out, "\n");
+//    fprintf(out, "\nb_U(P) : \n");
+//    for(set<int>::iterator it = bUP.begin(); it != bUP.end(); it++) {
+//        G_NLP[*it].output(out);
+//    }
+//    fprintf(out, "\n");
     
     // test for in_U(P)
     in_UP();
-    fprintf(out, "\nin_U(P) : \n");
-    for(set<int>::iterator it = inUP.begin(); it != inUP.end(); it++) {
-        G_NLP[*it].output(out);
-    }
-    fprintf(out, "\n");
+//    fprintf(out, "\nin_U(P) : \n");
+//    for(set<int>::iterator it = inUP.begin(); it != inUP.end(); it++) {
+//        G_NLP[*it].output(out);
+//    }
+//    fprintf(out, "\n");
     
     // test for out_U(P)
     out_UP();
-    fprintf(out, "\nout_U(P) : \n");
-    for(set<int>::iterator it = outUP.begin(); it != outUP.end(); it++) {
-        G_NLP[*it].output(out);
-    }
-    fprintf(out, "\n");
+//    fprintf(out, "\nout_U(P) : \n");
+//    for(set<int>::iterator it = outUP.begin(); it != outUP.end(); it++) {
+//        G_NLP[*it].output(out);
+//    }
+//    fprintf(out, "\n");
     
     // test for EC_U(P)
     EC_UP();
-    fprintf(out, "\nEC_U(P) : \n");
-    for(vector<Rule>::iterator it = ECUP.begin(); it != ECUP.end(); it++) {
-        (*it).output(out);
-    }
-    fprintf(out, "\n");
+//    fprintf(out, "\nEC_U(P) : \n");
+//    for(vector<Rule>::iterator it = ECUP.begin(); it != ECUP.end(); it++) {
+//        (*it).output(out);
+//    }
+//    fprintf(out, "\n");
     
     // test for calculate answer set X
     set< set<int> > Xs = solutionXs();
-    fprintf(out, "Answer set Xs : \n"); fflush(out);
-    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++) {
-        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
-            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
-        }
-        fprintf(out, "\n");
-    }
-    fprintf(out, "\n");         // tested OK
+    fprintf(out, "Answer set Xs num : %d\n", Xs.size()); fflush(out);
+//    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++) {
+//        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
+//            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
+//        }
+//        fprintf(out, "\n");
+//    }
+//    fprintf(out, "\n");         // tested OK
 
+    // test for calE
+    calE(); 
+    fprintf(out, "\nHalf loops Es num : %d\n", Es.size());
+//    for(vector<Loop>::iterator it = Es.begin(); it != Es.end(); it++) {
+//        fprintf(out, "Loop : ");
+//        for(set<int>::iterator sit = (it->loopNodes).begin(); sit != (it->loopNodes).end(); sit++) {
+//            fprintf(out, "%s ", Vocabulary::instance().getAtom(*sit));
+//        }
+//        fprintf(out, "\n");
+//    }
+//    fprintf(out, "\n");         // tested OK
     
     // test for ECC_U(P,X)
     int i = 0;  set<int> Xtest;
-    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++, i++)
-        if(i == 1)
-            Xtest = (*it);
-    fprintf(out, "\nChoose X : ");
-    for(set<int>::iterator it = Xtest.begin(); it != Xtest.end(); it++)
-        fprintf(out, "%s ", Vocabulary::instance().getAtom(*it));
-    vector<Rule> eccupx = ECC_UP(Xtest);
-    fprintf(out, "\nECC_U(P,X) :\n");
-    for(vector<Rule>::iterator eit = eccupx.begin(); eit != eccupx.end(); eit++) {
-        (*eit).output(out);
-    }
-    fprintf(out, "\n");         // tested OK
-    
-            
-    // test for calE
-    calE();
-    fprintf(out, "\nHalf loops Es : \n");
-    for(vector<Loop>::iterator it = Es.begin(); it != Es.end(); it++) {
-        fprintf(out, "Loop : ");
-        for(set<int>::iterator sit = (it->loopNodes).begin(); sit != (it->loopNodes).end(); sit++) {
-            fprintf(out, "%s ", Vocabulary::instance().getAtom(*sit));
+    for(set< set<int> >::iterator it = Xs.begin(); it != Xs.end(); it++, i++) {
+//        if(i == 1) 
+        Xtest = (*it);
+        fprintf(out, "\n--------------------------Choose X : ");
+    //    for(set<int>::iterator it = Xtest.begin(); it != Xtest.end(); it++)
+    //        fprintf(out, "%s ", Vocabulary::instance().getAtom(*it));
+        vector<Rule> eccupx = ECC_UP(Xtest);
+    //    fprintf(out, "\nECC_U(P,X) :\n");
+    //    for(vector<Rule>::iterator eit = eccupx.begin(); eit != eccupx.end(); eit++) {
+    //        (*eit).output(out);
+    //    }
+    //    fprintf(out, "\n");         // tested OK
+
+
+        // test for R-(E,X)
+        if(Es.size() > 0) {
+            R_EX(Es.front(), Xtest);
+        }
+    //    fprintf(out, "R-(E,X) : \n");
+    //    for(set<int>::iterator it = Es.front().ESRules.begin(); it != Es.front().ESRules.end(); it++) {
+    //        G_NLP[*it].output(out);
+    //    }
+    //    fprintf(out, "\n");         // tested OK
+
+
+        // test for HL_U(P,X)
+    //    vector<Loop> hlupx = HL_UPX(Xtest);
+    //    fprintf(out, "HL_U(P,X) :\n");
+    //    for(vector<Loop>::iterator it = hlupx.begin(); it != hlupx.end(); it++) {
+    //        fprintf(out, "Loop : ");
+    //        for(set<int>::iterator sit = (it->loopNodes).begin(); sit != (it->loopNodes).end(); sit++)
+    //            fprintf(out, "%s ", Vocabulary::instance().getAtom(*sit));
+    //        fprintf(out, "\n");
+    //    }
+    //    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
+
+
+        // test for t_U(P,X)
+        vector<Rule> tupx = t_UPX(Xtest);
+    //    fprintf(out, "t_U(P,X) : \n");
+    //    for(vector<Rule>::iterator it = tupx.begin(); it != tupx.end(); it++) {
+    //        (*it).output(out);
+    //    }
+    //    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
+
+
+        // test for e_U(P,X)
+        e_U(tupx, Xtest);
+    //    fprintf(out, "e_U(t_U(P,X), X): \n");
+    //    for(vector<Rule>::iterator it = tupx.begin(); it != tupx.end(); it++) {
+    //        (*it).output(out);
+    //    }
+    //    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
+
+
+        // test for solutionYs
+        vector<Rule> pY = eccupx;    // e_U(P, X)和ECC_U(P, X)的并集
+        pY.insert(pY.begin(), tupx.begin(), tupx.end());
+        set< set<int> > Ys = solutionYs(pY, Xtest);
+        fprintf(out, "Answer set Ys size : %d\n", Ys.size()); fflush(out);
+    //    for(set< set<int> >::iterator it = Ys.begin(); it != Ys.end(); it++) {
+    //        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
+    //            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
+    //        }
+    //        fprintf(out, "\n");
+    //    }
+    //    fprintf(out, "\n");         // tested OK
+
+
+        //-------------------Above is tested OK-------------------
+
+        Vocabulary::instance().dumpVocabulary(stdout);      fflush(out);
+
+    //    fprintf(out, "\nInput program P's answer sets : \n");
+    //    for(set< set<int> >::iterator pit = PAnswerSets.begin(); pit != PAnswerSets.end(); pit++) {
+    //        for(set<int>::iterator it = (*pit).begin(); it != (*pit).end(); it++) {
+    //            fprintf(out, " %s", Vocabulary::instance().getAtom(*it));
+    //        }
+    //        fprintf(out, "\n");
+    //    }
+    //    fprintf(out, "\n");
+
+        fprintf(out, "\nTest for Solution judge \n");
+        for(set< set<int> >::iterator sit = Ys.begin(); sit != Ys.end(); sit++) {
+            judge(out, Xtest, (*sit));
         }
         fprintf(out, "\n");
     }
-    fprintf(out, "\n");         // tested OK
-    
-    
-    // test for R-(E,X)
-    R_EX(Es.front(), Xtest);
-    fprintf(out, "R-(E,X) : \n");
-    for(set<int>::iterator it = Es.front().ESRules.begin(); it != Es.front().ESRules.end(); it++) {
-        G_NLP[*it].output(out);
-    }
-    fprintf(out, "\n");         // tested OK
-    
-    
-    // test for HL_U(P,X)
-    vector<Loop> hlupx = HL_UPX(Xtest);
-    fprintf(out, "HL_U(P,X) :\n");
-    for(vector<Loop>::iterator it = hlupx.begin(); it != hlupx.end(); it++) {
-        fprintf(out, "Loop : ");
-        for(set<int>::iterator sit = (it->loopNodes).begin(); sit != (it->loopNodes).end(); sit++)
-            fprintf(out, "%s ", Vocabulary::instance().getAtom(*sit));
-        fprintf(out, "\n");
-    }
-    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
-    
-    
-    // test for t_U(P,X)
-    vector<Rule> tupx = t_UPX(Xtest);
-    fprintf(out, "t_U(P,X) : \n");
-    for(vector<Rule>::iterator it = tupx.begin(); it != tupx.end(); it++) {
-        (*it).output(out);
-    }
-    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
-    
-    
-    // test for e_U(P,X)
-    e_U(tupx, Xtest);
-    fprintf(out, "e_U(t_U(P,X), X): \n");
-    for(vector<Rule>::iterator it = tupx.begin(); it != tupx.end(); it++) {
-        (*it).output(out);
-    }
-    fprintf(out, "\n");         // tested OK for HL_U(P,X) is empty situation.
- 
-    
-    // test for solutionYs
-    vector<Rule> pY = eccupx;    // e_U(P, X)和ECC_U(P, X)的并集
-    pY.insert(pY.begin(), tupx.begin(), tupx.end());
-    set< set<int> > Ys = solutionYs(pY, Xtest);
-    fprintf(out, "Answer set Ys : \n"); fflush(out);
-    for(set< set<int> >::iterator it = Ys.begin(); it != Ys.end(); it++) {
-        for(set<int>::iterator sit = (*it).begin(); sit != (*it).end(); sit++) {
-            fprintf(out, " %s", Vocabulary::instance().getAtom(*sit));  fflush(out);
-        }
-        fprintf(out, "\n");
-    }
-    fprintf(out, "\n");         // tested OK
-    
-    
-    //-------------------Above is tested OK-------------------
-    
-    Vocabulary::instance().dumpVocabulary(stdout);      fflush(out);
-    
-    fprintf(out, "\nInput program P's answer sets : \n");
-    for(set< set<int> >::iterator pit = PAnswerSets.begin(); pit != PAnswerSets.end(); pit++) {
-        for(set<int>::iterator it = (*pit).begin(); it != (*pit).end(); it++) {
-            fprintf(out, " %s", Vocabulary::instance().getAtom(*it));
-        }
-        fprintf(out, "\n");
-    }
-    fprintf(out, "\n");
-    
-    fprintf(out, "\nTest for Solution judge \n");
-    for(set< set<int> >::iterator sit = Ys.begin(); sit != Ys.end(); sit++) {
-        judge(out, Xtest, (*sit));
-    }
-    fprintf(out, "\n");
-    
+
 }
